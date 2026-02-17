@@ -1,0 +1,103 @@
+最新文献搜索报告（多源 PDF 增强版 2.7）
+===========================================
+
+关键词: starch
+时间范围: 最近 60 天 (2025-12-19 至 2026-02-17)
+总论文: 14 | 有摘要: 14 | PDF下载: 2 (13.9 MB)
+
+============================================================
+
+
+[1] Tracing modern breeding introgressions in European potato
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1007/s00122-025-05143-z
+  摘要: The European potato germplasm originated from a few founding genotypes, and its narrow genetic base has since been broadened through introgressions from wild relatives. We combined pedigree records and genome-wide SNP data to trace the origin, spread, and contributing ancestors of modern breeding in
+--------------------------------------------------
+
+[2] Biodegradation Behaviour of Acetylated Manihot Esculenta Crantz CV. TMS 92/0326 Starch-Based Bioplastics Films Reinforced with Rice Husk Ash Filler and Plasticize with Sorbitol
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18654303
+  摘要: This study investigates the biodegradability of acetylated Manihot esculenta Crantz cv. TMS 92/0326 cassava starch-based bioplastics reinforced with Rice husk ash and plasticized with Sorbitol. Starch was extracted from Manihot esculenta Crantz cv. TMS 92/0326 cassava variety and modified through ac
+--------------------------------------------------
+
+[3] Impact of Acetylation, Ethylene Glycol Plasticization, and Rice Husk Ash Reinforcement on Manihot Esculenta Crantz CV. TMS 92/0326 Starch-Based Bioplastic Films
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18653939
+  摘要: Abstract: This study analyzes the effect of acetylation, plasticization with ethylene glycol and rice husk ash - filler reinforcement on the properties of the Manihot esculenta Crantz cv. TMS 92/0326, a variety of cassava, used in starch films at different concentrations of plasticizer (2, 3, 4, 5 g
+--------------------------------------------------
+
+[4] Delayed Panicle Nitrogen Application Enhances Stem Nonstructural Carbohydrate Accumulation in Large-Panicle Rice Through the Sucrose–Starch Metabolic Network
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/agronomy16040464
+  摘要: Accumulation of stem non-structural carbohydrates (NSC) at heading is crucial for mitigating grain-setting defects in large-panicle rice. While traditional panicle nitrogen fertilizer application at the emergence of the fourth leaf from the flag leaf stage (TL4) may weaken stem sink strength, delayi
+--------------------------------------------------
+
+[5] Biodegradation Behaviour of Acetylated Manihot esculenta Crantz cv. TMS 92/0326 Starch-Based Bioplastics Films Reinforced with Rice Husk Ash Filler and plasticize with Sorbitol
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18653902
+  摘要: Abstract This study investigates the biodegradability of acetylated Manihot esculenta Crantz cv. TMS 92/0326 cassava starch-based bioplastics reinforced with Rice husk ash and plasticized with Sorbitol. Starch was extracted from Manihot esculenta Crantz cv. TMS 92/0326 cassava variety and modified t
+--------------------------------------------------
+
+[6] Laminaribiose in food and health: biological functions, applications, and recent advances in enzymatic production via green multi-enzyme cascade synthesis
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Laminaribiose, a β-1,3-linked glucose disaccharide, possesses notable bioactivities with potential applications in food and health. Its industrial use is constrained by low yield and purity. Production strategies include natural extraction, chemical synthesis, and enzymatic synthesis. Natural extrac
+--------------------------------------------------
+
+[7] Biodegradation Behaviour of Acetylated Manihot esculenta Crantz cv. TMS 92/0326 Starch-Based Bioplastics Films Reinforced with Rice Husk Ash Filler and plasticize with Sorbitol
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18653901
+  摘要: Abstract This study investigates the biodegradability of acetylated Manihot esculenta Crantz cv. TMS 92/0326 cassava starch-based bioplastics reinforced with Rice husk ash and plasticized with Sorbitol. Starch was extracted from Manihot esculenta Crantz cv. TMS 92/0326 cassava variety and modified t
+--------------------------------------------------
+
+[8] Aditivos de polímeros naturales en el concreto hidráulico
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.82289/474b-dk35
+  摘要: En este artículo de revisión se realiza un análisis a posibles fuentes bibliográficas que demuestran formas eficaces y seguras de realizar una matriz polimérica natural en el concreto hidráulico. Esto podría mejorar las propiedades mecánicas de dicho concreto, en contra de las patologías sufridas po
+--------------------------------------------------
+
+[9] Modeling grain biochemical composition traits of commercial sorghum hybrids under diverse management practices
+  来源: openalex | 日期: 2026-02-16 | PDF: ✔ openalex_modeling_grain_bioch_w7129070603.pdf (6.5 MB, 来源: original)
+
+  摘要: Introduction Sorghum ( Sorghum bicolor (L.) Moench) is a vital cereal crop for food, feed, and biofuel production. Accurate estimation of grain biochemical composition, crude protein (CP), lysine from grain (LysG) and protein (LysP), starch (SC), amylose from grain (AMLG) and starch (AMLS), and crud
+--------------------------------------------------
+
+[10] Effect of nanocellulose on the structure and properties of arrowroot starch films
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.14314/polimery.2026.2.5
+  摘要: Effect of 1 and 3 wt% nanocrystalline arrowroot cellulose (ARNC) on the structure and properties of arrowroot starch (AS)-based films was investigated. The addition of ARNC increased the film density and reduced its water absorption, indicating improved moisture barrier properties. Furthermore, tens
+--------------------------------------------------
+
+[11] Amine-based deep eutectic plasticization opens a low-energy, high-flow processing window and improves ductility retention in banana fiber-reinforced thermoplastic starch composites
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Plasticization of banana fiber (BF)-reinforced thermoplastic starch (TPS) must balance melt flowability during compounding with stability during service. Here, a stoichiometry-resolved processing map is established for an amine-based deep eutectic solvent (DES), choline chloride-monoethanolamine (Ch
+--------------------------------------------------
+
+[12] Biodegradation Behaviour of Acetylated Manihot Esculenta Crantz CV. TMS 92/0326 Starch-Based Bioplastics Films Reinforced with Rice Husk Ash Filler and Plasticize with Sorbitol
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18654304
+  摘要: This study investigates the biodegradability of acetylated Manihot esculenta Crantz cv. TMS 92/0326 cassava starch-based bioplastics reinforced with Rice husk ash and plasticized with Sorbitol. Starch was extracted from Manihot esculenta Crantz cv. TMS 92/0326 cassava variety and modified through ac
+--------------------------------------------------
+
+[13] Impact of Acetylation, Ethylene Glycol Plasticization, and Rice Husk Ash Reinforcement on Manihot Esculenta Crantz CV. TMS 92/0326 Starch-Based Bioplastic Films
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18653940
+  摘要: Abstract: This study analyzes the effect of acetylation, plasticization with ethylene glycol and rice husk ash - filler reinforcement on the properties of the Manihot esculenta Crantz cv. TMS 92/0326, a variety of cassava, used in starch films at different concentrations of plasticizer (2, 3, 4, 5 g
+--------------------------------------------------
+
+[14] Starch granules are instructive scaffolds for synergistic reinforcement and dissipation in hydrogel composites
+  来源: arxiv | 日期: 2026-02-13 | PDF: ✔ arxiv_starch_granule_are_i_260212538.pdf (7.4 MB, 来源: arxiv_pdf)
+
+  摘要: A fundamental challenge in soft material design is the competition between rigidity and dynamicity, as stiffening mechanisms typically suppress energy dissipation. Here, we demonstrate that starch granules serve as instructive scaffolds that overcome this constraint, enabling the synergistic amplifi
+--------------------------------------------------

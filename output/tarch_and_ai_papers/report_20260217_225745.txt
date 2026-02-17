@@ -1,0 +1,35 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: starch and AI 
+时间范围: 最近 60 天 (2025-12-19 至 2026-02-17)
+总论文: 4 | 有摘要: 4 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] Microwave-assisted synthesis of dual-emissive N, Fe-Co-doped carbon dot nanocomposites for latent fingerprint visualization via AI-enhanced analytical engineering
+  来源: openalex | 日期: 2026-01-12 | PDF: 无PDF链接
+
+  摘要: There is an urgent need for strategies that enable the rapid synthesis of long-wavelength fluorescent carbon dots (CDs). In forensic science, the development and analysis of latent fingerprints (LFPs) are vital for criminal investigations. This process involves two steps: enhancing LFP visualization
+--------------------------------------------------
+
+[2] Enhancing Food Safety, Quality and Sustainability Through Biopesticide Production Under the Concept of Process Intensification
+  来源: openalex | 日期: 2026-01-08 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://www.mdpi.com/2076-3417/16/2/644/pdf?version=1767861214
+  摘要: The worldwide population is anticipated to reach 10.12 billion by the year 2100, thereby amplifying the necessity for sustainable agricultural methodologies to secure food availability while reducing ecological consequences. Conventional synthetic pesticides, while capable of increasing crop yields 
+--------------------------------------------------
+
+[3] Recent Advances in Starch‐Based Nanocomposite for Heavy Metal Removal: Mechanisms, and Future Prospects
+  来源: openalex | 日期: 2026-01-01 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Starch‐based nanoparticles/composites have now emerged as an innovative and environmentally friendly solution for the remediation of heavy metals from contaminated water and soil. Starch provides a numerous, cheap and non‐toxic matrix for the creation of sustainable adsorbent materials beca
+--------------------------------------------------
+
+[4] Convolutional Neural Networks in Granulated Kissel Production
+  来源: openalex | 日期: 2025-12-25 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.21603/2074-9414-2025-4-2613
+  摘要: Artificial intelligence can be used to monitor production parameters in the food industry. Kissel is a jelly-like fruit or berry starch drink. Instant kissel usually consists of granules. Neural networks may help to control the size of kissel granules. In this research, convolutional neural networks
+--------------------------------------------------

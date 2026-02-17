@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # =============================================================================
-# 📚 学术文献搜索与 PDF 下载工具（多源 PDF 增强版 2.7 - Google CSE 集成版）
+# 📚 学术文献搜索与 PDF 下载工具（v3.0 - Semantic Scholar 首选版）
 # =============================================================================
 #
 # 【功能介绍】
@@ -8,39 +8,56 @@
 # 多渠道 PDF 下载，大幅提高文献获取成功率。
 #
 # 主要功能：
-#  ✓ 多源搜索：Europe PMC、arXiv、OpenAlex、Google Custom Search
+#  ✓ 多源搜索：Semantic Scholar（首选）、Europe PMC、arXiv、OpenAlex
 #  ✓ 智能 PDF 下载：7 个候选源自动切换（成功率高）
 #  ✓ 自动获取摘要：多种策略补全缺失的摘要
 #  ✓ 结果导出：CSV、JSON、纯文本报告
 #  ✓ 时间筛选：支持按天数筛选最新文献
+#  ✓ 自动重试：网络请求失败自动重试，提高稳定性
 #
 # ─────────────────────────────────────────────────────────────────────────────
 # 【数据源说明】
 # ─────────────────────────────────────────────────────────────────────────────
 #
-# 1. Europe PMC (欧洲 PubMed Central)
+# 1. Semantic Scholar (首选推荐) ⭐
+#    - 类型：AI 驱动的学术知识图谱（由艾伦人工智能研究所提供）
+#    - 特点：
+#      • 高度结构化数据（标题、摘要、作者、引用数、参考文献）
+#      • 强大的语义分析能力（不仅仅是关键词匹配）
+#      • 支持推荐算法 API
+#      • 涵盖所有学科领域
+#    - API：https://api.semanticscholar.org/
+#    - API Key：可选（无 Key 限制 100次/5分钟，有 Key 限制更宽松）
+#    - 国内访问：基本可用（偶尔会慢，已内置重试机制）
+#    - 适用场景：构建 AI 应用、文献问答、Agent、引用网络分析
+#
+# 2. Europe PMC (欧洲 PubMed Central)
 #    - 类型：生物医学和生命科学文献数据库
 #    - 特点：包含大量开放获取论文，有完整的摘要和 PDF 链接
 #    - API：https://europepmc.org/RestfulWebService
 #    - 无需 API Key
+#    - 适用场景：生物医学、生命科学领域
 #
-# 2. arXiv
+# 3. arXiv
 #    - 类型：物理、数学、计算机科学等领域的预印本论文库
 #    - 特点：所有论文免费开放，PDF 下载成功率 100%
 #    - API：https://arxiv.org/help/api/
 #    - 无需 API Key
+#    - 适用场景：物理、数学、计算机科学、统计学
 #
-# 3. OpenAlex
+# 4. OpenAlex
 #    - 类型：开放学术知识图谱（涵盖所有学科）
 #    - 特点：元数据丰富，包含论文引用、作者机构等信息
 #    - API：https://api.openalex.org/
 #    - 无需 API Key（建议添加邮箱参数以提升速率限制）
+#    - 适用场景：全学科文献检索、学术统计分析
 #
-# 4. Google Custom Search Engine (CSE)【可选】
+# 5. Google Custom Search Engine (CSE)【可选】
 #    - 类型：自定义搜索引擎，可搜索学术网站
 #    - 特点：作为补充源，可搜索到其他源遗漏的论文
 #    - API：https://developers.google.com/custom-search
 #    - **需要 API Key 和 Search Engine ID**（见配置章节）
+#    - 适用场景：补充搜索
 #
 # ─────────────────────────────────────────────────────────────────────────────
 # 【PDF 下载策略】（7 个候选源，按优先级）
@@ -230,7 +247,14 @@
 # 【更新日志】
 # ─────────────────────────────────────────────────────────────────────────────
 #
-# v2.7 (当前版本): 新增 Google Custom Search API 支持
+# v3.0 (当前版本): Semantic Scholar 首选版
+#      - 新增 Semantic Scholar 作为首选搜索源
+#      - 添加自动重试机制（HTTP 请求失败自动重试 3 次）
+#      - 支持 Semantic Scholar API Key（可选）
+#      - 优化超时设置（从 15 秒增加到 30 秒）
+#      - 更新数据源优先级：S2 > Europe PMC > arXiv > OpenAlex
+#
+# v2.7: 新增 Google Custom Search API 支持
 #      - 作为第四搜索源搜索学术论文
 #      - 作为 PDF 查找最终兜底（第 7 候选源）
 #
@@ -240,6 +264,7 @@
 #
 # v2.5: 搜索源优先 Europe PMC
 #      - 修复 CSV 输出时的换行符导致乱行问题
+#
 #
 # =============================================================================
 
@@ -265,14 +290,24 @@ CONFIG <- list(
   OUTPUT_DIR       = "output",
 
   # 启用的数据源列表（可删除不需要的源以提高速度）
-  # "europepmc" = 欧洲PubMed（生物医学）
-  # "arxiv"     = arXiv预印本（物理/数学/计算机）
-  # "openalex"  = OpenAlex开放学术（全学科）
-  # "google"    = Google自定义搜索（需配置API，可选）
-  SOURCES          = c("europepmc", "arxiv", "openalex", "google"),
+  # ⭐ "semanticscholar" = Semantic Scholar（首选推荐，全学科）
+  # "europepmc"         = 欧洲PubMed（生物医学）
+  # "arxiv"             = arXiv预印本（物理/数学/计算机）
+  # "openalex"          = OpenAlex开放学术（全学科）
+  # "google"            = Google自定义搜索（需配置API，可选）
+  SOURCES          = c("semanticscholar", "europepmc", "arxiv", "openalex"),
 
   # 请求间隔秒数，避免被API限流（建议保持 2-3 秒）
   DELAY_SEC        = 2,
+
+  # HTTP 请求超时时间（秒），针对国内网络环境优化
+  HTTP_TIMEOUT     = 30,
+
+  # HTTP 请求失败后的最大重试次数
+  MAX_RETRIES      = 3,
+
+  # 每次重试之间的等待时间（秒）
+  RETRY_DELAY      = 2,
 
   # Unpaywall API 邮箱（用于查找开放获取PDF）
   # ⚠️ 建议修改为你自己的邮箱，这样如有问题 Unpaywall 可以联系你
@@ -280,6 +315,17 @@ CONFIG <- list(
 
   # 摘要最大长度限制（字符数），防止全文误入 CSV
   MAX_ABSTRACT_LEN = 4000,
+
+  # ── Semantic Scholar API 配置 ────────────────────────────────────────────
+  # Semantic Scholar API Key（可选，推荐申请）
+  # 无 Key 模式：100 次请求 / 5 分钟（适合小规模测试）
+  # 有 Key 模式：速率限制更宽松（推荐用于生产环境）
+  #
+  # 申请地址：https://www.semanticscholar.org/product/api#api-key
+  # 通过环境变量传入（推荐）：
+  #   export S2_API_KEY="your_api_key_here"
+  S2_API_KEY       = Sys.getenv("S2_API_KEY", ""),
+  # ──────────────────────────────────────────────────────────────────────────
 
   # ── Google Custom Search API 配置 ───────────────────────────────────────
   # 推荐通过环境变量传入，避免密钥硬编码到脚本中：
@@ -296,6 +342,201 @@ log_msg <- function(msg, type = "INFO") {
   ts  <- format(Sys.time(), "%H:%M:%S")
   sym <- switch(type, "ERROR" = "✖", "SUCCESS" = "✔", "WARN" = "⚠", "🔄" = "🔄", "ℹ")
   cat(sprintf("[%s] %s %s\n", ts, sym, msg))
+}
+
+# ─── HTTP 请求工具（带重试机制）───────────────────────────────────────────────
+
+curl_with_retry <- function(url, max_retries = CONFIG$MAX_RETRIES,
+                             timeout = CONFIG$HTTP_TIMEOUT,
+                             headers = NULL, verbose = FALSE) {
+  for (attempt in 1:max_retries) {
+    tryCatch({
+      # 构建 curl 命令
+      header_args <- if (!is.null(headers)) {
+        paste(sapply(names(headers), function(k)
+          sprintf("-H '%s: %s'", k, headers[[k]])), collapse = " ")
+      } else ""
+
+      cmd <- sprintf(
+        "curl -sL --max-time %d %s '%s' 2>&1",
+        timeout, header_args, url
+      )
+
+      if (verbose && attempt > 1) {
+        cat(sprintf("    🔄 重试第 %d/%d 次...\n", attempt - 1, max_retries - 1))
+      }
+
+      result <- system(cmd, intern = TRUE)
+
+      # 检查结果是否有效
+      if (length(result) > 0 && !grepl("curl: \\(", result[1])) {
+        return(list(success = TRUE, content = paste(result, collapse = "\n")))
+      }
+
+      # 如果是最后一次尝试，返回失败
+      if (attempt == max_retries) {
+        return(list(success = FALSE, content = "", error = "Max retries reached"))
+      }
+
+      # 等待后重试
+      Sys.sleep(CONFIG$RETRY_DELAY)
+
+    }, error = function(e) {
+      if (attempt == max_retries) {
+        return(list(success = FALSE, content = "", error = e$message))
+      }
+      Sys.sleep(CONFIG$RETRY_DELAY)
+    })
+  }
+  list(success = FALSE, content = "", error = "Unknown error")
+}
+
+# ─── Semantic Scholar 搜索 ────────────────────────────────────────────────────
+
+search_semanticscholar <- function(q, n, days) {
+  api_key <- CONFIG$S2_API_KEY
+
+  log_msg(sprintf("搜索 SEMANTIC SCHOLAR: '%s' (最近 %d 天)", q, days))
+
+  if (api_key != "") {
+    log_msg("使用 Semantic Scholar API Key", "SUCCESS")
+  } else {
+    log_msg("无 API Key 模式（限制 100次/5分钟）", "WARN")
+  }
+
+  # 计算日期范围
+  date_from <- format(Sys.Date() - days, "%Y-%m-%d")
+
+  # 构建查询
+  # Semantic Scholar 支持高级查询语法
+  query_parts <- c(q)
+  query_parts <- c(query_parts, sprintf("year>=%s", format(Sys.Date() - days, "%Y")))
+  full_query <- paste(query_parts, collapse = " ")
+
+  # API 端点
+  base_url <- "https://api.semanticscholar.org/graph/v1/paper/search"
+  url <- sprintf(
+    "%s?query=%s&limit=%d&fields=paperId,title,abstract,authors,year,publicationDate,citationCount,openAccessPdf,externalIds",
+    base_url,
+    utils::URLencode(full_query, reserved = FALSE),
+    n * 2  # 请求更多以便过滤
+  )
+
+  # 构建请求头
+  headers <- if (api_key != "") {
+    list("x-api-key" = api_key)
+  } else {
+    NULL
+  }
+
+  # 发起请求（带重试）
+  response <- curl_with_retry(url, headers = headers, verbose = TRUE)
+
+  if (!response$success) {
+    log_msg("Semantic Scholar API 请求失败", "ERROR")
+    return(NULL)
+  }
+
+  # 解析 JSON
+  tryCatch({
+    parsed <- fromJSON(response$content)
+
+    if (is.null(parsed$data) || length(parsed$data) == 0) {
+      log_msg("Semantic Scholar: 未找到结果", "WARN")
+      return(NULL)
+    }
+
+    data <- parsed$data
+
+    # 构建论文列表
+    papers_list <- lapply(seq_len(nrow(data)), function(i) {
+      paper <- data[i, ]
+
+      # 提取作者
+      authors <- if (!is.null(paper$authors) && length(paper$authors) > 0) {
+        if (is.list(paper$authors[[1]])) {
+          author_names <- sapply(paper$authors[[1]], function(a) a$name %||% "")
+          paste(author_names, collapse = "; ")
+        } else {
+          ""
+        }
+      } else {
+        ""
+      }
+
+      # 提取 PDF URL
+      pdf_url <- NA_character_
+      if (!is.null(paper$openAccessPdf) && length(paper$openAccessPdf) > 0) {
+        if (is.list(paper$openAccessPdf)) {
+          pdf_url <- paper$openAccessPdf[[1]]$url %||% NA_character_
+        } else if (!is.na(paper$openAccessPdf)) {
+          pdf_url <- paper$openAccessPdf
+        }
+      }
+
+      # 提取 DOI 和 arXiv ID
+      doi <- NA_character_
+      arxiv_id <- NA_character_
+      if (!is.null(paper$externalIds) && length(paper$externalIds) > 0) {
+        ext_ids <- paper$externalIds[[1]]
+        if (!is.null(ext_ids$DOI)) doi <- ext_ids$DOI
+        if (!is.null(ext_ids$ArXiv)) arxiv_id <- ext_ids$ArXiv
+      }
+
+      # 构建论文 ID
+      paper_id <- if (!is.na(doi)) {
+        paste0("https://doi.org/", doi)
+      } else if (!is.na(arxiv_id)) {
+        paste0("https://arxiv.org/abs/", arxiv_id)
+      } else {
+        paste0("https://www.semanticscholar.org/paper/", paper$paperId)
+      }
+
+      # 日期处理
+      pub_date <- paper$publicationDate %||%
+                  (if (!is.null(paper$year) && !is.na(paper$year))
+                    paste0(paper$year, "-01-01") else NA_character_)
+
+      data.frame(
+        id       = paper_id,
+        title    = paper$title %||% "",
+        authors  = authors,
+        date     = pub_date,
+        doi      = doi,
+        abstract = paper$abstract %||% "",
+        source   = "semanticscholar",
+        pdf_url  = pdf_url,
+        citations = paper$citationCount %||% 0,
+        stringsAsFactors = FALSE
+      )
+    })
+
+    df <- do.call(rbind, papers_list)
+
+    # 过滤日期
+    df$days_ago <- sapply(df$date, days_since)
+    df <- df[!is.na(df$date) & df$days_ago <= days & df$days_ago >= 0, ]
+
+    if (nrow(df) == 0) {
+      log_msg(sprintf("Semantic Scholar: 最近 %d 天无结果", days), "WARN")
+      return(NULL)
+    }
+
+    # 按引用数排序（Semantic Scholar 的优势）
+    df <- df[order(-df$citations), ]
+
+    # 限制数量
+    if (nrow(df) > n) df <- df[1:n, ]
+
+    log_msg(sprintf("Semantic Scholar: 找到 %d 篇 (平均引用: %.1f)",
+                    nrow(df), mean(df$citations, na.rm = TRUE)))
+
+    list(content = df)
+
+  }, error = function(e) {
+    log_msg(paste("Semantic Scholar 解析错误:", e$message), "ERROR")
+    return(NULL)
+  })
 }
 
 safe_name <- function(text, max = 25) {
@@ -925,11 +1166,11 @@ main <- function() {
   if (length(args) < 1 || args[1] %in% c("-h", "--help", "help")) {
     cat("\n")
     cat("╔══════════════════════════════════════════════════════════════════════╗\n")
-    cat("║  📚 学术文献搜索与 PDF 下载工具 v2.7                                  ║\n")
+    cat("║  📚 学术文献搜索与 PDF 下载工具 v3.0 (Semantic Scholar 首选版)       ║\n")
     cat("╚══════════════════════════════════════════════════════════════════════╝\n\n")
 
     cat("【基本用法】\n")
-    cat("  Rscript download_papersv11.R <关键词> [论文数量] [天数]\n\n")
+    cat("  Rscript download_papersv12.R <关键词> [论文数量] [天数]\n\n")
 
     cat("【参数说明】\n")
     cat("  <关键词>    : 必需，搜索关键词（多个词用引号包围）\n")
@@ -938,19 +1179,34 @@ main <- function() {
 
     cat("【使用示例】\n")
     cat("  # 基本搜索（默认 5 篇，最近 10 天）\n")
-    cat("  Rscript download_papersv11.R starch\n\n")
+    cat("  Rscript download_papersv12.R starch\n\n")
 
     cat("  # 多词关键词（用引号）\n")
-    cat("  Rscript download_papersv11.R \"machine learning\"\n\n")
+    cat("  Rscript download_papersv12.R \"machine learning\"\n\n")
 
     cat("  # 自定义论文数量（10 篇）\n")
-    cat("  Rscript download_papersv11.R \"COVID-19\" 10\n\n")
+    cat("  Rscript download_papersv12.R \"COVID-19\" 10\n\n")
 
     cat("  # 完整参数（15 篇，最近 30 天）\n")
-    cat("  Rscript download_papersv11.R \"CRISPR gene editing\" 15 30\n\n")
+    cat("  Rscript download_papersv12.R \"CRISPR gene editing\" 15 30\n\n")
 
-    cat("【数据源】\n")
-    cat("  ✓ Europe PMC    : 生物医学/生命科学（无需 API Key）\n")
+    cat("【数据源】（按优先级）\n")
+    cat("  ⭐ Semantic Scholar : AI 驱动的学术图谱（首选，全学科）\n")
+    cat("  ✓ Europe PMC        : 生物医学/生命科学（无需 API Key）\n")
+    cat("  ✓ arXiv             : 物理/数学/计算机科学（无需 API Key）\n")
+    cat("  ✓ OpenAlex          : 全学科开放学术（无需 API Key）\n\n")
+
+    cat("【Semantic Scholar API Key】（可选）\n")
+    cat("  无 Key: 100 次请求/5 分钟（适合测试）\n")
+    cat("  有 Key: 速率限制更宽松（推荐）\n")
+    cat("  申请: https://www.semanticscholar.org/product/api#api-key\n")
+    cat("  设置: export S2_API_KEY=\"your_api_key\"\n\n")
+
+    cat("【新特性】\n")
+    cat("  ✓ 自动重试：网络失败自动重试 3 次\n")
+    cat("  ✓ 超时优化：30 秒超时（针对国内网络）\n")
+    cat("  ✓ 引用排序：Semantic Scholar 结果按引用数排序\n")
+    cat("  ✓ 语义搜索：更智能的论文匹配算法\n\n")
     cat("  ✓ arXiv         : 物理/数学/计算机科学（无需 API Key）\n")
     cat("  ✓ OpenAlex      : 全学科开放学术（无需 API Key）\n")
     cat("  ✓ Google CSE    : 补充搜索源（需要 API Key，可选）\n\n")
@@ -988,14 +1244,20 @@ main <- function() {
   if (is.na(days)) days <- CONFIG$DEFAULT_DAYS
 
   cat("\n╔════════════════════════════════════════════════════════════╗\n")
-  cat("║   学术文献搜索与 PDF 下载工具（多源 PDF 增强版 2.7）        ║\n")
+  cat("║   学术文献搜索与 PDF 下载工具 v3.0 (S2 首选版)             ║\n")
   cat("╚════════════════════════════════════════════════════════════╝\n\n")
   log_msg(sprintf("关键词: \"%s\" | 每源: %d | 最近 %d 天", kw, n, days))
 
-  # 提示 Google 配置状态
+  # 提示 API 配置状态
+  if (CONFIG$S2_API_KEY != "") {
+    log_msg("Semantic Scholar API Key: 已配置 ✔", "SUCCESS")
+  } else {
+    log_msg("Semantic Scholar: 无 Key 模式（建议申请 API Key 以提升限额）", "WARN")
+  }
+
   if (CONFIG$GOOGLE_API_KEY != "") {
     log_msg("Google CSE: 已配置 ✔", "SUCCESS")
-  } else {
+  } else if ("google" %in% CONFIG$SOURCES) {
     log_msg("Google CSE: 未配置（设置 GOOGLE_API_KEY / GOOGLE_CX 环境变量启用）", "WARN")
   }
 
@@ -1004,9 +1266,11 @@ main <- function() {
   # ── 搜索 ──
   all_papers <- list()
   for (src in CONFIG$SOURCES) {
-    r <- if (src == "europepmc") {
+    r <- if (src == "semanticscholar") {
+      search_semanticscholar(kw, n, days)
+    } else if (src == "europepmc") {
       search_europepmc_r(kw, n, days)
-    } else if (src == "google") {        # 【新增分支】
+    } else if (src == "google") {
       search_google_papers(kw, n, days)
     } else {
       search_papers(src, kw, n, days)
@@ -1065,6 +1329,12 @@ main <- function() {
     abst  <- get_abstract_text(all$abstract[i])
     cat(sprintf("  [%d/%d] %s... ", i, nrow(all), title))
     if (nchar(abst) >= 50) { cat(sprintf("✔ 已有 (%d字)\n", nchar(abst))); next }
+
+    # Semantic Scholar 通常已有完整摘要，无需补充
+    if (src == "semanticscholar") {
+      cat("⚠ 无摘要 (S2)\n")
+      next
+    }
 
     # Google 源的 snippet 通常较短，也走补充流程
     if (src %in% c("arxiv", "openalex", "google")) {
@@ -1151,7 +1421,7 @@ main <- function() {
   rp  <- file.path(dirs$base, sprintf("report_%s.txt", ts))
   con <- file(rp, "w", encoding = "UTF-8")
   writeLines(c(
-    "最新文献搜索报告（多源 PDF 增强版 2.7）", "===========================================", "",
+    "最新文献搜索报告 v3.0 (Semantic Scholar 首选版)", "===========================================", "",
     sprintf("关键词: %s", kw),
     sprintf("时间范围: 最近 %d 天 (%s 至 %s)", days, Sys.Date() - days, Sys.Date()),
     sprintf("总论文: %d | 有摘要: %d | PDF下载: %d (%.1f MB)",

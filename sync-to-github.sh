@@ -258,10 +258,21 @@ else
 fi
 
 # --- 4. 推送到远程 (Push) ---
-# 如果没有新提交且远程分支已存在，跳过推送
-if [ "$HAS_NEW_COMMIT" = false ] && [ "$REMOTE_BRANCH_EXISTS" = true ]; then
-    echo -e "${GREEN}✅ 没有新提交需要推送，同步完成!${NC}"
+# 检查是否有未推送的提交
+if [ "$REMOTE_BRANCH_EXISTS" = true ]; then
+    # 获取本地和远程的提交差异
+    LOCAL_COMMITS=$(git rev-list --count "$REMOTE_NAME/$CURRENT_BRANCH".."$CURRENT_BRANCH" 2>/dev/null || echo "0")
 else
+    LOCAL_COMMITS="1"  # 新分支，需要推送
+fi
+
+# 如果没有新提交且本地没有领先远程，跳过推送
+if [ "$HAS_NEW_COMMIT" = false ] && [ "$LOCAL_COMMITS" = "0" ]; then
+    echo -e "${GREEN}✅ 没有新提交需要推送，已与远程同步!${NC}"
+else
+    if [ "$LOCAL_COMMITS" != "0" ]; then
+        echo -e "${CYAN}📊 检测到 $LOCAL_COMMITS 个本地提交待推送${NC}"
+    fi
     # 检查网络连接
     if ! check_network; then
         handle_error "网络连接失败，无法推送"

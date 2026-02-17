@@ -1,0 +1,45 @@
+[
+  {
+    "id": "2602.12281",
+    "title": "Scaling Verification Can Be More Effective than Scaling Policy Learning for Vision-Language-Action Alignment",
+    "authors": [
+      "Jacky Kwok",
+      "Xilun Zhang",
+      "Mengdi Xu",
+      "Yuejiang Liu",
+      "Azalia Mirhoseini",
+      "Chelsea Finn",
+      "Marco Pavone"
+    ],
+    "date": "2026-02-12",
+    "pdf_url": "https://arxiv.org/pdf/2602.12281v1.pdf",
+    "text_length": 0,
+    "pdf_downloaded": true,
+    "pdf_filename": "arxiv_Scaling_Verification_Can_Be_More_Ef_2602.12281.pdf"
+  },
+  {
+    "id": "2602.12279",
+    "title": "UniT: Unified Multimodal Chain-of-Thought Test-time Scaling",
+    "authors": [
+      "Leon Liangyu Chen",
+      "Haoyu Ma",
+      "Zhipeng Fan",
+      "Ziqi Huang",
+      "Animesh Sinha",
+      "Xiaoliang Dai",
+      "Jialiang Wang",
+      "Zecheng He",
+      "Jianwei Yang",
+      "Chunyuan Li",
+      "Junzhe Sun",
+      "Chu Wang",
+      "Serena Yeung-Levy",
+      "Felix Juefei-Xu"
+    ],
+    "date": "2026-02-12",
+    "pdf_url": "https://arxiv.org/pdf/2602.12279v1.pdf",
+    "text_length": 0,
+    "pdf_downloaded": true,
+    "pdf_filename": "arxiv_UniT__Unified_Multimodal_Chain_of_T_2602.12279.pdf"
+  }
+]

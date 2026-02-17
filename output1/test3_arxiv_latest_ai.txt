@@ -1,0 +1,2527 @@
+arXiv 最新论文: cs.AI
+找到 3 篇论文
+PDF保存目录: /Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs
+
+
+================================================================================
+标题: Scaling Verification Can Be More Effective than Scaling Policy Learning for Vision-Language-Action Alignment
+================================================================================
+
+ID: 2602.12281
+作者: Jacky Kwok, Xilun Zhang, Mengdi Xu, Yuejiang Liu, Azalia Mirhoseini, Chelsea Finn, Marco Pavone
+日期: 2026-02-12
+PDF链接: https://arxiv.org/pdf/2602.12281v1.pdf
+DOI: N/A
+
+【摘要】
+无摘要
+
+【全文内容】
+Scaling Verification Can Be More Effective than Scaling Policy Learning
+for Vision-Language-Action Alignment
+
+Jacky Kwok1,†  Xilun Zhang1,†  Mengdi Xu1  Yuejiang Liu1,§
+
+Azalia Mirhoseini1,§  Chelsea Finn1,§  Marco Pavone1,2,§
+
+1Stanford University  2NVIDIA Research
+
+Abstract
+The long-standing vision of general-purpose robots hinges on their ability to understand and act upon natural language instructions. Vision-Language-Action (VLA) models have made remarkable progress toward this goal, yet their generated actions can still misalign with the given instructions. In this paper, we investigate test-time verification as a means to shrink the “intention-action gap.” We first characterize the test-time scaling law for embodied instruction following and demonstrate that jointly scaling the number of rephrased instructions and generated actions greatly increases test-time sample diversity, often recovering correct actions more efficiently than scaling each dimension independently. To capitalize on these scaling laws, we present CoVer, a contrastive verifier for vision–language–action alignment, and show that our architecture scales gracefully with additional computational resources and data. We then introduce “boot-time compute” and a hierarchical verification inference pipeline for VLAs. At deployment, our framework precomputes a diverse set of rephrased instructions from a Vision-Language-Model (VLM), repeatedly generates action candidates for each instruction, and then uses a verifier to select the optimal high-level prompt and low-level action chunks. Compared to scaling policy pre-training on the same data, our verification approach yields 22% gains in-distribution and 13% out-of-distribution on the SIMPLER benchmark, with a further 45% improvement in real-world experiments. On the PolaRiS benchmark, CoVer achieves 14% gains in task progress and 9% in success rate.
+
+Figure 1: Hierarchical Test-Time Verification Pipeline.
+Left: Given the initial observation and language instruction, a VLM performs structured reasoning over the scene and precomputes a set of rephrased instructions during boot time.
+At each step during deployment, our framework generates a batch of action candidates for each instruction using a VLA.
+Middle: CoVer then scores all instruction–action pairs and selects the optimal high-level instruction and low-level action chunk for execution.
+Right: Compared to prior work on scaling policy learning [black$p_0$VisionLanguageActionFlow2024], our approach achieves stronger performance while requiring substantially less compute. The reported training compute for π0\pi_{0} includes both pre-training and fine-tuning on augmented instruction sets, whereas π0\pi_{0} + CoVer accounts for pre-training π0\pi_{0} and training the CoVer verifier on the same data.
+
+1 Introduction
+
+For robots to be useful in human-centric environments, they must be able to interpret and act upon natural language instructions. Vision-Language-Action (VLA) models, pre-trained on large-scale robotic datasets, have made significant progress towards this goal [3, 11]. However, their widespread deployment is hindered by a critical “intention-action gap”: the misalignment between generated actions and the given language instructions.
+When the policy fails to follow the instruction, this gap can result in costly errors. For instance, a robot tasked with “putting a plastic container into a drawer” might correctly grasp the container but then fail to discriminate between the oven and a nearby drawer, mistakenly placing the container inside the oven. The container could melt or even catch fire. Addressing this fundamental misalignment is essential for deploying robots in real-world settings.
+††footnotetext: † denotes Equal contribution and § indicates Equal advising.
+
+Existing efforts to close this gap have largely focused on scaling policy pre-training, such as augmenting training data with rephrased instructions [21] or employing larger VLM backbones [2, 6]. However, these approaches typically yield only incremental gains, and performance still degrades severely under simple perturbations [5, 10]. Moreover, scaling policy pre-training often leads to catastrophic forgetting, where learning action generation diminishes the VLM’s multimodal understanding and reasoning, hindering generalization and semantic understanding [8, 5]. In this paper, we argue that VLA alignment can be more effectively improved through test-time scaling. More specifically, we ask in this work:
+
+Can we enable VLAs to leverage additional computation at test time to improve the alignment between their generated actions and the provided language instructions?
+
+The implications of answering this question extend not only to the generalization capabilities of VLAs, but also to how practitioners should trade off pre-training and test-time compute in robotics. To this end, we first characterize the test-time scaling law for embodied instruction following. Assuming the presence of an oracle verifier, we observe that action error consistently decreases as we scale the number of rephrased instructions, establishing a clear relationship between linguistic diversity and performance gains. Moreover, we demonstrate that jointly scaling the number of rephrased instructions and the generated actions constructs a more diverse action proposal distribution. This hybrid sampling approach often recovers correct actions more efficiently than scaling each dimension independently.
+
+To leverage these scaling laws, we seek to develop a robust verifier for both instruction optimization and action verification. Existing verifiers often focus on low-level dynamics [12, 15] and require costly interactions with the environment [14]. To address this, we draw insights from cross-modal alignment [18, 17] and introduce CoVer, a contrastive approach for verifying the alignment across vision, language, and action. Our architecture employs two key components: a text-aware visual encoder that selectively extracts task-relevant features, and an action encoder that captures long-range temporal dependencies within action chunks. The results show that scaling the number of synthetic instructions, model parameters, negative samples, and verifiers in an ensemble consistently improves verification and downstream retrieval accuracy of CoVer. We train CoVer on 20 million offline samples using a 1B parameter backbone, producing a robust verifier for test-time scaling.
+
+During deployment, our framework first leverages “boot-time compute” to let the robot reason offline. Given the initial observation and language instruction, a VLM performs structured reasoning over the scene—identifying relevant objects, spatial relations, and plausible task decompositions. The resulting reasoning traces are then used to precompute a diverse set of rephrased instructions, allowing the robot to avoid redundant rephrase generation during execution. At test time, we employ a hierarchical verification pipeline. This pipeline generates a batch of action candidates for each precomputed instruction with a VLA, scores all instruction-action pairs using CoVer, and then selects the optimal high-level instruction and low-level action chunks for execution. In summary, our contributions are as follows:
+
+1.
+
+We characterize the test-time scaling law for embodied instruction following and propose a compute-efficient action sampling method.
+
+2.
+
+We present a contrastive verifier for vision–language–action alignment and show that our architecture scales gracefully with additional computational resources and data.
+
+3.
+
+We introduce boot-time compute for offline embodied reasoning and a hierarchical test-time verification pipeline that couples high-level prompt optimization with low-level action chunk selection.
+
+4.
+
+We show that pairing VLAs with CoVer substantially improves downstream performance, achieving a 45% absolute improvement on real-world tasks, 18% on SIMPLER environments, and 9% on the PolaRiS benchmark.
+
+Figure 2: Test-Time Scaling Law for Embodied Instruction Following.
+Compared to prior methods that obtain diverse actions through repeated sampling [15] or Gaussian perturbations [12], we find that instruction rephrasing produces a broader set of action candidates, leading to improved recovery of the correct action. Furthermore, a hybrid test-time scaling strategy that increases both the number of rephrases and the number of sampled actions per rephrase is more effective than either strategy alone.
+We characterize each sampling approach using a power law, where the logarithm of oracle action error ee is a function of the number of action candidates kk: log⁡(e)≈log⁡(a)+b⋅log⁡(k)\log(e)\approx\log(a)+b\cdot\log(k).
+
+2 Related Work
+
+Vision-Language-Action Models.
+
+Recent VLA models, pre-trained on large-scale multimodal data and fine-tuned for visuomotor control, have demonstrated impressive generalization across tasks, objects, and environments [black$p_0$VisionLanguageActionFlow2024, 11, nvidiaGR00TN1Open2025, teamGeminiRoboticsBringing2025, shukorSmolVLAVisionLanguageActionModel2025].
+Yet, they still struggle with instruction following: semantically equivalent rephrases can cause sharp drops in success [10, 5].
+Some recent work seeks to mitigate this issue by scaling up model capacity [liGeneralistRobotPolicies2024], expanding training data [groverEnhancingGeneralizationVisionLanguageAction2025, yangInstructVLAVisionLanguageActionInstruction2025], and introducing auxiliary objectives to preserve linguistic knowledge [driessKnowledgeInsulatingVisionLanguageAction2025, kimContrastiveRepresentationRegularization2025].
+Orthogonal to these training approaches, our work takes a test-time perspective: we treat a user instruction as a distribution over phrasings and verify resulting actions before execution.
+
+Test-Time Scaling.
+
+Inference with additional compute has emerged as a promising paradigm for tackling challenging problems across diverse domains, including language reasoning [snellScalingLLMTestTime2024, muennighoffS1SimpleTesttime2025, brownLargeLanguageMonkeys2024, saad-falconArchonArchitectureSearch2024], visual understanding [wangTentFullyTestTime2020], and agentic planning [zhangInferencetimeScalingDiffusion2025].
+In the context of robot learning, recent studies have demonstrated the effectiveness of optimizing over multiple candidate action sequences to enhance performance [15, 20], consistency [liuBidirectionalDecodingImproving2025], and robustness [12].
+Such sampling processes can be further accelerated via guidance mechanisms in the latent space [wagenmakerSteeringYourDiffusion2025, zhangAlignThenstEerAdaptingVisionLanguage2025].
+Despite these advances, existing approaches still struggle with instruction following and often incur substantial computational overhead.
+Our method addresses these challenges through an action verification mechanism explicitly designed for instruction following while enabling acceleration through pre-computation.
+
+Action Verification.
+
+Early work on action verification derives signals directly from the policy itself, e.g., prediction uncertainty [21, 7] and temporal consistency [1, liuBidirectionalDecodingImproving2025], yielding lightweight ways to convert prior knowledge into a quality estimator.
+More recently, a growing body of work has focused on training explicit models for action verification, such as value functions [hansen-estruchIDQLImplicitQLearning2023, dongWhatMattersBatch2025] and preference models [12].
+Another line of work decomposes verification into two stages: predicting future states with a dynamics model [20, qiStrengtheningGenerativeRobot2025], and then assessing task progress in the predicted states.
+However, these techniques are still largely centered on low-level dynamics, while high-level instruction following remains a challenge.
+We instead formulate action verification as a contrastive alignment problem between language and behavior, explicitly targeting instruction-following quality.
+
+3 Test-Time Scaling Analysis
+
+In this section, we characterize the test-time scaling law for embodied instruction following, revealing how linguistic diversity in instructions affects downstream robot policy performance. Following the scheme introduced by Kwok et al. [12], we uniformly sample 1,000 (s,a,I)(s,\ a,\ I) tuples from the Bridge V2 dataset [19]. For each tuple, we scale the number of generated action candidates using different sampling strategies and compute the Normalized Root Mean Squared Error (NRMSE) between the ground-truth action a∗a^{*} and each of the sampled actions {a1,a2,…,am}\{a_{1},\ a_{2},\ \ldots,\ a_{m}\}.
+
+We evaluate four sampling approaches: Repeated sampling: actions are repeatedly sampled from a robot policy π​(a∣s,I)\pi(a\mid s,\ I) with a positive temperature. Gaussian perturbation: a small batch of actions is sampled from the policy π​(a∣s,I)\pi(a\mid s,\ I), from which a Gaussian distribution is fit and used to draw all candidate actions. Instruction rephrasing: actions are sampled from the policy π​(a∣s,I)\pi(a\mid s,\ I) conditioned on rephrased instructions {l1,l2,…,lk}\{l_{1},\ l_{2},\ \ldots,\ l_{k}\} generated by a VLM. Hybrid sampling: instead of generating a single action candidate per rephrased instruction, we fan out and repeatedly sample multiple actions per rephrase. We also find that the relationship between action error and total inference FLOPs follows an exponentiated power law across these sampling methods. For power law fitting, we model the logarithm of action error ee as a function of the allocated inference compute.
+
+The results in Figure 2 reveal two key findings: (1) instruction rephrasing consistently yields lower action error compared to vanilla repeated sampling and Gaussian perturbation; and (2) the hybrid approach combining instruction rephrasing with repeated sampling achieves even greater diversity by exploring radically different actions rather than getting stuck in a local minimum.
+
+4 Method
+
+While prior works focus either on policy learning or on atomic-level action verification, our approach introduces a general hierarchical test-time verification and scaling framework (Section 4.1) that integrates scalable verifier training (Section 4.2) and hierarchical instruction-action verification (Section 4.3).
+Instead of treating the base model’s output as final, we jointly select high-level language prompts and low-level action alignment through an optimized latency-aware inference pipeline.
+
+4.1 Hierarchical Prompt-Action Optimization
+
+We consider a sequential decision-making problem with observation space 𝒪\mathcal{O}, action space 𝒜\mathcal{A}, and natural-language instruction space ℒ\mathcal{L}.
+At timestep tt, the robot receives an observation ot∈𝒪o_{t}\in\mathcal{O} and a user instruction l∈ℒl\in\mathcal{L}. A chunk-based VLA policy π\pi produces an action chunk at∼π​(at∣ot,l)a_{t}\sim\pi(a_{t}\mid o_{t},l), where ata_{t} may correspond to multiple low-level control steps.
+Natural language permits many semantically equivalent rephrases, yet VLA policies
+are notoriously sensitive to phrasing.
+For a rephrased instruction l′l^{\prime}, the induced action at′∼π​(at′∣ot,l′)a^{\prime}_{t}\sim\pi(a^{\prime}_{t}\mid o_{t},l^{\prime}) may deviate significantly from the intended behavior, revealing a brittleness to linguistic drift.
+This motivates treating the instruction itself as a decision variable that can be optimized at test time.
+
+Language-level optimization.
+
+Rather than committing to a single phrasing, we construct a set with KK number of rephrases:
+
+ℒr​(l′)={l1′,…,lK′},\mathcal{L}_{r}(l^{\prime})=\{\,l^{\prime}_{1},\,\dots,\,l^{\prime}_{K}\,\},
+
+all expressing the same user intent.
+Each lk′l^{\prime}_{k} conditions a different action distribution under the fixed base policy.
+To formalize the objective, we use a conceptual reward function r​(ot,a,l)r(o_{t},a,l) that measures how well an action aa fulfills the semantics of the original instruction ll; this reward is not computed at test time but serves to define the ideal target behavior.
+We then aim to select the rephrase whose induced behavior best aligns with the original intent:
+
+l∗=arg⁡maxl′∈ℒr⁡𝔼a∼π(⋅∣ot,l′)​[r​(ot,a,l)].l^{*}=\arg\max_{l^{\prime}\in\mathcal{L}_{r}}\mathbb{E}_{a\sim\pi(\cdot\mid o_{t},\,l^{\prime})}\big[r(o_{t},a,l)\big].
+
+This reformulates VLA inference as an optimization problem in language space, not parameter space.
+
+Action-level optimization.
+
+Given a selected rephrase l∗l^{*}, sampling a single action from π\pi is unreliable due to bias and noise.
+We therefore draw MM candidate action chunks from the policy, conditioning on the current observation oto_{t} and the selected instruction l∗l^{*}:
+
+aj′∼π(⋅∣ot,l∗),j=1,…,M,a^{\prime}_{j}\sim\pi(\cdot\mid o_{t},l^{*}),\qquad j=1,\dots,M,
+
+We then select the candidate that maximizes semantic alignment with the instruction:
+
+at∗=arg⁡maxj∈[M]⁡𝒱θ​(ot,ht,l∗,aj′),a_{t}^{*}=\arg\max_{j\in[M]}\mathcal{V}_{\theta}\!\big(o_{t},\,h_{t},\,l^{*},\,a^{\prime}_{j}\big),
+
+where 𝒱θ\mathcal{V}_{\theta} estimates vision–language–action alignment, and ht∈𝒜Wh_{t}\in\mathcal{A}^{W} denotes the recent action history (e.g., the past CC actions), providing temporal context to the verifier.
+
+This view unifies language refinement and action verification: the system first searches for the rephrase whose induced action distribution aligns with the user intent, then verifies individual action candidates within that distribution.
+Overall, developing verifier 𝒱θ\mathcal{V}_{\theta} is essential. In the next section, we will describe how to develop a robust and scalable verifier from available robotics datasets.
+
+Figure 3:
+Overview of CoVer Training Strategy.
+CoVer learns a joint embedding space aligning visual observations, language instructions, and robot actions through contrastive pre-training.
+Image and text encoders extract task-relevant visual–linguistic features, which are fused into text-aware visual representations.
+An action encoder maps action sequences into the same embedding space, enabling cross-modal alignment between instructions and executed behaviors.
+
+4.2 Offline Verifier Training
+
+The objective of verifier 𝒱θ\mathcal{V}_{\theta} is to assess the semantic alignment between visual observations, instruction language, and action sequences.
+A central challenge in training a VLA verifier is that robotic datasets contain only successful demonstrations, providing no direct supervision indicating when an action is semantically misaligned with an instruction.
+Constructing negative examples is non-trivial [21]: synthesizing incorrect actions often produces unrealistic motions, while manually annotating failures is prohibitively expensive.
+Contrastive learning [17, 18] offers a natural solution by treating other actions in the batch as implicit negatives, allowing the model to learn alignment structure without curated failure labels.
+Our training pipeline consists of two stages: (i) augmenting the instruction space with diverse rephrases and (ii) contrastive learning on the augmented dataset. The detailed algorithm is shown in Algorithm 1.
+
+Algorithm 1 Verifier Training with Rephrase Augmentation
+
+1:Offline trajectories 𝒟={(ot,ht,l,at)}t=1T\mathcal{D}=\{(o_{t},h_{t},l,a_{t})\}_{t=1}^{T}; batch size BB; Augmented Instruction Set ℐ\mathcal{I}
+
+2:Initialize augmented dataset 𝒟aug←∅\mathcal{D}_{\text{aug}}\leftarrow\emptyset
+
+3:Stage 1: Rephrase Augmentation
+
+4:for (ot,ht,l,at)∈𝒟(o_{t},h_{t},l,a_{t})\in\mathcal{D} do
+
+5:  for lno​x​el^{oxe}_{n} in ℐ​(l)\mathcal{I}(l) do
+
+6:   𝒟aug←𝒟aug∪{(ot,ht,lno​x​e,at)}\mathcal{D}_{\text{aug}}\leftarrow\mathcal{D}_{\text{aug}}\cup\{(o_{t},h_{t},l^{oxe}_{n},a_{t})\}
+
+7:Stage 2: Verifier Training
+
+8:Initialize parameters θ\theta
+
+9:while not converged do
+
+10:  Sample minibatch {(oi,hi,li,ai)}i=1B∼𝒟aug\{(o_{i},h_{i},l_{i},a_{i})\}_{i=1}^{B}\sim\mathcal{D}_{\text{aug}}
+
+11:  for i=1..Bi=1..B do
+
+12:   𝐅i=𝐅combined​(oi,li)\mathbf{F}_{i}=\mathbf{F}_{\text{combined}}(o_{i},l_{i})
+
+13:   𝐀i=𝐀​(hi,ai)\mathbf{A}_{i}=\mathbf{A}(h_{i},a_{i})
+
+14:   Normalize: 𝐟i=𝐅i/‖𝐅i‖2\mathbf{f}_{i}=\mathbf{F}_{i}/\|\mathbf{F}_{i}\|_{2},   𝐚i=𝐀i/‖𝐀i‖2\mathbf{a}_{i}=\mathbf{A}_{i}/\|\mathbf{A}_{i}\|_{2}
+
+15:   Compute pairwise similarities si,j=⟨𝐟i,𝐚j⟩s_{i,j}=\langle\mathbf{f}_{i},\mathbf{a}_{j}\rangle
+
+16:   ℒif→a=−log⁡exp⁡(si,i)∑j=1Bexp⁡(si,j)\mathcal{L}_{i}^{f\rightarrow a}=-\log\frac{\exp(s_{i,i})}{\sum_{j=1}^{B}\exp(s_{i,j})}
+
+17:   ℒia→f=−log⁡exp⁡(si,i)∑j=1Bexp⁡(sj,i)\mathcal{L}_{i}^{a\rightarrow f}=-\log\frac{\exp(s_{i,i})}{\sum_{j=1}^{B}\exp(s_{j,i})}
+
+18:  ℒInfoNCE=12​B​∑i=1B(ℒif→a+ℒia→f)\mathcal{L}_{\text{InfoNCE}}=\frac{1}{2B}\sum_{i=1}^{B}(\mathcal{L}_{i}^{f\rightarrow a}+\mathcal{L}_{i}^{a\rightarrow f})
+
+19:  θ←θ−η​∇θℒInfoNCE\theta\leftarrow\theta-\eta\nabla_{\theta}\mathcal{L}_{\text{InfoNCE}}
+
+Rephrase Augmentation.
+
+To address the linguistic sensitivity of VLA policies, we expand each original instruction solely in language space, leaving observations and actions fixed. The training language augmentation is obtained from Open-X Embodiment [collaborationOpenXEmbodimentRobotic2023a] datasets ℐ\mathcal{I}, where each original task instruction set ℐ​(l)\mathcal{I}(l) corresponds to NN rephrases.
+Each selected rephrase lno​x​el^{oxe}_{n} from ℐ​(l)\mathcal{I}(l) is then paired with the same observation oto_{t}, and ground-truth action sequence that consists of short-term action history hth_{t} and future action chunk ata_{t} to form additional training tuples.
+Rephrases enable the verifier to encounter multiple linguistic realizations of the same underlying intent.
+This procedure enlarges the effective language coverage of the dataset without altering the action distribution, and equips the verifier with the ability to distinguish true semantic equivalence from phrasing-induced discrepancies that often mislead the base VLA policy.
+Though the same rephrase augmentation technique has been developed for policy learning [4, 5], we demonstrate that using the same data budget to train a verifier would be more effective than directly augmenting the policy training dataset.
+
+Verifier Training and Architecture.
+
+The verifier aims to estimate the alignment between visual–textual and action representations.
+Visual inputs and language tokens are encoded with pre-trained SigLIP2 encoders [18], then fused via text-aware visual attention to obtain instruction-relevant features.
+Vision and text encoders are frozen during verifier training to preserve the web-scale knowledge [9].
+The resulting fused representation 𝐅combined\mathbf{F}_{\text{combined}} captures visual–language context.
+The action sequence, which contains short-term history and future chunks, is processed by a transformer encoder to better capture the temporal features of low-level behaviors [liuBidirectionalDecodingImproving2025].
+The fused vision–language representation 𝐅combined\mathbf{F}_{\text{combined}} and the action embedding 𝐀\mathbf{A} are then ℓ2\ell_{2}-normalized to get 𝐟\mathbf{f} and 𝐚\mathbf{a} respectively.
+Their similarity defines the alignment score: s​(𝐟,𝐚)=⟨𝐟,𝐚⟩s(\mathbf{f},\mathbf{a})=\langle\mathbf{f},\,\mathbf{a}\rangle.
+Given a minibatch of BB tuples {(oi,hi,li,ai)}i=1B\{(o_{i},h_{i},l_{i},a_{i})\}_{i=1}^{B},
+the verifier is trained with bi-directional InfoNCE [16] objective.
+This symmetrical formulation aligns vision–language embeddings
+𝐟\mathbf{f} with action embeddings 𝐚\mathbf{a} in both directions.
+By treating all other pairs in the batch as implicit negatives, it leverages the diversity of each minibatch to learn robust fine-grained correspondences without requiring explicit failure labels or hand-crafted counterexamples.
+Such in-batch contrastive structure enables the verifier to discover meaningful distinctions between semantically aligned and misaligned behaviors, leading to more stable and cycle-consistent vision–language–action grounding during test-time verification. The verifier structure is shown in Figure 3. Given a robust verifier that can score the alignment between intentions and actions, we develop a general verification framework that can adapt to any VLA policies without additional training.
+
+4.3 Test-time Verification
+
+In Section 4.2, we explored the advantages of contrastive training for vision-language-action alignment, which enables zero-shot verification for both instruction and actions.
+Such bidirectional features make the verification process more flexible. In this section, we propose CoVer-VLA, a test-time verification framework that is robust to language-induced action drift, while adding only minimal latency from proposal generation and verification.
+CoVer-VLA casts inference as a hierarchical verification problem as shown in Figure 4.
+The system first evaluates on the language level, selecting the instruction whose induced action distribution is most semantically reliable, and then selects the optimal action chunk conditioned on that instruction.
+This hierarchical structure enables the robot to update its active language prompt online and to filter action proposals using a learned alignment score, improving robustness without altering the underlying VLA policy.
+To support this procedure, we first introduce boot-time rephrase generation and caching that significantly boosts runtime efficiency by bringing scene reasoning offline. We follow with the details on batched action proposals that enable efficient search over both languages and actions.
+The resulting pipeline preserves robustness without compromising real-time control, and the full procedure is summarized in Algorithm 2.
+
+Figure 4:
+Overview of Test-Time Verification Pipeline.
+At deployment, the system performs hierarchical optimization over language and action spaces.
+Given a user prompt and the initial observation, a VLM first reasons over the scene and generates a set of rephrased prompts at boot time. For each rephrase, a VLA samples action candidates conditioned on the corresponding instruction. The trained CoVer verifier then scores all instruction–action pairs and selects the optimal prompt and action for execution.
+
+Algorithm 2 Hierarchical Test-time Verification
+
+1:Input: base policy π\pi, verifier ensemble 𝒱θ\mathcal{V}_{\theta}, user instruction l′l^{\prime}, num of rephrases KK, num of action samples MM
+
+2:Boot-time: generate rephrases {lk′}k=1K←VLM​(o0,l′)\{l^{\prime}_{k}\}_{k=1}^{K}\leftarrow\mathrm{VLM}(o_{0},l^{\prime}); cache embeddings
+
+3:while episode not finished do
+
+4:  1. Sample action proposals
+
+5:  for k=1k=1 to KK do
+
+6:   for j=1j=1 to MM do
+
+7:     ak,j′∼π(⋅∣ot,lk′)a^{\prime}_{k,j}\sim\pi(\cdot\mid o_{t},l^{\prime}_{k})
+
+8:  2. Score proposals
+
+9:  sk,j=𝒱θ​(ot,ht,l′,ak,j′)s_{k,j}=\mathcal{V}_{\theta}(o_{t},h_{t},l^{\prime},a^{\prime}_{k,j})
+
+10:  3. Select rephrase (language-level)
+
+11:  Sk=1M​∑j=1Msk,jS_{k}=\frac{1}{M}\sum_{j=1}^{M}s_{k,j}   k∗=arg⁡maxk⁡Skk^{*}=\arg\max_{k}S_{k}
+
+12:  4. Select action (action-level)
+
+13:  j∗=arg⁡maxj⁡sk∗,jj^{*}=\arg\max_{j}s_{k^{*},j}
+
+14:  Execute ak∗,j∗′a^{\prime}_{k^{*},j^{*}} and update (ot+Δ,ht+Δ)(o_{t+\Delta},h_{t+\Delta})
+
+Figure 5: Verifier Scaling Results. We show that our architecture scales gracefully with additional compute and data. The top-1 action-retrieval accuracy consistently improves as we scale the number of synthetic instructions, model parameters, negative samples, training compute, and the number of verifiers in the ensemble. This result strongly indicates that our approach benefits from scaling, which we exploit for training CoVer.
+
+Boot-time rephrase generation and caching.
+
+To efficiently handle linguistic variability, we expand each free-form instruction l′l^{\prime} into KK rephrases using an off-the-shelf VLM.
+The VLM takes the initial scene image o0o_{0} and user instruction l′l^{\prime} as input. It generates both scene-level reasoning and rephrased command variants {lk′}k=1K\{l^{\prime}_{k}\}_{k=1}^{K}.
+Leveraging the VLM’s reasoning capabilities incorporates web-scale knowledge into the rephrase generation process.
+Running the VLM on-the-fly, however, is computationally expensive and can introduce undesirable latency or motion discontinuities during robot control.
+Given that user intent is typically consistent throughout an episode, generating new rephrases mid-rollout offers limited benefits.
+Instead, we perform rephrase generation and embedding computation entirely at boot time.
+By caching rephrase embeddings before execution, we shift the heaviest computations off the critical path and ensure that retrieving rephrase features at inference time incurs negligible overhead.
+This allows the controller to evaluate paraphrastic variants efficiently at test time, enabling robust test-time optimization without compromising control smoothness. Detailed implementations of boot-time reasoning can be found in Appendix 8.9, and VLM prompts in Appendix 8.10.
+
+Inference with batched action proposals.
+
+With rephrases cached and a verifier in place, we perform chunk-level optimization by jointly searching over rephrased instructions and candidate action chunks.
+Let {lk′}k=1K\{\,l^{\prime}_{k}\,\}_{k=1}^{K} denote the KK rephrases generated at boot time, with l1′=l′l^{\prime}_{1}=l^{\prime}.
+At each chunk boundary, the base VLA policy induces a distribution over action chunks, a∼π(⋅∣ot,lk′)a\sim\pi(\cdot\mid o_{t},l^{\prime}_{k}), from which we sample MM candidates for each rephrase.
+This yields K×MK\times M proposals:
+
+ak,j′∼π(⋅∣ot,lk′),k=1,…,K,j=1,…,M.a^{\prime}_{k,j}\sim\pi(\cdot\mid o_{t},l^{\prime}_{k}),\qquad k=1,\dots,K,\;\;j=1,\dots,M.
+
+Each proposal is then evaluated by the verifier ensemble with respect to the user instruction l′l^{\prime},
+
+sk,j=𝒱θ​(ot,ht,l′,ak,j′),s_{k,j}=\mathcal{V}_{\theta}(o_{t},h_{t},l^{\prime},a^{\prime}_{k,j}),
+
+producing a semantic alignment score for every (rephrase, action) pair.
+To determine which rephrase induces the most reliable action distribution,
+we take the average scores across all MM actions from the same language:
+
+Sk=1M​∑j=1Msk,j,k∗=arg⁡maxk⁡Sk.S_{k}=\frac{1}{M}\sum_{j=1}^{M}s_{k,j},\qquad k^{*}=\arg\max_{k}S_{k}.
+
+The chosen rephrase lk∗′l^{\prime}_{k^{*}} becomes the active language for this chunk.
+Within the selected rephrase, the controller chooses the highest-scoring action candidate:
+
+j∗=arg⁡maxj⁡sk∗,j.j^{*}=\arg\max_{j}s_{k^{*},j}.
+
+The selected action chunk ak∗,j∗′a^{\prime}_{k^{*},j^{*}} is executed, and the state (ot+Δ,ht+Δ)(o_{t+\Delta},h_{t+\Delta}) is updated accordingly. This procedure repeats at each chunk boundary, forming a closed-loop optimization that continually adapts both the instruction and the executed action.
+
+5 Experiments
+
+5.1 Verifier Scaling Results
+
+In this section, we investigate the scaling behavior of the CoVer verifier. We conduct thorough studies to explore the impact of five key dimensions: model size, dataset size, batch size, training compute, and ensemble size. Detailed specifications regarding architecture and compute usage are provided in the Appendix.
+
+We first evaluate how scaling synthetic instructions and model parameters affects verifier performance. As shown in Figure 4, CoVer exhibits consistent scaling trends: every increase in dataset size (from 8×8\times to 64×64\times) or in model capacity (from 250M to 1B parameters) leads to steady improvements in top-1 retrieval accuracy. This provides strong empirical evidence that our contrastive approach effectively capitalizes on scaling.
+
+We also investigate the effects of scaling batch size and training epochs. Because our verifier relies on contrastive learning, the number of in-batch negative samples is critical for learning robust decision boundaries. We find that larger batch sizes (scaling from 2,048 to 8,192) provide a richer set of negative examples, thereby facilitating better convergence. Similarly, extending training epochs exposes the model to more diverse negative samples, leading to improved results.
+
+Finally, we explore test-time ensembling as a scaling dimension. Specifically, we train multiple verifiers with identical architectures and data budgets, differing only in their random seeds. During inference, we average the image, text, and action embeddings across these verifiers before computing the cosine similarity between modalities. We find that action retrieval accuracy consistently improves as the ensemble size increases (from 1 to 8). These gains stem from variance reduction, as the ensemble averages out individual model biases.
+
+5.2 Implementation Details
+
+Our final CoVer verifier is a 1B-parameter model trained with a batch size of 32,768 on the augmented Bridge V2 dataset [19] containing 16×16\times synthetic instructions. Training was conducted for a total of 2k steps using 8 NVIDIA H200 GPUs. For deployment, we utilize an ensemble of 3 verifiers to balance robustness and computational overhead.
+
+5.3 Evaluation Setup
+
+We evaluate CoVer-VLA across both simulated and real-world settings, focusing on robustness to linguistic variation and generalization on out-of-distribution environments (Appendix 8.1). Our primary benchmark is the SIMPLER benchmark [13], which includes four in-distribution (ID) manipulation tasks and three OOD variants containing distractor objects and clutter [4].
+We evaluate on four representative tasks from the SIMPLER environment and adopt three challenging OOD tasks from Interleave-VLA [4], includes “Redbull on Plate”, “Zucchini on Towel”, and “Tennis in basket”.
+The OOD environments contain multiple objects in the scene, where the VLA cannot rely solely on visual inputs and must also reason over the object information in the instructions.
+For real-world experiments, we use the WidowX robot to evaluate two tasks “pepto bismol on plate” and “redbull on plate”. We use π0\pi_{0} as the base model for tasks in BridgeV2. To assess how our approach performs with a stronger base policy, we also evaluate using π0.5\pi_{0.5} and CoVer on the PolaRiS benchmark [jain2025polaris]. All evaluations are conducted under challenging red-teaming instructions generated by ERT [10] (Appendix 8.8). Our framework samples 8 rephrased instructions and generates 5 action candidates per rephrase.
+
+Figure 6:
+SIMPLER Evaluation Results. We demonstrate that scaling test-time verification with CoVer significantly enhances the robustness of VLAs across diverse manipulation tasks. Compared to scaling policy pre-training on the same data, our verification-based approach achieves a 22% improvement on in-distribution tasks and a 13% improvement on OOD tasks.
+
+Baselines and Ablations.
+
+We compare CoVer-VLA against five variants built on the same π0\pi_{0} backbone to disentangle the effects of training-time augmentation and test-time verification (Appendix 8.2). (1) π0\pi_{0} denotes the generalist robot policy fine-tuned on BridgeV2 without instruction augmentation or verification. (2) π0\pi_{0} (rephrase) [5] represents π0\pi_{0} finetuned on instruction-augmented datasets. (3) RoboMonkey [12] applies a 7B-scale verifier with action resampling for test-time scaling, serving as the strongest prior method without hierarchical reasoning. (4)π0\pi_{0}+ CoVer introduces our verifier-based inference that jointly optimizes over rephrases and action chunks at test time. (5) π0\pi_{0}+Rand. Reph. uses a single random rephrase without verification to isolate the role of language selection. (6) π0\pi_{0} (rephrase)+ CoVer combines both training-time augmentation and our hierarchical test-time verifier to examine their complementarity. Together, these baselines allow us to examine the effectiveness of (i) training-time instruction augmentation, (ii) test-time verification of instructions and actions, and (iii) verifier-guided hierarchical optimization. This allows us to systematically assess CoVer ’s robustness and ability to generalize across tasks.
+
+5.4 Simulation Evaluation Results
+
+Figure 6 summarizes performance across four ID tasks and three OOD tasks under red-teaming instructions. Detailed numerical values are described in the Appendix 8.3.
+Due to training distribution shift, Robomonkey fails to select optimal actions given challenging instructions.
+For all the other ablations, we observe different levels of performance gain over the base robot policy π0\pi_{0}.
+We highlight three key findings below:
+
+(1) Training-time augmentation alone provides modest performance gain.
+We show that fine-tuning π0\pi_{0} on augmented instruction sets can indeed improve robustness to challenging rephrases. However, this approach yields only minimal gains on in-distribution environments (41.5→\rightarrow 44) and provides modest improvements on OOD tasks.
+
+(2) Random rephrases can improve performance on some tasks but lack consistency without language-level verification.
+Using a randomly generated VLM rephrase slightly improves ID performance over the base policy π0\pi_{0} (41.5 →\rightarrow 42.3), confirming that rephrasing can enhance policy performance in some cases. However, OOD performance declines (29.7 →\rightarrow 28.7), and the variance across tasks is substantial. For example, the model achieves a 78% success rate on Eggplant in Basket but only 1% on Redbull on Plate. This reveals a key insight: while certain rephrased instructions can be beneficial, others may catastrophically mislead the policy. These results underscore the potential of VLM-generated rephrasings, but also expose their inconsistency.
+
+(3) CoVer-VLA substantially enhances generalization and complements policy learning.
+Pairing CoVer with π0\pi_{0} significantly enhances robustness, yielding a 16% improvement on in-distribution tasks and a 31% gain in OOD environments. Notably, we find that scaling verification (π0\pi_{0} + CoVer) outperforms scaling policy learning (π0\pi_{0} fine-tuned with augmented instructions), achieving 15% gains on ID tasks and 12% on OOD, while requiring substantially less compute, as illustrated in Figure 1. Interestingly, our approach is complementary to scaling policy learning. Combining π0\pi_{0} (rephrase) and CoVer achieves the strongest overall performance: 65.5% on ID tasks and 62.0% on OOD tasks. We further evaluate our method with a stronger base model, π0.5\pi_{0.5}, on the PolaRiS benchmark [jain2025polaris]. Pairing π0.5\pi_{0.5} with CoVer leads to a 14% improvement in task progress and a 9% gain in success rate. By jointly selecting the semantically aligned instruction and verifying action chunks, our method reliably recovers correct behavior even under heavily perturbed instructions and in challenging OOD environments.
+
+Models
+Task Progress (%)
+Success Rate (%)
+
+PanClean
+π0.5\pi_{0.5}
+48.4 ±\pm 1.9
+10.7 ±\pm 0.9
+
+π0.5\pi_{0.5} + CoVer
+70.4 ±\pm 4.0
+33.3 ±\pm 6.6
+
+BlockStack
+π0.5\pi_{0.5}
+33.1 ±\pm 1.3
+0.0 ±\pm 0.0
+
+π0.5\pi_{0.5} + CoVer
+44.3 ±\pm 2.5
+0.7 ±\pm 0.9
+
+FoodBussing
+π0.5\pi_{0.5}
+38.3 ±\pm 2.4
+0.7 ±\pm 0.9
+
+π0.5\pi_{0.5} + CoVer
+47.0 ±\pm 4.1
+5.3 ±\pm 1.9
+
+Average
+π0.5\pi_{0.5}
+40.0 ±\pm 6.4
+3.8 ±\pm 4.9
+
+π0.5\pi_{0.5} + CoVer
+
+53.9 ±\pm 11.7 (+13.9↑\uparrow)
+
+13.1 ±\pm 14.1 (+9.3↑\uparrow)
+
+Table 1:
+PolaRiS benchmark evaluation.
+Mean task progress and success rate (±\pm standard deviation) across 50 episodes and 3 seeds on three PolaRiS environments.
+π0.5\pi_{0.5} serves as the stronger base VLA policy.
+π0.5\pi_{0.5} + CoVer consistently improves performance across all tasks, achieving a 13.9% gain in task progress and a 9.3% increase in success rate on average, demonstrating that hierarchical verification complements stronger base models.
+
+Figure 7: Example tasks across DROID [khazatskyDROIDLargeScaleInTheWild2024] and Bridge V2 [19] environments.
+
+5.5 Real-World Evaluation Results
+
+We further evaluate CoVer-VLA in two real-world manipulation tasks as shown in Figure 8.
+CoVer-VLA substantially outperforms the baselines, improving the success rate by 30% and 60%, respectively. CoVer-VLA consistently shows the correct intention to accomplish the task, whereas the other baselines often fail to identify the correct object. We observe that the base π0\pi_{0} model often failed to initiate motion under challenging scenes and instructions, resulting in 0% success. Overall, these results demonstrate that scaling test-time verification with CoVer provides an effective and scalable pathway toward building a robust robotics foundation model.
+
+5.6 Latency Analysis and Optimizations
+
+While our approach introduces additional computational overhead from action sampling and verification, we mitigate these costs through several key optimizations. Concretely, we decouple the image-text encoder and action encoder within our verifier architecture. This design enables the image-text embedding to be computed in parallel with the forward pass of the base robot policy. As a result, the end-to-end latency of our pipeline consists only of batched inference with π0\pi_{0} (or π0.5\pi_{0.5}) and a lightweight action encoder from CoVer. As shown in Table 2, the action encoder consistently adds only ∼\sim8 ms even at larger batch sizes. In addition, repeated sampling can exploit KV cache optimizations and batch processing to achieve higher throughput than greedy decoding, allowing CoVer-VLA to sample and verify 16 candidate actions in approximately 453 ms (∼\sim2.2 Hz). We also avoid online rephrase generation by shifting reasoning to boot time. Specifically, we precompute and cache a set of diverse rephrased instructions before deployment. This eliminates redundant runtime calls to the VLM, thereby minimizing inference-time latency. Our full latency and throughput analysis can be found in Appendix 8.7.
+
+Figure 8: Real-World Evaluation Results. π0\pi_{0} + CoVer outperforms the baseline policy π0\pi_{0} (rephrase), achieving on average 45% performance gain in terms of task success rate compared to the baseline policy.
+
+6 Conclusion
+
+In this paper, we present CoVer, a novel contrastive-based verifier and hierarchical test-time scaling framework that bridges the “intention–action gap” for generalist robot policies. CoVer achieves substantial performance improvements across both simulated and real-world settings, particularly under out-of-distribution conditions. Our findings demonstrate that allocating compute to reasoning and verification at deployment can be more effective than scaling policy training alone, providing a promising direction for robust policy deployment in the real world. While our study focuses on applying the verifier for test-time scaling, the same design and principle can extend beyond inference optimizations such as post-training with reinforcement learning or run-time monitoring. Future work could also explore more efficient architectures for both the base policy and verifier to further reduce latency and enable broader use of test-time scaling in real-world robotic settings.
+
+Batch Size
+
+π0.5\pi_{0.5} (ms)
+
+CoVer (ms)
+
+π0.5\pi_{0.5} + CoVer (ms)
+
+1
+56
+7
+63
+
+2
+84
+7
+91
+
+4
+138
+8
+146
+
+8
+243
+8
+251
+
+16
+445
+8
+453
+
+32
+865
+8
+873
+
+Table 2: Latency (milliseconds) across batch sizes running on RTX-5090 GPU. Since the image-text encoder can run in parallel with the forward pass of π0.5\pi_{0.5}, the end-to-end latency of our pipeline only consists of batched inference with π0.5\pi_{0.5} and the lightweight CoVer action encoder
+
+7 Acknowledgments
+
+We thank the members of the Stanford Autonomous Systems Lab, Scaling Intelligence Lab, and IRIS Lab for their constructive feedback and informative discussions. We gratefully acknowledge the support of DARPA; NASA ULI; Google DeepMind; Google Research; Google Cloud; SNSF; IBM and Felicis.
+
+References
+
+[1]
+C. Agia, R. Sinha, J. Yang, Z. Cao, R. Antonova, M. Pavone, and J. Bohg (2024)
+
+Unpacking failure modes of generative policies: runtime monitoring of consistency and progress.
+
+In 8th Annual Conference on Robot Learning,
+
+Cited by: §2.
+
+[2]
+L. Beyer, A. Steiner, A. S. Pinto, A. Kolesnikov, X. Wang, D. Salz, M. Neumann, I. Alabdulmohsin, M. Tschannen, E. Bugliarello, et al. (2024)
+
+Paligemma: a versatile 3b vlm for transfer.
+
+arXiv preprint arXiv:2407.07726.
+
+Cited by: §1.
+
+[3]
+A. Brohan, N. Brown, J. Carbajal, Y. Chebotar, X. Chen, K. Choromanski, T. Ding, D. Driess, A. Dubey, C. Finn, P. Florence, C. Fu, M. G. Arenas, K. Gopalakrishnan, K. Han, K. Hausman, A. Herzog, J. Hsu, B. Ichter, A. Irpan, N. Joshi, R. Julian, D. Kalashnikov, Y. Kuang, I. Leal, L. Lee, T. E. Lee, S. Levine, Y. Lu, H. Michalewski, I. Mordatch, K. Pertsch, K. Rao, K. Reymann, M. Ryoo, G. Salazar, P. Sanketi, P. Sermanet, J. Singh, A. Singh, R. Soricut, H. Tran, V. Vanhoucke, Q. Vuong, A. Wahid, S. Welker, P. Wohlhart, J. Wu, F. Xia, T. Xiao, P. Xu, S. Xu, T. Yu, and B. Zitkovich (2023)
+
+RT-2: vision-language-action models transfer web knowledge to robotic control.
+
+External Links: 2307.15818,
+Link
+
+Cited by: §1.
+
+[4]
+C. Fan, X. Jia, Y. Sun, Y. Wang, J. Wei, Z. Gong, X. Zhao, M. Tomizuka, X. Yang, J. Yan, et al. (2025)
+
+Interleave-vla: enhancing robot manipulation with interleaved image-text instructions.
+
+arXiv preprint arXiv:2505.02152.
+
+Cited by: §4.2,
+§5.3.
+
+[5]
+I. Fang, J. Zhang, S. Tong, and C. Feng (2025)
+
+From intention to execution: probing the generalization boundaries of vision-language-action models.
+
+arXiv preprint arXiv:2506.09930.
+
+Cited by: §1,
+§2,
+§4.2,
+§5.3,
+2nd item,
+§8.6,
+Table 3.
+
+[6]
+A. Grattafiori, A. Dubey, A. Jauhri, A. Pandey, A. Kadian, A. Al-Dahle, A. Letman, A. Mathur, A. Schelten, A. Vaughan, et al. (2024)
+
+The llama 3 herd of models.
+
+arXiv preprint arXiv:2407.21783.
+
+Cited by: §1.
+
+[7]
+Q. Gu, Y. Ju, S. Sun, I. Gilitschenski, H. Nishimura, M. Itkina, and F. Shkurti (2025)
+
+SAFE: multitask failure detection for vision-language-action models.
+
+arXiv preprint arXiv:2506.09937.
+
+Cited by: §2.
+
+[8]
+A. J. Hancock, X. Wu, L. Zha, O. Russakovsky, and A. Majumdar (2025)
+
+Actions as language: fine-tuning vlms into vlas without catastrophic forgetting.
+
+External Links: 2509.22195,
+Link
+
+Cited by: §1.
+
+[9]
+H. Huang, F. Liu, L. Fu, T. Wu, M. Mukadam, J. Malik, K. Goldberg, and P. Abbeel (2025)
+
+Otter: a vision-language-action model with text-aware visual feature extraction.
+
+arXiv preprint arXiv:2503.03734.
+
+Cited by: §4.2.
+
+[10]
+S. Karnik, Z. Hong, N. Abhangi, Y. Lin, T. Wang, C. Dupuy, R. Gupta, and P. Agrawal (2025)
+
+Embodied red teaming for auditing robotic foundation models.
+
+External Links: 2411.18676,
+Link
+
+Cited by: §1,
+§2,
+§5.3,
+§8.3,
+§8.8.
+
+[11]
+M. J. Kim, K. Pertsch, S. Karamcheti, T. Xiao, A. Balakrishna, S. Nair, R. Rafailov, E. Foster, G. Lam, P. Sanketi, Q. Vuong, T. Kollar, B. Burchfiel, R. Tedrake, D. Sadigh, S. Levine, P. Liang, and C. Finn (2024)
+
+OpenVLA: an open-source vision-language-action model.
+
+External Links: 2406.09246,
+Link
+
+Cited by: §1,
+§2,
+3rd item.
+
+[12]
+J. Kwok, C. Agia, R. Sinha, M. Foutter, S. Li, I. Stoica, A. Mirhoseini, and M. Pavone (2025)
+
+RoboMonkey: scaling test-time sampling and verification for vision-language-action models.
+
+arXiv preprint arXiv:2506.17811.
+
+Cited by: Figure 2,
+Figure 2,
+§1,
+§2,
+§2,
+§3,
+§5.3,
+3rd item,
+Table 3.
+
+[13]
+X. Li, K. Hsu, J. Gu, K. Pertsch, O. Mees, H. R. Walke, C. Fu, I. Lunawat, I. Sieh, S. Kirmani, S. Levine, J. Wu, C. Finn, H. Su, Q. Vuong, and T. Xiao (2024)
+
+Evaluating real-world robot manipulation policies in simulation.
+
+arXiv preprint arXiv:2405.05941.
+
+Cited by: §5.3.
+
+[14]
+J. Liu, F. Gao, B. Wei, X. Chen, Q. Liao, Y. Wu, C. Yu, and Y. Wang (2025)
+
+What can rl bring to vla generalization? an empirical study.
+
+arXiv preprint arXiv:2505.19789.
+
+Cited by: §1.
+
+[15]
+M. Nakamoto, O. Mees, A. Kumar, and S. Levine (2024)
+
+Steering your generalists: improving robotic foundation models via value guidance.
+
+Conference on Robot Learning (CoRL).
+
+Cited by: Figure 2,
+Figure 2,
+§1,
+§2.
+
+[16]
+A. v. d. Oord, Y. Li, and O. Vinyals (2018)
+
+Representation learning with contrastive predictive coding.
+
+arXiv preprint arXiv:1807.03748.
+
+Cited by: §4.2.
+
+[17]
+A. Radford, J. W. Kim, C. Hallacy, A. Ramesh, G. Goh, S. Agarwal, G. Sastry, A. Askell, P. Mishkin, J. Clark, et al. (2021)
+
+Learning transferable visual models from natural language supervision.
+
+In International conference on machine learning,
+
+pp. 8748–8763.
+
+Cited by: §1,
+§4.2.
+
+[18]
+M. Tschannen, A. Gritsenko, X. Wang, M. F. Naeem, I. Alabdulmohsin, N. Parthasarathy, T. Evans, L. Beyer, Y. Xia, B. Mustafa, et al. (2025)
+
+Siglip 2: multilingual vision-language encoders with improved semantic understanding, localization, and dense features.
+
+arXiv preprint arXiv:2502.14786.
+
+Cited by: §1,
+§4.2,
+§4.2.
+
+[19]
+H. R. Walke, K. Black, T. Z. Zhao, Q. Vuong, C. Zheng, P. Hansen-Estruch, A. W. He, V. Myers, M. J. Kim, M. Du, et al. (2023)
+
+Bridgedata v2: a dataset for robot learning at scale.
+
+In Conference on Robot Learning,
+
+pp. 1723–1736.
+
+Cited by: §3,
+Figure 7,
+Figure 7,
+§5.2,
+1st item,
+§8.1.
+
+[20]
+Y. Wu, R. Tian, G. Swamy, and A. Bajcsy (2025)
+
+From foresight to forethought: vlm-in-the-loop policy steering via latent alignment.
+
+In Robotics: Science and Systems (RSS),
+
+Cited by: §2,
+§2.
+
+[21]
+C. Xu, T. K. Nguyen, E. Dixon, C. Rodriguez, P. Miller, R. Lee, P. Shah, R. Ambrus, H. Nishimura, and M. Itkina (2025)
+
+Can we detect failures without failure data? uncertainty-aware runtime failure detection for imitation learning policies.
+
+arXiv preprint arXiv:2503.08558.
+
+Cited by: §1,
+§2,
+§4.2.
+
+8 Appendix
+
+Model
+In-Distribution Env
+Out-of-Distribution Env
+
+Carrot on Plate
+Eggplant in Basket
+Spoon on Towel
+Block Stacking
+Avg
+Redbull on Plate
+Zucchini on Towel
+Tennis in basket
+Avg
+
+π0\pi_{0}
+48 ±\pm 4
+74 ±\pm 3
+27 ±\pm 4
+17 ±\pm 1
+41.5
+6 ±\pm 1
+30 ±\pm 3
+53 ±\pm 5
+29.7
+
+π0\pi_{0} w/ Inst. Aug. [5]
+
+48 ±\pm 4
+68 ±\pm 4
+36 ±\pm 2
+24 ±\pm 4
+44.0
+29 ±\pm 3
+42 ±\pm 3
+75 ±\pm 9
+48.7
+
+π0\pi_{0} w/ random
+49 ±\pm 5
+78 ±\pm 3
+41 ±\pm 1
+1 ±\pm 1
+42.3
+1 ±\pm 1
+7 ±\pm 2
+78 ±\pm 3
+28.7
+
+RoboMonkey [12]
+
+0 ±\pm 0
+13 ±\pm 3
+10 ±\pm 1
+7 ±\pm 2
+7.5
+19 ±\pm 3
+10 ±\pm 5
+45 ±\pm 1
+24.7
+
+π0\pi_{0}+ CoV
+
+... (内容已截断)
+
+================================================================================
+================================================================================
+标题: UniT: Unified Multimodal Chain-of-Thought Test-time Scaling
+================================================================================
+
+ID: 2602.12279
+作者: Leon Liangyu Chen, Haoyu Ma, Zhipeng Fan, Ziqi Huang, Animesh Sinha, Xiaoliang Dai, Jialiang Wang, Zecheng He, Jianwei Yang, Chunyuan Li, Junzhe Sun, Chu Wang, Serena Yeung-Levy, Felix Juefei-Xu
+日期: 2026-02-12
+PDF链接: https://arxiv.org/pdf/2602.12279v1.pdf
+DOI: N/A
+
+【摘要】
+无摘要
+
+【全文内容】
+1]Stanford University
+2]Meta Superintelligence Labs
+3]Nanyang Technological University
+\metadata[Paper]https://ai.meta.com/research/publications/unit-unified-multimodal-chain-of-thought-test-time-scaling
+\correspondenceLeon Liangyu Chen at
+
+UniT: Unified Multimodal Chain-of-Thought Test-time Scaling
+
+Leon Liangyu Chen
+
+Haoyu Ma
+
+Zhipeng Fan
+
+Ziqi Huang
+
+Animesh Sinha
+
+Xiaoliang Dai
+
+Jialiang Wang
+
+Zecheng He
+
+Jianwei Yang
+
+Chunyuan Li
+
+Junzhe Sun
+
+Chu Wang
+
+Serena Yeung-Levy
+
+Felix Juefei-Xu
+
+[
+
+[
+
+[
+
+liangyuc@stanford.edu
+
+(February 11, 2026)
+
+Abstract
+Unified models can handle both multimodal understanding and generation within a single architecture, yet they typically operate in a single pass without iteratively refining their outputs. Many multimodal tasks, especially those involving complex spatial compositions, multiple interacting objects, or evolving instructions, require decomposing instructions, verifying intermediate results, and making iterative corrections. While test-time scaling (TTS) has demonstrated that allocating additional inference compute for iterative reasoning substantially improves language model performance, extending this paradigm to unified multimodal models remains an open challenge.
+We introduce UniT, a framework for multimodal chain-of-thought test-time scaling that enables a single unified model to reason, verify, and refine across multiple rounds. UniT combines agentic data synthesis, unified model training, and flexible test-time inference to elicit cognitive behaviors including verification, subgoal decomposition, and content memory. Our key findings are: (1) unified models trained on short reasoning trajectories generalize to longer inference chains at test time; (2) sequential chain-of-thought reasoning provides a more scalable and compute-efficient TTS strategy than parallel sampling; (3) training on generation and editing trajectories improves out-of-distribution visual reasoning. These results establish multimodal test-time scaling as an effective paradigm for advancing both generation and understanding in unified models.
+
+Figure 1:
+Multimodal chain-of-thought enables test-time scaling through emergent cognitive behaviors. We propose the UniT framework for unified multimodal models, which induces subgoal decomposition for compositional tasks and unlocks content understanding and memory for multi-turn editing. Controlling the number of test-time images, chain-of-thought sequential scaling outperforms best-of-N parallel scaling across generation and reasoning benchmarks. User input
+Model output
+
+1 Introduction
+
+Unified multimodal models (deng2025emerging; wu2025janus; zhou2024transfusion) aim to merge vision, language, and more modalities into a single architecture capable of both understanding and generation. Unlike modular pipelines where separate models handle perception, verification, and generation, unified models handle all modalities within one coherent conversation, enabling richer cross-modal grounding, continuous contextual tracking, and seamless interleaving of understanding and generation. However, despite this potential, existing unified models still operate mostly in a single-pass mode: they produce an output once, without explicit mechanisms for evaluating, reflecting on, or refining their predictions. This limitation becomes fundamental for tasks that intrinsically require multi-step reasoning and self-correction, such as compositional generation, multi-turn editing, and complex visual reasoning - settings where both humans and AI naturally benefit from extended reasoning.
+
+Recent advances in language models have demonstrated that test-time scaling (TTS)—allocating additional computational resources during inference through extended chain-of-thought reasoning, verification, and iterative refinement (jaech2024openai; guo2025deepseek; snell2024scaling)—enables substantial performance gains on complex reasoning tasks in mathematics (cobbe2021training), coding (chen2021evaluating), and logic (srivastava2023beyond). Early work on multimodal chain-of-thought has shown similar benefits for single-round visual understanding and generation (visualcot; fang2025got; xiao2025mindomni; huang2025interleaving; chern2025thinking). Yet, test-time scaling for unified multimodal models remains largely unexplored. The challenge is nontrivial: test-time scaling requires capabilities that currently scatter across specialized models (image generation models for generation, vision-language models for verification, image editing models for refinement). Bridging this gap requires a unified framework that systematically integrates data synthesis, model training, and inference mechanisms for multimodal test-time scaling. This motivates the central question:
+
+How to enable scalable multimodal inference that allows unified models to iteratively generate, reflect, and refine?
+
+We introduce UniT, a unified framework for multimodal chain-of-thought test-time scaling. Scalable multimodal inference requires the tight integration of three components: (i) Agentic data synthesis to induce cognitive behaviors through multi-round trajectories. We develop an automated pipeline (Fig. 2) where vision-language models iteratively critique and image editing models refine generated images with explicit chain-of-thought reasoning. This naturally produces training data exhibiting three critical cognitive behaviors (gandhi2025cognitive): verification—evaluating outputs against instructions; subgoal decomposition—breaking complex instructions into sequential planning steps; content memory—maintaining understanding of visual content across rounds through unified multimodal context. (ii) Unified model training to enable the model to internalize multimodal reasoning patterns. We collect approximately 12K multi-round trajectories and fine-tune the Bagel unified multimodal model (deng2025emerging) for 700 H100 hours, enabling it to perform both understanding and refinement without switching models. (iii) Multimodal test-time scaling at inference with flexible computational budget. The trained model performs all reasoning, generation, and refinement iteratively through explicit multimodal chain-of-thought thinking, allocating more rounds to more challenging tasks.
+
+The synergy of these components enables the model to act as a single, coherent multimodal reasoner capable of self-evaluation and iterative improvement. The UniT framework exhibits strong test-time scaling behavior (Fig. 1) with emergent capabilities. Most notably, models trained on shorter reasoning trajectories (averaging 3.6 rounds) effectively generalize to longer inference chains at test time (averaging 4.7 rounds) (Fig. 5), echoing patterns previously seen only in text-only models (snell2024scaling). Furthermore, chain-of-thought sequential scaling substantially outperforms best-of-N parallel sampling, achieving comparable performance with 2.5×\times less computational cost (Fig. 1). This demonstrates that iterative refinement with explicit reasoning provides more efficient use of inference compute than parallel sampling. Critically, UniT achieves 5.56% improvement on CompBench multi-object editing, 2.95 human preference scores on ImgEdit multi-turn editing, and 10.34% on OneIG instruction following compared to single-pass generation. Moreover, it improves out-of-distribution visual reasoning on MIRA by 53.33%, establishing multimodal chain-of-thought test-time scaling as a unified paradigm that benefits both generation and comprehension.
+
+We summarize our contributions as follows:
+
+•
+
+Unified multimodal test-time scaling. We propose UniT, a unified framework for multimodal chain-of-thought test-time scaling, integrating agentic data synthesis, unified model training, and test-time scaling mechanisms.
+
+•
+
+Emergent extrapolation to longer reasoning chains. We demonstrate that models trained on shorter trajectories generalize to longer inference chains at test time, extrapolating beyond the training distribution.
+
+•
+
+Broad improvements across multimodal tasks. UniT achieves substantial gains on compositional generation/editing, multi-turn editing, and visual reasoning, establishing chain-of-thought test-time scaling as a unified paradigm for both generation and understanding tasks.
+
+Figure 2: Agentic framework for synthesizing chain-of-thought training data. Starting from a user prompt, an image generation model generates an initial image. A vision-language model then performs verification - evaluating whether the output satisfies the prompt. When unsatisfactory, the VLM engages in explicit subgoal decomposition through thinking tokens, planning concrete improvements, and rewriting editing instructions. This iterative loop continues until verification succeeds, generating multi-turn reasoning trajectories that teach unified models to refine outputs through test-time computation. The explicit reasoning traces of the three models capture how cognitive behaviors emerge from the interplay between generation, verification, and planning.
+
+2 Related Works
+
+Test-time scaling. Test-time scaling allocates additional computation during inference to improve model performance. We distinguish two primary approaches: parallel and sequential methods. Parallel scaling generates multiple independent candidates and selects the best via criteria such as best-of-N sampling (brown2024largelanguagemonkeysscaling; levi2024simplemodelinferencescaling) or majority voting (irvine2023rewardingchatbotsrealworldengagement), typically guided by outcome reward models (xin2024deepseekproveradvancingtheoremproving; ankner2024critiqueoutloudrewardmodels). Sequential scaling (snell2024scalingllmtesttimecompute; hou2025advancinglanguagemodelreasoning; lee2025evolvingdeeperllmthinking) enables iterative refinement where models critique and improve outputs across multiple rounds. Self-refinement approaches (madaan2024self) exemplify this by having models explicitly reason about deficiencies and produce progressively better solutions. Tree-based methods such as Monte Carlo Tree Search (liu2024dontthrowawayvalue; zhang2023planninglargelanguagemodels; zhou2024languageagenttreesearch; choi2023kcts) and REBASE (wu2024inference) occupy a middle ground, using process reward models (lightman2023letsverifystepstep; wang-etal-2024-math; wang2024helpsteer2opensourcedatasettraining) to guide structured search. Recent breakthroughs including o1 (jaech2024openai) and DeepSeek-R1 (guo2025deepseek) demonstrate that reinforcement learning enables effective utilization of extended inference computation. Budget forcing (snell2024scalingllmtesttimecompute; tyen2024lamini) trains models to produce reasoning chains of controllable cost by varying computational budgets during training. While most test-time scaling research focuses on text-only reasoning, recent work has explored search-based methods for image and video generation (he2025scaling; liu2025video). However, unified multimodal test-time scaling interleaving text and images remains largely unexplored, which we address in this work.
+
+Unified multimodal models. Unified models that jointly handle understanding and generation have attracted substantial interest. Autoregressive approaches (wu2025janus; januspro2025; lu2024unified; qu2024tokenflow; chameleon; emu3) extend next-token prediction to both text and discrete image tokens. Additional diffusion methods (dream-llm; wu2024next; pan2025transfer; tong2024metamorph) augment language models with external diffusion modules for image generation. Unified integrated transformers (deng2025emerging; liang2024mixture; janusflow2024; shi2024llamafusion; transfusion) deeply integrate language modeling and diffusion within single architectures. Our work builds upon Bagel (deng2025emerging), pretrained on large-scale interleaved text-image sequences. Our framework generalizes to all three paradigms as they naturally handle interleaved multimodal inputs and outputs.
+
+Multimodal chain-of-thought. Chain-of-thought reasoning (wei2022chain) has proven effective for text-based problem-solving, motivating extensions to multimodal tasks. Visual chain-of-thought methods (visualcot; chainofimage; visualsketchpad; mvot; visualizationofthought; huang2025vchain) incorporate visual representations into reasoning steps for multimodal understanding. Recent work explores interleaved reasoning (huang2025interleaving; gu2025thinkmorph) across text and visual modalities. Uni-CoT (qin2025uni) further demonstrates a unified model that couples macro- and micro-level reasoning for vision-language understanding, but it does not study compute scaling or iterative editing. In text-to-image generation, studies investigate whether explicit reasoning improves generation quality (fang2025got; xiao2025mindomni; deng2025emerging; jiang2025t2i; gu2025improving). Reflection-based approaches (zhuo2025reflection; wu2025omnigen2; chern2025thinking) iteratively critique and refine generated images. Our work differs by focusing on both semantic correctness and visual quality through test-time scaled refinement, while demonstrating that multimodal chain-of-thought benefits both generation and understanding tasks as a unified paradigm.
+
+Figure 3: UniT enables iterative refinement for compositional instructions through multimodal chain-of-thought reasoning. UniT exhibits: (i) error verification and correction—identifying and fixing constraint violations that Bagel
+misses (top: correcting leash placement and dog action); (ii) subgoal decomposition with subject consistency—sequentially addressing instructions while maintaining subject identity across rounds (middle: preserving bear features through style
+transformation, bottom: skateboard consistency); (iii) quality preservation—maintaining visual fidelity through iterative refinement rather than degradation (top: reduced artifacts and haloing).
+
+3 Method
+
+We extend test-time compute scaling from text-only reasoning to unified multimodal models. As illustrated in Fig. 2, we develop an agentic framework to automatically collect chain-of-thought training data, then control test-time computational budget through iterative refinement rounds. Sequential chain-of-thought scaling outperforms parallel best-of-N sampling (Fig. 1) while inducing emergent cognitive behaviors—verification and subgoal decomposition.
+
+Key distinction. The multi-model agentic framework described in Sec. 3.1 is used solely for synthesizing training data. At inference time (Sec. 3.3), we use only the single unified BAGEL model (deng2025emerging), which performs all planning, generation, reflection, and refinement operations without external models.
+
+3.1 Multimodal Chain-of-Thought Data
+
+Agentic data collection pipeline. Our automated pipeline synthesizes multimodal chain-of-thought trajectories through iterative reflection-editing (Fig. 2):
+
+1.
+
+Prompt generation: Llama-4-Scout-17B-16E (meta2025llama4scout) generates 20K diverse prompts covering compositional attributes, spatial relations, and complex multimodal tasks based on (T2I-CoReBench).
+
+2.
+
+Initial generation: Flux Pro (flux) produces initial images from prompts. For complex prompts, the VLM (Qwen3-VL) decomposes the prompts into subgoals and executes the first step in initial generation.
+
+3.
+
+Reflection: Qwen3-VL (qwen2025vl) evaluates whether the image satisfies the prompt. If not, it generates explicit chain-of-thought reasoning, identifying deficiencies, planning improvements, and specifying editing instructions.
+
+4.
+
+Refinement: Flux Kontext (labs2025flux) or Qwen-Image-Edit (wu2025qwen) applies editing instructions.
+
+5.
+
+Iteration: Steps 3-4 repeat until the VLM determines the output satisfies the prompt.
+
+Figure 4: Qualitative examples of chain-of-thought test-time scaling. Representative trajectories showing progressive refinement across different tasks and computational budgets. Examples demonstrate how explicit chain-of-thought reasoning enables the model to iteratively improve compositional generation.
+
+The VLMs produce interleaved text and image tokens with explicit thinking tokens. The reflection step generates detailed reasoning about why outputs fall short and how to improve them, rather than simply issuing new instructions.
+
+Cognitive behaviors. As demonstrated in Fig. 1, 2, this agentic pipeline naturally induces three critical cognitive behaviors: (i) verification—VLMs evaluate outputs against specifications to determine when refinement is needed; (ii) subgoal decomposition—complex compositional tasks are planned in sequential editing steps; (iii) content memory—the model maintains understanding of image content across refinement rounds through unified multimodal context.
+
+Data filtering. We apply quality filtering to ensure training efficiency:
+
+•
+
+Length constraint: Trajectories exceeding 8 rounds are removed to balance efficiency with reasoning depth.
+
+•
+
+Quality regression: Trajectories where the final image has worse instruction-following quality than any of the first three images (measured by Qwen3-VL) are removed.
+
+•
+
+Relevance filtering: Individual rounds with editing prompts semantically irrelevant to the original task (measured by Llama-4-Scout-17B-16E) are removed.
+
+•
+
+Minimal visual changes: Rounds with perceptual editing distance below LPIPS <0.03<0.03 (zhang2018perceptual) between consecutive images are removed.
+
+•
+
+Benchmark deduplication: Training prompts are deduplicated from evaluation benchmarks using 5-gram matching to prevent data leakage.
+
+This filtering retains 12k high-quality trajectories for training.
+
+Method
+Alignment↑\uparrow
+
+NP
+T&P
+Short
+Medium
+Long
+Overall
+
+Janus-Pro (chen2025janus)
+
+0.557
+0.533
+0.609
+0.548
+0.515
+0.552
+
+BLIP3-o (chen2025blip3)
+
+0.719
+0.671
+0.754
+0.712
+0.674
+0.706
+
+Bagel (deng2025bagel)
+
+0.776
+0.734
+0.782
+0.769
+0.759
+0.764
+
+Bagel+CoT (deng2025bagel)
+
+0.798
+0.767
+0.824
+0.793
+0.767
+0.790
+
+UniT
+0.853
+0.844
+0.859
+0.849
+0.812
+0.843
+
+Table 1: Compositional generation, OneIG-Bench. NP denotes the natural
+language prompt. T&P denotes the tag-based and phrase-based prompt. Short, Medium and Long represent the length of the prompts, where Short denotes the number of words is less than 30, Medium denotes the number between 30 and 60, and Long denotes the number exceeding 60. Bagel+CoT indicates Bagel with text-only chain-of-thought.
+
+3.2 Training and Inference
+
+Training. We use Bagel (deng2025emerging), a unified multimodal architecture with understanding and generation capabilities, trained on the dataset from Sec. 3.1 for 700 H100 hours. To simulate user prompts for multi-turn editing, 10% of intermediate image editing instructions don’t require losses.
+
+Inference. We adopt a framework that incorporates two complementary classifier-free guidance (CFG) schemes applied in a nested manner: (1) text CFG, conditioning with versus without the current text instruction, and (2) image CFG, conditioning
+with versus without all images in the generation history (including both the initial input image if exists and previously generated outputs). Formally, let vtv_{t} denote the fully conditional prediction, vt,uncv_{t,\text{unc}} the text-unconditional prediction, and vi,uncv_{i,\text{unc}} the image-unconditional prediction. We apply CFG sequentially: first text guidance vtext=vt,unc+st​(vt−vt,unc)v_{\text{text}}=v_{t,\text{unc}}+s_{t}(v_{t}-v_{t,\text{unc}}), then image guidance vfinal=vi,unc+si​(vtext−vi,unc)v_{\text{final}}=v_{i,\text{unc}}+s_{i}(v_{\text{text}}-v_{i,\text{unc}}), with scales st=4.0s_{t}{=}4.0 and si=2.0s_{i}{=}2.0. The nested application—where image guidance is applied on top of the text-guided
+prediction—enables independent control over prompt adherence and visual consistency. This strategy helps maintain strong alignment with text instructions while preserving structural coherence across
+multi-turn editing sequences, with notable benefits for generation quality and consistency in iterative refinement workflows.
+
+The original untrained Bagel model can also be forced to reason chain-of-thought with our inference code. However, the image quality degrades quickly as context images scale and the Bagel model can’t verify its image outputs properly. It usually hallucinates visual content according to user prompts. Thus the untrained Bagel model is not feasible for practical multimodal chain-of-thought reasoning. Training is required to enable effective multimodal chain-of-thought reasoning.
+
+3.3 Budget Forcing for Test-time Scaling
+
+We adapt budget forcing (tyen2024lamini) from text-only to multimodal test-time scaling. While text-based methods control reasoning tokens, we control image generation rounds, which dominate inference latency. At test time, the unified BAGEL model performs all operations autonomously—planning, generation, reflection, and refinement—without relying on external models.
+
+Controlling computational budget. At inference, we specify computational budget CC as the number of image generation rounds. Each round consists of textual chain-of-thought reasoning followed by image generation or editing. To enforce budget CC:
+
+•
+
+Forcing extended reasoning: If the model terminates before CC rounds, we suppress EOS, append “Let’s edit the image", wait for reasoning completion, then force image generation.
+
+•
+
+Budget constraint: If the model generates more than CC images, we use only the final image from round CC.
+
+This enables studying sequential chain-of-thought scaling (iterative refinement building on previous outputs) versus parallel best-of-N scaling (generating NN independent images and selecting the best). We present detailed scaling analysis in Sec. 5.1.
+
+Figure 5: Training vs. inference round distribution demonstrates beyond-training generalization. The model is trained on trajectories averaging 3.6 refinement rounds, but effectively generalizes to longer inference chains averaging 4.7 rounds at test time. This distribution shift reveals the model’s emergent ability to extend inference beyond its training distribution, a key property of effective test-time scaling.
+
+Beyond-training generalization. Models trained on trajectories averaging 3.6 rounds generalize to longer inference chains averaging 4.7 rounds at test time (Fig. 5), exhibiting problem-solving capabilities beyond their training distribution. This establishes test-time compute as a general paradigm for unified multimodal models.
+
+4 Experiments
+
+We evaluate on text-to-image generation, compositional editing, multi-turn editing, and visual reasoning benchmarks. Chain-of-thought TTS achieves substantial gains across both generation and understanding tasks.
+
+4.1 Experiment Settings
+
+Evaluation setup. We evaluate with computational budgets C=1C{\!=\!}1 to C=10C{\!=\!}10 (maximum due to GPU memory), controlled via Sec. 3.3. For ImgEdit multi-turn editing, we apply CC refinement rounds independently to each of three sequential turns, with maximum C=4C{\!=\!}4 per turn due to memory constraints.
+
+Baselines. We compare: (1) Bagel, base model without chain-of-thought; (2) Bagel+CoT, textual thinking only; (3) UniT, our full multimodal chain-of-thought with interleaved text and image reasoning. We report C=10C{\!=\!}10 rounds (C=4C{\!=\!}4 for ImgEdit) unless specified otherwise.
+
+Human evaluation protocol. For ImgEdit multi-turn editing, 3 expert annotators with computer vision backgrounds independently rate outputs on a 0-10 scale across three criteria: content memory (tracking edits across turns), content understanding (correctly interpreting instructions), and version backtracking (maintaining coherence). We evaluate 100 randomly sampled test examples per method. Inter-annotator agreement is high (Krippendorff’s α=0.82\alpha=0.82), and final scores are averaged across annotators.
+
+4.2 Compositional Generation and Editing
+
+We evaluate on OneIG-Bench-EN (chang2025oneig) for compositional generation (Table 1), achieving 10.34% improvement over base model at C=10C{\!=\!}10. On CompBench (jia2025compbench) multi-object compositional editing subset (Table 3), we achieve 5.56% improvement from C=1C{\!=\!}1 to C=10C{\!=\!}10. Fig. 1 demonstrates that iterative refinement with explicit reasoning enables better compositional understanding and generation.
+
+Content
+Content
+Version
+
+Method
+Memory
+Understand
+Backtrack
+Overall
+
+Bagel (deng2025bagel)
+
+1.76
+1.34
+0.82
+1.31
+
+Bagel+CoT (deng2025bagel)
+
+2.24
+2.67
+0.84
+1.92
+
+UniT
+4.29
+5.02
+3.48
+4.26
+
+Table 2: Multi-turn editing, ImgEdit. Human evaluation score from 0-10, normalized over 3 turns of editing.
+
+4.3 Multi-Turn Editing
+
+We evaluate on ImgEdit (ye2025imgedit) multi-turn editing subset (Table 2), achieving 225.19% improvement from C=1C{\!=\!}1 to C=4C{\!=\!}4. This demonstrates that maintained context and reasoning chains are critical for multi-turn interactions. The model’s content memory through unified multimodal context enables coherent interactions as computational budget increases (Fig. 1).
+
+4.4 Visual Reasoning
+
+On MIRA (zhou2025visualizing) for out-of-distribution visual reasoning (Table 4), we achieve 53.33% improvement from C=1C{\!=\!}1 to C=10C{\!=\!}10 (Fig. 1). The remaining gap to frontier models (GPT-5, Qwen2.5-VL-72B) reflects base model capability differences: these models benefit from significantly larger scale and proprietary training data. Our key contribution is methodological, demonstrating that TTS successfully transfers to multimodal domains; as base unified models improve, the UniT framework directly benefits. This establishes multimodal chain-of-thought test-time scaling as a unified paradigm enhancing both generation and comprehension tasks. The cognitive behaviors induced by our agentic framework (Fig. 2)—verification, subgoal decomposition, and content memory—transfer from generation to understanding tasks.
+
+4.5 Qualitative Results
+
+Foreground
+Background
+
+Method
+
+LC-T↑\uparrow
+
+LC-I↑\uparrow
+
+PSNR(dB)↑\uparrow
+
+SSIM↑\uparrow
+
+LPIPS↓\downarrow
+
+Overall↑\uparrow
+
+HQ-Edit (hui2024hqedit)
+
+19.163
+0.757
+12.987
+0.412
+0.421
+0.007
+
+UltraEdit (zhao2024ultraedit)
+
+20.022
+0.795
+22.326
+0.719
+0.164
+0.609
+
+AnyEdit (yu2024anyedit)
+
+19.875
+0.809
+22.789
+0.697
+0.129
+0.622
+
+SEED-X (ge2024seedx)
+
+19.092
+0.795
+20.638
+0.788
+0.138
+0.595
+
+GoT (fang2025got)
+
+19.919
+0.804
+21.296
+0.826
+0.127
+0.668
+
+Step1X-Edit (liu2025step1x)
+
+20.213
+0.828
+22.696
+0.873
+0.089
+0.844
+
+FLUX.1 Kontext (labs2025flux)
+
+20.983
+0.836
+24.013
+0.938
+0.064
+0.965
+
+Qwen-Image-Edit (wu2025qwen)
+
+21.058
+0.836
+21.927
+0.810
+0.121
+0.782
+
+Bagel (deng2025bagel)
+
+20.434
+0.842
+24.370
+0.917
+0.069
+0.936
+
+Bagel+CoT (deng2025bagel)
+
+20.658
+0.846
+24.691
+0.926
+0.065
+0.956
+
+UniT
+21.127
+0.854
+25.442
+0.942
+0.055
+0.988
+
+Table 3: Multi-object editing, CompBench. LC-T denotes local CLIP scores between the edited foreground and the local description. LC-I refers to the CLIP image similarity between the foreground edited result and ground truth (GT) image. Overall scores are computed using min-max normalization for each metric.
+
+Fig. 1 and Fig. 3 demonstrate how multimodal chain-of-thought test-time scaling progressively refines outputs through iterative reasoning, revealing the three cognitive behaviors—verification, subgoal decomposition, and content memory.
+
+Compositional generation. For complex compositional prompts, Round 1 produces partial solutions with compositional errors—missing objects, incorrect attributes, or violated spatial constraints. The model’s explicit reasoning identifies deficiencies, and through subgoal decomposition, breaks corrections into sequential steps. By Round 10, the output achieves precise alignment with all requirements, demonstrating systematic error correction through explicit reasoning.
+
+Visual reasoning. For MIRA geometry tasks, the model’s chain-of-thought reveals how verification supports iterative problem-solving. Early rounds may produce incorrect analyses, but the reasoning shows self-critique, allowing identification of flaws and revision in subsequent rounds. Subgoal decomposition breaks complex reasoning into steps. These examples demonstrate that cognitive behaviors transfer from generation to understanding tasks.
+
+5 Discussion
+
+Figure 6: Chain-of-thought visual reasoning on MIRA. The model decomposes the puzzle into subgoals (zoom in, identify patterns) before selecting the matching piece, demonstrating cognitive behaviors transferring from generation to understanding tasks.
+
+We analyze factors contributing to effective multimodal test-time scaling: sequential versus parallel scaling, cognitive behaviors, and data quality.
+
+Experimental protocol. Unless specified otherwise, we use computational budget C=10C{\!=\!}10 (C=4C{\!=\!}4 for ImgEdit) and report: alignment score for OneIG-Bench, overall normalized score for CompBench, human evaluation score (0-10) for ImgEdit, and accuracy for MIRA.
+
+5.1 Sequential vs. Parallel Scaling
+
+We compare chain-of-thought sequential scaling against best-of-N parallel scaling. Following tyen2024lamini, sequential scaling builds on intermediate results through iterative refinement, while parallel scaling generates outputs independently.
+
+Setup. For both approaches, we control the number of generated images (C=NC{=}N) from 1 to 10. Sequential scaling uses budget forcing (Sec. 3.3). Parallel scaling generates NN independent images and selects the best via HPSv3 (ma2025hpsv3).
+
+Compute accounting. We use the number of generated images as our compute metric (C=NC{=}N), which accurately reflects computational cost because: (i) image generation via diffusion models dominates wall-clock time—as noted in Sec. 3.3, image generation rounds control inference latency; (ii) marginal text tokens from VLM reflection have negligible effect on latency compared to diffusion sampling; (iii) computational cost scales linearly with the number of images generated. We exclude selection costs (HPSv3 for parallel scaling, VLM verification for sequential scaling) from our comparison as these represent arbitrary model choices rather than fundamental algorithmic requirements. Under this metric, sequential scaling achieves comparable performance to parallel with 2.5× fewer generated images (e.g., C=4C{\!=\!}4 sequential matches N=10N{=}10 parallel on OneIG-Bench).
+
+Results. Sequential scaling consistently outperforms parallel scaling across all tasks (Fig. 1). At C=10C{\!=\!}10 (C=4C{\!=\!}4 for ImgEdit), sequential achieves 4.85% improvement over parallel on OneIG-Bench, 3.89% on CompBench, 71.77% on ImgEdit, and 33.72% on MIRA. This advantage manifests through:
+
+•
+
+Steeper scaling slopes: Sequential achieves larger performance improvements per additional image, indicating more efficient test-time compute use.
+
+•
+
+Sustained improvements: Sequential shows continued gains up to C=10C{\!=\!}10, while parallel plateaus after a few samples.
+
+Iterative refinement with explicit chain-of-thought reasoning provides more effective test-time compute scaling than independent sampling. The advantage stems from sequential scaling accumulating successful edits and learning from previous iterations: each round builds on prior images with explicit CoT corrections, leveraging expanded textual context (reflections, plans). Parallel scaling generates independent samples without inter-sample learning, explaining why it plateaus earlier—it cannot systematically refine toward the target.
+
+Latency considerations. Sequential and parallel scaling serve complementary use cases: sequential optimizes performance while parallel optimizes latency. Sequential scaling also benefits from unique acceleration techniques including speculative decoding, KV-cache reuse across rounds, and early stopping when the model determines satisfaction, which can significantly reduce the latency gap in practice.
+
+Unified model vs. modular pipeline. At inference, UniT performs all reasoning, generation, and refinement within a single model, unlike the multi-model agentic pipeline used for data synthesis (Sec. 3.1). While the teacher pipeline (Flux Pro + Qwen3-VL) scores slightly higher due to frontier-scale components, UniT offers faster inference by eliminating inter-model communication overhead, seamless multimodal context within a single architecture, and practical single-model deployability.
+
+Method
+EG↑\uparrow
+PBR↑\uparrow
+ASLP↑\uparrow
+CT↑\uparrow
+Overall↑\uparrow
+
+GPT-5 (openai2025gpt5)
+
+14.5
+29.9
+10.8
+17.9
+16.5
+
+Qwen2.5-VL (72B) (Qwen2.5)
+
+14.5
+21.7
+11.1
+8.6
+13.1
+
+Bagel (deng2025bagel)
+
+9.7
+7.9
+3.5
+12.3
+7.5
+
+Bagel+CoT (deng2025bagel)
+
+8.0
+9.5
+4.8
+14.2
+9.2
+
+UniT
+12.5
+11.2
+6.1
+16.3
+11.5
+
+Table 4: Multimodal reasoning, MIRA, with direct input. We report results across four reasoning categories: EG (Geometry), PBR (Physics), ASLP (Puzzles), and CT (Causal), along with the overall average score.
+
+5.2 Ablation on Cognitive Behaviors
+
+Setup. We train three ablated models, each removing one cognitive behavior: (1) w/o Verification, reflection stages do not evaluate quality; (2) w/o Subgoal Decomposition, planning stages removed; (3) w/o Content Memory, multimodal context not maintained across rounds.
+
+Results. Table 5 shows task-specific sensitivities. Removing subgoal decomposition particularly hurts compositional tasks (3.8% and 2.5% drops on OneIG-Bench and CompBench), demonstrating its importance for planning multi-step generations. Most critically, removing content memory devastates multi-turn editing with 42.5% relative drop on ImgEdit (from 4.26 to 2.45), while minimally impacting single-turn tasks (1.0-1.5% drops). Removing verification most significantly impacts visual reasoning (1.9% drop on MIRA), highlighting its importance for validating reasoning steps. These patterns confirm each cognitive behavior serves a distinct functional role.
+
+Configuration
+OneIG
+CompBench
+ImgEdit
+MIRA
+
+Align (%)
+Overall (%)
+Score
+Acc (%)
+
+All behaviours
+84.3
+98.8
+4.26
+11.5
+
+w/o Verification
+81.2 (-3.1)
+96.8 (-2.0)
+3.55 (-0.71)
+9.6 (-1.9)
+
+w/o Subgoal Decomp.
+80.5 (-3.8)
+96.3 (-2.5)
+3.75 (-0.51)
+10.3 (-1.2)
+
+w/o Content Memory
+82.8 (-1.5)
+97.8 (-1.0)
+2.45 (-1.81)
+10.8 (-0.7)
+
+Table 5: Cognitive behavior ablation. Impact of removing verification, subgoal decomposition, or content memory from our agentic framework.
+
+5.3 Data Quality Analysis
+
+We analyze the impact of data quality by ablating individual filters from our curation pipeline (Sec. 3.1).
+
+Setup. We train three ablated models, each removing one quality filter: (1) w/o Quality regression filter, including trajectories where refinement degrades quality; (2) w/o Relevance filtering, including rounds with semantically irrelevant editing prompts; (3) w/o Minimal visual changes filter, including rounds with negligible visual refinement.
+
+Results. Table 6 shows task-specific sensitivities. Removing relevance filtering causes the largest degradation on compositional tasks (3.1% on OneIG-Bench, 2.5% on CompBench), as off-topic edits undermine maintaining compositional constraints. Removing the minimal visual changes filter most significantly hurts multi-turn editing (1.16 points on ImgEdit), demonstrating that learning meaningful incremental progress is critical for sustained interactions. For visual reasoning (MIRA), removing the quality regression filter has the largest impact (1.5%), as learning from degraded trajectories impairs converging toward correct answers. Different quality dimensions matter for different capabilities; effective test-time scaling requires curating data along multiple axes.
+
+5.4 Failure Cases
+
+Despite strong performance, our approach exhibits limitations in specific scenarios. First, tasks requiring precise physical reasoning or fine-grained spatial relationships occasionally fail, as iterative refinement may struggle to correct fundamental physics violations or attribute binding errors inherited from the base generation/editing models (e.g., incorrect leash-dog assignment or wrong helmet placement and sizes in Fig. 3). Second, we observe occasional degradation loops where reflection incorrectly identifies non-existent issues, leading to unnecessary edits that harm quality rather than improve it—a verification hallucination bottleneck particularly evident when the VLM’s verification capabilities are insufficient to accurately assess subtle visual attributes. Third, extremely complex compositional prompts with many interacting constraints can lead to subgoal conflicts during decomposition, where satisfying one constraint inadvertently violates another. Finally, test-time scaling cannot overcome fundamental capability gaps in the base model; if the underlying diffusion or VLM components lack certain semantic understanding, additional inference compute provides diminishing returns. These failure modes suggest directions for future work, including more robust verification mechanisms, physics-aware refinement strategies, and constraint satisfaction planning. We further discuss scaling limits beyond C=10C{=}10 in Sec. D. Failure visualizations are presented in Sec. E.
+
+Data Configuration
+OneIG
+CompBench
+ImgEdit
+MIRA
+
+Align (%)
+Overall (%)
+Score
+Acc (%)
+
+Full curated dataset
+84.3
+98.8
+4.26
+11.5
+
+w/o Quality regression filter
+82.5 (-1.8)
+97.5 (-1.3)
+3.30 (-0.96)
+10.0 (-1.5)
+
+w/o Relevance filtering
+81.2 (-3.1)
+96.3 (-2.5)
+3.60 (-0.66)
+10.3 (-1.2)
+
+w/o Min. visual changes filter
+83.5 (-0.8)
+98.0 (-0.8)
+3.10 (-1.16)
+10.9 (-0.6)
+
+Table 6: Data quality ablation. Impact of removing individual curation filters (Sec. 3.1) from the training data pipeline.
+
+6 Conclusion
+
+We have presented a unified approach to multimodal chain-of-thought test-time scaling that extends inference-time compute from text-only reasoning to models handling both visual understanding and generation, establishing a paradigm that benefits both generation and comprehension across modalities. Our key contributions—an agentic framework that induces cognitive behaviors (verification, subgoal decomposition, content memory), budget forcing for beyond-training generalization, and evidence that sequential reasoning outperforms parallel sampling—yield substantial gains across compositional generation, multi-turn editing, and visual reasoning, demonstrating that iterative refinement through explicit reasoning unlocks significant performance improvements on complex multimodal tasks.
+
+Limitations. While our approach demonstrates strong results, test-time scaling inherently requires additional computational resources at inference. Future work should explore more efficient reflection mechanisms and adaptive budget allocation strategies that minimize computational overhead while preserving quality gains.
+
+Future directions. Promising directions include extending our approach to additional modalities (audio, video), augmenting reflection with explicit physical reasoning to enforce implicit constraints (e.g., object sizing, perspective, occlusion), investigating reinforcement learning from human feedback to further improve reflection quality, and exploring how test-time scaling interacts with other inference-time techniques such as self-consistency and verifier-guided generation.
+
+Acknowledgements
+
+We thank Hao Tang, Mark Endo, and Alejandro Lozano for their helpful discussions.
+
+References
+
+Figure 7: Data synthesis pipeline architecture. Three model roles coordinate via information flows: Image Gen Model produces initial images, Vision-language model verifies image and performs planning/prompt rewriting with content memory, Image Editing Model applies refinements. Trajectories loop until satisfied, producing interleaved text-image chain-of-thought data.
+
+Appendix A Data Synthesis Pipeline
+
+We provide implementation details for our automated data collection pipeline that generates 12K multimodal chain-of-thought training trajectories.
+
+A.1 Pipeline Architecture
+
+The agentic framework coordinates three model roles in an iterative loop (Fig. 7): Image Gen Model produces initial images from user prompts, Vision-language Model evaluates satisfaction and performs verification with content memory and subgoal decomposition, and Image Editing Model applies refinements based on VLM planning. This loop continues until the VLM determines the image satisfies all requirements, producing interleaved text-image chain-of-thought trajectories that are filtered for quality.
+
+A.2 Model Components
+
+Prompt generation: Llama-4-Scout-17B-16E generates 20K diverse prompts covering compositional attributes, spatial relations, and multi-object generation tasks based on T2I-CoReBench.
+
+Image generation: Flux Pro produces initial images from prompts. For complex prompts, Qwen3-VL decomposes prompts into subgoals and executes the first step in initial generation.
+
+Verification: Qwen3-VL evaluates whether images satisfy prompts. If not, it generates explicit chain-of-thought reasoning, identifying deficiencies, planning improvements, and specifying editing instructions.
+
+Editing: Flux Kontext or Qwen-Image-Edit applies editing instructions based on VLM planning.
+
+A.3 Example Trajectory
+
+Fig. 8 shows a concrete bookshelf generation trajectory demonstrating the three cognitive behaviors induced by our framework. The VLM performs verification by identifying that books are present when the prompt specifies “no books, only picture frames.” It exhibits subgoal decomposition by breaking the correction into sequential steps—first removing books, then adding frames. Finally, it demonstrates content memory by explicitly referencing and comparing Images #1, #2, and #3 to track cumulative progress across refinement rounds.
+
+Figure 8: Detailed chain-of-thought trajectory demonstrating cognitive behaviors. This bookshelf generation example shows the model’s explicit reasoning through <think> blocks across three refinement rounds. Verification: the model identifies that books are present when the prompt specifies “no books, only picture frames.” Subgoal decomposition: the model breaks the correction into sequential steps—first removing books, then adding picture frames. Content memory: the model explicitly references and compares Images #1, #2, and #3 to track cumulative progress. The reasoning demonstrates how chain-of-thought enables iterative self-correction through explicit evaluation and planning.
+
+A.4 Training Data Statistics
+
+After quality filtering, we obtain 12K trajectories with the following characteristics: training trajectories average 3.6 refinement rounds (range 1-8 rounds). Training on this data requires 700 H100 GPU hours.
+
+A.5 VLM Prompt Design
+
+The vision-language model uses a structured prompt template (Table 7) to induce cognitive behaviors during data synthesis. The prompt guides the VLM through three steps: (1) detailed image description with explicit object counts and spatial relationships, (2) comparison analysis against user requirements with reflection on previous attempts, and (3) decision making between editing, backtracking, or completion. This structured reasoning naturally produces trajectories exhibiting verification, subgoal decomposition, and content memory.
+
+You are an intelligent and honest image evaluation agent.
+
+ORIGINAL USER REQUEST: {user_prompt}
+[Previous images information with satisfied/TODO features]
+
+STEP 1 - IMAGE DESCRIPTION:
+First, describe what you see in the current image in detail:
+- List ALL objects present with exact counts
+- Describe their positions and spatial relationships
+- Note colors, materials, lighting, and style
+- Describe the overall scene composition
+
+STEP 2 - COMPARISON ANALYSIS:
+Compare your image description with the user request:
+1. COUNT all objects explicitly
+2. CHECK spatial relationships
+3. VERIFY colors, materials, and other specific details
+4. IDENTIFY correct objects to retain and wrong objects to remove
+5. REFLECT on previous attempts - making progress or stuck?
+6. If instruction failed multiple times, try simpler language
+
+STEP 3 - DECISION:
+Choose ONE action:
+
+ACTION: EDIT_IMAGE
+EDIT_INSTRUCTION: [5-18 word instruction, focus on ONE change]
+SATISFIED: [features matching request with counts]
+TODO: [features still needed with counts]
+
+ACTION: BACKTRACK_TO_IMAGE
+BACKTRACK_TO: [image number, e.g., "Image #2"]
+
+ACTION: SATISFIED_COMPLETE
+SATISFIED: [all requirements met with verification]
+
+Table 7: VLM verification and planning prompt. Structured template guiding the vision-language model through image description, comparison analysis, and action decision. This three-step reasoning naturally induces verification, subgoal decomposition, and content memory behaviors during trajectory generation.
+
+Appendix B Additional Qualitative Results
+
+Additional qualitative examples are provided in the main paper (Fig. 4), showing representative trajectories across different task types and computational budgets.
+
+Appendix C Generalization Preservation
+
+Fine-tuning on 12K reasoning-heavy trajectories does not cause catastrophic forgetting of the base Bagel model’s general capabilities. We compare Bagel before and after fine-tuning on our data (without test-time scaling at inference): the fine-tuned model achieves 0.783 alignment on OneIG-Bench (vs. 0.764 for vanilla Bagel) and 2.26 on ImgEdit (vs. 1.31), indicating that the chain-of-thought training data improves rather than degrades the base model’s instruction-following capabilities even without multi-round inference.
+
+Appendix D Scaling Beyond C=10C{=}10
+
+We cap evaluation at C=10C{=}10 due to GPU memory constraints. We observe that image quality collapses when editing rounds produce minimal visual changes (LPIPS <0.03<0.03 between consecutive images), as accumulated autoregressive noise degrades fidelity. Such non-improving editing steps are infrequent, so scaling remains effective up to C=10C{=}10. Beyond this point, we expect TTS performance to saturate or degrade once quality collapse dominates. The exact inflection point depends on the base generation and editing model capabilities. Potential mitigations include: (a) perceptual thresholding to skip rounds with minimal changes, (b) “reset” rounds that regenerate from scratch using accumulated reasoning, and (c) adaptive noise scheduling to counteract quality degradation.
+
+Appendix E Failure Analysis
+
+While our approach achieves strong performance, we observe limitations in specific scenarios. Fig. 9 visualizes representative failure modes where chain-of-thought test-time scaling struggles to produce satisfactory outputs even with extended computational budget. These cases reveal fundamental challenges in precise compositional reasoning, complex spatial arrangements, and fine-grained attribute control that warrant future investigation.
+
+Figure 9: Representative failure modes. Example 1: Compositional constraints with precise object counts and spatial arrangements (napkin count). Example 2: Complex spatial relationships requiring specific geometric configurations (forks encircling plate). Examples 3,4: Layout change from the intermediate images (people count).
+
+================================================================================
+================================================================================
+标题: AttentionRetriever: Attention Layers are Secretly Long Document Retrievers
+================================================================================
+
+ID: 2602.12278
+作者: David Jiahao Fu, Lam Thanh Do, Jiayu Li, Kevin Chen-Chuan Chang
+日期: 2026-02-12
+PDF链接: https://arxiv.org/pdf/2602.12278v1.pdf
+DOI: N/A
+
+【摘要】
+无摘要
+
+【全文内容】
+AttentionRetriever: Attention Layers are Secretly Long Document Retrievers
+
+David Jiahao Fu1,
+Lam Thanh Do1,
+Jiayu Li1,
+Kevin Chen-Chuan Chang1
+1University of Illinois Urbana-Champaign
+
+{jiahaof4, lamdo, jiayul11, kcchang}@illinois.edu
+
+Abstract
+Retrieval augmented generation (RAG) has been widely adopted to help Large Language Models (LLMs) to process tasks involving long documents. However, existing retrieval models are not designed for long document retrieval and fail to address several key challenges of long document retrieval, including context-awareness, causal dependence, and scope of retrieval. In this paper, we proposed AttentionRetriever, a novel long document retrieval model that leverages attention mechanism and entity-based retrieval to build context-aware embeddings for long document and determine the scope of retrieval. With extensive experiments, we found AttentionRetriever is able to outperform existing retrieval models on long document retrieval datasets by a large margin while remaining as efficient as dense retrieval models.
+
+AttentionRetriever: Attention Layers are Secretly Long Document Retrievers
+
+David Jiahao Fu1,
+Lam Thanh Do1,
+Jiayu Li1,
+Kevin Chen-Chuan Chang1
+
+1University of Illinois Urbana-Champaign
+
+{jiahaof4, lamdo, jiayul11, kcchang}@illinois.edu
+
+1 Introduction
+
+Recent advancements in Large Language Models (LLMs) OpenAI (2023, 2025); Dubey et al. (2024); Jiang et al. (2023) have demonstrated strong capabilities in natural language understanding, but recent studies Liu et al. (2024); Maharana et al. (2024); Lu et al. (2024) have shown that LLMs still struggle to perform well on long document processing tasks due to the lost-in-the-middle problem and limited context window length, while the quadratic complexity of the attention mechanism makes processing long documents very expensive, especially for large models with hundreds of billions of parameters. In recent years, retrieval-augmented generation (RAG) Lewis et al. (2020) techniques have been widely applied to address this issue by selecting relevant information from the document with a retrieval model, which improves performance by removing distracting information and decreases processing time by shortening the input length.
+
+In the RAG pipeline, the retrieval model needs to perform long document retrieval, which requires the model to find a subset D′D^{\prime} from a user-provided long document DD such that |D′|≪|D||D^{\prime}|\ll|D| and D′D^{\prime} is sufficient and necessary to answer the input query qq. However, existing retrieval models are not tailored for long document retrieval and overlook the following three types of dependencies in long documents:
+
+•
+
+Contextual dependency. Since long documents are generally coherent, context is often required to resolve issues like coreference and word ambiguity, which are crucial for determining the relevance of chunks. For example, in a document discussing Chicago, the author might use "the city" to refer to "Chicago", but this reference is clear only if the context is provided.
+
+•
+
+Causal dependency. The query may involve intermediate answers from the document that are needed to reach the final answer. For the same document about Chicago, an example query would be "What was the population of Chicago when the Great Fire happened?", where the intermediate answer "the Great Fire happened in 1871" is needed to find the chunk containing the final answer.
+
+•
+
+Query dependency. Text chunks providing background information, like the one containing "the Great Fire happened in 1871" in the previous example, are also important to answering the query and should be retrieved. However, these chunks might receive low similarity scores because they are not very relevant to the query, which asks about "the population of Chicago". Therefore, it is necessary to accurately decide the scope of retrieval in long document retrieval tasks.
+
+Modeling the first two dependencies requires a more advanced retrieval model that can build context-aware representations and update the embeddings as additional contextual information is available. We found that the attention layers in transformer models perfectly match both requirements. Since attention layers calculate the representations of each token by aggregating information from other tokens, they are essentially cross-encoders that embed contextual information into the representation of each token, providing more abundant semantic information compared to existing embedding-based retrieval models. Furthermore, as the representations are propagated through layers, they are also dynamically adjusted based on contextual information gathered in previous layers to encode causal dependencies.
+
+It is also intuitive to use attention layers as retrievers because the attention operations are essentially calculating similarity scores. In each attention layer of the transformer model, the attention score assigned to the jj-th token by the ii-th token is calculated as the weighted dot product between the key vector kjk_{j} and the query vector qiq_{i}, which is identical to similarity calculation of embedding models. Moreover, attention computation is performed on two sets of embeddings qq and kk, which allows the attention layers to perform a broader range of tasks other than semantic similarity search by adjusting the embeddings.
+
+However, training a transformer model for retrieval is very expensive. Ye et al. (2025) found that the last layer in the Qwen-2 model shows high retrieval accuracy without any additional training, implying the possibility of directly employing pretrained LLMs to estimate relevance with attention scores. However, their experiments were very limited and the findings might not generalize to other attention layers and other LLMs. More importantly, since pretrained LLMs suffer from accuracy and efficiency issues with long context, it is also crucial to find out whether attention scores can be efficiently calculated and still achieve high retrieval accuracy with long context.
+
+Therefore, we conducted careful analysis (Section 3) to verify if attention layers in pretrained LLMs can be effective and efficient training-free retrievers. Our analysis showed that attention scores are more precise than outputs in collecting relevant information and suffer less from the lost-in-the-middle problem, validating the effectiveness of using LLMs for retrieval tasks despite that they face various issues in long context tasks. Moreover, existing attention approximation methods for LLMs can be directly applied to this approach, making it possible to process long documents with arbitrary lengths. Furthermore, we found that employing pretrained LLMs with around 3 billion parameters as retrievers is already able to achieve impressive performance, which eliminates the need for using larger LLMs and improves efficiency.
+
+However, attention scoring alone is still insufficient to model the third dependency. Background information is still unlikely to receive high attention scores in layers with high retrieval accuracies because it is already embedded into the representations before these layers. To obtain a better estimate of the scope of retrieval, it is essential to additionally consider text chunks that are not immediately relevant but provide background information. Since each piece of background information typically focuses on one entity, and it should be included as part of the retrieval result only if the entity is relevant to the input query, we believe an entity graph structure could help to determine the retrieval scope precisely by connecting text chunks through entities and finding the entities relevant to the query during retrieval to discover hidden background information. In contrast to knowledge graphs, entity graphs are much easier and more efficient to construct, without the need to extract relationships between entities.
+
+Figure 1: Overview of AttentionRetriever.
+
+Based on these findings and analysis, we proposed AttentionRetriever, a novel retrieval model that builds context-aware embeddings with pretrained LLMs and decides the scope of retrieval through entity-based retrieval, as summarized in Figure 1. During retrieval, we leverage LLMs to process the long document and the query together, adopting the attention maps at layers that show high retrieval accuracies to estimate the relevance score of each text segment, which is combined with embedding-based similarity scoring for more precise retrieval. To decide the scope of retrieval, we find the desired entities by ranking them by the scores of sentences containing the entities. We eventually obtain the final output by collecting all text chunks that contain the highest ranked entities and sentences.
+
+To better evaluate and compare the performance and efficiency of our proposed method and baselines on extremely long documents, we also constructed a new long document retrieval dataset consisting of different types of documents with an average length of over 100,000 words and various types of queries (Section 5). To the best of our knowledge, this is the first retrieval dataset that features documents with lengths exceeding the context window length of most existing LLMs.
+
+We evaluated AttentionRetriever on our constructed dataset, as well as six other single-document retrieval datasets and three multi-document retrieval datasets. AttentionRetriever outperforms state-of-the-art sparse and dense retrieval models by a large margin on single-document retrieval datasets while remaining as efficient as dense retrieval models with similar sizes. Moreover, AttentionRetriever also achieves competitive performance in multi-document retrieval datasets where contextual information is generally not needed, further demonstrating its effectiveness in long document retrieval tasks.
+
+In summary, our contributions are as follows:
+
+•
+
+We propose AttentionRetriever, which leverages the attention mechanism and entity-based retrieval to perform context-aware long document retrieval and decide the scope of retrieval based on the query;
+
+•
+
+We perform empirical analysis on the attention mechanism in pretrained LLMs, verifying the effectiveness of using attention maps for retrieval tasks and its capability of dynamically updating embeddings across layers;
+
+•
+
+We construct a new long document retrieval dataset consisting of extremely long documents to compare the retrieval accuracy of our proposed method and various baselines.
+
+2 Related Works
+
+2.1 Long Document Retrieval
+
+Although the concept of text retrieval has appeared for many years, the task of long document retrieval remains largely unexplored. Existing sparse and dense models, such as BM25 Robertson and Zaragoza (2009), DPR Karpukhin et al. (2020), ANCE Xiong et al. (2021), GTR Ni et al. (2022), mGTE Zhang et al. (2024), and Grit-LM Muennighoff et al. (2025), are mostly designed for open-domain retrieval, in which the models deal with a large corpus of independent documents instead of a long document and can process each document separately because other ones are likely to be irrelevant. Researchers have attempted to incorporate context-awareness into retrieval models Morris and Rush (2024); Günther et al. (2024); Conti et al. (2025), but they are still designed for open-domain retrieval. In recent years, SPScanner Cao et al. (2025) and MC-Indexing Dong et al. (2024) have been proposed to address the problem of long document retrieval. However, they still failed to address the challenges of causal and query dependencies.
+
+2.2 Context Window Length Extension
+
+LLMs fail to process inputs exceeding its context window length because they lack training on out-of-distribution (OOD) indices. To tackle this problem, prior works Ding et al. (2024); Shang et al. (2025); An et al. (2024); Jin et al. (2024); Xu et al. (2025); Liu et al. (2025) proposed to map OOD indices to in-distribution indices to avoid the problem. To reduce the computational cost when processing long contexts, researchers also proposed methods to approximate the full attention map by dividing the context into text segments and performing attention operations only on relevant text segments Xiao et al. (2024); Fountas et al. (2024); Willette et al. (2025).
+
+2.3 Attention Mechanism Interpretation
+
+Despite the success of modern LLMs, it remains unclear how the attention mechanism Bahdanau et al. (2015) in LLMs contribute to its success. Vig and Belinkov (2019) showed that different attention heads are assigned to different tasks in GPT-2, while Sun et al. (2024) also found that the middle transformer layers have similar functionalities and are responsible for different tasks. Ye et al. (2025) conducted analysis on the final layer of Qwen-2 model and concluded that high attention scores are given to tokens relevant to the query. However, no existing work has explored the potential of employing attention layers in LLMs for retrieval.
+
+3 Observations
+
+In order to verify whether the attention layers of different LLMs can accurately find relevant chunks for different types of queries, we conducted a detailed empirical analysis to measure the effectiveness of each attention layer for retrieval and the shift of attention patterns across layers. We selected LLaMA-3.2 3B Dubey et al. (2024), Qwen-2.5 3B Yang et al. (2024), and Mistral 7B Jiang et al. (2023) as representatives of LLMs, and analyzed the cross attention between the query and the document at each attention layer when the document and the query are processed by the LLMs. To compare the attention patterns of different types of queries, we utilized the training set of MuSiQue dataset Trivedi et al. (2022), which contains different types of multi-hop questions and can be decomposed into simpler subqueries.
+
+In each attention layer, we calculate its retrieval accuracy by finding the paragraphs the model focuses on through cross attention scores. Specifically, we estimate the relevance of each paragraph by the maximum cross attention scores assigned by the query to tokens from the paragraph, averaged over all attention heads. Formally, given the attention map A∈ℝH×Td×TqA\in\mathbb{R}^{H\times T_{d}\times T_{q}}, the paragraph score s​c​o​r​epscore_{p} is calculated as:
+
+s​c​o​r​ep=maxsl≤t≤sr,1≤tq≤Tq⁡(1H​∑h=1HAh,t,tq)score_{p}=\max_{s_{l}\leq t\leq s_{r},1\leq t_{q}\leq T_{q}}\left(\frac{1}{H}\sum_{h=1}^{H}A_{h,t,t_{q}}\right)
+
+where HH is the number of attention heads, TdT_{d} is the length of the document, TqT_{q} is the length of the query, and the paragraph pp spans over tokens pl,…,prp_{l},\dots,p_{r}. We then rank the paragraphs by their corresponding scores to determine the paragraphs being focused on and compare with the gold paragraphs for each subquery of the questions to calculate the retrieval accuracy for the subquery.
+
+(a) Average ranks of the gold paragraph for each subquery over all queries in the dataset. The layer achieving the highest average rank for each subquery is marked at the top of each line. The subqueries are ordered by dependencies, where subquery 1 does not depend on any other subqueries while subquery 4 could depend on any other subqueries.
+
+(b) The quartic approximation of the average ranks.
+
+Figure 2: Results of attention analysis.
+
+Figure 2 presents the results of attention layers of Llama-3.2-3B-Instruct on all queries, while the results for other models and each specific type of queries can be found in Appendix B. The top figure shows the average ranking of the gold paragraph for each subquery across the layers, while the bottom figure is the quartic approximation of the rankings. From Figure 2(a), we found that only certain attention layers can achieve high retrieval accuracy, and they are mostly in the second half of the layers. By analyzing the approximation in Figure 2(b), we also found that pretrained LLMs shift focuses in different attention layers. Earlier attention layers tend to focus on the independent subquery (subquery 1), while later layers rank the gold paragraphs for subqueries 2, 3, and 4 higher, which depends on subquery 1. This result validates the process of building context and causal dependencies through attention layers in LLMs.
+
+(a) Retrieval accuracy for attention layers.
+
+(b) Retrieval accuracy for attention layers with Cascading KV Cache.
+
+Figure 3: Test results on the needle-in-a-haystack test.
+
+However, pretrained LLMs are known to struggle with processing long documents due to lost-in-the-middle problem and limited context window length. Therefore, we conducted additional experiments on the needle-in-a-haystack gkamradt test to verify if lost-in-the-middle also appears in attention layers and if existing context length extension methods can be applied to our pipeline. To determine whether the attention layers can find the needles, we calculated the number of attention heads where the highest attention score is assigned to the needle. We selected Llama-3.2-3B-Instruct as the base model and employed Cascading KV Cache Willette et al. (2025) as the context extension method, and tested on documents with approximately 100,000 tokens.
+
+Figure 3 shows the results of our experiments. Figure 3(a) reveals that the count does not decrease when the needle is in the middle of the document, indicating that attention layers are less affected by the lost-in-the-middle problem. Figure 3(b) also demonstrates that the approximation method can be effective in our proposed pipeline because it can even find needles much more accurately than full attention. Based on these observations, we proposed our attention-based retrieval approach, which will be outlined in the next section.
+
+4 Method
+
+4.1 Overview
+
+Our proposed retrieval model is summarized in Figure 1. We leverage a pretrained LLM to assign a score for each sentence in the document based on attention maps of the LLM (Subsection 4.2). Meanwhile, we also employ a dense embedding model to calculate a separate score for each sentence by similarity between the sentence embedding the and query embedding to further improve retrieval accuracy (Subsection 4.3). We then use these two sets of scores to find relevant entities and perform an entity-based retrieval to obtain the outputs (Subsection 4.4).
+
+4.2 Attention for Sentence Scoring
+
+The observations of Section 3 suggest that the cross-attention scores between the query and the document in pretrained LLMs could provide an accurate estimate of query relevance. Based on this conclusion, we proposed to employ a pretrained LLM to estimate the relevance of each sentence by computing cross-attention scores between tokens corresponding to the query and tokens from the sentence. Since only certain layers achieve high retrieval accuracies, we only use the attention scores from layers that obtained smallest average ranking for at least one subquery (the layers labeled in Figure 2(a)) to remove the noise of other layers.
+
+We followed the same procedure as Section 3 to convert token-level attention scores into sentence scores to fully utilize our findings. After obtaining the raw attention map A∈ℝL×H×Td×TqA\in\mathbb{R}^{L\times H\times T_{d}\times T_{q}}, where LL is the number of selected layers, HH is the number of attention heads, TdT_{d} is the length of the document, and TqT_{q} is the length of the query, we calculate the attention score for each sentence by taking the maximum attention score assigned to tokens in the sentence across all selected layers and all query tokens, averaged over attention heads. More formally, given a sentence ss spanning over tokens sl,…,srs_{l},\dots,s_{r}, the attention score of the sentence asa_{s} is computed as follows:
+
+as=max1≤l≤L,sl≤t≤sr,1≤tq≤Tq⁡(1H​∑h=1HAl,h,t,tq)a_{s}=\max_{1\leq l\leq L,s_{l}\leq t\leq s_{r},1\leq t_{q}\leq T_{q}}\left(\frac{1}{H}\sum_{h=1}^{H}A_{l,h,t,t_{q}}\right)
+
+In Section 3, we also found that Cascading KV cache method Willette et al. (2025) can be seamlessly applied to our method, so we apply this method to handle inputs of that could exceed the pre-defined context window limit of our selected base model efficiently. In practice, since the extension method would bring additional overhead to the pipeline, we only apply it when the length of the document exceeds the context window limit of the base LLM.
+
+4.3 Sentence Embedding for Multi-view Similarity Search
+
+Attention-based similarity estimation provides a token-level measurement of the relevance to the query, which is in fact complementary to the traditional embedding-based sentence-level estimation. To enhance our retrieval process, we use sentence embedding to obtain a sentence-level similarity estimate as an additional view in similarity search to enrich the information obtained by attention-based search. We encode each sentence ss into its embedding Es=f​(s)E_{s}=f(s) through an embedding model ff, and use the same embedding model to obtain the query embedding query embedding Eq=f​(q)E_{q}=f(q). The sentence embedding score ese_{s} for each sentence ss is calculated as the cosine similarity between its embedding EsE_{s} and query embedding EqE_{q}:
+
+es=Es⋅Eq||Es||​||Eq||e_{s}=\frac{E_{s}\cdot E_{q}}{\lvert\lvert E_{s}\rvert\rvert\lvert\lvert E_{q}\rvert\rvert}
+
+4.4 Entity-based Retrieval
+
+In long document retrieval, it is insufficient to only retrieve the most relevant text chunks because long documents are typically coherent and other chunks could provide additional background information about the query. Since chunks mentioning the entities relevant to the query can usually provide useful information, we find the most relevant entities and use them to find these indirectly relevant text chunks.
+
+Specifically, we use SpaCy Honnibal et al. (2020) to extract the entities in each sentence, and assign a relevance score to each entity based on the scores of the sentences it appears in to find the most relevant entities. Since relevant entities should only appear in relevant sentences, we calculate the relevance score of entities by the average relevance scores of the sentences.
+
+Since we obtained both attention scores and embedding scores and the attention score and embedding score are not directly comparable, we perform retrieval on each score separately and combine the results with equal weights. With a top_k value of kk, we first retrieve ⌈k2⌉\lceil\frac{k}{2}\rceil entities and sentences with the highest attention scores and ⌊k2⌋\lfloor\frac{k}{2}\rfloor entities and sentences with the highest embedding scores. The union of these two sets of entities and sentences is the collection of all selected entities and sentences. For each selected sentence, we retrieve the paragraph it belongs to, while for each selected entity, we retrieve all paragraphs containing the entity.
+
+QASA
+Qasper
+RepLiQA
+ConditionalQA
+NaturalQuestions
+LongBench-v2-Retrieval
+Average
+
+Average Length
+4665.09
+3442.26
+970.50
+1298.13
+2548.97
+106025.49
+
+Sparse Models
+
+   BM25
+0.3795
+0.2304
+0.4896
+0.1988
+0.3055
+0.3126
+0.3194
+
+Dense Models
+
+   DPR
+0.2181
+0.0529
+0.3602
+0.1542
+0.2981
+0.1226
+0.2010
+
+   ANCE
+0.3724
+0.2856
+0.4686
+0.1893
+0.3818
+0.3240
+0.3370
+
+   CDE
+0.1341
+0.0962
+0.2449
+0.1547
+0.2416
+0.0485
+0.1532
+
+   GTR
+0.3977
+0.2714
+0.4851
+0.2584
+0.4110
+0.3260
+0.3583
+
+   GTE-Qwen2
+0.3785
+0.2442
+0.4785
+0.2415
+0.4131
+0.3314
+0.3479
+
+   Qwen3
+0.4414
+0.2057
+0.4846
+0.2892
+0.4091
+0.3205
+0.3584
+
+   GritLM
+0.4394
+0.3008
+0.5141
+0.3258
+0.4592
+0.3398
+0.3965
+
+Autoregressive Models
+
+   SPScanner
+0.4604
+0.3712
+0.6434
+0.1354
+0.4237
+0.4188
+0.4088
+
+AttentionRetriever (Ours)
+
+   LLaMA-3.2 3B
+0.5584
+0.4618
+0.8339
+0.3526
+0.5998
+0.4738
+0.5467
+
+   Qwen-2.5 3B
+0.5663
+0.4551
+0.8422
+0.3106
+0.5655
+0.3215
+0.5102
+
+Table 1: Comparison of proposed method and baselines on single-document retrieval datasets, where best and second best results are marked in bold and underline, respectively.
+
+5 Dataset Construction
+
+Since the average length of documents in existing retrieval datasets are very limited, we collected a set of long documents from LongBench-v2 dataset Bai et al. (2025), which features long documents from a variety of sources, to compare our proposed method with baselines on extremely long documents. We only selected documents with length labeled as "medium" or "long", and sub-domain is one of Financial, Academic, Governmental, and Legal to obtain more well-structured documents. We collected a total of 35 documents from the dataset.
+
+Through our analysis on prior retrieval and QA datasets, such as MuSiQue Trivedi et al. (2022), Qasper Dasigi et al. (2021), and LongBench Bai et al. (2024), we found that most questions in the datasets fall into the following four categories:
+
+•
+
+Single-hop: the question can be answered with a single piece of information.
+
+•
+
+Comparison: the question requires comparison between two or more pieces of information from multiple paragraphs.
+
+•
+
+Composition: the question composes multiple single-hop questions, and the LLM needs to answer each sub-question in sequence to arrive at the final answer.
+
+•
+
+Summarization: the question requires summarizing information from multiple locations throughout the document.
+
+Therefore, to ensure our dataset includes all these four types of queries, we manually generated a query for each of these four types of queries for each document we collected, and annotated the corresponding answer and relevant paragraphs. We denote our dataset as LongBench-v2-Retrieval for the rest of the paper. A comparison of our dataset and other long document retrieval datasets can be found in Appendix A, which shows that the documents in our new dataset are significantly longer than other retrieval datasets and some of them even exceed the context window length of most LLMs Dubey et al. (2024); Jiang et al. (2023); Zhang et al. (2025).
+
+6 Experiments
+
+6.1 Experimental Setup
+
+To comprehensively evaluate the effectiveness and efficiency of our proposed method, we conducted our experiment on both long document retrieval tasks and long document question answering (QA) tasks with the retrieval-augmented generation (RAG) setting.
+
+Baselines. We compared AttentionRetriever with the following three types of existing retrieval models that can be applied to long document retrieval:
+
+(a)
+
+Sparse retrieval model BM25 Robertson and Zaragoza (2009);
+
+(b)
+
+Dense retrieval models, such as DPR Karpukhin et al. (2020), ANCE Xiong et al. (2021), GTR Ni et al. (2022), GTE-Qwen2-7B Zhang et al. (2024), GritLM-7B Muennighoff et al. (2025), and Qwen3-7B Zhang et al. (2025);
+
+(c)
+
+Long document retrieval model SPScanner-1.3B Cao et al. (2025);
+
+For evaluation on QA tasks, we used pretrained LLMs, such as LLaMA-3.1 8B Dubey et al. (2024), Mistral-7B Jiang et al. (2023), Qwen-2.5 7B Yang et al. (2024), and GPT-5 mini OpenAI (2025), as our baselines to compare between RAG setting and direct generation.
+
+Datasets. We conducted experiments on five long document retrieval benchmarks: LongBench-v2-Retrieval (Ours), QASA Lee et al. (2023), Qasper Dasigi et al. (2021), RepLiQA Monteiro et al. (2024), and DAPR Wang et al. (2024). For DAPR, we only selected datasets where each query can be answered by a single document, which are ConditionalQA, MS MARCO, and Natural Questions. However, we decided not to use MS MARCO because the average paragraph count of documents in the datasets is very limited (as shown in Table 3), and is not suitable for our task. We report the performance of our proposed method and the baselines on the test sets of these benchmarks. For LongBench-v2-Retrieval and RepLiQA, we used the full datasets because the dataset splits are not provided.
+
+We also used three multi-document retrieval benchmarks for further comparison, which are HotpotQA Yang et al. (2018), 2WikiMultihopQA Ho et al. (2020), and MuSiQue Trivedi et al. (2022). We report the performance of our proposed method and the baselines on the validation sets of these benchmarks.
+
+For evaluation on the QA task, we utilized the LongBench Bai et al. (2024) dataset and selected three single-document QA subsets, Qasper, MultiFieldQA-en, and NarrativeQA.
+
+Metrics. To evaluate and compare retrieval and QA performance, we use F-1 as the evaluation metric. For comparison of retrieval efficiency, we measure the average processing time for each sample in the datasets. For QA tasks, we report the number of input tokens passed into the QA model, as we cannot measure the processing time for closed-source models.
+
+Implementation Details. In our experiments, we use paragraphs as basic retrieval units. For baselines that cannot process long paragraphs, we split each paragraph into text chunks that can fit into the context window and take the maximum similarity of the text chunks with the query as the similarity of the paragraph. For AttentionRetriever, we used Llama-3.2-3B-Instruct and Qwen/Qwen2.5-3B-Instruct as our base LLMs to compute attention scores. For top_k choices, we used 1, 2, 3, and 5 because the average number of evidences of the datasets we used are below 5 (as shown in Table 3). For QA tasks, we also used vLLM Kwon et al. (2023) for efficient generation. We performed all our experiments on a single NVIDIA A40 GPU.
+
+6.2 Main Results
+
+Table 1 and 2 present the retrieval performance of baselines and AttentionRetriever on single-document and multi-document retrieval datasets, respectively. For simplicity, we only included the results with top_k value of 3, while the results of other top_k values can be found in Appendix C. Our proposed method significantly outperforms the baselines across all single-document retrieval datasets, while achieving a similar performance with baselines on multi-document datasets, which is not the primary target of our method. However, we also noticed a significant performance drop of AttentionRetriever-Qwen on LongBench-v2-Retrieval dataset compared to other dataset, which could indicate that Qwen-2.5 model does not work well with the context extension method. Table 5 compares the retrieval efficiency of AttentionRetriever and the baselines. Our proposed method is as efficient as large dense embedding models like GTE, Qwen3, and GritLM, demonstrating the efficiency of AttentionRetriever.
+
+The results for the QA tasks can be found in Appendix E. Our proposed method achieves comparable performance as direct generation with the LLM while significantly reducing the number of input tokens, while also outperforming the long document retrieval baseline SPScanner. Notably, we found that all RAG methods fail to perform well on NarrativeQA dataset, which might indicate that RAG methods do not work well on novels since novels are typically less well-structured than other types of long documents and retrieval cannot collect all pieces of information required to answer the question.
+
+HotpotQA
+2WikiMultihopQA
+MuSiQue
+Average
+
+Average Length
+887.05
+549.58
+8089.59
+
+Sparse Models
+
+   BM25
+0.5695
+0.5454
+0.3412
+0.4854
+
+Dense Models
+
+   DPR
+0.5020
+0.5389
+0.3680
+0.4696
+
+   ANCE
+0.5547
+0.6603
+0.4285
+0.5478
+
+   CDE
+0.3932
+0.2637
+0.2320
+0.2963
+
+   GTR
+0.6109
+0.6393
+0.4591
+0.5698
+
+   GTE-Qwen2
+0.6707
+0.664
+0.5328
+0.6225
+
+   Qwen3
+0.6721
+0.6533
+0.522
+0.6158
+
+   GritLM
+0.7096
+0.6802
+0.5484
+0.6461
+
+Autoregressive Models
+
+   SPScanner
+0.6052
+0.6268
+0.3982
+0.5434
+
+AttentionRetriever (Ours)
+
+   LLaMA-3.2 3B
+0.7090
+0.6495
+0.5084
+0.6223
+
+   Qwen-2.5 3B
+0.7037
+0.6355
+0.5062
+0.6151
+
+Table 2: Comparison of proposed method and baselines on multi-document retrieval datasets, where best and second best results are marked in bold and underline, respectively.
+
+7 Conclusion
+
+In this paper, we introduced AttentionRetriever, a training-free context-aware retrieval model that leverages the attention mechanism in LLMs and entity-based retrieval for accurate long document retrieval. In contrast to prior sparse and dense retrieval models, our approach considers contextual, causal, and query dependencies in the long document when evaluating the relevance of each text segment, enabling a more precise retrieval process. Our experiment results reveal that AttentionRetriever can achieve very strong performance on various long document retrieval benchmarks, while maintaining competitive performances on multi-document retrieval scenarios.
+
+Limitations
+
+We identified several major limitations of our work. Firstly, our proposed method requires a sufficiently large LLM (around 3 billion parameters) to perform well, making it less efficient than sparse and small dense models. Secondly, due to hardware constraints, we did not extend our analysis on attention to larger LLMs, which could show different attention patterns. Lastly, due to the scarcity of well-formatted long documents and the difficulty of manual labeling, the size of the retrieval dataset we constructed is limited and can be sensitive to outliers, causing the evaluation results to be inaccurate.
+
+References
+
+C. An, F. Huang, J. Zhang, S. Gong, X. Qiu, C. Zhou, and L. Kong (2024)
+Training-Free Long-Context Scaling of Large Language Models.
+
+In Forty-first International Conference on Machine Learning, ICML 2024, Vienna, Austria, July 21-27, 2024,
+
+External Links: Link
+
+Cited by: §2.2.
+
+D. Bahdanau, K. Cho, and Y. Bengio (2015)
+Neural Machine Translation by Jointly Learning to Align and Translate.
+
+In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings, Y. Bengio and Y. LeCun (Eds.),
+
+External Links: Link
+
+Cited by: §2.3.
+
+Y. Bai, X. Lv, J. Zhang, H. Lyu, J. Tang, Z. Huang, Z. Du, X. Liu, A. Zeng, L. Hou, Y. Dong, J. Tang, and J. Li (2024)
+LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding.
+
+In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2024, Bangkok, Thailand, August 11-16, 2024, L. Ku, A. Martins, and V. Srikumar (Eds.),
+
+pp. 3119–3137.
+
+External Links: Link,
+Document
+
+Cited by: §5,
+§6.1.
+
+Y. Bai, S. Tu, J. Zhang, H. Peng, X. Wang, X. Lv, S. Cao, J. Xu, L. Hou, Y. Dong, J. Tang, and J. Li (2025)
+LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks.
+
+In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2025, Vienna, Austria, July 27 - August 1, 2025, W. Che, J. Nabende, E. Shutova, and M. T. Pilehvar (Eds.),
+
+pp. 3639–3664.
+
+External Links: Link
+
+Cited by: §5.
+
+W. Cao, J. Wang, Y. Zheng, L. Bao, Q. Zheng, T. Berg-Kirkpatrick, R. Paturi, and L. Bergen (2025)
+Single-Pass Document Scanning for Question Answering.
+
+CoRR abs/2504.03101.
+
+Note: arXiv: 2504.03101
+
+External Links: Link,
+Document
+
+Cited by: §2.1,
+item (c).
+
+M. Conti, M. Faysse, G. Viaud, A. Bosselut, C. Hudelot, and P. Colombo (2025)
+Context is Gold to find the Gold Passage: Evaluating and Training Contextual Document Embeddings.
+
+CoRR abs/2505.24782.
+
+Note: arXiv: 2505.24782
+
+External Links: Link,
+Document
+
+Cited by: §2.1.
+
+P. Dasigi, K. Lo, I. Beltagy, A. Cohan, N. A. Smith, and M. Gardner (2021)
+A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers.
+
+In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2021, Online, June 6-11, 2021, K. Toutanova, A. Rumshisky, L. Zettlemoyer, D. Hakkani-Tür, I. Beltagy, S. Bethard, R. Cotterell, T. Chakraborty, and Y. Zhou (Eds.),
+
+pp. 4599–4610.
+
+External Links: Link,
+Document
+
+Cited by: Table 3,
+§5,
+§6.1.
+
+Y. Ding, L. L. Zhang, C. Zhang, Y. Xu, N. Shang, J. Xu, F. Yang, and M. Yang (2024)
+LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens.
+
+In Forty-first International Conference on Machine Learning, ICML 2024, Vienna, Austria, July 21-27, 2024,
+
+External Links: Link
+
+Cited by: §2.2.
+
+K. Dong, D. Deik, Y. Lee, H. Zhang, X. Li, C. Zhang, and Y. Liu (2024)
+MC-indexing: Effective Long Document Retrieval via Multi-view Content-aware Indexing.
+
+In Findings of the Association for Computational Linguistics: EMNLP 2024, Miami, Florida, USA, November 12-16, 2024, Y. Al-Onaizan, M. Bansal, and Y. Chen (Eds.),
+
+pp. 2673–2691.
+
+External Links: Link,
+Document
+
+Cited by: §2.1.
+
+A. Dubey, A. Jauhri, A. Pandey, A. Kadian, A. Al-Dahle, A. Letman, A. Mathur, A. Schelten, A. Yang, A. Fan, A. Goyal, A. Hartshorn, A. Yang, A. Mitra, A. Sravankumar, A. Korenev, A. Hinsvark, A. Rao, A. Zhang, A. Rodriguez, A. Gregerson, A. Spataru, B. Rozière, B. Biron, B. Tang, B. Chern, C. Caucheteux, C. Nayak, C. Bi, C. Marra, C. McConnell, C. Keller, C. Touret, C. Wu, C. Wong, C. C. Ferrer, C. Nikolaidis, D. Allonsius, D. Song, D. Pintz, D. Livshits, D. Esiobu, D. Choudhary, D. Mahajan, D. Garcia-Olano, D. Perino, D. Hupkes, E. Lakomkin, E. AlBadawy, E. Lobanova, E. Dinan, E. M. Smith, F. Radenovic, F. Zhang, G. Synnaeve, G. Lee, G. L. Anderson, G. Nail, G. Mialon, G. Pang, G. Cucurell, H. Nguyen, H. Korevaar, H. Xu, H. Touvron, I. Zarov, I. A. Ibarra, I. M. Kloumann, I. Misra, I. Evtimov, J. Copet, J. Lee, J. Geffert, J. Vranes, J. Park, J. Mahadeokar, J. Shah, J. v. d. Linde, J. Billock, J. Hong, J. Lee, J. Fu, J. Chi, J. Huang, J. Liu, J. Wang, J. Yu, J. Bitton, J. Spisak, J. Park, J. Rocca, J. Johnstun, J. Saxe, J. Jia, K. V. Alwala, K. Upasani, K. Plawiak, K. Li, K. Heafield, K. Stone, and e. al (2024)
+The Llama 3 Herd of Models.
+
+CoRR abs/2407.21783.
+
+Note: arXiv: 2407.21783
+
+External Links: Link,
+Document
+
+Cited by: §1,
+§3,
+§5,
+§6.1.
+
+Z. Fountas, M. Benfeghoul, A. Oomerjee, F. Christopoulou, G. Lampouras, H. Bou-Ammar, and J. Wang (2024)
+Human-like Episodic Memory for Infinite Context LLMs.
+
+CoRR abs/2407.09450.
+
+Note: arXiv: 2407.09450
+
+External Links: Link,
+Document
+
+Cited by: §2.2.
+
+[12]
+gkamradt
+
+Gkamradt/LLMTest_needleinahaystack: Doing simple retrieval from LLM models at various context lengths to measure accuracy.
+
+External Links: Link
+
+Cited by: §3.
+
+M. Günther, I. Mohr, B. Wang, and H. Xiao (2024)
+Late Chunking: Contextual Chunk Embeddings Using Long-Context Embedding Models.
+
+CoRR abs/2409.04701.
+
+Note: arXiv: 2409.04701
+
+External Links: Link,
+Document
+
+Cited by: §2.1.
+
+X. Ho, A. D. Nguyen, S. Sugawara, and A. Aizawa (2020)
+Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps.
+
+In Proceedings of the 28th International Conference on Computational Linguistics, COLING 2020, Barcelona, Spain (Online), December 8-13, 2020, D. Scott, N. Bel, and C. Zong (Eds.),
+
+pp. 6609–6625.
+
+External Links: Link,
+Document
+
+Cited by: §6.1.
+
+M. Honnibal, I. Montani, S. Van Landeghem, and A. Boyd (2020)
+spaCy: Industrial-strength Natural Language Processing in Python.
+
+External Links: Document
+
+Cited by: §4.4.
+
+A. Q. Jiang, A. Sablayrolles, A. Mensch, C. Bamford, D. S. Chaplot, D. d. L. Casas, F. Bressand, G. Lengyel, G. Lample, L. Saulnier, L. R. Lavaud, M. Lachaux, P. Stock, T. L. Scao, T. Lavril, T. Wang, T. Lacroix, and W. E. Sayed (2023)
+Mistral 7B.
+
+CoRR abs/2310.06825.
+
+Note: arXiv: 2310.06825
+
+External Links: Link,
+Document
+
+Cited by: §1,
+§3,
+§5,
+§6.1.
+
+H. Jin, X. Han, J. Yang, Z. Jiang, Z. Liu, C. Chang, H. Chen, and X. Hu (2024)
+LLM Maybe LongLM: SelfExtend LLM Context Window Without Tuning.
+
+In Forty-first International Conference on Machine Learning, ICML 2024, Vienna, Austria, July 21-27, 2024,
+
+External Links: Link
+
+Cited by: §2.2.
+
+V. Karpukhin, B. Oguz, S. Min, P. S. H. Lewis, L. Wu, S. Edunov, D. Chen, and W. Yih (2020)
+Dense Passage Retrieval for Open-Domain Question Answering.
+
+In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing, EMNLP 2020, Online, November 16-20, 2020, B. Webber, T. Cohn, Y. He, and Y. Liu (Eds.),
+
+pp. 6769–6781.
+
+External Links: Link,
+Document
+
+Cited by: §2.1,
+item (b).
+
+W. Kwon, Z. Li, S. Zhuang, Y. Sheng, L. Zheng, C. H. Yu, J. E. Gonzalez, H. Zhang, and I. Stoica (2023)
+Efficient Memory Management for Large Language Model Serving with PagedAttention.
+
+In Proceedings of the ACM SIGOPS 29th Symposium on Operating Systems Principles,
+
+Cited by: §6.1.
+
+Y. Lee, K. Lee, S. Park, D. Hwang, J. Kim, H. Lee, and M. Lee (2023)
+QASA: Advanced Question Answering on Scientific Articles.
+
+In International Conference on Machine Learning, ICML 2023, 23-29 July 2023, Honolulu, Hawaii, USA, A. Krause, E. Brunskill, K. Cho, B. Engelhardt, S. Sabato, and J. Scarlett (Eds.),
+
+Proceedings of Machine Learning Research, Vol. 202, pp. 19036–19052.
+
+External Links: Link
+
+Cited by: Table 3,
+§6.1.
+
+P. S. H. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. Küttler, M. Lewis, W. Yih, T. Rocktäschel, S. Riedel, and D. Kiela (2020)
+Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+
+In Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual, H. Larochelle, M. Ranzato, R. Hadsell, M. Balcan, and H. Lin (Eds.),
+
+External Links: Link
+
+Cited by: §1.
+
+N. F. Liu, K. Lin, J. Hewitt, A. Paranjape, M. Bevilacqua, F. Petroni, and P. Liang (2024)
+Lost in the Middle: How Language Models Use Long Contexts.
+
+Trans. Assoc. Comput. Linguistics 12, pp. 157–173.
+
+External Links: Link,
+Document
+
+Cited by: §1.
+
+X. Liu, R. Li, Z. Liu, Q. Guo, Y. Song, K. Lv, H. Yan, L. Li, Q. Liu, and X. Qiu (2025)
+ReAttention: Training-Free Infinite Context with Finite Attention Scope.
+
+In The Thirteenth International Conference on Learning Representations, ICLR 2025, Singapore, April 24-28, 2025,
+
+External Links: Link
+
+Cited by: §2.2.
+
+Y. Lu, J. N. Yan, S. Yang, J. T. Chiu, S. Ren, F. Yuan, W. Zhao, Z. Wu, and A. M. Rush (2024)
+A Controlled Study on Long Context Extension and Generalization in LLMs.
+
+CoRR abs/2409.12181.
+
+Note: arXiv: 2409.12181
+
+External Links: Link,
+Document
+
+Cited by: §1.
+
+A. Maharana, D. Lee, S. Tulyakov, M. Bansal, F. Barbieri, and Y. Fang (2024)
+Evaluating Very Long-Term Conversational Memory of LLM Agents.
+
+In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2024, Bangkok, Thailand, August 11-16, 2024, L. Ku, A. Martins, and V. Srikumar (Eds.),
+
+pp. 13851–13870.
+
+External Links: Link,
+Document
+
+Cited by: §1.
+
+J. Monteiro, P. Noël, É. Marcotte, S. R. Mudumba, V. Zantedeschi, D. Vázquez, N. Chapados, C. Pal, and P. Taslakian (2024)
+RepLiQA: A Question-Answering Dataset for Benchmarking LLMs on Unseen Reference Content.
+
+In Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, NeurIPS 2024, Vancouver, BC, Canada, December 10 - 15, 2024, A. Globersons, L. Mackey, D. Belgrave, A. Fan, U. Paquet, J. M. Tomczak, and C. Zhang (Eds.),
+
+External Links: Link
+
+Cited by: Table 3,
+§6.1.
+
+J. X. Morris and A. M. Rush (2024)
+Contextual Document Embeddings.
+
+CoRR abs/2410.02525.
+
+Note: arXiv: 2410.02525
+
+External Links: Link,
+Document
+
+Cited by: §2.1.
+
+N. Muennighoff, H. Su, L. Wang, N. Yang, F. Wei, T. Yu, A. Singh, and D. Kiela (2025)
+Generative Representational Instruction Tuning.
+
+In The Thirteenth International Conference on Learning Representations, ICLR 2025, Singapore, April 24-28, 2025,
+
+External Links: Link
+
+Cited by: §2.1,
+item (b).
+
+J. Ni, C. Qu, J. Lu, Z. Dai, G. H. Ábrego, J. Ma, V. Y. Zhao, Y. Luan, K. B. Hall, M. Chang, and Y. Yang (2022)
+Large Dual Encoders Are Generalizable Retrievers.
+
+In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, EMNLP 2022, Abu Dhabi, United Arab Emirates, December 7-11, 2022, Y. Goldberg, Z. Kozareva, and Y. Zhang (Eds.),
+
+pp. 9844–9855.
+
+External Links: Link,
+Document
+
+Cited by: §2.1,
+item (b).
+
+OpenAI (2023)
+GPT-4 Technical Report.
+
+CoRR abs/2303.08774.
+
+Note: arXiv: 2303.08774
+
+External Links: Link,
+Document
+
+Cited by: §1.
+
+OpenAI (2025)
+GPT-5 System Card.
+
+Technical report
+
+External Links: Link
+
+Cited by: §1,
+§6.1.
+
+S. E. Robertson and H. Zaragoza (2009)
+The Probabilistic Relevance Framework: BM25 and Beyond.
+
+Found. Trends Inf. Retr. 3 (4), pp. 333–389.
+
+External Links: Link,
+Document
+
+Cited by: §2.1,
+item (a).
+
+N. Shang, L. L. Zhang, S. Wang, G. Zhang, G. Lopez, F. Yang, W. Chen, and M. Yang (2025)
+LongRoPE2: Near-Lossless LLM Context Window Scaling.
+
+CoRR abs/2502.20082.
+
+Note: arXiv: 2502.20082
+
+External Links: Link,
+Document
+
+Cited by: §2.2.
+
+Q. Sun, M. Pickett, A. K. Nain, and L. Jones (2024)
+Transformer Layers as Painters.
+
+CoRR abs/2407.09298.
+
+Note: arXiv: 2407.09298
+
+External Links: Link,
+Document
+
+Cited by: §2.3.
+
+H. Trivedi, N. Balasubramanian, T. Khot, and A. Sabharwal (2022)
+\unicode9835 MuSiQue: Multihop Questions via Single-hop Question Composition.
+
+Trans. Assoc. Comput. Linguistics 10, pp. 539–554.
+
+External Links: Link,
+Document
+
+Cited by: §3,
+§5,
+§6.1.
+
+J. Vig and Y. Belinkov (2019)
+Analyzing the Structure of Attention in a Transformer Language Model.
+
+In Proceedings of the 2019 ACL Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP, BlackboxNLP@ACL 2019, Florence, Italy, August 1, 2019, T. Linzen, G. Chrupala, Y. Belinkov, and D. Hupkes (Eds.),
+
+pp. 63–76.
+
+External Links: Link,
+Document
+
+Cited by: §2.3.
+
+K. Wang, N. Reimers, and I. Gurevych (2024)
+DAPR: A Benchmark on Document-Aware Passage Retrieval.
+
+In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2024, Bangkok, Thailand, August 11-16, 2024, L. Ku, A. Martins, and V. Srikumar (Eds.),
+
+pp. 4313–4330.
+
+External Links: Link,
+Document
+
+Cited by: Table 3,
+§6.1.
+
+J. Willette, H. Lee, Y. Lee, M. Jeon, and S. J. Hwang (2025)
+Training Free Exponential Context Extension via Cascading KV Cache.
+
+In The Thirteenth International Conference on Learning Representations, ICLR 2025, Singapore, April 24-28, 2025,
+
+External Links: Link
+
+Cited by: §2.2,
+§3,
+§4.2.
+
+C. Xiao, P. Zhang, X. Han, G. Xiao, Y. Lin, Z. Zhang, Z. Liu, S. Han, and M. Sun (2024)
+InfLLM: Unveiling the Intrinsic Capacity of LLMs for Understanding Extremely Long Sequences with Training-Free Memory.
+
+CoRR abs/2402.04617.
+
+Note: arXiv: 2402.04617
+
+External Links: Link,
+Document
+
+Cited by: §2.2.
+
+L. Xiong, C. Xiong, Y. Li, K. Tang, J. Liu, P. N. Bennett, J. Ahmed, and A. Overwijk (2021)
+Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval.
+
+In 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021,
+
+External Links: Link
+
+Cited by: §2.1,
+item (b).
+
+X. Xu, J. Li, H. Chen, Z. Lin, J. Han, and G. Ding (2025)
+Extending LLM Context Window with Adaptive Grouped Positional Encoding: A Training-Free Method.
+
+In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), ACL 2025, Vienna, Austria, July 27 - August 1, 2025, W. Che, J. Nabende, E. Shutova, and M. T. Pilehvar (Eds.),
+
+pp. 573–587.
+
+External Links: Link
+
+Cited by: §2.2.
+
+A. Yang, B. Yang, B. Zhang, B. Hui, B. Zheng, B. Yu, C. Li, D. Liu, F. Huang, H. Wei, H. Lin, J. Yang, J. Tu, J. Zhang, J. Yang, J. Yang, J. Zhou, J. Lin, K. Dang, K. Lu, K. Bao, K. Yang, L. Yu, M. Li, M. Xue, P. Zhang, Q. Zhu, R. Men, R. Lin, T. Li, T. Xia, X. Ren, X. Ren, Y. Fan, Y. Su, Y. Zhang, Y. Wan, Y. Liu, Z. Cui, Z. Zhang, and Z. Qiu (2024)
+Qwen2.5 Technical Report.
+
+CoRR abs/2412.15115.
+
+Note: arXiv: 2412.15115
+
+External Links: Link,
+Document
+
+Cited by: §3,
+§6.1.
+
+Z. Yang, P. Qi, S. Zhang, Y. Bengio, W. W. Cohen, R. Salakhutdinov, and C. D. Manning (2018)
+HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering.
+
+In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, Brussels, Belgium, October 31 - November 4, 2018, E. Riloff, D. Chiang, J. Hockenmaier, and J. Tsujii (Eds.),
+
+pp. 2369–2380.
+
+External Links: Link,
+Document
+
+Cited by: §6.1.
+
+X. Ye, Z. Wang, and J. Wang (2025)
+Infinite Retrieval: Attention Enhanced LLMs in Long-Context Processing.
+
+CoRR abs/2502.12962.
+
+Note: arXiv: 2502.12962
+
+External Links: Link,
+Document
+
+Cited by: §1,
+§2.3.
+
+X. Zhang, Y. Zhang, D. Long, W. Xie, Z. Dai, J. Tang, H. Lin, B. Yang, P. Xie, F. Huang, M. Zhang, W. Li, and M. Zhang (2024)
+mGTE: Generalized Long-Context Text Representation and Reranking Models for Multilingual Text Retrieval.
+
+In Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: EMNLP 2024 - Industry Track, Miami, Florida, USA, November 12-16, 2024, F. Dernoncourt, D. Preotiuc-Pietro, and A. Shimorina (Eds.),
+
+pp. 1393–1412.
+
+External Links: Link
+
+Cited by: §2.1,
+item (b).
+
+Y. Zhang, M. Li, D. Long, X. Zhang, H. Lin, B. Yang, P. Xie, A. Yang, D. Liu, J. Lin, F. Huang, and J. Zhou (2025)
+Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models.
+
+CoRR abs/2506.05176.
+
+Note: arXiv: 2506.05176
+
+External Links: Link,
+Document
+
+Cited by: §5,
+item (b).
+
+Appendix A Details of LongBench-v2-Retrieval
+
+A.1 Comparison with Existing Long Document Retrieval Datasets
+
+Dataset
+Size
+Avg Length
+Max Length
+Avg Paragraph Count
+Max Paragraph Count
+Avg Number of Evidences
+
+QASA Lee et al. (2023)
+
+518
+4665.09
+15796
+52.45
+186
+1.55
+
+Qasper Dasigi et al. (2021)
+
+1307
+3442.26
+21043
+61.94
+328
+1.75
+
+RepLiQA Monteiro et al. (2024)
+
+89770
+970.50
+1799
+22.31
+58
+1.00
+
+DAPR (ConditionalQA) Wang et al. (2024)
+
+2517
+1298.13
+7733
+105.04
+559
+4.08
+
+DAPR (MS MARCO)
+98466
+1059.75
+152515
+4.05
+43
+1.03
+
+DAPR (NaturalQuestions)
+7220
+2438.86
+28871
+30.14
+535
+1.11
+
+LongBench-v2-Retrieval (Ours)
+140
+106025.49
+350135
+2460.23
+13944
+2.59
+
+Table 3: Comparison of long document retrieval retrieval datasets. "Average Length" and "Maximum Length" are measured in number of words. For datasets consisting of multiple splits, we count the total number of samples across all splits.
+
+Table 3 compares the lengths and number of evidences of existing long document retrieval datasets with our newly constructed dataset. The average document length of our dataset is significantly larger than other existing datasets, while the average number of e
+
+... (内容已截断)
+
+================================================================================

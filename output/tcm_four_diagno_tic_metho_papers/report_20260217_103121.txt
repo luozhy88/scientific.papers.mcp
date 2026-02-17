@@ -1,0 +1,43 @@
+最新文献搜索报告（多源 PDF 增强版 2.6）
+===========================================
+
+关键词: TCM four diagnostic methods
+时间范围: 最近 50 天 (2025-12-29 至 2026-02-17)
+总论文: 5 | 有摘要: 5 | PDF下载: 1 (2.2 MB)
+
+============================================================
+
+
+[1] Clinical Efficacy of Zhang’s Formula No. 2 Fumigation Combined with Blood Flow Restriction Training in Middle-Aged and Elderly Patients with Early-Stage Knee Osteoarthritis and Liver-Kidney Deficiency:A Randomized Controlled Trial Protocol (Preprint)
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.2196/preprints.91920
+  摘要: Background: Knee osteoarthritis (KOA) is a prevalent degenerative joint disorder that causes chronic pain and functional impairment, particularly among middle-aged and older adults. In early-stage KOA, patients often exhibit reduced periarticular muscle strength and compromised joint function. Witho
+--------------------------------------------------
+
+[2] Spatial accessibility and equity of traditional Chinese medicine hospitals in Eastern China: application of improved two-step floating catchment area method
+  来源: openalex | 日期: 2026-02-05 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fpubh.2026.1741264
+  摘要: Purpose Despite the growing role of Traditional Chinese Medicine (TCM) in China, little is known about the spatial accessibility and equity of TCM hospital resources at high geographic resolution. This study quantifies the spatial accessibility (SA) of TCM hospitals and assess the equity in resource
+--------------------------------------------------
+
+[3] Traditional Chinese Medicine Modernization in Diagnosis and Treatment: Utilizing Artificial Intelligence and Nanotechnology
+  来源: openalex | 日期: 2026-02-01 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mco2.70596
+  摘要: ABSTRACT Traditional Chinese medicine (TCM), consisting of a complete TCM diagnosis and treatment system, is a valuable treasure in the long river of Chinese clinical history. However, the subjective diagnosis, ambiguous mechanisms, and complex formulas make it slightly lag behind the development of
+--------------------------------------------------
+
+[4] An approach to medium-term coastal morphological modelling
+  来源: openalex | 日期: 2026-01-16 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: http://resolver.tudelft.nl/uuid:27a1ffa0-580e-4eae-907b-ce6f901e652e
+  摘要: This thesis presents the development and validation of a novel three-dimensional sediment transport and morphological numerical model suitable for coastal regions. The thesis discusses the modelling of both suspended and bed-load transport of non-cohesive sediment, important aspects of the morpholog
+--------------------------------------------------
+
+[5] A study on the correlation between TCM syndrome types, TCM symptoms and myocardial injury markers in patients with coronary heart disease
+  来源: openalex | 日期: 2026-01-12 | PDF: ✔ openalex_a_tudy_on_the_correl_w7122595779.pdf (2.2 MB, 来源: original)
+
+  摘要: Background Coronary heart disease (CHD) is the leading cause of death from cardiovascular diseases. Previous studies related to traditional Chinese medicine (TCM) mostly lacked objective basis for TCM syndrome types, which may affect the accuracy of syndrome differentiation. Objective To explore the
+--------------------------------------------------

@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-02-14T04:32:04.814Z",
+  "output_dir": "/Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output",
+  "pdf_dir": "/Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs",
+  "tests": {},
+  "text_files": [
+    {
+      "name": "EuropePMC___Cancer_Research.txt",
+      "size_kb": "0.1"
+    },
+    {
+      "name": "OpenAlex___Artificial_Intelligence.txt",
+      "size_kb": "2.1"
+    },
+    {
+      "name": "arXiv___Latest_AI_Papers.txt",
+      "size_kb": "1.7"
+    },
+    {
+      "name": "arXiv___Machine_Learning_Search.txt",
+      "size_kb": "31.2"
+    },
+    {
+      "name": "arXiv___Quantum_Computing_Search.txt",
+      "size_kb": "1.7"
+    },
+    {
+      "name": "arxiv_latest_ai_results.txt",
+      "size_kb": "0.0"
+    },
+    {
+      "name": "arxiv_ml_results.txt",
+      "size_kb": "21.3"
+    },
+    {
+      "name": "test1_arxiv_ml.txt",
+      "size_kb": "62.1"
+    },
+    {
+      "name": "test2_core_covid19.txt",
+      "size_kb": "10.9"
+    },
+    {
+      "name": "test3_arxiv_latest_ai.txt",
+      "size_kb": "146.9"
+    },
+    {
+      "name": "test4_openalex_ai.txt",
+      "size_kb": "2.4"
+    }
+  ],
+  "json_files": [
+    {
+      "name": "EuropePMC___Cancer_Research.json",
+      "size_kb": "0.0"
+    },
+    {
+      "name": "OpenAlex___Artificial_Intelligence.json",
+      "size_kb": "0.6"
+    },
+    {
+      "name": "arXiv___Latest_AI_Papers.json",
+      "size_kb": "1.2"
+    },
+    {
+      "name": "arXiv___Machine_Learning_Search.json",
+      "size_kb": "0.8"
+    },
+    {
+      "name": "arXiv___Quantum_Computing_Search.json",
+      "size_kb": "1.1"
+    },
+    {
+      "name": "arxiv_ml_results.json",
+      "size_kb": "0.8"
+    },
+    {
+      "name": "final_report.json",
+      "size_kb": "3.5"
+    },
+    {
+      "name": "test1_arxiv_ml.json",
+      "size_kb": "1.1"
+    },
+    {
+      "name": "test2_core_covid19.json",
+      "size_kb": "1.3"
+    },
+    {
+      "name": "test3_arxiv_latest_ai.json",
+      "size_kb": "1.6"
+    },
+    {
+      "name": "test4_openalex_ai.json",
+      "size_kb": "1.0"
+    }
+  ],
+  "pdf_files": [
+    {
+      "name": "arxiv_Changing_Data_Sources_in_the_Age_of_2306.04338.pdf",
+      "size_kb": "148.8"
+    },
+    {
+      "name": "arxiv_Changing_Data_Sources_in_the_Age_of_Mach_2306.04338.pdf",
+      "size_kb": "148.8"
+    },
+    {
+      "name": "arxiv_Entangling_Disciplines__Causality___2506.15909.pdf",
+      "size_kb": "2927.4"
+    },
+    {
+      "name": "arxiv_Physics_Inspired_Interpretability_O_2304.02381.pdf",
+      "size_kb": "265.2"
+    },
+    {
+      "name": "arxiv_Physics_Inspired_Interpretability_Of_Mac_2304.02381.pdf",
+      "size_kb": "265.2"
+    },
+    {
+      "name": "arxiv_Quantum_Computing__Vision_and_Chall_2403.02240.pdf",
+      "size_kb": "721.8"
+    },
+    {
+      "name": "arxiv_Scaling_Verification_Can_Be_More_Ef_2602.12281.pdf",
+      "size_kb": "4778.4"
+    },
+    {
+      "name": "arxiv_UniT__Unified_Multimodal_Chain_of_T_2602.12279.pdf",
+      "size_kb": "7712.2"
+    }
+  ],
+  "total_pdfs": 8
+}

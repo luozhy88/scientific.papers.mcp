@@ -1,0 +1,52 @@
+[
+  {
+    "id": "85660944",
+    "title": "Finding Covid-19 from Chest X-rays using Deep Learning on a Small\n  Dataset",
+    "authors": [
+      "Goldgof, Dmitry B.",
+      "Goldgof, Gregory M.",
+      "Hall, Lawrence O.",
+      "Paul, Rahul"
+    ],
+    "date": "2020-05-19",
+    "pdf_url": "http://arxiv.org/abs/2004.02060",
+    "text_length": 0,
+    "text_truncated": false,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  },
+  {
+    "id": "85957381",
+    "title": "Early Screening of SARS-CoV-2 by Intelligent Analysis of X-Ray Images",
+    "authors": [
+      "Díaz-Chito, K.",
+      "Gil, D.",
+      "Hernández-Sabaté, A.",
+      "Sánchez, C."
+    ],
+    "date": "2020-05-27",
+    "pdf_url": "http://arxiv.org/abs/2005.13928",
+    "text_length": 0,
+    "text_truncated": false,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  },
+  {
+    "id": "85806153",
+    "title": "COVID-CT-Dataset: A CT Scan Dataset about COVID-19",
+    "authors": [
+      "He, Xuehai",
+      "Xie, Pengtao",
+      "Yang, Xingyi",
+      "Zhang, Shanghang",
+      "Zhang, Yichen",
+      "Zhao, Jinyu"
+    ],
+    "date": "2020-06-16",
+    "pdf_url": "http://arxiv.org/abs/2003.13865",
+    "text_length": 9484,
+    "text_truncated": false,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  }
+]

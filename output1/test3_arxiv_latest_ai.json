@@ -1,0 +1,63 @@
+[
+  {
+    "id": "2602.12281",
+    "title": "Scaling Verification Can Be More Effective than Scaling Policy Learning for Vision-Language-Action Alignment",
+    "authors": [
+      "Jacky Kwok",
+      "Xilun Zhang",
+      "Mengdi Xu",
+      "Yuejiang Liu",
+      "Azalia Mirhoseini",
+      "Chelsea Finn",
+      "Marco Pavone"
+    ],
+    "date": "2026-02-12",
+    "pdf_url": "https://arxiv.org/pdf/2602.12281v1.pdf",
+    "text_length": 79842,
+    "text_truncated": true,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  },
+  {
+    "id": "2602.12279",
+    "title": "UniT: Unified Multimodal Chain-of-Thought Test-time Scaling",
+    "authors": [
+      "Leon Liangyu Chen",
+      "Haoyu Ma",
+      "Zhipeng Fan",
+      "Ziqi Huang",
+      "Animesh Sinha",
+      "Xiaoliang Dai",
+      "Jialiang Wang",
+      "Zecheng He",
+      "Jianwei Yang",
+      "Chunyuan Li",
+      "Junzhe Sun",
+      "Chu Wang",
+      "Serena Yeung-Levy",
+      "Felix Juefei-Xu"
+    ],
+    "date": "2026-02-12",
+    "pdf_url": "https://arxiv.org/pdf/2602.12279v1.pdf",
+    "text_length": 46943,
+    "text_truncated": false,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  },
+  {
+    "id": "2602.12278",
+    "title": "AttentionRetriever: Attention Layers are Secretly Long Document Retrievers",
+    "authors": [
+      "David Jiahao Fu",
+      "Lam Thanh Do",
+      "Jiayu Li",
+      "Kevin Chen-Chuan Chang"
+    ],
+    "date": "2026-02-12",
+    "pdf_url": "https://arxiv.org/pdf/2602.12278v1.pdf",
+    "text_length": 62223,
+    "text_truncated": true,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "W7128674828",
+    "title": "Clinical Efficacy of Zhang’s Formula No. 2 Fumigation Combined with Blood Flow Restriction Training in Middle-Aged and Elderly Patients with Early-Stage Knee Osteoarthritis and Liver-Kidney Deficiency:A Randomized Controlled Trial Protocol (Preprint)",
+    "authors": "Huihui Yu; Xiangying Yang; Xiangying Liu; Luping Zhang; Menghua Qi; Li Ning; Li Zhang",
+    "date": "2026-02-12",
+    "text": "",
+    "days_ago": 5,
+    "source": "openalex",
+    "abstract": "Background: Knee osteoarthritis (KOA) is a prevalent degenerative joint disorder that causes chronic pain and functional impairment, particularly among middle-aged and older adults. In early-stage KOA, patients often exhibit reduced periarticular muscle strength and compromised joint function. Without timely intervention, the condition may progress to irreversible structural damage. In Traditional Chinese Medicine (TCM), this stage frequently corresponds to the Liver-Kidney Deficiency pattern, characterized by insufficient nourishment of tendons and bones and diminished muscular function—representing a critical window for therapeutic intervention. Herbal fumigation and Blood Flow Restriction Training (BFRT) each offer advantages in improving local circulation and enhancing muscle strength, respectively; however, clinical evidence for their combined application remains insufficient. Objective: This study aims to systematically evaluate the clinical efficacy and safety of Zhang’s Formula No. 2 fumigation combined with BFRT in middle-aged and elderly patients diagnosed with early-stage KOA and TCM-defined Liver-Kidney Deficiency syndrome. Methods: This is a prospective, single-center, randomized, single-blind, four-arm, parallel-group controlled clinical trial. A total of 140 patients with KOA meeting both the Kellgren-Lawrence grade I–II radiographic criteria and the TCM diagnostic criteria for Liver-Kidney Deficiency syndrome (as outlined in the Guiding Principles for Clinical Research on New Chinese Medicines) will be enrolled. Participants will be randomly assigned in a 1:1:1:1 ratio to one of four groups:Control group (usual care), Fumigation group, BFRT group, or Combined intervention group. The intervention period will last 8 weeks, with follow-up assessments conducted at week 12. The primary outcome is the total score of the Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC). Secondary outcomes include: pain intensity measured by the Visual Analogue Scale (VAS), TCM syndrome severity score, the 36-Item Short Form Health Survey (SF-36), knee extensor muscle strength, and the Clinical Global Impression of Change (CGI-C). All outcomes will be assessed by blinded evaluators at baseline (week 0) and at weeks 4, 8, and 12. Results: Participant recruitment is scheduled to begin in January 2026, with enrollment and interventions expected to be completed by June 2027. Data collection will conclude by October 2027, and primary statistical analysis and manuscript preparation are anticipated in early 2028. Conclusions: Through a rigorously designed randomized controlled trial, this study will investigate the feasibility, efficacy, and safety of an integrative intervention combining TCM external therapy (herbal fumigation) with modern low-load resistance training (BFRT) in patients with early-stage KOA and Liver-Kidney Deficiency. The findings are expected to inform clinical practice and support further research into non-pharmacological, multimodal strategies for managing early KOA within an integrative medicine framework. Clinical Trial: International Traditional Medicine Clinical Trial Registry (ChiCTR), Registration Number: ChiCTR2200066875. Date Registered: December 15, 2025. https://itmctr.ccebtcm.org.cn/  Citation Please cite as: Yu H, Yang X, Liu X, Zhang L, Qi M, Ning L, Zhang L Clinical Efficacy of Zhang’s Formula No. 2 Fumigation Combined with Blood Flow Restriction Training in Middle-Aged and Elderly Patients with Early-Stage Knee Osteoarthritis and Liver-Kidney Deficiency:A Randomized Controlled Trial Protocol JMIR Preprints. 12/02/2026:91920 DOI: 10.2196/preprints.91920 URL: https://preprints.jmir.org/preprint/91920",
+    "pdf_ok": false,
+    "pdf_blocked": false,
+    "openalex_pdf": "https://doi.org/10.2196/preprints.91920"
+  },
+  {
+    "id": "W7127990738",
+    "title": "Spatial accessibility and equity of traditional Chinese medicine hospitals in Eastern China: application of improved two-step floating catchment area method",
+    "authors": "C. Xu; Tingyu Mu; Yulian Liu; Rixiang Xu",
+    "date": "2026-02-05",
+    "text": "",
+    "days_ago": 12,
+    "source": "openalex",
+    "abstract": "Purpose Despite the growing role of Traditional Chinese Medicine (TCM) in China, little is known about the spatial accessibility and equity of TCM hospital resources at high geographic resolution. This study quantifies the spatial accessibility (SA) of TCM hospitals and assess the equity in resource distribution across Zhejiang Province to identify distributional disparities and inform policy responses. Methods We applied a Two-Step Floating Catchment Area (2SFCA) framework augmented with navigation-derived travel times from a real-time route API to estimate SA for 99 public TCM hospitals and 25,601 residential demand points; equity was evaluated using Gini coefficients for four core resources (TCM physicians, TCM pharmacists, inpatient beds, and high-value TCM equipment), and spatial clustering was examined via Moran's I. Results Among the 25,601 residential points analyzed, 93.47% were within a 60 min driving distance of a TCM hospital, covering 97.21% of the provincial population. However, accessibility varied considerably by municipality: Hangzhou exhibited the highest SA scores, while Lishui demonstrated consistently poor equity across all resource indicators. Gini coefficients ranged from 0.365 for TCM pharmacists (indicating proper equity) to 0.505 for medical equipment (indicating high inequity). Spatial autocorrelation analysis revealed distinct clustering patterns, with accessibility shaped by both topographical constraints and disparities in resource allocation. Conclusion While Zhejiang achieves high overall SA to TCM hospitals, substantial inequities in resource allocation remain. Policy implications include targeted redistribution of high-value assets (for example, regional equipment-sharing consortia), deployment of mobile diagnostic and treatment units for remote and insular areas, incentives to attract TCM practitioners to underserved localities, and strengthening county-level service capacity to reduce intra-municipal disparities. These measures would help translate broad coverage into more equitable access to TCM services.",
+    "pdf_ok": false,
+    "pdf_blocked": false,
+    "openalex_pdf": "https://doi.org/10.3389/fpubh.2026.1741264"
+  },
+  {
+    "id": "W7127603085",
+    "title": "Traditional Chinese Medicine Modernization in Diagnosis and Treatment: Utilizing Artificial Intelligence and Nanotechnology",
+    "authors": "Wenqi Yu; Mao Chen; Xueqi Tan; Xi Wei; Fan Sun; Hua Yan; Xue Xu; Hongcai Shang",
+    "date": "2026-02-01",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mco2.70596",
+    "text": "",
+    "days_ago": 16,
+    "source": "openalex",
+    "abstract": "ABSTRACT Traditional Chinese medicine (TCM), consisting of a complete TCM diagnosis and treatment system, is a valuable treasure in the long river of Chinese clinical history. However, the subjective diagnosis, ambiguous mechanisms, and complex formulas make it slightly lag behind the development of modern medicine. With the emergence of novel technologies such as artificial intelligence (AI) and nanotechnology, TCM modernization has regained its promise of hope. In this review, we provide an overview of applications of AI and nanotechnology to assist TCM modernization. Firstly, we summarize the auxiliary TCM diagnosis approaches based on machine learning and deep learning, which facilitate “four diagnostic methods” (inspection, auscultation–olfaction, inquiry, and pulse palpation) with standard and quantifiable data collection, and objective syndrome differentiation and diagnostic decisions. Secondly, a comprehensive overview of the nanotechnology used to enhance the therapeutic effects of TCM is provided, including optimizing TCM formulas and enhancing active targeting. Finally, we summarize the current challenges, clinical translation, and future perspectives of AI, TCM diagnosis, and nanotechnology. Our review and insights aim to provide valuable guidance for the continued advancement of TCM modernization.",
+    "pdf_ok": false,
+    "pdf_blocked": false,
+    "openalex_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mco2.70596"
+  },
+  {
+    "id": "W2132441680",
+    "title": "An approach to medium-term coastal morphological modelling",
+    "authors": "Giles Lesser",
+    "date": "2026-01-16",
+    "pdf_url": "http://resolver.tudelft.nl/uuid:27a1ffa0-580e-4eae-907b-ce6f901e652e",
+    "text": "",
+    "days_ago": 32,
+    "source": "openalex",
+    "abstract": "This thesis presents the development and validation of a novel three-dimensional sediment transport and morphological numerical model suitable for coastal regions. The thesis discusses the modelling of both suspended and bed-load transport of non-cohesive sediment, important aspects of the morphological updating scheme, and approaches used to model the three-dimensional effects of waves on coastal hydrodynamics.\\n\\nResults of several validation studies are presented and the model is shown to perform well in several theoretical, laboratory, and full scale test cases. Application of the model and acceleration techniques to the complex and dynamic entrance to Willapa Bay, WA, USA is also critically analysed and discussed. A new method to select a representative morphological tide for coastal environments containing significant diurnal tidal energy is presented.",
+    "pdf_ok": false,
+    "pdf_blocked": false,
+    "openalex_pdf": "http://resolver.tudelft.nl/uuid:27a1ffa0-580e-4eae-907b-ce6f901e652e"
+  },
+  {
+    "id": "W7122595779",
+    "title": "A study on the correlation between TCM syndrome types, TCM symptoms and myocardial injury markers in patients with coronary heart disease",
+    "authors": "Zhou Mi; L.I. Jieyun; Xiao Xin ‘ang; Lim Jiekee; X.U. Zhaoxia",
+    "date": "2026-01-12",
+    "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1669239/pdf",
+    "text": "",
+    "days_ago": 36,
+    "source": "openalex",
+    "abstract": "Background Coronary heart disease (CHD) is the leading cause of death from cardiovascular diseases. Previous studies related to traditional Chinese medicine (TCM) mostly lacked objective basis for TCM syndrome types, which may affect the accuracy of syndrome differentiation. Objective To explore the distribution pattern of TCM syndrome types in patients with CHD, analyze its correlation with TCM symptoms and myocardial injury markers. Method This study adopted a cross-sectional research design. A total of 1,503 patients with CHD from January 2023 to January 2025 were included. The clinical and TCM four diagnostic data of the selected patients were systematically collected, aiming to analyze the association between TCM syndrome types and TCM symptoms as well as myocardial injury markers, and to construct and verify the predictive model of TCM syndrome types. Result A total of 1435 patients were included and grouped according to the syndrome types in TCM. The main types were 295 cases (20.5%) of phlegm blocking the heart meridian syndrome, 289 cases (20.1%) of qi and Yin deficiency syndrome, 257 cases (17.9%) of heart and kidney Yin deficiency syndrome, 199 cases (13.8%) of qi deficiency and blood stasis syndrome, 177 cases (12.3%) of qi stagnation and blood stasis syndrome, and 186 cases (12.9%) of heart blood stasis obstruction syndrome. BNP and NT-proBNP were statistically significant differences among different TCM syndrome types ( P &amp;lt; 0.05). Further, unordered multi-class regression analysis was used to compare the differences in TCM symptom indicators among different TCM syndrome types. Meaningful statistical results and TCM symptoms were combined for discriminant analysis of TCM syndrome types (coincidence rate of discrimination = 62.8%), and machine learning models (LGBM, XGBoost, etc.) were used to construct TCM syndrome type prediction models. Ultimately, the best-performing model LGBM (validation set accuracy = 72.51%) was selected and SHAP was used to explain the contribution of the model. Conclusion The combination of TCM symptoms and myocardial injury markers can be used to distinguish and predict the syndrome types of patients.",
+    "pdf_ok": true,
+    "pdf_file": "openalex_a_tudy_on_the_correl_w7122595779.pdf",
+    "pdf_mb": 2.19,
+    "pdf_blocked": false,
+    "pdf_source": "original"
+  }
+]

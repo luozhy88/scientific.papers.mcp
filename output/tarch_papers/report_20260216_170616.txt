@@ -1,0 +1,410 @@
+最新文献搜索报告（多源 PDF 增强版 2.5）
+===========================================
+
+关键词: starch
+时间范围: 最近 250 天 (2025-06-11 至 2026-02-16)
+总论文: 60 | 有摘要: 56 | PDF下载: 7 (31.9 MB)
+
+============================================================
+
+
+[1] Purification, characterization and antibacterial potential of streptococcus-derived protease: Insights into biomedical applications
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.56053/10.s.257
+  摘要: Purification, characterization and antibacterial potential of streptococcus-derived protease: Insights into biomedical applications Authors Hajer Sabah Shabram Applied Sciences Department, University of Technology- Iraq, Baghdad 10066, Iraq Author Entesar Hussain Ali Applied Sciences Department, Uni
+--------------------------------------------------
+
+[2] Formulation and Evaluation of a Combination Tablet Containing Prucalopride Succinate and Elobixibat for the Treatment of Chronic Constipation
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18648087
+  摘要: Abstract This research centers on creating and assessing a combination tablet that includes Prucalopride Succinate and Elobixibat aimed at treating chronic constipation. Prucalopride is a prokinetic medication that improves colonic movement, whereas Elobixibat, an IBAT blocker, helps treat constipat
+--------------------------------------------------
+
+[3] Revealing the Impact of Starch&ndash;Pectin Interactions on the Textural Properties of Different Potato Varieties During Boiling
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/foods15040722
+  摘要: This study aimed to investigate the changes in textural properties of two potato varieties (JZ-226 and XS-6) during boiling and to elucidate the interaction mechanisms within their starch&ndash;pectin composite systems, and their impacts on textural characteristics. The results showed that during th
+--------------------------------------------------
+
+[4] Enhancing the resistant starch content of cassava starch via heat-moisture treatment for application as a prebiotic in chicken feed
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.17632/r839mtn9mj.1
+  摘要: This study aimed to increase the resistant starch (RS) content of cassava starch via heat-moisture treatment (HMT) and evaluate its prebiotic potential in chicken feed.
+--------------------------------------------------
+
+[5] Post‐Heading High Nighttime Temperature Impairs Grain Protein‐Starch Balance and Rice Quality Through Altering Nitrogen Metabolism
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  摘要: ABSTRACT High nighttime temperatures (HNT) tend to diminish rice quality by disrupting assimilate translocation and grain filling process in rice ( Oryza sativa L.). However, there is controversy remains regarding whether source or sink limitation are the primary driver under HNT during grain fillin
+--------------------------------------------------
+
+[6] Developmental Differences and Implications for Small and Large ‘Zesy002’ Kiwifruit
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  摘要: ‘Zesy002’ ( Actinidia chinensis var. chinensis , sold commercially as Zespri SunGold Kiwifruit) now dominates the New Zealand kiwifruit industry and the global market for yellow‐fleshed kiwifruit. It is an inherently larger‐fruited cultivar than the traditional green‐fleshed “Hayward” fruit, with an
+--------------------------------------------------
+
+[7] Enhancing the resistant starch content of cassava starch via heat-moisture treatment for application as a prebiotic in chicken feed
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.17632/r839mtn9mj
+  摘要: This study aimed to increase the resistant starch (RS) content of cassava starch via heat-moisture treatment (HMT) and evaluate its prebiotic potential in chicken feed.
+--------------------------------------------------
+
+[8] Hydrophobicity Strategies of Starch-Based Films: Recent Advances and Perspectives
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/polym18040490
+  摘要: The rapid accumulation of plastic waste and the depletion of fossil resources have intensified global efforts to develop biodegradable polymeric materials derived from renewable feedstocks. In this context, starch-based films have emerged as one of the most promising alternatives to conventional pet
+--------------------------------------------------
+
+[9] Formulation and Evaluation of a Combination Tablet Containing Prucalopride Succinate and Elobixibat for the Treatment of Chronic Constipation
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18648086
+  摘要: Abstract This research centers on creating and assessing a combination tablet that includes Prucalopride Succinate and Elobixibat aimed at treating chronic constipation. Prucalopride is a prokinetic medication that improves colonic movement, whereas Elobixibat, an IBAT blocker, helps treat constipat
+--------------------------------------------------
+
+[10] The Mechanism of Promoting Agarwood Formation in Aquilaria sinensis by Girdling
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/f17020257
+  摘要: Agarwood is highly valued; however, its formation process is relatively slow. In this study, carbon isotope labeling was used to investigate the effects of girdling on agarwood formation. The starch, soluble sugar, and essential oil contents of the stems above the girdle were higher than those of th
+--------------------------------------------------
+
+[11] NATURAL POLYMER-BASED MICROBEADS FOR CONTROLLED DRUG DELIVERY: A COMPREHENSIVE REVIEW
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18638540
+  摘要: In recent times, there has been an increased search for new, safe, and sustainable alternatives to existing pharmaceutical excipients.This is because traditional pharmaceutical excipients synthesized in laboratories are considered toxic and pose adverse environmental concerns. Natural polymers have 
+--------------------------------------------------
+
+[12] Advances in Biopolymers: A Comprehensive Review Towards a Circular Economy
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/su18041983
+  摘要: Biopolymers can be derived from biological sources, including protein blends with plasticizers, starch, enzymatic synthesis, microorganisms, and algae. They are classified into polynucleotides, polysaccharides, and polypeptides, including polyhydroxyalkanoates, polylactic acid, and thermoplastic sta
+--------------------------------------------------
+
+[13] 📜 Special Thesis: The Illusion of Proton Decay and the Dynamic Equilibrium of Neutrino Flow ~Why the Universe Never Ages and the True Identity of Gravity~
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18638282
+  摘要: 💎 The Paradigm Shift: Deciphering the "Illusion of Proton Decay" "We are not decaying; we are being perpetually reborn." In this groundbreaking thesis, Tetsuji Shimei delivers a 1.125% pure masterstroke to the foundations of modern physics. By redefining the very nature of existence through the Temp
+--------------------------------------------------
+
+[14] Polyploidization-Driven Functional Innovation of AGPase Small Subunit Gene APS1 Regulates Starch Biosynthesis in Banana (Musa acuminata)
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/ijms27041821
+  摘要: Starch biosynthesis is a fundamental process influencing yield and fruit quality in banana, with ADP-glucose pyrophosphorylase (AGPase) serving as the rate-limiting enzyme catalyzing sucrose conversion into starch. However, the mechanisms underlying functional differentiation of AGPase family genes 
+--------------------------------------------------
+
+[15] Effects of Chemical Composition and Intramolecular Structural Characteristics of Black Rice Varieties on Glycemic Index and Their Regulation Under Different Processing Conditions
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/foods15040715
+  摘要: This study explored how the chemical composition and molecular structure of black rice influence its glycemic index (GI), as well as how different processing methods regulate these relationships. Eight black rice varieties were analyzed for their nutritional composition, physicochemical and rheologi
+--------------------------------------------------
+
+[16] Effects of Biochar Combined with Organic Fertilizer on Soil Properties and the Yield and Quality of Sweet Potato
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/horticulturae12020235
+  摘要: Biochar and organic fertilizers are recommended for sustaining crop yield and sustainable agricultural development. However, the mechanisms of their combined application on the nutritional, flavor and eating quality and their optimal ratio remain unclear in sweet potatoes. Therefore, this field expe
+--------------------------------------------------
+
+[17] Indole-3-Acetic Acid as a Putative Selective AhR Modulator Counteracts Skatole-Induced Dual-Hit Toxicity in Colorectal Cancer Cells
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/toxins18020098
+  摘要: The rising incidence of colorectal cancer (CRC) in modernized societies is linked to diet-induced dysbiosis, characterized by a critical metabolic divergence: the depletion of protective indole-3-acetic acid (IAA) concurrent with the accumulation of toxic skatole (3-methylindole). However, the molec
+--------------------------------------------------
+
+[18] NATURAL POLYMER-BASED MICROBEADS FOR CONTROLLED DRUG DELIVERY: A COMPREHENSIVE REVIEW
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18638539
+  摘要: In recent times, there has been an increased search for new, safe, and sustainable alternatives to existing pharmaceutical excipients.This is because traditional pharmaceutical excipients synthesized in laboratories are considered toxic and pose adverse environmental concerns. Natural polymers have 
+--------------------------------------------------
+
+[19] 📜 Special Thesis: The Illusion of Proton Decay and the Dynamic Equilibrium of Neutrino Flow ~Why the Universe Never Ages and the True Identity of Gravity~
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18638281
+  摘要: 💎 The Paradigm Shift: Deciphering the "Illusion of Proton Decay" "We are not decaying; we are being perpetually reborn." In this groundbreaking thesis, Tetsuji Shimei delivers a 1.125% pure masterstroke to the foundations of modern physics. By redefining the very nature of existence through the Temp
+--------------------------------------------------
+
+[20] Morphophysiological disorders and metabolic reprogramming in Physalis peruviana infected with the physalis rugose mosaic virus
+  来源: openalex | 日期: 2026-02-14 | PDF: ✔ openalex_morphophy_iological__w7128924627.pdf (2.4 MB, 来源: original)
+
+  摘要: Physalis peruviana L. (Cape gooseberry) is susceptible to several pathogens, among which the sobemovirus physalis rugose mosaic virus (PhyRMV) is most prominent. This study investigated the anatomical, morphophysiological, and metabolic responses of P. peruviana to PhyRMV over the course of the infe
+--------------------------------------------------
+
+[21] Genetic Control, Stability, and Multivariate Analysis of Wheat Seed Quality Traits in Elite Pure Lines Under Mediterranean Environments
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/agriculture16040444
+  摘要: Grain quality traits in wheat (Triticum aestivum L.), including protein content, gluten strength, and carbohydrate composition, are key determinants of end-use performance and breeding potential. This study assessed the genetic variability, stability, and multivariate relationships of seed quality t
+--------------------------------------------------
+
+[22] 2-Ethylhexanol inhibit Botrytis cinerea by interfering in sugar and amino acid metabolism
+  来源: openalex | 日期: 2026-02-14 | PDF: ✔ openalex_2-ethylhexanol_inhib_w7128911529.pdf (3.0 MB, 来源: original)
+
+  摘要: The aim of this study was to evaluate the efficacy and underlying mechanism of 2-ethylhexanol (2-EH), a volatile compound, against the postharvest pathogen Botrytis cinerea on cherry tomato fruit. 2-EH demonstrated potent fungicidal activity in vitro, effectively inhibiting mycelial growth (100% inh
+--------------------------------------------------
+
+[23] Pea Starch and Pea Fiber—A Review of Functional Properties, Sensory Characteristics, and Value‐Added Uses
+  来源: openalex | 日期: 2026-02-14 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1541-4337.70419
+  摘要: ABSTRACT The utilization of plant‐based ingredients, such as legumes, is gaining popularity because of consumer demand for sustainably sourced, high‐protein foods, and an increased number of consumers reluctant to consume animal‐based products. Legumes are often cultivated for their protein but are 
+--------------------------------------------------
+
+[24] Development of a Flexible Film Based on Purple Yam Flour and Nanoparticles Obtained by Aqueous Counter Collision
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/applnano7010006
+  摘要: The utilization of biopolymers as raw materials for the development of sustainable materials has become one of the most promising strategies to minimize the negative impact of plastic pollution. Tubers such as purple yam are rich in starch, which serves as the main component for producing strong and
+--------------------------------------------------
+
+[25] Mechanistic insights into fermentation induced starch biotransformation and its food functionality with nutritional relevance
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1007/s44187-026-00854-8
+  摘要: Mechanistic insights into fermentation induced starch biotransformation and its food functionality with nutritional relevance Review Open access Published: 14 February 2026 article number , (2026) Cite this article You have full access to this open access article Download PDF Save article View saved
+--------------------------------------------------
+
+[26] Starch granules are instructive scaffolds for synergistic reinforcement and dissipation in hydrogel composites
+  来源: arxiv | 日期: 2026-02-13 | PDF: ✔ arxiv_starch_granule_are_i_260212538.pdf (7.4 MB, 来源: arxiv_pdf)
+
+  摘要: A fundamental challenge in soft material design is the competition between rigidity and dynamicity, as stiffening mechanisms typically suppress energy dissipation. Here, we demonstrate that starch granules serve as instructive scaffolds that overcome this constraint, enabling the synergistic amplifi
+--------------------------------------------------
+
+[27] From ancient plaster to modern sustainability: assessing starch granules and organic components in historical earthen plasters for environmental applications
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1007/s43939-026-00549-y
+  摘要: From ancient plaster to modern sustainability: assessing starch granules and organic components in historical earthen plasters for environmental applications Research Open access Published: 13 February 2026 article number , (2026) Cite this article You have full access to this open access article Do
+--------------------------------------------------
+
+[28] Freeze-structuring unlocks minimal-processing strategies for legume texturization
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_freeze-_tructuring_u_w7128767228.pdf (6.8 MB, 来源: original)
+
+  摘要: <title>Abstract</title> Legumes are sustainable, nutrient-rich, and affordable, yet their potential remains underused because conventional food processing often fails to utilize the entire raw material or achieve desirable textures. We show that freeze structuring can serve as a minimal-processing t
+--------------------------------------------------
+
+[29] Life cycle sustainability assessment of a multi-technology action for food loss and waste prevention
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.12688/openreseurope.22916.1
+  摘要: <ns3:p>Background Food waste persists as a global challenge, with upstream preventive technological innovations still insufficiently evaluated for their sustainability performance despite policy pressure and the Sustainable Development Goals. The objective of this article is to present a sustainabil
+--------------------------------------------------
+
+[30] Decoding the Microbial Diversity of Indian Fermented Foods: Integrating Ethnobiology, Multi-Omics and Functional Insights
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/foods15040687
+  摘要: Open AccessReview Decoding the Microbial Diversity of Indian Fermented Foods: Integrating Ethnobiology, Multi-Omics and Functional Insights by Priyanka SamantarayPriyanka Samantaray SciProfiles Scilit Preprints.org Google Scholar and Sudeshna SahaSudeshna Saha SciProfiles Scilit Preprints.org Google
+--------------------------------------------------
+
+[31] Millet Starch
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[32] Purification of aqueous fluids from basic fuchsine employing a new polymer of CMC-CMS hydrogel mixture: sustainability perspective
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1186/s13065-025-01710-z
+  摘要: Purification of aqueous fluids from basic fuchsine employing a new polymer of CMC-CMS hydrogel mixture: sustainability perspective Research Open access Published: 13 February 2026 article number , (2026) Cite this article You have full access to this open access article Download PDF Save article Vie
+--------------------------------------------------
+
+[33] Identification and characterization of an isomaltooligosaccharide utilizing α-glucosidase from the resistant-starch degrading gut bacterium Ruminococcoides bili FMB-J6
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: Identification and characterization of an isomaltooligosaccharide utilizing α-glucosidase from the resistant-starch degrading gut bacterium Ruminococcoides bili FMB-J6 Research Article Published: 13 February 2026 (2026) Cite this article Save article View saved research Food Science and Biotechnolog
+--------------------------------------------------
+
+[34] Nutritional composition of Zea mays L: A comprehensive Review of Macronutrients, Micronutrients, and Bioactive Compounds
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.12688/openresafrica.16056.2
+  摘要: <ns3:p> Background Maize ( <ns3:italic>Zea mays L.</ns3:italic> ) is a significant cereal crop, which, due to its nutritious content, especially in terms of dietary energy and nutrients, is globally important. Its nutritive status does not just end with macronutrients, but it also encompasses nutrie
+--------------------------------------------------
+
+[35] Biodegradable film from taro starch and gelatin with duck eggshell nano calcium filler (TS-G/DES nano calcium): Study chemical, physical, and mechanical properties
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1016/j.nxmate.2026.101744
+  摘要: 无摘要
+--------------------------------------------------
+
+[36] Fabrication of small-sized starch nanoparticles and their inhibition of interfacial enzymatic hydrolysis of granular starch
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: https://api.elsevier.com/content/article/pii/S1466856426000561doi:10.1016/j.ifset.2026.1044881-s2.0-S146685642600056110.1016/j.ifset.2026.104488S1466-8564(26)00056-1Fabrication of small-sized starch nanoparticles and their inhibition of interfacial enzymatic hydrolysis of granular starch Innovative 
+--------------------------------------------------
+
+[37] Partial Factor Productivity as a Tool to Enhance Wheat Seed Quality and Yield Through Nitrogen Fertilization Management
+  来源: openalex | 日期: 2026-02-13 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://www.mdpi.com/2674-1024/5/1/12/pdf?version=1770979945
+  摘要: Even though wheat’s response to nitrogen (N) is well studied, practical optimization remains challenging because yield and seed quality often react inconsistently across seasons. For winter wheat, the simultaneous quantification of efficiency indicators that capture N losses and diminishing returns 
+--------------------------------------------------
+
+[38] Data set of Impact of kilning on the fermentability of oat wholemeal flour and related bioconversion of starch, protein, dietary fibre and phytate.
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.17550221
+  摘要: Corresponding data sets of manuscript "Impact of kilning the fermentability of oat wholemeal flour and related bioconversion of starch, protein, dietary fibre and phytate". The first file shows the acidification and microbial growth data The second file shows data on phytate hydrolysis, protein solu
+--------------------------------------------------
+
+[39] Data set of Impact of kilning on the fermentability of oat wholemeal flour and related bioconversion of starch, protein, dietary fibre and phytate.
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.17550220
+  摘要: Corresponding data sets of manuscript "Impact of kilning the fermentability of oat wholemeal flour and related bioconversion of starch, protein, dietary fibre and phytate". The first file shows the acidification and microbial growth data The second file shows data on phytate hydrolysis, protein solu
+--------------------------------------------------
+
+[40] Rigid Polyurethane Foam Flame‐Retardanted by Environmentally Friendly Polyether Polyol Based on Dialdehyde Starch
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Polyurethane foam (PUF) is widely recognized for its excellent mechanical properties, yet its inherent flammability and potential toxicity of certain additives limit its compliance with green and safe production principles. In this study, a novel melamine‐based polyether polyol (MFPPG) was 
+--------------------------------------------------
+
+[41] Development of Sustainable Paper, Drinking Straw and Plate Using Zea mays Husk
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_development_of_su_ta_w7128817881.pdf (1.6 MB, 来源: original)
+
+  摘要: <title>Abstract</title> Maize is a crop cultivated worldwide due to its high demand. It has been used to generate natural cellulosic fibers for the textile industry; its starch is used in preparing soups, sauces, gravies, and custards. The corn husks are often discarded or utilized to make crafts an
+--------------------------------------------------
+
+[42] Chemical compositions, nutritional values, total phenolic content, and antioxidant activity from Eleocharis dulcis
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18636582
+  摘要: Several wild crops remain to be explored worldwide; among them, some have excellent medicinal and nutritional properties. In this study, Eleocharis dulcis has been selected for investigation of its chemical composition, nutritional values, total phenolic content, and antioxidant activity. The phytoc
+--------------------------------------------------
+
+[43] A Novel Versatile Neopullulanase with Transglycosylation Activity from <i>Bacillus Inaquosorum</i> : Heterologous Expression, Characterization, and Synergistic Application with α-Transglucosidase from <i> <i>Aspergillus niger</i> </i> in Bread Making
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: To explore transglycosidase application potential in starch processing and baking, a <i>Bacillus inaquosorum</i> strain with high amylopectin debranching activity was isolated and identified from the soil. Its neopullulanase gene (<i>Binp</i>) was cloned and heterologously expressed in <i><i>Escheri
+--------------------------------------------------
+
+[44] Impact of Climate Change on Physicochemical Properties and Nutritional Quality of Bread Wheat Triticum aestivum
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_impact_of_climate_ch_w7128770259.pdf (1.3 MB, 来源: original)
+
+  摘要: <title>Abstract</title> Climate change poses a significant threat to global food security, particularly through its impact on the physiological, biochemical, and nutritional properties of staple crops like bread wheat ( <italic>Triticum aestivum</italic> ). Elevated atmospheric carbon dioxide (eCO₂)
+--------------------------------------------------
+
+[45] Chemical compositions, nutritional values, total phenolic content, and antioxidant activity from Eleocharis dulcis
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18636581
+  摘要: Several wild crops remain to be explored worldwide; among them, some have excellent medicinal and nutritional properties. In this study, Eleocharis dulcis has been selected for investigation of its chemical composition, nutritional values, total phenolic content, and antioxidant activity. The phytoc
+--------------------------------------------------
+
+[46] Urinary Metabolomics Study on Acupuncture plus Wet Cupping Therapy for Post Stroke Depression: A pilot study
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Objective: This study aimed to investigate urinary metabolomics alterations associated with acupuncture plus wet cupping (AC) therapy in patients with post-stroke depression (PSD). Methods: A total of 40 subjects were randomly allocated to either the acupuncture plus wet cupping group (AC group, n=2
+--------------------------------------------------
+
+[47] Synergistic Effects of Fu Brick Tea Extract and Millet on Antiobesity in High-Fat Diet-Fed Mice through Gut Microbiota Modulation and Activation of the <i>Ffar2</i> – <i>Gcg</i> / <i>Pyy</i> Molecular Pathway
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: This study elucidates the antiobesity mechanism of the Fu brick tea extract-millet complex (FTE-M). FTE-M exhibited a dense and smooth microstructure, resulting in improved digestive properties compared with millet alone, including a reduced glycemic index and increased slowly digestible starch and 
+--------------------------------------------------
+
+[48] Cellulose reinforced potato-tapioca starch films-preparation and characterization
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[49] Sustainable Bioactive Films From Avocado Seed Starch: Biodegradable Extruded Materials Reinforced With Starch Nanocrystals for Active Packaging
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1002/efd2.70130
+  摘要: ABSTRACT Biodegradable films were developed from starch extracted from avocado seeds (ASS) and reinforced with starch nanocrystals (SNCs) to investigate the effect of nanofiller incorporation on thermal, mechanical, barrier, antioxidant, and antimicrobial properties. Thermogravimetric analysis showe
+--------------------------------------------------
+
+[50] Overexpression of SlANT1 Enhances Drought Tolerance in Tomato Through Anthocyanin-Mediated Antioxidant Protection and Metabolic Reprogramming
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/plants15040579
+  摘要: Open AccessArticle Overexpression of SlANT1 Enhances Drought Tolerance in Tomato Through Anthocyanin-Mediated Antioxidant Protection and Metabolic Reprogramming by Jikai LiuJikai Liu SciProfiles Scilit Preprints.org Google Scholar 1,2,†, Fabi ShenFabi Shen SciProfiles Scilit Preprints.org Google Sch
+--------------------------------------------------
+
+[51] Seed germination improves air classification efficiency of pea and faba bean flours
+  来源: openalex | 日期: 2026-02-12 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jsfa.70522
+  摘要: Abstract BACKGROUND Increasing interest in incorporating pulses into human diets has increased demand for their fractionation into diverse food ingredients. Air classification has relatively low capital and operating costs, uses no water, and preserves the native protein structure. However, its effi
+--------------------------------------------------
+
+[52] Thesis: Time Fluid Vortex Theory — Chapter 4 Physical Barriers to Interstellar Navigation in the Cosmic OS: Why Civilizations Cannot Cross the 17THz Wall
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18616600
+  摘要: The Symphony of 17THz: An Elegant Vision of the Universe By Tetsuji Shimei The universe is not a graveyard of dead matter, nor is it a void of cold silence. It is a living, breathing masterpiece of fluid information, constantly pulsing at the sacred frequency of 17THz. 1. The Breath of the Infinite 
+--------------------------------------------------
+
+[53] Integrated Nutritional, Spectroscopic and Technological Evaluation of Black Oat (Avena strigosa) and White Oat (Avena sativa L.) Cultivars
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/molecules31040639
+  摘要: Open AccessArticle Integrated Nutritional, Spectroscopic and Technological Evaluation of Black Oat (Avena strigosa) and White Oat (Avena sativa L.) Cultivars by Bogdan CozmaBogdan Cozma SciProfiles Scilit Preprints.org Google Scholar 1,2, Sylvestre DossaSylvestre Dossa SciProfiles Scilit Preprints.o
+--------------------------------------------------
+
+[54] Chemical composition, technological quality, and bioaccessibility of phenolics and starch of bread enriched with germinated wholemeal flour
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: https://api.elsevier.com/content/article/pii/S1878450X26000375doi:10.1016/j.ijgfs.2026.1014431-s2.0-S1878450X2600037510.1016/j.ijgfs.2026.101443S1878-450X(26)00037-5Chemical composition, technological quality, and bioaccessibility of phenolics and starch of bread enriched with germinated wholemeal f
+--------------------------------------------------
+
+[55] Nectary Structure and Nectar Secretion Characteristics Among Various Cultivars of Paeonia lactiflora
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/plants15040580
+  摘要: Open AccessArticle Nectary Structure and Nectar Secretion Characteristics Among Various Cultivars of Paeonia lactiflora by Hui CaiHui Cai SciProfiles Scilit Preprints.org Google Scholar , Wenjie MaWenjie Ma SciProfiles Scilit Preprints.org Google Scholar , Yingling WanYingling Wan SciProfiles Scilit
+--------------------------------------------------
+
+[56] Starching-induced heat transfer enhancement of food particles during stir-frying: Bubble mechanisms and quality effects
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: https://api.elsevier.com/content/article/pii/S0260877426000634doi:10.1016/j.jfoodeng.2026.1130251-s2.0-S026087742600063410.1016/j.jfoodeng.2026.113025S0260-8774(26)00063-4Starching-induced heat transfer enhancement of food particles during stir-frying: Bubble mechanisms and quality effects Journal o
+--------------------------------------------------
+
+[57] Electrochemical Sensor Based on a Composite of Babassu Starch, Carbon Black, and Cobalt Phthalocyanine for the Detection of Hydroxychloroquine
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1021/acsomega.5c13354
+  摘要: 无摘要
+--------------------------------------------------
+
+[58] Genome‐wide association study identifies consistent genomic loci for yield and nutritional quality in Ethiopian sorghum landraces
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1002/tpg2.70201
+  摘要: Abstract Identifying genomic regions linked to yield and quality is crucial for sorghum ( Sorghum bicolor L.) improvement, but limited studies on its genome and diversity hinder breeding efforts. This study aimed to identify phenotypic variance and common quantitative trait nucleotides (QTNs) associ
+--------------------------------------------------
+
+[59] Effects of β-glucanase on the dough and powder properties of highland barley–wheat blended dough
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1093/ijfood/vvag029
+  摘要: Summary This study investigated how β-glucanase (BGS) alters the dough and powder properties of two highland barley varieties, Kunlun-14 and Zangqing-18, to optimize high-fibre barley products via enzymatic modification. Peak viscosity decreased owing to reduced β-glucan barrier effects and weaker g
+--------------------------------------------------
+
+[60] Fracture and failure of shear-jammed dense suspensions under impact
+  来源: arxiv | 日期: 2025-11-21 | PDF: ✔ arxiv_fracture_and_failure_251117742.pdf (9.5 MB, 来源: arxiv_pdf)
+
+  摘要: Impacted with sufficiently large stress, a dense, initially liquid-like suspension can be forced into a solid-like state through a process known as shear jamming. While the onset of shear jamming has been investigated extensively, much less is known about the resulting solid-like state in the high s
+--------------------------------------------------

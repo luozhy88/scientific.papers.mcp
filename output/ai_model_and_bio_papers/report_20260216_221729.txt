@@ -1,0 +1,125 @@
+最新文献搜索报告（多源 PDF 增强版 2.5）
+===========================================
+
+关键词: AI model and bio
+时间范围: 最近 10 天 (2026-02-06 至 2026-02-16)
+总论文: 17 | 有摘要: 17 | PDF下载: 1 (0.8 MB)
+
+============================================================
+
+
+[1] Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647022
+  摘要: Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→
+--------------------------------------------------
+
+[2] Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647138
+  摘要: Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→
+--------------------------------------------------
+
+[3] Semantic Parasitism: The Bio-Energetic Cost of High-Entropy Abstract Information in Human Neural Architectures
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647006
+  摘要: [ORIGINAL ABSTRACT] Existential depression is traditionally conceptualized as psychological distress or neurochemical imbalance. In this paper, I propose an alternative framework: the Semantic Parasitism Hypothesis. I suggest that existential depression may involve a systemic, protective metabolic a
+--------------------------------------------------
+
+[4] Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647021
+  摘要: Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→
+--------------------------------------------------
+
+[5] Proactive Healthcare - Fighting the affects of aging (Closed-Loop Biological Restoration & Multi-Omics Optimization Platform)
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18644752
+  摘要: The Guardian System v7.0Ultimate Closed-Loop Biological Restoration & Multi-Omics Optimization PlatformFebruary 2026 Authors: Morgan Elliott Smart¹ and Jasper Kiron Smart¹Independent Research CollectiveCorresponding Author: Morgan Elliott Smart AbstractWe present The Guardian System v7.0, a comprehe
+--------------------------------------------------
+
+[6] Proactive Healthcare - Fighting the affects of aging (Closed-Loop Biological Restoration & Multi-Omics Optimization Platform)
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18644753
+  摘要: The Guardian System v7.0Ultimate Closed-Loop Biological Restoration & Multi-Omics Optimization PlatformFebruary 2026 Authors: Morgan Elliott Smart¹ and Jasper Kiron Smart¹Independent Research CollectiveCorresponding Author: Morgan Elliott Smart AbstractWe present The Guardian System v7.0, a comprehe
+--------------------------------------------------
+
+[7] Pigmentos bioactivos del chinicuil (&lt;i&gt;Comadia redtenbacheri&lt;/i&gt;): química, funcionalidad y revitalización gastronómica asistida por inteligencia artificial
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_pigmento_bioactivo_d_w7128770881.pdf (0.8 MB, 来源: original)
+
+  摘要: The limited integration of traditional ingredients into contemporary food systems has restricted the functional and economic utilization of native edible insects such as the chinicuil (Comadia redtenbacheri). In this work, the physicochemical aspects of chinicuil as a food ingredient and the technol
+--------------------------------------------------
+
+[8] A Review on AI-Based Data-Driven Models for Optimization of Nanocarriers as Drug Delivery Systems
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  摘要: Artificial intelligence (AI), primarily machine learning (ML), has revolutionized as a transformative strategy to accelerate nanomedicine research and optimization. The present review highlights the nanocarrier-integrated AI-based approaches to enhance the performance of drug delivery systems. Tradi
+--------------------------------------------------
+
+[9] Full-Spectrum Synthetic Organizations: How AI Closes the Last Verification Gap for Under $500
+  来源: openalex | 日期: 2026-02-08 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18521458
+  摘要: Full-Spectrum Synthetic Organizations demonstrates that a complete organizational impersonation infrastructure—fabricated company, deepfake-capable executives, backdoor-compromised AI products, and customer-facing operations—can be established for under $500 initial cost and approximately $400/month
+--------------------------------------------------
+
+[10] Full-Spectrum Synthetic Organizations: How AI Closes the Last Verification Gap for Under $500
+  来源: openalex | 日期: 2026-02-08 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18521459
+  摘要: Full-Spectrum Synthetic Organizations demonstrates that a complete organizational impersonation infrastructure—fabricated company, deepfake-capable executives, backdoor-compromised AI products, and customer-facing operations—can be established for under $500 initial cost and approximately $400/month
+--------------------------------------------------
+
+[11] Bioinspired and Engineered Ion‐Selective Membranes Toward High‐Flux and High‐Selectivity Energy Devices
+  来源: openalex | 日期: 2026-02-07 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Nanofluidic membranes with precise ion selectivity and ultrahigh permeability are central to advancing electromembrane technologies for energy generation, storage, water purification, and environmental monitoring. The performance of these systems hinges on the ability of membranes to effici
+--------------------------------------------------
+
+[12] Accurate somatic variant detection from formalin fixed, paraffin embedded tissue (FFPE) derived WES and WGS by DeepOmicsFFPE-PLUS, a sequence context-based transformer
+  来源: openalex | 日期: 2026-02-07 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.64898/2026.02.05.702695
+  摘要: Abstract Formalin-fixed paraffin-embedded (FFPE) tissues represent a vast archival resource for genomic studies, yet their utility remains constrained by fixation-induced DNA damage and subsequent sequencing artifacts. To comprehensively characterize and address this challenge, we analyzed matched F
+--------------------------------------------------
+
+[13] The Sapezoic Eon: A Meta-Theoretical Framework for Planetary Intelligence and Bio-Digital Homeostasis
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18501869
+  摘要: Abstract This report establishes the meta-theoretical framework for the "Sapezoic Eon" (智慧代), a proposed geological epoch following the Anthropocene, characterized by the integration of technological logic into planetary coupled feedback loops. We define "Planetary Intelligence" not as an individual
+--------------------------------------------------
+
+[14] The Sapezoic Eon: A Meta-Theoretical Framework for Planetary Intelligence and Bio-Digital Homeostasis
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18501868
+  摘要: Abstract This report establishes the meta-theoretical framework for the "Sapezoic Eon" (智慧代), a proposed geological epoch following the Anthropocene, characterized by the integration of technological logic into planetary coupled feedback loops. We define "Planetary Intelligence" not as an individual
+--------------------------------------------------
+
+[15] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18263735
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[16] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18500492
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[17] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18500551
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------

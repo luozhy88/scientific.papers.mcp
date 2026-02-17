@@ -1,0 +1,29 @@
+[
+  {
+    "id": "W2122410182",
+    "title": "Artificial intelligence: a modern approach",
+    "authors": [
+      "Stuart Russell",
+      "Peter Norvig",
+      "Dr. Haewon Byeon",
+      "Prof. Ganesh Vasudeo Manerkar"
+    ],
+    "date": "1995-11-01",
+    "pdf_url": null,
+    "text_length": 629,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  },
+  {
+    "id": "W2623293810",
+    "title": "Artificial intelligence: A modern approach",
+    "authors": [
+      "Nils J. Nilsson"
+    ],
+    "date": "1996-04-01",
+    "pdf_url": null,
+    "text_length": 441,
+    "pdf_downloaded": false,
+    "pdf_filename": null
+  }
+]

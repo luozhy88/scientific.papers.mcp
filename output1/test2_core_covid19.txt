@@ -1,0 +1,425 @@
+CORE 搜索: COVID-19
+找到 3 篇论文
+PDF保存目录: /Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs
+
+
+================================================================================
+标题: Finding Covid-19 from Chest X-rays using Deep Learning on a Small
+  Dataset
+================================================================================
+
+ID: 85660944
+作者: Goldgof, Dmitry B., Goldgof, Gregory M., Hall, Lawrence O., Paul, Rahul
+日期: 2020-05-19
+PDF链接: http://arxiv.org/abs/2004.02060
+DOI: N/A
+
+【摘要】
+无摘要
+
+================================================================================
+================================================================================
+标题: Early Screening of SARS-CoV-2 by Intelligent Analysis of X-Ray Images
+================================================================================
+
+ID: 85957381
+作者: Díaz-Chito, K., Gil, D., Hernández-Sabaté, A., Sánchez, C.
+日期: 2020-05-27
+PDF链接: http://arxiv.org/abs/2005.13928
+DOI: N/A
+
+【摘要】
+无摘要
+
+================================================================================
+================================================================================
+标题: COVID-CT-Dataset: A CT Scan Dataset about COVID-19
+================================================================================
+
+ID: 85806153
+作者: He, Xuehai, Xie, Pengtao, Yang, Xingyi, Zhang, Shanghang, Zhang, Yichen, Zhao, Jinyu
+日期: 2020-06-16
+PDF链接: http://arxiv.org/abs/2003.13865
+DOI: N/A
+
+【摘要】
+无摘要
+
+【全文内容】
+Computer Science > Machine Learning
+
+arXiv:2003.13865 (cs)
+
+COVID-19 e-print
+Important: e-prints posted on arXiv are not peer-reviewed by arXiv; they should not be relied upon without context to guide clinical practice or health-related behavior and should not be reported in news media as established information without consulting multiple experts in the field.
+
+[Submitted on 30 Mar 2020 (v1), last revised 17 Jun 2020 (this version, v3)]
+Title:COVID-CT-Dataset: A CT Scan Dataset about COVID-19
+Authors:Xingyi Yang, Xuehai He, Jinyu Zhao, Yichen Zhang, Shanghang Zhang, Pengtao Xie View a PDF of the paper titled COVID-CT-Dataset: A CT Scan Dataset about COVID-19, by Xingyi Yang and 5 other authors
+View PDF
+
+Abstract:During the outbreak time of COVID-19, computed tomography (CT) is a useful manner for diagnosing COVID-19 patients. Due to privacy issues, publicly available COVID-19 CT datasets are highly difficult to obtain, which hinders the research and development of AI-powered diagnosis methods of COVID-19 based on CTs. To address this issue, we build an open-sourced dataset -- COVID-CT, which contains 349 COVID-19 CT images from 216 patients and 463 non-COVID-19 CTs. The utility of this dataset is confirmed by a senior radiologist who has been diagnosing and treating COVID-19 patients since the outbreak of this pandemic. We also perform experimental studies which further demonstrate that this dataset is useful for developing AI-based diagnosis models of COVID-19. Using this dataset, we develop diagnosis methods based on multi-task learning and self-supervised learning, that achieve an F1 of 0.90, an AUC of 0.98, and an accuracy of 0.89. According to the senior radiologist, models with such performance are good enough for clinical usage. The data and code are available at this https URL
+
+Subjects:
+
+Machine Learning (cs.LG); Computer Vision and Pattern Recognition (cs.CV); Image and Video Processing (eess.IV); Machine Learning (stat.ML)
+
+Cite as:
+arXiv:2003.13865 [cs.LG]
+
+(or
+arXiv:2003.13865v3 [cs.LG] for this version)
+
+https://doi.org/10.48550/arXiv.2003.13865
+
+Focus to learn more
+
+arXiv-issued DOI via DataCite
+
+Submission history From: Pengtao Xie [view email] [v1]
+Mon, 30 Mar 2020 23:27:24 UTC (3,587 KB)
+[v2]
+Mon, 18 May 2020 02:08:25 UTC (5,531 KB)
+[v3]
+Wed, 17 Jun 2020 20:14:22 UTC (6,148 KB)
+
+Full-text links:
+Access Paper:
+
+View a PDF of the paper titled COVID-CT-Dataset: A CT Scan Dataset about COVID-19, by Xingyi Yang and 5 other authorsView PDFTeX Source
+
+view license
+
+Current browse context: cs.LG
+
+< prev
+
+  |  
+next >
+
+new
+|
+recent
+| 2020-03
+
+Change to browse by:
+
+cs
+cs.CV
+eess
+eess.IV
+stat
+stat.ML
+
+References & Citations
+
+NASA ADSGoogle Scholar
+Semantic Scholar
+
+DBLP - CS Bibliography
+
+listing | bibtex
+
+Jinyu ZhaoYichen ZhangPengtao Xie
+
+export BibTeX citation
+Loading...
+
+BibTeX formatted citation
+×
+
+loading...
+
+Data provided by:
+
+Bookmark
+
+Bibliographic Tools
+
+Bibliographic and Citation Tools
+
+Bibliographic Explorer Toggle
+
+Bibliographic Explorer (What is the Explorer?)
+
+Connected Papers Toggle
+
+Connected Papers (What is Connected Papers?)
+
+Litmaps Toggle
+
+Litmaps (What is Litmaps?)
+
+scite.ai Toggle
+
+scite Smart Citations (What are Smart Citations?)
+
+Code, Data, Media
+
+Code, Data and Media Associated with this Article
+
+alphaXiv Toggle
+
+alphaXiv (What is alphaXiv?)
+
+Links to Code Toggle
+
+CatalyzeX Code Finder for Papers (What is CatalyzeX?)
+
+DagsHub Toggle
+
+DagsHub (What is DagsHub?)
+
+GotitPub Toggle
+
+Gotit.pub (What is GotitPub?)
+
+Huggingface Toggle
+
+Hugging Face (What is Huggingface?)
+
+Links to Code Toggle
+
+Papers with Code (What is Papers with Code?)
+
+ScienceCast Toggle
+
+ScienceCast (What is ScienceCast?)
+
+Demos
+
+Demos
+
+Replicate Toggle
+
+Replicate (What is Replicate?)
+
+Spaces Toggle
+
+Hugging Face Spaces (What is Spaces?)
+
+Spaces Toggle
+
+TXYZ.AI (What is TXYZ.AI?)
+
+Related Papers
+
+Recommenders and Search Tools
+
+Link to Influence Flower
+
+Influence Flower (What are Influence Flowers?)
+
+Core recommender toggle
+
+CORE Recommender (What is CORE?)
+
+IArxiv recommender toggle
+
+IArxiv Recommender
+(What is IArxiv?)
+
+Author
+Venue
+Institution
+Topic
+
+About arXivLabs
+
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs.
+
+Which authors of this paper are endorsers? |
+Disable MathJax (What is MathJax?)
+
+Computer Science > Machine Learning
+
+arXiv:2003.13865 (cs)
+
+COVID-19 e-print
+Important: e-prints posted on arXiv are not peer-reviewed by arXiv; they should not be relied upon without context to guide clinical practice or health-related behavior and should not be reported in news media as established information without consulting multiple experts in the field.
+
+[Submitted on 30 Mar 2020 (v1), last revised 17 Jun 2020 (this version, v3)]
+Title:COVID-CT-Dataset: A CT Scan Dataset about COVID-19
+Authors:Xingyi Yang, Xuehai He, Jinyu Zhao, Yichen Zhang, Shanghang Zhang, Pengtao Xie View a PDF of the paper titled COVID-CT-Dataset: A CT Scan Dataset about COVID-19, by Xingyi Yang and 5 other authors
+View PDF
+
+Abstract:During the outbreak time of COVID-19, computed tomography (CT) is a useful manner for diagnosing COVID-19 patients. Due to privacy issues, publicly available COVID-19 CT datasets are highly difficult to obtain, which hinders the research and development of AI-powered diagnosis methods of COVID-19 based on CTs. To address this issue, we build an open-sourced dataset -- COVID-CT, which contains 349 COVID-19 CT images from 216 patients and 463 non-COVID-19 CTs. The utility of this dataset is confirmed by a senior radiologist who has been diagnosing and treating COVID-19 patients since the outbreak of this pandemic. We also perform experimental studies which further demonstrate that this dataset is useful for developing AI-based diagnosis models of COVID-19. Using this dataset, we develop diagnosis methods based on multi-task learning and self-supervised learning, that achieve an F1 of 0.90, an AUC of 0.98, and an accuracy of 0.89. According to the senior radiologist, models with such performance are good enough for clinical usage. The data and code are available at this https URL
+
+Subjects:
+
+Machine Learning (cs.LG); Computer Vision and Pattern Recognition (cs.CV); Image and Video Processing (eess.IV); Machine Learning (stat.ML)
+
+Cite as:
+arXiv:2003.13865 [cs.LG]
+
+(or
+arXiv:2003.13865v3 [cs.LG] for this version)
+
+https://doi.org/10.48550/arXiv.2003.13865
+
+Focus to learn more
+
+arXiv-issued DOI via DataCite
+
+Submission history From: Pengtao Xie [view email] [v1]
+Mon, 30 Mar 2020 23:27:24 UTC (3,587 KB)
+[v2]
+Mon, 18 May 2020 02:08:25 UTC (5,531 KB)
+[v3]
+Wed, 17 Jun 2020 20:14:22 UTC (6,148 KB)
+
+Full-text links:
+Access Paper:
+
+View a PDF of the paper titled COVID-CT-Dataset: A CT Scan Dataset about COVID-19, by Xingyi Yang and 5 other authorsView PDFTeX Source
+
+view license
+
+Current browse context: cs.LG
+
+< prev
+
+  |  
+next >
+
+new
+|
+recent
+| 2020-03
+
+Change to browse by:
+
+cs
+cs.CV
+eess
+eess.IV
+stat
+stat.ML
+
+References & Citations
+
+NASA ADSGoogle Scholar
+Semantic Scholar
+
+DBLP - CS Bibliography
+
+listing | bibtex
+
+Jinyu ZhaoYichen ZhangPengtao Xie
+
+export BibTeX citation
+Loading...
+
+BibTeX formatted citation
+×
+
+loading...
+
+Data provided by:
+
+Bookmark
+
+Bibliographic Tools
+
+Bibliographic and Citation Tools
+
+Bibliographic Explorer Toggle
+
+Bibliographic Explorer (What is the Explorer?)
+
+Connected Papers Toggle
+
+Connected Papers (What is Connected Papers?)
+
+Litmaps Toggle
+
+Litmaps (What is Litmaps?)
+
+scite.ai Toggle
+
+scite Smart Citations (What are Smart Citations?)
+
+Code, Data, Media
+
+Code, Data and Media Associated with this Article
+
+alphaXiv Toggle
+
+alphaXiv (What is alphaXiv?)
+
+Links to Code Toggle
+
+CatalyzeX Code Finder for Papers (What is CatalyzeX?)
+
+DagsHub Toggle
+
+DagsHub (What is DagsHub?)
+
+GotitPub Toggle
+
+Gotit.pub (What is GotitPub?)
+
+Huggingface Toggle
+
+Hugging Face (What is Huggingface?)
+
+Links to Code Toggle
+
+Papers with Code (What is Papers with Code?)
+
+ScienceCast Toggle
+
+ScienceCast (What is ScienceCast?)
+
+Demos
+
+Demos
+
+Replicate Toggle
+
+Replicate (What is Replicate?)
+
+Spaces Toggle
+
+Hugging Face Spaces (What is Spaces?)
+
+Spaces Toggle
+
+TXYZ.AI (What is TXYZ.AI?)
+
+Related Papers
+
+Recommenders and Search Tools
+
+Link to Influence Flower
+
+Influence Flower (What are Influence Flowers?)
+
+Core recommender toggle
+
+CORE Recommender (What is CORE?)
+
+IArxiv recommender toggle
+
+IArxiv Recommender
+(What is IArxiv?)
+
+Author
+Venue
+Institution
+Topic
+
+About arXivLabs
+
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs.
+
+Which authors of this paper are endorsers? |
+Disable MathJax (What is MathJax?)
+
+================================================================================

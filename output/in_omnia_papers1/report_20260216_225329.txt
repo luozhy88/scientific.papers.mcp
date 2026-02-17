@@ -1,0 +1,185 @@
+最新文献搜索报告（多源 PDF 增强版 2.5）
+===========================================
+
+关键词: insomnia
+时间范围: 最近 50 天 (2025-12-28 至 2026-02-16)
+总论文: 27 | 有摘要: 25 | PDF下载: 8 (6.6 MB)
+
+============================================================
+
+
+[1] An integrated behavioral treatment for improving nocturia and insomnia symptoms in older adults (MINT): study protocol for a multi-site randomized clinical trial
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1186/s13063-026-09464-2
+  摘要: An integrated behavioral treatment for improving nocturia and insomnia symptoms in older adults (MINT): study protocol for a multi-site randomized clinical trial Study protocol Open access Published: 16 February 2026 article number , (2026) Cite this article You have full access to this open access 
+--------------------------------------------------
+
+[2] Dampak Fisik, Emosional, dan Perilaku pada Perempuan Korban Perselingkuhan: Sebuah Tinjauan Literatur
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.54082/jupin.2139
+  摘要: Kasus perceraian di Indonesia menunjukkan tren peningkatan yang signifikan, di mana perselingkuhan menjadi salah satu faktor pemicu utamanya. Perselingkuhan bukan sekadar bentuk pengkhianatan komitmen, melainkan sebuah bentuk kekerasan yang menimbulkan dampak sistemik pada korban, terutama perempuan
+--------------------------------------------------
+
+[3] Sleep Improvement for Metabolic Health: A Feasibility Trial of a Digital Sleep Treatment in People With Insomnia and Non‐Diabetic Hyperglycaemia
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1111/jsr.70306
+  摘要: ABSTRACT Insomnia may play a causal role in type 2 diabetes (T2D). Addressing insomnia through cognitive behavioural therapy (CBTi) in people with non‐diabetic hyperglycaemia could potentially reduce the risk of progression to T2D. To inform a future randomised trial, we performed a feasibility stud
+--------------------------------------------------
+
+[4] Mediating effect of resilience on the influence of insomnia and pain severity on depressive symptoms in patients with cancer
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  摘要: Mediating effect of resilience on the influence of insomnia and pain severity on depressive symptoms in patients with cancer Original Article Published: 15 February 2026 (2026) Cite this article Save article View saved research Sleep and Biological Rhythms Aims and scope Submit manuscript AbstractWe
+--------------------------------------------------
+
+[5] The Metabolic Mass of Memory: Emergent Psychopathology and Downward Causation in the E.N.G.R.A.M. Architecture
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18652272
+  摘要: The Transformer architecture has fundamentally revolutionized artificial intelligence, providing an unparalleled engine for discrete symbolic computation. However, as Artificial General Intelligence (AGI) evolves toward autonomy, operating strictly as a disembodied state machine reveals profound lim
+--------------------------------------------------
+
+[6] The Metabolic Mass of Memory: Emergent Psychopathology and Downward Causation in the E.N.G.R.A.M. Architecture
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18652271
+  摘要: The Transformer architecture has fundamentally revolutionized artificial intelligence, providing an unparalleled engine for discrete symbolic computation. However, as Artificial General Intelligence (AGI) evolves toward autonomy, operating strictly as a disembodied state machine reveals profound lim
+--------------------------------------------------
+
+[7] Insomnia Among Adolescents in Northern Peru: Associations with Psychosocial, Health-Related, and Educational Factors in a Cross-Sectional Study Across Five Schools
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/jcm15041505
+  摘要: Open AccessArticle Insomnia Among Adolescents in Northern Peru: Associations with Psychosocial, Health-Related, and Educational Factors in a Cross-Sectional Study Across Five Schools by Mario J. Valladares-GarridoMario J. Valladares-Garrido SciProfiles Scilit Preprints.org Google Scholar 1,2,*, Palm
+--------------------------------------------------
+
+[8] Cannabis Use Among Individuals Treated with Medication for Opioid Use Disorder: Correlates, Patterns, and Motivations for Use
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  摘要: Background: Cannabis use is prevalent among patients receiving medication for opioid use disorder (MOUD). However, little is known about factors associated with frequent cannabis use. Objective: To describe correlates, patterns, and motivations for cannabis use among individuals treated with MOUD. M
+--------------------------------------------------
+
+[9] Factors Associated With Health-Related Quality of Life of Stroke Survivors: An Integrative Review
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[10] Integrative Healthcare for Optimal Health
+  来源: openalex | 日期: 2026-02-14 | PDF: ✔ openalex_integrative_healthca_w7128920168.pdf (0.8 MB, 来源: original)
+
+  摘要: <ns3:p> Conventional medicine and public health have collectively improved health and saved the lives of millions. Yet, as we confront the escalating crisis of non-communicable diseases (NCDs), it becomes increasingly clear that conventional approaches alone are no longer sufficient. A new, evidence
+--------------------------------------------------
+
+[11] Effectiveness and Safety of Acupuncture and Related Therapies for Poststroke Insomnia: A Network Meta-Analysis
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.18502/ijph.v55i1.20975
+  摘要: Effectiveness and Safety of Acupuncture and Related Therapies for Poststroke Insomnia: A Network Meta-Analysis Xinwang Chen Henan University of Chinese Medicine, Zhengzhou, Henan Province, China Run Zhang The Central Hospital of Enshi Tujia and Miao Autonomous Prefecture, Enshi, Hubei Province, Chin
+--------------------------------------------------
+
+[12] High impact chronic pain in children: exploration of associated characteristics and clinical factors in children and parents
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_high_impact_chronic__w7128788183.pdf (0.3 MB, 来源: original)
+
+  摘要: Background Chronic pain in children can significantly impact daily functioning. While interdisciplinary pain rehabilitation is the recommended treatment, it is resource-intensive and limited in availability. Therefore, children with more complex symptoms, classified as High Impact Chronic Pain (HICP
+--------------------------------------------------
+
+[13] Ai-Augmented Management of Pharmacoresistant Insomnia and Restless Legs Syndrome in Park2 Parkinson’s Disease: an N-Of-1 Case Report Integrating Pharmacogenetics, Chronopharmacology, Digital Monitoring, and an Llm Co-Pilot
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_ai-augmented_managem_w7128809653.pdf (0.6 MB, 来源: original)
+
+  摘要: <title>Abstract</title> We report a case of young-onset PARK2 Parkinson’s disease complicated by severe, persistent insomnia, restless legs syndrome (RLS), and REM sleep behavior disorder (RBD), refractory to multiple conventional strategies. The clinical course included features consistent with lev
+--------------------------------------------------
+
+[14] The effectiveness of Cognitive behavioral therapy for insomnia on sleep EEG hyperarousal: a multicentric polysomnographic study
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_the_effectivene_of_c_w7128817711.pdf (1.1 MB, 来源: original)
+
+  摘要: Chronic Insomnia Disorder (ID) is characterized by hyperarousal, a key pathophysiological feature. While Cognitive-Behavioral Therapy for Insomnia (CBT-I) is the first-line treatment, its physiological effects on sleep-related hyperarousal remain underexplored. This study assessed the impact of CBT-
+--------------------------------------------------
+
+[15] Online education and its relation to hearing status among higher-secondary students in Bangladesh: A cross-sectional survey
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1371/journal.pone.0342668
+  摘要: Article Authors Metrics Comments Media Coverage Reader Comments Figures Figures Abstract Background Online education gained its popularity in the education system during the COVID-19 pandemic lockdown. The online platform, including social media, was institutionalized globally for the purpose of tut
+--------------------------------------------------
+
+[16] THE HYPERBOLE AS A FOUNDATIONAL TOOL FOR MAGICAL REALIST ONTOLOGY OF THE NOVEL 100 YEARS OF SOLITUDE
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18635726
+  摘要: This paper explores the function of hyperbole not merely as a decorative rhetorical device, but as the primary ontological foundation of Gabriel Garcia Marquez's One Hundred Years of Solitude. While magical realism is often defined by the seamless integration of the supernatural into the mundane, th
+--------------------------------------------------
+
+[17] A survey study to assess stress and coping during medical education in a Jordanian university
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1097/md.0000000000047495
+  摘要: Medical education’s rigorous demands are known to cause significant stress among students. The study investigated how students evaluate stressors and apply coping strategies to handle perceived stress and examined how these processes relate to sociodemographic and lifestyle characteristics. The stud
+--------------------------------------------------
+
+[18] MicroRNA Profile in Menopausal Women with Insomnia: A Pilot Study
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: MicroRNA Profile in Menopausal Women with Insomnia: A Pilot Study Published: 13 February 2026 (2026) Cite this article Save article View saved research Bulletin of Experimental Biology and Medicine Aims and scope The microRNA profile in the blood plasma of menopausal women with insomnia, defined by 
+--------------------------------------------------
+
+[19] Insomnische Beschwerden in der Region Neckaralb und ihre Zusammenhänge mit Extrinsischen und Intrinsischen Belastungsfaktoren
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.15496/publikation-117011
+  摘要: Schlaf ist ein elementarer Bestandteil des menschlichen Lebens. Abgesehen von der Regenerierung finden während des Schlafes eine Vielzahl weiterer essenzieller Stoffwechselprozesse statt, ohne die ein Überleben längerfristig nicht möglich ist. Eine große Zahl an Menschen leidet unter Schlafstörungen
+--------------------------------------------------
+
+[20] The role of sleep disturbances in the maintenance of PTSD symptoms: a literature review
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_the_role_of_leep_di__w7128803867.pdf (1.9 MB, 来源: original)
+
+  摘要: Post-traumatic stress disorder (PTSD) represents one of the most debilitating psychiatric conditions. Posttraumatic stress disorder is frequently accompanied by sleep disturbances, including insomnia and trauma-related nightmares, affecting up to 90% of individuals with this condition. This literatu
+--------------------------------------------------
+
+[21] THE HYPERBOLE AS A FOUNDATIONAL TOOL FOR MAGICAL REALIST ONTOLOGY OF THE NOVEL 100 YEARS OF SOLITUDE
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18635728
+  摘要: This paper explores the function of hyperbole not merely as a decorative rhetorical device, but as the primary ontological foundation of Gabriel Garcia Marquez's One Hundred Years of Solitude. While magical realism is often defined by the seamless integration of the supernatural into the mundane, th
+--------------------------------------------------
+
+[22] Effectiveness of guided imagery to improve sleep quality among young adults with post-traumatic stress disorder (PTSD)
+  来源: openalex | 日期: 2026-02-12 | PDF: ✔ openalex_effectivene_of_guide_w7128716537.pdf (1.1 MB, 来源: original)
+
+  摘要: Background: Post-traumatic stress disorder often leads to ongoing sleep difficulties such as insomnia and nightmares, which can interfere with mood, concentration, and daily activities. Guided imagery, a relaxation method that uses calming, multisensory visualizations, has shown potential to improve
+--------------------------------------------------
+
+[23] Clinical subtypes of co-morbid insomnia and obstructive sleep apnea (COMISA): results of a cluster analysis
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1186/s12931-026-03577-7
+  摘要: Clinical subtypes of co-morbid insomnia and obstructive sleep apnea (COMISA): results of a cluster analysis Research Open access Published: 12 February 2026 article number , (2026) Cite this article You have full access to this open access article Download PDF Save article View saved research Respir
+--------------------------------------------------
+
+[24] Brief Cognitive-Behavioral Insomnia Treatment for Primary Care Veterans at Elevated Risk for Suicide: A Randomized Clinical Trial
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Introduction: Many patients at risk for suicide present in primary care where insomnia and other suicide risk factors are prevalent. Addressing insomnia in this milieu may augment suicide prevention strategies. Methods: A randomized clinical trial was conducted to test the effectiveness of brief cog
+--------------------------------------------------
+
+[25] Review of: "Insomnia Prevalence and Mental Health Correlates Among 18,646 Users of an Internet-Based Cognitive-Behavioral Therapy Website: Archival Real-World Data from the United States, 2017-2019"
+  来源: openalex | 日期: 2026-02-12 | PDF: ✔ openalex_review_of_in_omnia_p_w7128675623.pdf (0.2 MB, 来源: original)
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[26] Network Pharmacology and Molecular Docking Analyses of Jiao-Tai-Wan Indicate that Adenosine and its Receptors are Potential Targets forTreating Insomnia
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.2174/0113862073403801251027101439
+  摘要: Introduction: This study aimed to explore the underlying pharmacological mechanisms of Jiao-Tai-Wan (JTW) in insomnia. Methods: Network pharmacology approach to explore potential therapeutic targets of JTW in treating insomnia. Molecular docking was conducted to analyze the binding mechanisms of the
+--------------------------------------------------
+
+[27] Efficacy and mechanism of combined treatment with transcranial direct current stimulation and zolpidem for treatment-resistant insomnia: a study protocol for a prospective, double-blind, randomized controlled trial
+  来源: openalex | 日期: 2026-02-12 | PDF: ✔ openalex_efficacy_and_mechani_w7128708392.pdf (0.6 MB, 来源: original)
+
+  摘要: Background Treatment-resistant insomnia remains a major unmet clinical challenge, as a substantial proportion of patients fail to achieve long-term remission with cognitive behavioral therapy or pharmacotherapy alone. Transcranial direct current stimulation (tDCS) has shown promise in modulating cor
+--------------------------------------------------

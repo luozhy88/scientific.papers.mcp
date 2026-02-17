@@ -1,0 +1,61 @@
+最新文献搜索报告（多源 PDF 增强版 2.5）
+===========================================
+
+关键词: insomnia and TCM
+时间范围: 最近 50 天 (2025-12-28 至 2026-02-16)
+总论文: 8 | 有摘要: 7 | PDF下载: 1 (0.3 MB)
+
+============================================================
+
+
+[1] An Analysis Study of <scp> <i>Celastrus orbiculatus</i> </scp> Fruits ( <i>Beihehuan</i> ) for Insomnia Treatment and Potential Replacement for <scp> <i>Albizia julibrissin</i> </scp> Flowers ( <i>Hehuanhua</i> )
+  来源: openalex | 日期: 2026-01-26 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bmc.70370
+  摘要: ABSTRACT Celastrus orbiculatus fruits as Beihehuan ( BHH ) in Chinese are used as an alternative to Albizia julibrissin flowers ( Hehuanhua ) for insomnia treatment in North of China. Both of them perhaps contain similar material foundations with common components, making them highly worthy of syste
+--------------------------------------------------
+
+[2] Yiqi Huoxue formula attenuates pressure overload-induced chronic heart failure with insomnia via regulation of RORα-mediated mitochondrial fuction
+  来源: openalex | 日期: 2026-01-23 | PDF: 无PDF链接
+
+  摘要: https://api.elsevier.com/content/article/pii/S0367326X26000262doi:10.1016/j.fitote.2026.1071071-s2.0-S0367326X2600026210.1016/j.fitote.2026.107107S0367-326X(26)00026-2Yiqi Huoxue formula attenuates pressure overload-induced chronic heart failure with insomnia via regulation of RORα-mediated mitochon
+--------------------------------------------------
+
+[3] Utilization, user evaluation, and associated factors of Traditional Chinese Medicine techniques for insomnia symptoms among Chinese community-dwelling older adults: a cross-sectional study
+  来源: openalex | 日期: 2026-01-15 | PDF: ✔ openalex_utilization_u_er_eva_w7124287233.pdf (0.3 MB, 来源: original)
+
+  摘要: Background Insomnia symptoms are common among older adults, and Traditional Chinese Medicine (TCM) techniques have shown benefits in relieving these symptoms. However, real-world evidence on their use, evaluation, and associated factors in community settings remains limited. This study aimed to desc
+--------------------------------------------------
+
+[4] Comparative effectiveness of different acupuncture therapies for perimenopausal syndrome: a systematic review and network meta-analysis
+  来源: openalex | 日期: 2026-01-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fneur.2025.1696085
+  摘要: SYSTEMATIC REVIEW articleFront. Neurol., 15 January 2026 Sec. Experimental TherapeuticsVolume 16 - 2025 | https://doi.org/10.3389/fneur.2025.1696085Comparative effectiveness of different acupuncture therapies for perimenopausal syndrome: a systematic review and network meta-analysis Xiaoyan Yang1Fen
+--------------------------------------------------
+
+[5] Insomnia treatment based on the regulation of the GABAergic system: traditional Chinese medicine perspectives and therapeutic approaches
+  来源: openalex | 日期: 2026-01-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fnins.2025.1670273
+  摘要: REVIEW articleFront. Neurosci., 12 January 2026 Sec. Sleep and Circadian RhythmsVolume 19 - 2025 | https://doi.org/10.3389/fnins.2025.1670273This article is part of the Research TopicThe Interplay Between GABA and Glutamate in Systems Physiology and PathophysiologyView all 7 articlesInsomnia treatme
+--------------------------------------------------
+
+[6] Auricular Acupressure for Insomnia in Patients with Decompensated Hepatitis B-Related Liver Cirrhosis: A Clinical Observation
+  来源: openalex | 日期: 2026-01-06 | PDF: 无PDF链接
+
+  摘要: Objective This study aims to evaluate the efficacy and safety of auricular acupressure for insomnia in patients with decompensated hepatitis B-related liver cirrhosis (DHBV-LC). Methods This prospective randomized controlled trial enrolled 60 patients with DHBV-LC and comorbid insomnia between May 2
+--------------------------------------------------
+
+[7] ZhiAn-GPT: An Explainable Language Model for Generating TCM Prescriptions for Insomnia
+  来源: openalex | 日期: 2026-01-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.13140/rg.2.2.30280.79368
+  摘要: 无摘要
+--------------------------------------------------
+
+[8] Discovery of the Underlying Mechanism of Ginger Juice Processed Ziziphi Spinosae Semen for Its Sedative‐Hypnotic Effect on Insomnia Mice via Regulation of HPA Axis and cAMP/PKA Signaling Pathway
+  来源: openalex | 日期: 2026-01-01 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Based on Traditional Chinese Medicine (TCM) theory, the efficacy and mechanism of Ginger juice processed Ziziphi Spinosae Semen (GJPZSS) for treating insomnia, particularly stress‐related types, were investigated to provide empirical evidence. An insomnia model was induced in mice by DL‐4‐c
+--------------------------------------------------

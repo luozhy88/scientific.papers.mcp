@@ -1,0 +1,41 @@
+arXiv - Quantum Computing Search
+找到 2 篇论文
+PDF保存目录: /Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs
+
+
+================================================================================
+标题: Quantum Computing: Vision and Challenges
+================================================================================
+
+ID: 2403.02240
+作者: Sukhpal Singh Gill, Oktay Cetinkaya, Stefano Marrone, Daniel Claudino, David Haunschild, Leon Schlote, Huaming Wu, Carlo Ottaviani, Xiaoyuan Liu, Sree Pragna Machupalli, Kamalpreet Kaur, Priyansh Arora, Ji Liu, Ahmed Farouk, Houbing Herbert Song, Steve Uhlig, Kotagiri Ramamohanarao
+日期: 2024-03-04
+PDF链接: https://arxiv.org/pdf/2403.02240v5.pdf
+DOI: N/A
+
+【摘要】
+无摘要
+
+【PDF文件】
+已下载: arxiv_Quantum_Computing__Vision_and_Chall_2403.02240.pdf
+路径: /Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs/arxiv_Quantum_Computing__Vision_and_Chall_2403.02240.pdf
+
+================================================================================
+================================================================================
+标题: Entangling Disciplines: Causality, Entropy and Time-Travel Paradoxes on a Quantum Computer
+================================================================================
+
+ID: 2506.15909
+作者: Maria Violaris
+日期: 2025-06-18
+PDF链接: https://arxiv.org/pdf/2506.15909v1.pdf
+DOI: N/A
+
+【摘要】
+无摘要
+
+【PDF文件】
+已下载: arxiv_Entangling_Disciplines__Causality___2506.15909.pdf
+路径: /Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs/arxiv_Entangling_Disciplines__Causality___2506.15909.pdf
+
+================================================================================

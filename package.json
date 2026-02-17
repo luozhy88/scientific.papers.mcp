@@ -1,0 +1,67 @@
+{
+  "name": "@futurelab-studio/latest-science-mcp",
+  "version": "0.1.40",
+  "description": "MCP Server for Scientific Paper Harvesting from arXiv and OpenAlex",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "latest-science-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/server.js",
+    "dev": "tsc --watch",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "scientific-papers",
+    "arxiv",
+    "openalex",
+    "research"
+  ],
+  "author": "FutureLab",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benedict2310/Scientific-Papers-MCP.git"
+  },
+  "homepage": "https://github.com/benedict2310/Scientific-Papers-MCP#readme",
+  "bugs": {
+    "url": "https://github.com/benedict2310/Scientific-Papers-MCP/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "axios": "^1.9.0",
+    "cheerio": "^1.0.0",
+    "pdf-parse": "^1.1.1",
+    "winston": "^3.11.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/pdf-parse": "^1.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "execa": "^8.0.0",
+    "nock": "^13.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.3"
+  }
+}

@@ -1,0 +1,98 @@
+OpenAlex - Artificial Intelligence
+找到 2 篇论文
+PDF保存目录: /Users/apple/Desktop/kimi/test3/Scientific-Papers-MCP/output/pdfs
+
+
+================================================================================
+标题: Artificial intelligence: a modern approach
+================================================================================
+
+ID: W2122410182
+作者: Stuart Russell, Peter Norvig, Dr. Haewon Byeon, Prof. Ganesh Vasudeo Manerkar
+日期: 1995-11-01
+PDF链接: N/A
+DOI: N/A
+
+【摘要】
+无摘要
+
+【全文内容 - 前15000字符】
+Xoffencer International Book Publication House
+
+There is a newer version of the record
+available.
+
+Published May 18, 2024
+
+| Version v1
+
+Book
+
+Open
+
+ARTIFICIAL INTELLIGENCE: A MODERN APPROACH
+
+Authors/Creators
+
+Dr. Anil Kumar
+(Editor)
+
+Sivasubramanian Balasubramanian
+(Editor)
+
+Dr. Haewon Byeon
+(Editor)
+
+Prof. Ganesh Vasudeo Manerkar
+(Editor)
+
+Files
+
+E - Book Artificial Intelligence A modern Appro.pdf
+
+Files
+(3.9 MB)
+
+Name
+Size
+
+Download all
+
+E - Book Artificial Intelligence A modern Appro.pdf
+
+md5:d39699a593c5d0384fb870714a4a6776
+
+3.9 MB
+
+Preview
+
+Download
+
+Additional details
+
+Identifiers
+
+ISBN
+
+978-81-973708-1-6
+
+Jump up
+
+================================================================================
+================================================================================
+标题: Artificial intelligence: A modern approach
+================================================================================
+
+ID: W2623293810
+作者: Nils J. Nilsson
+日期: 1996-04-01
+PDF链接: N/A
+DOI: N/A
+
+【摘要】
+无摘要
+
+【全文内容 - 前15000字符】
+https://api.elsevier.com/content/article/pii/0004370296000070doi:10.1016/0004-3702(96)00007-01-s2.0-000437029600007010.1016/0004-3702(96)00007-00004-3702(96)00007-0Artificial intelligence: A modern approach Stuart Russell and Peter Norvig, (Prentice Hall, Englewood Cliffs, NJ, 1995); xxviii + 932 pagesArtificial IntelligenceJournal000437021996-04-30April 19961trueFulltrueElsevierBrandedhttp://www.elsevier.com/open-access/userlicense/1.0/
+
+================================================================================

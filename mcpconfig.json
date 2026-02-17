@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+	"scientific-papers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@futurelab-studio/latest-science-mcp"
+      ]
+    }
+    }
+  }

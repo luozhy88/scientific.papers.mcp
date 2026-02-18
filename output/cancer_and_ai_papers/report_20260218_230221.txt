@@ -1,0 +1,69 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: cancer and AI
+时间范围: 最近 14 天 (2026-02-04 至 2026-02-18)
+总论文: 10 | 有摘要: 4 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] R-loop editing by DNA cytosine deaminase APOBEC3B modulates the activity of oestrogen receptor enhancers
+  来源: top_journals | 日期: 2026-02-18 | PDF: 无PDF链接
+
+  摘要: Abstract Oestrogen receptor (ER) activation leads to the formation of DNA double strand breaks (DSB), promoting genomic instability and tumour heterogeneity. The single-stranded DNA cytosine deaminase APOBEC3B (A3B) serves as a co-activator of ER and is implicated in inducing DSBs at transcriptional
+--------------------------------------------------
+
+[2] Why sky-high pay for AI researchers is bad for the future of science
+  来源: top_journals | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[3] High efficiency CRISPR knock-in demonstrates that TCF1 is insufficient to reverse T cell exhaustion
+  来源: top_journals | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] Daily briefing: New platform lets AI agents hire human helpers
+  来源: top_journals | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[5] Clinical progress of engineered cellular immunotherapies for autoimmunity
+  来源: top_journals | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[6] Modeling the evolutionary dynamics of clonal hematopoiesis
+  来源: top_journals | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[7] Comprehensive repertoire of the chromosomal alteration and mutational signatures across 16 cancer types
+  来源: top_journals | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: Abstract Whole-genome sequencing (WGS) enables exploration of the full spectrum of oncogenic processes that generate characteristic patterns of mutations. Mutational signatures provide clues to tumor etiology and highlight potentially targetable pathway defects. Here alongside single-base substituti
+--------------------------------------------------
+
+[8] Structural ontogeny of protein-protein interactions
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Understanding how protein binding sites evolve interactions with other proteins could hold clues to targeting “undruggable” surfaces. We used synthetic coevolution to engineer new interactions between naïve surfaces, simulating the de novo formation of protein complexes. We isolated seven distinct s
+--------------------------------------------------
+
+[9] Transcription factor Etv3 controls the tolerogenic function of dendritic cells
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Dendritic cells (DCs) facilitate the maintenance of immunological tolerance in the steady state. We report that transcription factor Etv3 is preferentially expressed in mature DCs, including tissue-derived migratory DCs (migDCs), and facilitates their homeostatic maturation and CCR7-dependent migrat
+--------------------------------------------------
+
+[10] THY1+ cancer stem cells drive metastasis through a pseudohypoxic state shaped by neutrophil-derived mitochondria
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------

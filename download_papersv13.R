@@ -1194,9 +1194,97 @@ send_email_report <- function(keyword, papers_df, pdf_success_count, total_size_
 
   log_msg("正在生成邮件报告...")
 
-  # 生成邮件正文
-  email_body <- sprintf(
-    "文献搜索报告\n\n关键词: %s\n搜索日期: %s\n总论文数: %d\nPDF下载成功: %d\n总下载大小: %.2f MB\n\n",
+  # 辅助函数：根据来源和ID生成文章链接
+  get_paper_url <- function(source, id, pdf_url) {
+    source <- tolower(trimws(source))
+    if (source == "arxiv") {
+      return(paste0("https://arxiv.org/abs/", id))
+    } else if (source == "pmc" || source == "europepmc") {
+      # Europe PMC 的链接格式
+      return(paste0("https://europepmc.org/article/MED/", id))
+    } else if (source == "openalex") {
+      # OpenAlex 链接
+      if (grepl("^W\\d+", id)) {
+        return(paste0("https://openalex.org/works/", id))
+      }
+    }
+    # 如果无法识别来源，尝试使用 pdf_url
+    if (!is.na(pdf_url) && nzchar(pdf_url)) {
+      # 移除 .pdf 扩展名，可能得到文章页面
+      url <- sub("\\.pdf$", "", pdf_url)
+      return(url)
+    }
+    return("")
+  }
+
+  # 辅助函数：从摘要中提取期刊信息
+  extract_journal_info <- function(abstract_text) {
+    if (is.na(abstract_text) || !nzchar(abstract_text)) {
+      return("")
+    }
+
+    # 提取 Comments 部分的会议或期刊信息
+    if (grepl("Comments:", abstract_text)) {
+      comment_match <- regmatches(abstract_text,
+        regexpr("Comments:[^\\n]*", abstract_text))
+      if (length(comment_match) > 0) {
+        journal_info <- sub("Comments:\\s*", "", comment_match[1])
+        journal_info <- trimws(strsplit(journal_info, "Subjects:")[[1]][1])
+        return(journal_info)
+      }
+    }
+
+    # 提取 Subjects 部分
+    if (grepl("Subjects:", abstract_text)) {
+      subject_match <- regmatches(abstract_text,
+        regexpr("Subjects:[^\\n]*", abstract_text))
+      if (length(subject_match) > 0) {
+        subject_info <- sub("Subjects:\\s*", "", subject_match[1])
+        subject_info <- trimws(strsplit(subject_info, "Cite as:")[[1]][1])
+        return(subject_info)
+      }
+    }
+
+    return("")
+  }
+
+  # 生成 HTML 邮件正文
+  html_header <- sprintf('<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; }
+  .header { background: linear-gradient(135deg, #667eea 0%%, #764ba2 100%%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; }
+  .header h1 { margin: 0 0 10px 0; font-size: 28px; }
+  .header .stats { font-size: 14px; opacity: 0.95; }
+  .paper { background: #f8f9fa; border-left: 4px solid #667eea; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
+  .paper-title { color: #2c3e50; font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+  .paper-meta { color: #666; font-size: 13px; margin-bottom: 8px; }
+  .paper-meta strong { color: #444; }
+  .paper-abstract { color: #555; font-size: 14px; line-height: 1.5; margin: 10px 0; padding: 10px; background: white; border-radius: 4px; }
+  .paper-links { margin-top: 12px; }
+  .paper-links a { display: inline-block; margin-right: 15px; color: #667eea; text-decoration: none; font-size: 13px; }
+  .paper-links a:hover { text-decoration: underline; }
+  .badge { display: inline-block; padding: 3px 8px; border-radius: 3px; font-size: 11px; font-weight: bold; margin-right: 5px; }
+  .badge-success { background: #28a745; color: white; }
+  .badge-warning { background: #ffc107; color: #333; }
+  .badge-info { background: #17a2b8; color: white; }
+  .footer { text-align: center; color: #999; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📚 文献搜索报告</h1>
+  <div class="stats">
+    <strong>关键词:</strong> %s<br>
+    <strong>搜索日期:</strong> %s<br>
+    <strong>总论文数:</strong> %d 篇 |
+    <strong>PDF下载成功:</strong> %d 篇 |
+    <strong>总下载大小:</strong> %.2f MB
+  </div>
+</div>
+',
     keyword,
     format(Sys.Date(), "%Y-%m-%d"),
     nrow(papers_df),
@@ -1204,49 +1292,104 @@ send_email_report <- function(keyword, papers_df, pdf_success_count, total_size_
     total_size_mb
   )
 
-  email_body <- paste0(email_body, strrep("=", 60), "\n\n")
-
-  # 添加每篇文章的详细信息（最多20篇）
-  for (i in seq_len(min(nrow(papers_df), 20))) {
+  # 生成每篇文章的 HTML（包含所有文章，不限制数量）
+  papers_html <- ""
+  for (i in seq_len(nrow(papers_df))) {
     p <- papers_df[i, ]
 
+    # 处理摘要
     abstract_text <- gsub("\\s+", " ", p$abstract)
     abstract_text <- trimws(abstract_text)
-    if (nchar(trimws(abstract_text)) == 0) abstract_text <- "（无摘要）"
 
-    paper_info <- sprintf(
-      "[%d] %s\n来源: %s | 日期: %s\n摘要: %s\nPDF: %s\n链接: %s\n\n%s\n\n",
+    # 提取期刊/会议信息
+    journal_info <- extract_journal_info(p$abstract)
+
+    # 移除摘要中的 Comments、Subjects、Cite as 部分，只保留正文
+    abstract_clean <- gsub("Comments:.*$", "", abstract_text)
+    abstract_clean <- gsub("Subjects:.*$", "", abstract_clean)
+    abstract_clean <- trimws(abstract_clean)
+
+    if (nchar(trimws(abstract_clean)) == 0) abstract_clean <- "（无摘要）"
+
+    # 限制摘要长度，避免邮件过大
+    if (nchar(abstract_clean) > 800) {
+      abstract_clean <- paste0(substr(abstract_clean, 1, 800), "...")
+    }
+
+    # 生成文章链接
+    paper_url <- get_paper_url(p$source, p$id, p$pdf_url)
+
+    # PDF 状态标记
+    pdf_badge <- if (isTRUE(p$pdf_ok)) {
+      sprintf('<span class="badge badge-success">✓ PDF已下载 (%.2f MB)</span>', p$pdf_mb)
+    } else {
+      '<span class="badge badge-warning">✗ PDF未下载</span>'
+    }
+
+    # 来源标记
+    source_badge <- sprintf('<span class="badge badge-info">%s</span>', toupper(p$source))
+
+    paper_html <- sprintf('
+<div class="paper">
+  <div class="paper-title">[%d] %s</div>
+  <div class="paper-meta">
+    <strong>作者:</strong> %s<br>
+    <strong>发表日期:</strong> %s | %s %s
+  </div>
+  %s
+  <div class="paper-abstract">%s</div>
+  <div class="paper-links">
+    %s
+    %s
+  </div>
+</div>
+',
       i,
       p$title,
-      toupper(p$source),
+      p$authors,
       p$date,
-      abstract_text,
-      if (isTRUE(p$pdf_ok)) sprintf("✓ 已下载 (%.2f MB)", p$pdf_mb) else "✗ 未下载",
-      p$id,
-      strrep("-", 60)
+      source_badge,
+      pdf_badge,
+      if (nzchar(journal_info)) sprintf('<div class="paper-meta"><strong>期刊/会议:</strong> %s</div>', journal_info) else "",
+      abstract_clean,
+      if (nzchar(paper_url)) sprintf('<a href="%s" target="_blank">📄 查看文章</a>', paper_url) else "",
+      if (!is.na(p$pdf_url) && nzchar(p$pdf_url)) sprintf('<a href="%s" target="_blank">📥 下载PDF</a>', p$pdf_url) else ""
     )
-    email_body <- paste0(email_body, paper_info)
+
+    papers_html <- paste0(papers_html, paper_html)
   }
 
-  if (nrow(papers_df) > 20) {
-    email_body <- paste0(email_body,
-      sprintf("\n... 还有 %d 篇论文（已省略）\n", nrow(papers_df) - 20))
-  }
-  email_body <- paste0(email_body, "\n\n此邮件由文献搜索脚本自动发送。\n")
+  # HTML 结尾
+  html_footer <- sprintf('
+<div class="footer">
+  <p>此邮件由文献搜索脚本自动生成并发送 | %s</p>
+  <p>共收录 %d 篇文献</p>
+</div>
+</body>
+</html>',
+    format(Sys.time(), "%Y-%m-%d %H:%M:%S"),
+    nrow(papers_df)
+  )
+
+  # 组合完整的 HTML
+  email_body <- paste0(html_header, papers_html, html_footer)
 
   # 写入临时文件
-  tmp_body <- tempfile(fileext = ".txt")
+  tmp_body <- tempfile(fileext = ".html")
   writeLines(email_body, tmp_body, useBytes = TRUE)
 
   # 邮件主题
-  subject <- sprintf("文献搜索报告 - %s (%s)", keyword, format(Sys.Date(), "%Y-%m-%d"))
+  subject <- sprintf("文献搜索报告 - %s (%s) - 共%d篇",
+                     keyword,
+                     format(Sys.Date(), "%Y-%m-%d"),
+                     nrow(papers_df))
 
   # 设置环境变量供 Python 脚本读取
   Sys.setenv(QQ_AUTH_CODE      = CONFIG$SMTP_AUTH_CODE)
   Sys.setenv(RECIPIENT_EMAIL   = CONFIG$RECIPIENT_EMAIL)
 
-  # 调用 Python 脚本发送邮件
-  cmd <- sprintf("python3 '%s' '%s' '%s' '%s' 2>&1",
+  # 调用 Python 脚本发送邮件（第4个参数指定为 html 格式）
+  cmd <- sprintf("python3 '%s' '%s' '%s' '%s' 'html' 2>&1",
                  py_script, subject, tmp_body, CONFIG$RECIPIENT_EMAIL)
 
   log_msg(sprintf("发送邮件到: %s", CONFIG$RECIPIENT_EMAIL))

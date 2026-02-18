@@ -1,0 +1,101 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: AI in TCM
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 14 | 有摘要: 11 | PDF下载: 4 (7.2 MB)
+
+============================================================
+
+
+[1] An AI-Powered Integrated Care Model Combining Traditional Chinese Medicine and Western Medicine for Personalized Alzheimer&rsquo;s Disease Management
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Alzheimer&#039;s Disease (AD) gradually reduces memory and cognition. While Western medicine focuses on pharmacological treatments, it frequently ignores holistic factors such as mood and digestion. Traditional Chinese Medicine (TCM) addresses these issues through a wellness-oriented approach. Howev
+--------------------------------------------------
+
+[2] Research advances in integrated traditional Chinese and Western medicine for the prevention and treatment of perioperative shivering
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_re_earch_advance_in__w7128503708.pdf (0.7 MB, 来源: original)
+
+  摘要: Perioperative shivering (POS) is a common complication during anesthesia recovery and has traditionally been regarded as a simple thermoregulatory response. Modern research has revealed that it involves complex mechanisms, including activation of the neuro–immune–inflammator y axis and dysfunction o
+--------------------------------------------------
+
+[3] Optimization of potential targets for antidepressant Chinese medicines: AI and multi-omics methods
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_optimization_of_pote_w7128475972.pdf (2.6 MB, 来源: original)
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] 基于数字五行芯片的可实证的环形拓扑理论的赛博中医数字中医硅基化新范式HoloSapien Cyber-Physical Clinical Architecture: A Unified BSPP/PCTT-Theoretic Framework with a 42-LUT Wu Xing Coprocessor for Silicon-Validated TCM Reasoning
+  来源: openalex | 日期: 2026-02-07 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18513391
+  摘要: “重要声明:本白皮书及配套代码仅用于中医理论教学演示,不可用于临床诊断、治疗或任何商业用途。任何违反本声明的行为均与作者无关,作者保留追究法律责任的权利。” ⚠️ ⚠️ ⚠️ 三重警示(必读,请勿跳过) ⚠️ ⚠️ ⚠️ 🚫 这不是医疗设备 — 不能诊断、不能治疗、不能替代医生 🚫 这不是AI系统 — 没有智能、没有学习、没有大数据 🚫 这是教学演示 — 仅用于理解中医理论,参数未经临床验证 如有身体不适,请立即就医,不要参考本文任何内容 🚨 重要声明 1. 学术声明:BSPP/PCTT理论是作者提出的教学辅助框架,属于探索性学术工作,尚未经过同行评议期刊发表,也未经过中医学术界广泛验证。欢迎
+--------------------------------------------------
+
+[5] 基于数字五行芯片的可实证的环形拓扑理论的赛博中医数字中医硅基化新范式HoloSapien Cyber-Physical Clinical Architecture: A Unified BSPP/PCTT-Theoretic Framework with a 42-LUT Wu Xing Coprocessor for Silicon-Validated TCM Reasoning
+  来源: openalex | 日期: 2026-02-07 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18513392
+  摘要: “重要声明:本白皮书及配套代码仅用于中医理论教学演示,不可用于临床诊断、治疗或任何商业用途。任何违反本声明的行为均与作者无关,作者保留追究法律责任的权利。” ⚠️ ⚠️ ⚠️ 三重警示(必读,请勿跳过) ⚠️ ⚠️ ⚠️ 🚫 这不是医疗设备 — 不能诊断、不能治疗、不能替代医生 🚫 这不是AI系统 — 没有智能、没有学习、没有大数据 🚫 这是教学演示 — 仅用于理解中医理论,参数未经临床验证 如有身体不适,请立即就医,不要参考本文任何内容 🚨 重要声明 1. 学术声明:BSPP/PCTT理论是作者提出的教学辅助框架,属于探索性学术工作,尚未经过同行评议期刊发表,也未经过中医学术界广泛验证。欢迎
+--------------------------------------------------
+
+[6] Multimodal AI‐Driven Identification of Dehydrocostus Lactone as a Potent Renal Fibrosis Attenuator Targeting IQGAP1
+  来源: openalex | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1002/advs.202520277
+  摘要: ABSTRACT Renal fibrosis, a hallmark of chronic kidney disease (CKD), remains a critical therapeutic challenge with limited effective interventions. Herein, we proposed a multimodal AI‐driven Traditional Chinese Medicine (TCM) symptom prediction model (TCM‐SPred) and predicted potential herb‐symptom 
+--------------------------------------------------
+
+[7] LingLanMiDian: Systematic Evaluation of LLMs on TCM Knowledge and Clinical Reasoning
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.48550/arxiv.2602.01779
+  摘要: Large language models (LLMs) are advancing rapidly in medical NLP, yet Traditional Chinese Medicine (TCM) with its distinctive ontology, terminology, and reasoning patterns requires domain-faithful evaluation. Existing TCM benchmarks are fragmented in coverage and scale and rely on non-unified or ge
+--------------------------------------------------
+
+[8] AN INVESTIGATION INTO THE CURRENT STATUS OF LEARNING CHINESE FOR TRADITIONAL CHINESE MEDICINE AMONG STUDENTS MAJORING IN TRADITIONAL MEDICINE AT THE HUE UNIVERSITY OF MEDICINE AND PHARMACY
+  来源: openalex | 日期: 2026-02-02 | PDF: ✔ openalex_an_investigation_int_w7127372659.pdf (0.6 MB, 来源: original)
+
+  摘要: This study aims to examine the current status of learning Chinese for Traditional Chinese Medicine (Chinese for TCM) among students majoring in Traditional Medicine at Hue University of Medicine and Pharmacy. Quantitative data collected from a 20-item questionnaire with 133 students were analyzed wi
+--------------------------------------------------
+
+[9] LingLanMiDian: Systematic Evaluation of LLMs on TCM Knowledge and Clinical Reasoning
+  来源: openalex | 日期: 2026-02-02 | PDF: ✔ openalex_linglanmidian_sy_tem_w7127542476.pdf (3.4 MB, 来源: arxiv_pdf)
+
+  摘要: Large language models (LLMs) are advancing rapidly in medical NLP, yet Traditional Chinese Medicine (TCM) with its distinctive ontology, terminology, and reasoning patterns requires domain-faithful evaluation. Existing TCM benchmarks are fragmented in coverage and scale and rely on non-unified or ge
+--------------------------------------------------
+
+[10] Traditional Chinese Medicine Modernization in Diagnosis and Treatment: Utilizing Artificial Intelligence and Nanotechnology
+  来源: openalex | 日期: 2026-02-01 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mco2.70596
+  摘要: ABSTRACT Traditional Chinese medicine (TCM), consisting of a complete TCM diagnosis and treatment system, is a valuable treasure in the long river of Chinese clinical history. However, the subjective diagnosis, ambiguous mechanisms, and complex formulas make it slightly lag behind the development of
+--------------------------------------------------
+
+[11] RCM×TCM: Structural Analysis and Defense Framework for Influence Mechanisms via Blur Engineering — A Unified Model and Verification Protocol across Marketing, Politics, and AI-Mediated Cognitive Lock-in
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18409764
+  摘要: Ethics & Misuse This work analyzes structural influence mechanisms (RCM×TCM×Class) that may operate without explicit falsehood, through composition control (DL/IL/RL), boundary spotlighting, and verification bypass (“blur engineering”). The author acknowledges that merely recognizing such mechanisms
+--------------------------------------------------
+
+[12] Integrating Traditional Chinese Medicine (TCM) and Western Medicine Perspectives on Biological Rhythms - From Ancient Theories to AI-Driven Multidisciplinary Modeling
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[13] RCM×TCM: Structural Analysis and Defense Framework for Influence Mechanisms via Blur Engineering — A Unified Model and Verification Protocol across Marketing, Politics, and AI-Mediated Cognitive Lock-in
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18409765
+  摘要: Ethics & Misuse This work analyzes structural influence mechanisms (RCM×TCM×Class) that may operate without explicit falsehood, through composition control (DL/IL/RL), boundary spotlighting, and verification bypass (“blur engineering”). The author acknowledges that merely recognizing such mechanisms
+--------------------------------------------------
+
+[14] Advancing the modernization of traditional Chinese medicine through artificial intelligence and multimodal data integration
+  来源: openalex | 日期: 2026-01-26 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1186/s13020-025-01194-y
+  摘要: 无摘要
+--------------------------------------------------

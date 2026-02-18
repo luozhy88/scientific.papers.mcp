@@ -1,0 +1,189 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: AI model
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 30 | 有摘要: 30 | PDF下载: 30 (179.2 MB)
+
+============================================================
+
+
+[1] Enhancing Building Semantics Preservation in AI Model Training with Large Language Model Encodings
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_enhancing_building_s_260215791.pdf (1.5 MB, 来源: arxiv_pdf)
+
+  摘要: Accurate representation of building semantics, encompassing both generic object types and specific subtypes, is essential for effective AI model training in the architecture, engineering, construction, and operation (AECO) industry. Conventional encoding methods (e.g., one-hot) often fail to convey 
+--------------------------------------------------
+
+[2] Molecular Design beyond Training Data with Novel Extended Objective Functionals of Generative AI Models Driven by Quantum Annealing Computer
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_molecular_de_ign_bey_260215451.pdf (1.5 MB, 来源: arxiv_pdf)
+
+  摘要: Deep generative modeling to stochastically design small molecules is an emerging technology for accelerating drug discovery and development. However, one major issue in molecular generative models is their lower frequency of drug-like compounds. To resolve this problem, we developed a novel framewor
+--------------------------------------------------
+
+[3] High-Fidelity Network Management for Federated AI-as-a-Service: Cross-Domain Orchestration
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_high-fidelity_networ_260215281.pdf (0.4 MB, 来源: arxiv_pdf)
+
+  摘要: To support the emergence of AI-as-a-Service (AIaaS), communication service providers (CSPs) are on the verge of a radical transformation—from pure connectivity providers to AIaaS a managed network service (control-and-orchestration plane that exposes AI models). In this model, the CSP is responsible
+--------------------------------------------------
+
+[4] AI Arms and Influence: Frontier Models Exhibit Sophisticated Reasoning in Simulated Nuclear Crises
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_ai_arm_and_influence_260214740.pdf (0.9 MB, 来源: arxiv_pdf)
+
+  摘要: Today’s leading AI models engage in sophisticated behaviour when placed in strategic competition. They spontaneously attempt deception, signaling intentions they do not intend to follow; they demonstrate rich theory of mind, reasoning about adversary beliefs and anticipating their actions; and they 
+--------------------------------------------------
+
+[5] Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report v1.5
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_frontier_ai_ri_k_man_260214457.pdf (3.3 MB, 来源: arxiv_pdf)
+
+  摘要: To understand and identify the unprecedented risks posed by rapidly advancing artificial intelligence (AI) models, Frontier AI Risk Management Framework in Practice (Chen2025FrontierAR) presents a comprehensive assessment of their frontier risks. As Large Language Models (LLMs) general capabilities 
+--------------------------------------------------
+
+[6] Competition for attention predicts good-to-bad tipping in AI
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_competition_for_atte_260214370.pdf (2.5 MB, 来源: arxiv_pdf)
+
+  摘要: More than half the global population now carries devices that can run ChatGPT-like language models with no Internet connection and minimal safety oversight – and hence the potential to promote self-harm, financial losses and extremism among other dangers 1; 2; 3. Existing safety tools either require
+--------------------------------------------------
+
+[7] Benchmarking AI Performance on End-to-End Data Science Projects
+  来源: arxiv | 日期: 2026-02-15 | PDF: ✔ arxiv_benchmarking_ai_perf_260214284.pdf (2.1 MB, 来源: arxiv_pdf)
+
+  摘要: Data science is an integrated workflow of technical, analytical, communication, and ethical skills, but current AI benchmarks focus mostly on constituent parts. We test whether AI models can generate end-to-end data science projects. To do this we create a benchmark of 40 end-to-end data science pro
+--------------------------------------------------
+
+[8] Designing a Rashomon Machine: Pluri-perspectivism and XAI for Creativity Support
+  来源: arxiv | 日期: 2026-02-15 | PDF: ✔ arxiv_de_igning_a_ra_homon_260214232.pdf (4.3 MB, 来源: arxiv_pdf)
+
+  摘要: s of the CHI Conference on Human Factors in Computing Systems, pp. 1–9. Cited by: §2. A. Newen, L. De Bruin, and S. Gallagher (2018) The oxford handbook of 4e cognition. Oxford University Press. Cited by: §3.2, §3.3. K. O’Toole and E. Horvát (2024) Extending human creativity with ai. Journal of Crea
+--------------------------------------------------
+
+[9] ForesightSafety Bench: A Frontier Risk Evaluation and Governance Framework towards Safe AI
+  来源: arxiv | 日期: 2026-02-15 | PDF: ✔ arxiv_fore_ightsafety_benc_260214135.pdf (7.3 MB, 来源: arxiv_pdf)
+
+  摘要: Rapidly evolving AI exhibits increasingly strong autonomy and goal-directed capabilities, accompanied by derivative systemic risks that are more unpredictable, difficult to control, and potentially irreversible. However, current AI safety evaluation systems suffer from critical limitations such as r
+--------------------------------------------------
+
+[10] Toward Autonomous O-RAN: A Multi-Scale Agentic AI Framework for Real-Time Network Control and Management
+  来源: arxiv | 日期: 2026-02-15 | PDF: ✔ arxiv_toward_autonomou_o-r_260214117.pdf (0.4 MB, 来源: arxiv_pdf)
+
+  摘要: Open Radio Access Networks (O-RAN) promise flexible 6G network access through disaggregated, software-driven components and open interfaces, but this programmability also increases operational complexity. Multiple control loops coexist across the service management layer and RAN Intelligent Controll
+--------------------------------------------------
+
+[11] Bridging AI and Clinical Reasoning: Abductive Explanations for Alignment on Critical Symptoms
+  来源: arxiv | 日期: 2026-02-15 | PDF: ✔ arxiv_bridging_ai_and_clin_260213985.pdf (0.7 MB, 来源: arxiv_pdf)
+
+  摘要: . Artificial intelligence (AI) has demonstrated strong potential in clinical diagnostics, often achieving accuracy comparable to or exceeding that of human experts. A key challenge, however, is that AI reasoning frequently diverges from structured clinical frameworks, limiting trust, interpretabilit
+--------------------------------------------------
+
+[12] A generalizable foundation model for intraoperative understanding across surgical procedures
+  来源: arxiv | 日期: 2026-02-14 | PDF: ✔ arxiv_a_generalizable_foun_260213633.pdf (40.0 MB, 来源: arxiv_pdf)
+
+  摘要: In minimally invasive surgery, clinical decisions depend on real-time visual interpretation, yet intraoperative perception varies substantially across surgeons and procedures. This variability limits consistent assessment, training, and the development of reliable artificial intelligence systems, as
+--------------------------------------------------
+
+[13] Parametric-Sensitivity Aware Retransmission for Efficient AI Downloading
+  来源: arxiv | 日期: 2026-02-14 | PDF: ✔ arxiv_parametric-sen_itivi_260213607.pdf (1.8 MB, 来源: arxiv_pdf)
+
+  摘要: The edge artificial intelligence (AI) applications in next-generation mobile networks demand efficient AI-model downloading techniques to support real-time, on-device inference. However, transmitting high-dimensional AI models over wireless channels remains challenging due to limited communication r
+--------------------------------------------------
+
+[14] Future of Edge AI in biodiversity monitoring
+  来源: arxiv | 日期: 2026-02-13 | PDF: ✔ arxiv_future_of_edge_ai_in_260213496.pdf (3.5 MB, 来源: arxiv_pdf)
+
+  摘要: 1. Many ecological decisions are slowed by the gap between collecting and analysing biodiversity data. Edge computing moves processing closer to the sensor, with edge artificial intelligence (AI) enabling on-device inference, reducing reliance on data transfer and continuous connectivity. In princip
+--------------------------------------------------
+
+[15] Personalization Aids Pluralistic Alignment Under Competition
+  来源: arxiv | 日期: 2026-02-13 | PDF: ✔ arxiv_per_onalization_aid__260213451.pdf (7.3 MB, 来源: arxiv_pdf)
+
+  摘要: Can competition among misaligned AI providers yield aligned outcomes for a diverse population of users, and what role does model personalization play? We study a setting where multiple competing AI providers interact with multiple users who must make downstream decisions but differ in preferences. P
+--------------------------------------------------
+
+[16] Quantization-Aware Collaborative Inference for Large Embodied AI Models
+  来源: arxiv | 日期: 2026-02-13 | PDF: ✔ arxiv_quantization-aware_c_260213052.pdf (2.9 MB, 来源: arxiv_pdf)
+
+  摘要: Large artificial intelligence models (LAIMs) are increasingly regarded as a core intelligence engine for embodied AI applications. However, the massive parameter scale and computational demands of LAIMs pose significant challenges for resource-limited embodied agents. To address this issue, we inves
+--------------------------------------------------
+
+[17] Can we trust AI to detect healthy multilingual English speakers among the cognitively impaired cohort in the UK? An investigation using real-world conversational speech
+  来源: arxiv | 日期: 2026-02-13 | PDF: ✔ arxiv_can_we_tru_t_ai_to_d_260213047.pdf (2.1 MB, 来源: arxiv_pdf)
+
+  摘要: Objective: Conversational speech often reveals early signs of cognitive decline, such as dementia and mild cognitive impairment (MCI). Numerous recent studies have demonstrated the high performance of AI models in detecting Alzheimer’s dementia among monolingual speakers in their native languages. I
+--------------------------------------------------
+
+[18] Visual Reasoning Benchmark: Evaluating Multimodal LLMs on Classroom-Authentic Visual Problems from Primary Education
+  来源: arxiv | 日期: 2026-02-12 | PDF: ✔ arxiv_vi_ual_rea_oning_ben_260212196.pdf (2.7 MB, 来源: arxiv_pdf)
+
+  摘要: AI models have achieved state-of-the-art results in textual reasoning; however, their ability to reason over spatial and relational structures remains a critical bottleneck—particularly in early-grade maths, which relies heavily on visuals. This paper introduces the visual reasoning benchmark (VRB),
+--------------------------------------------------
+
+[19] Cross-Architecture Model Diffing with Crosscoders: Unsupervised Discovery of Differences Between LLMs
+  来源: arxiv | 日期: 2026-02-12 | PDF: ✔ arxiv_cro_-architecture_mo_260211729.pdf (3.8 MB, 来源: arxiv_pdf)
+
+  摘要: Model diffing, the process of comparing models' internal representations to identify their differences, is a promising approach for uncovering safety-critical behaviors in new models. However, its application has so far been primarily focused on comparing a base model with its finetune. Since new LL
+--------------------------------------------------
+
+[20] Reality Copilot: Voice-First Human-AI Collaboration in Mixed Reality Using Large Multimodal Models
+  来源: arxiv | 日期: 2026-02-11 | PDF: ✔ arxiv_reality_copilot_voic_260211025.pdf (29.0 MB, 来源: arxiv_pdf)
+
+  摘要: . Large Multimodal Models (LMMs) have shown strong potential for assisting users in tasks, such as programming, content creation, and information access, yet their interaction remains largely limited to traditional interfaces such as desktops and smartphones. Meanwhile, advances in mixed reality (MR
+--------------------------------------------------
+
+[21] Ecological mapping with geospatial foundation models
+  来源: arxiv | 日期: 2026-02-11 | PDF: ✔ arxiv_ecological_mapping_w_260210720.pdf (8.4 MB, 来源: arxiv_pdf)
+
+  摘要: Geospatial foundation models (GFMs) are a fast-emerging paradigm for various geospatial tasks, such as ecological mapping. However, the utility of GFMs has not been fully explored for high-value use cases. This study aims to explore the utility, challenges and opportunities associated with the appli
+--------------------------------------------------
+
+[22] Drawing Your Programs: Exploring the Applications of Visual-Prompting with GenAI for Teaching and Assessment
+  来源: arxiv | 日期: 2026-02-11 | PDF: ✔ arxiv_drawing_your_program_260210529.pdf (5.3 MB, 来源: arxiv_pdf)
+
+  摘要: . When designing a program, both novice programmers and seasoned developers alike often sketch out—or, perhaps more famously, whiteboard—their ideas. Yet despite the introduction of natively multimodal Generative AI models, work on Human-GenAI collaborative coding has remained overwhelmingly focused
+--------------------------------------------------
+
+[23] Time-to-Event Transformer to Capture Timing Attention of Events in EHR Time Series
+  来源: arxiv | 日期: 2026-02-11 | PDF: ✔ arxiv_time-to-event_tran_f_260210385.pdf (2.0 MB, 来源: arxiv_pdf)
+
+  摘要: . Automatically discovering personalized sequential events from large-scale time-series data is crucial for enabling precision medicine in clinical research, yet it remains a formidable challenge even for contemporary AI models. For example, while transformers capture rich associations, they are mos
+--------------------------------------------------
+
+[24] Understanding the Effects of AI-Assisted Critical Thinking on Human-AI Decision Making
+  来源: arxiv | 日期: 2026-02-10 | PDF: ✔ arxiv_under_tanding_the_ef_260210222.pdf (5.1 MB, 来源: arxiv_pdf)
+
+  摘要: . Despite the growing prevalence of human-AI decision making, the human-AI team’s decision performance often remains suboptimal, partially due to insufficient examination of humans’ own reasoning. In this paper, we explore designing AI systems that directly analyze humans’ decision rationales and en
+--------------------------------------------------
+
+[25] AlgoVeri: An Aligned Benchmark for Verified Code Generation on Classical Algorithms
+  来源: arxiv | 日期: 2026-02-10 | PDF: ✔ arxiv_algoveri_an_aligned__260209464.pdf (1.5 MB, 来源: arxiv_pdf)
+
+  摘要: Vericoding refers to the generation of formally verified code from rigorous specifications. Recent AI models show promise in vericoding, but a unified methodology for cross-paradigm evaluation is lacking. Existing benchmarks test only individual languages/tools (e.g., Dafny, Verus, and Lean) and eac
+--------------------------------------------------
+
+[26] Behavioral Economics of AI: LLM Biases and Corrections
+  来源: arxiv | 日期: 2026-02-10 | PDF: ✔ arxiv_behavioral_economic__260209362.pdf (2.0 MB, 来源: arxiv_pdf)
+
+  摘要: Do generative AI models, particularly large language models (LLMs), exhibit systematic behavioral biases in economic and financial decisions? If so, how can these biases be mitigated? Drawing on the cognitive psychology and experimental economics literatures, we conduct the most comprehensive set of
+--------------------------------------------------
+
+[27] Synthetic Reflections on Resource Extraction
+  来源: arxiv | 日期: 2026-02-10 | PDF: ✔ arxiv_synthetic_reflection_260209299.pdf (1.2 MB, 来源: arxiv_pdf)
+
+  摘要: This paper describes how AI models can be augmented and adapted to produce interpretation of landscapes. We describe the technical framework of a Sentinel-2 satellite asset interpretation pipeline that combines statistical operations, human judgement, and generative AI models to create succinct comm
+--------------------------------------------------
+
+[28] AI-Driven Cardiorespiratory Signal Processing: Separation, Clustering, and Anomaly Detection
+  来源: arxiv | 日期: 2026-02-09 | PDF: ✔ arxiv_ai-driven_cardiore_p_260209210.pdf (32.4 MB, 来源: arxiv_pdf)
+
+  摘要: This research applies artificial intelligence (AI) to separate, cluster, and analyze cardiorespiratory sounds. We recorded a new dataset and developed several AI models, including generative AI methods based on large language models (LLMs) for guided separation, explainable AI (XAI) techniques to in
+--------------------------------------------------
+
+[29] PRISM-XR: Empowering Privacy-Aware XR Collaboration with Multimodal Large Language Models
+  来源: arxiv | 日期: 2026-02-09 | PDF: ✔ arxiv_prism-xr_empowering__260210154.pdf (2.8 MB, 来源: arxiv_pdf)
+
+  摘要: Multimodal Large Language Models (MLLMs) enhance collaboration in Extended Reality (XR) environments by enabling flexible object and animation creation through the combination of natural language and visual inputs. However, visual data captured by XR headsets includes real-world backgrounds that may
+--------------------------------------------------
+
+[30] The Use of AI Tools to Develop and Validate Q-Matrices
+  来源: arxiv | 日期: 2026-02-09 | PDF: ✔ arxiv_the_u_e_of_ai_tool_t_260208796.pdf (0.8 MB, 来源: arxiv_pdf)
+
+  摘要: Constructing a Q-matrix is a critical but labor-intensive step in cognitive diagnostic modeling (CDM). This study investigates whether AI tools (i.e., general language models) can support Q-matrix development by comparing AI-generated Q-matrices with a validated Q-matrix from Li and Suen (2013) for 
+--------------------------------------------------

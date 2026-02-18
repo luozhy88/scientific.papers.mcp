@@ -1,0 +1,15 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: CRISPR
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 1 | 有摘要: 1 | PDF下载: 1 (1.2 MB)
+
+============================================================
+
+
+[1] STRAND: Sequence-Conditioned Transport for Single-Cell Perturbations
+  来源: arxiv | 日期: 2026-02-10 | PDF: ✔ arxiv_strand_sequence-cond_260210156.pdf (1.2 MB, 来源: arxiv_pdf)
+
+  摘要: Predicting how genetic perturbations change cellular state is a core problem for building controllable models of gene regulation. Perturbations targeting the same gene can produce different transcriptional responses depending on their genomic locus, including different transcription start sites and 
+--------------------------------------------------

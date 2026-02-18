@@ -1,0 +1,22 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: insomnia  in TCM 
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 2 | 有摘要: 1 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] An Analysis Study of <scp> <i>Celastrus orbiculatus</i> </scp> Fruits ( <i>Beihehuan</i> ) for Insomnia Treatment and Potential Replacement for <scp> <i>Albizia julibrissin</i> </scp> Flowers ( <i>Hehuanhua</i> )
+  来源: openalex | 日期: 2026-01-26 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bmc.70370
+  摘要: ABSTRACT Celastrus orbiculatus fruits as Beihehuan ( BHH ) in Chinese are used as an alternative to Albizia julibrissin flowers ( Hehuanhua ) for insomnia treatment in North of China. Both of them perhaps contain similar material foundations with common components, making them highly worthy of syste
+--------------------------------------------------
+
+[2] Yiqi Huoxue formula attenuates pressure overload-induced chronic heart failure with insomnia via regulation of RORα-mediated mitochondrial fuction
+  来源: openalex | 日期: 2026-01-23 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------

@@ -1,0 +1,69 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: artificial intelligence
+时间范围: 最近 20 天 (2026-01-29 至 2026-02-18)
+总论文: 10 | 有摘要: 8 | PDF下载: 6 (17.9 MB)
+
+============================================================
+
+
+[1] Statistical approximation is not general intelligence
+  来源: top_journals | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[2] Modular engineering of thermoresponsive allosteric proteins
+  来源: top_journals | 日期: 2026-02-12 | PDF: ✔ top_journals_modular_engineering__httpsdoiorg1.pdf (6.8 MB, 来源: unpaywall_doi)
+
+  摘要: Abstract Thermogenetics enables noninvasive spatiotemporal control over protein activity in living cells and tissues, yet its applications have largely been restricted to transcriptional regulation and membrane recruitment. Here, we present a generalizable strategy for engineering thermosensitive al
+--------------------------------------------------
+
+[3] My ‘detective’ job as a competitive-intelligence consultant for pharma
+  来源: top_journals | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] Artificial gauge fields and dimensions in a polariton hofstadter ladder
+  来源: top_journals | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: Abstract Artificial gauge fields allow uncharged particles such as photons to mimic the behaviour of charged particles subjected to magnetic fields, providing a powerful platform to alter the effective dynamics and exploring topological physics. Topological exciton-polariton lasers have attracted co
+--------------------------------------------------
+
+[5] Turning the web against sex traffickers: Scalable artificial intelligence is harnessed for investigative search
+  来源: top_journals | 日期: 2026-02-05 | PDF: 无PDF链接
+
+  摘要: Scalable artificial intelligence is harnessed for investigative search
+--------------------------------------------------
+
+[6] Expanding the DNA damaging potential of artificial metallo-nucleases with click chemistry
+  来源: top_journals | 日期: 2026-02-03 | PDF: ✔ top_journals_expanding_the_dna_da_httpsdoiorg1.pdf (2.9 MB, 来源: unpaywall_doi)
+
+  摘要: Abstract Recently, copper(I)-catalysed azide-alkyne cycloaddition (CuAAC) click chemistry has emerged as a promising approach for designing new artificial metallo-nucleases (AMNs) with DNA-damaging properties. By functionalising a central organic azide with three alkyne donors, Tri-Click (TC) ligand
+--------------------------------------------------
+
+[7] Lattice surgery realized on two distance-three repetition codes with superconducting qubits
+  来源: top_journals | 日期: 2026-01-30 | PDF: ✔ top_journals_lattice_urgery_reali_httpsdoiorg1.pdf (1.9 MB, 来源: unpaywall_doi)
+
+  摘要: Abstract Quantum error correction is needed for quantum computers to be capable of executing algorithms using hundreds of logical qubits in a fault-tolerant manner. Recent experiments have progressed towards this by demonstrating sufficiently low error rates for state preservation of a single logica
+--------------------------------------------------
+
+[8] Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_perceptive_humanoid__260215827.pdf (3.4 MB, 来源: arxiv_pdf)
+
+  摘要: While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-lik
+--------------------------------------------------
+
+[9] CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_cri_pedit_low-curvat_260215823.pdf (2.3 MB, 来源: arxiv_pdf)
+
+  摘要: A central challenge in large language model (LLM) editing is capability preservation: methods that successfully change targeted behavior can quietly game the editing proxy and corrupt general capabilities, producing degenerate behaviors reminiscent of proxy/reward hacking. We present CrispEdit, a sc
+--------------------------------------------------
+
+[10] Developing AI Agents with Simulated Data: Why, what, and how?
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_developing_ai_agent__260215816.pdf (0.7 MB, 来源: arxiv_pdf)
+
+  摘要: As insufficient data volume and quality remain the key impediments to the adoption of modern subsymbolic AI, techniques of synthetic data generation are in high demand. Simulation offers an apt, systematic approach to generating diverse synthetic data. This chapter introduces the reader to the key c
+--------------------------------------------------

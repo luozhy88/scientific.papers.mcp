@@ -1,0 +1,36 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: starch
+时间范围: 最近 5 天 (2026-02-13 至 2026-02-18)
+总论文: 4 | 有摘要: 2 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] Starch-Based Hydrogel: Classifications, Preparations, Properties, Evaluations, And Future Applications
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18673020
+  摘要: In recent years, starch-derived hydrogels have attracted considerable interest because of their distinctive characteristics, biocompatibility, and biodegradability. This review seeks to deliver a thorough overview of starch-based hydrogels, encompassing their classifications, preparation techniques,
+--------------------------------------------------
+
+[2] Optimizing panicle fertilizer application based on amylose content for balancing yield and quality of japonica rice
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fpls.2026.1745001
+  摘要: Introduction: Panicle nitrogen application is a key agronomic practice for regulating rice yield and quality, yet its effects are highly dependent on genetic background, especially the amylose content of japonica rice varieties. Methods: This study systematically examined the differential responses 
+--------------------------------------------------
+
+[3] Exploring the Immense Potential of Pectin- and Starch-Based Dressings in Wound Healing
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] Molecular and microstructural cues for starch digestive heterogeneity in Indian pearl millet (Pennisetum Glaucum)
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1016/j.jff.2026.107208
+  摘要: 无摘要
+--------------------------------------------------

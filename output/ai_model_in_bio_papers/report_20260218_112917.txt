@@ -1,0 +1,419 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: AI model  in bio
+时间范围: 最近 60 天 (2025-12-20 至 2026-02-18)
+总论文: 60 | 有摘要: 59 | PDF下载: 4 (12.7 MB)
+
+============================================================
+
+
+[1] Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647022
+  摘要: Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→
+--------------------------------------------------
+
+[2] Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647138
+  摘要: Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→
+--------------------------------------------------
+
+[3] Semantic Parasitism: The Bio-Energetic Cost of High-Entropy Abstract Information in Human Neural Architectures
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647006
+  摘要: [ORIGINAL ABSTRACT] Existential depression is traditionally conceptualized as psychological distress or neurochemical imbalance. In this paper, I propose an alternative framework: the Semantic Parasitism Hypothesis. I suggest that existential depression may involve a systemic, protective metabolic a
+--------------------------------------------------
+
+[4] Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18647021
+  摘要: Biological Relativity: Evidence of a Lorentz-Invariant Folding Limit in Finite-Bandwidth Systems Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→
+--------------------------------------------------
+
+[5] Proactive Healthcare - Fighting the affects of aging (Closed-Loop Biological Restoration & Multi-Omics Optimization Platform)
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18644752
+  摘要: The Guardian System v7.0Ultimate Closed-Loop Biological Restoration & Multi-Omics Optimization PlatformFebruary 2026 Authors: Morgan Elliott Smart¹ and Jasper Kiron Smart¹Independent Research CollectiveCorresponding Author: Morgan Elliott Smart AbstractWe present The Guardian System v7.0, a comprehe
+--------------------------------------------------
+
+[6] Proactive Healthcare - Fighting the affects of aging (Closed-Loop Biological Restoration & Multi-Omics Optimization Platform)
+  来源: openalex | 日期: 2026-02-14 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18644753
+  摘要: The Guardian System v7.0Ultimate Closed-Loop Biological Restoration & Multi-Omics Optimization PlatformFebruary 2026 Authors: Morgan Elliott Smart¹ and Jasper Kiron Smart¹Independent Research CollectiveCorresponding Author: Morgan Elliott Smart AbstractWe present The Guardian System v7.0, a comprehe
+--------------------------------------------------
+
+[7] Pigmentos bioactivos del chinicuil (&lt;i&gt;Comadia redtenbacheri&lt;/i&gt;): química, funcionalidad y revitalización gastronómica asistida por inteligencia artificial
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_pigmento_bioactivo_d_w7128770881.pdf (0.8 MB, 来源: original)
+
+  摘要: The limited integration of traditional ingredients into contemporary food systems has restricted the functional and economic utilization of native edible insects such as the chinicuil (Comadia redtenbacheri). In this work, the physicochemical aspects of chinicuil as a food ingredient and the technol
+--------------------------------------------------
+
+[8] A Review on AI-Based Data-Driven Models for Optimization of Nanocarriers as Drug Delivery Systems
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  摘要: Artificial intelligence (AI), primarily machine learning (ML), has revolutionized as a transformative strategy to accelerate nanomedicine research and optimization. The present review highlights the nanocarrier-integrated AI-based approaches to enhance the performance of drug delivery systems. Tradi
+--------------------------------------------------
+
+[9] Full-Spectrum Synthetic Organizations: How AI Closes the Last Verification Gap for Under $500
+  来源: openalex | 日期: 2026-02-08 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18521458
+  摘要: Full-Spectrum Synthetic Organizations demonstrates that a complete organizational impersonation infrastructure—fabricated company, deepfake-capable executives, backdoor-compromised AI products, and customer-facing operations—can be established for under $500 initial cost and approximately $400/month
+--------------------------------------------------
+
+[10] Full-Spectrum Synthetic Organizations: How AI Closes the Last Verification Gap for Under $500
+  来源: openalex | 日期: 2026-02-08 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18521459
+  摘要: Full-Spectrum Synthetic Organizations demonstrates that a complete organizational impersonation infrastructure—fabricated company, deepfake-capable executives, backdoor-compromised AI products, and customer-facing operations—can be established for under $500 initial cost and approximately $400/month
+--------------------------------------------------
+
+[11] Bioinspired and Engineered Ion‐Selective Membranes Toward High‐Flux and High‐Selectivity Energy Devices
+  来源: openalex | 日期: 2026-02-07 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Nanofluidic membranes with precise ion selectivity and ultrahigh permeability are central to advancing electromembrane technologies for energy generation, storage, water purification, and environmental monitoring. The performance of these systems hinges on the ability of membranes to effici
+--------------------------------------------------
+
+[12] Accurate somatic variant detection from formalin fixed, paraffin embedded tissue (FFPE) derived WES and WGS by DeepOmicsFFPE-PLUS, a sequence context-based transformer
+  来源: openalex | 日期: 2026-02-07 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.64898/2026.02.05.702695
+  摘要: Abstract Formalin-fixed paraffin-embedded (FFPE) tissues represent a vast archival resource for genomic studies, yet their utility remains constrained by fixation-induced DNA damage and subsequent sequencing artifacts. To comprehensively characterize and address this challenge, we analyzed matched F
+--------------------------------------------------
+
+[13] The Sapezoic Eon: A Meta-Theoretical Framework for Planetary Intelligence and Bio-Digital Homeostasis
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18501869
+  摘要: Abstract This report establishes the meta-theoretical framework for the ""Sapezoic Eon"" (智慧代), a proposed geological epoch following the Anthropocene, characterized by the integration of technological logic into planetary coupled feedback loops. We define ""Planetary Intelligence"" not as an indivi
+--------------------------------------------------
+
+[14] The Sapezoic Eon: A Meta-Theoretical Framework for Planetary Intelligence and Bio-Digital Homeostasis
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18501868
+  摘要: Abstract This report establishes the meta-theoretical framework for the ""Sapezoic Eon"" (智慧代), a proposed geological epoch following the Anthropocene, characterized by the integration of technological logic into planetary coupled feedback loops. We define ""Planetary Intelligence"" not as an indivi
+--------------------------------------------------
+
+[15] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18263735
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[16] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18500492
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[17] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18500551
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[18] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-05 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18488858
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[19] Development and Validation of a Multimodal AI Framework for Assessing Craving Intensity and Vedic Personality Traits in Substance Use Disorders
+  来源: openalex | 日期: 2026-02-05 | PDF: 无PDF链接
+
+  摘要: The clinical evaluation of craving in the context of Substance Use Disorders, is still heavily dependent on subjective self-reports, which are frequently tainted by patient anosognosia and social desirability bias, despite advancements in addiction science. Moreover, the qualitative internal states 
+--------------------------------------------------
+
+[20] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-04 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18475653
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[21] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-04 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18483591
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[22] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-04 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18475627
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[23] BioCube
+  来源: openalex | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18464340
+  摘要: 1. Functionality • The Stone Cube computes by state realization, not symbolic instructions. • Nodes represent electron routing points; each has a permanent identity. • Execution occurs atomically: all nodes update simultaneously. • Delta measures changes; Alpha proposes the next state; Beta is the c
+--------------------------------------------------
+
+[24] BioCube
+  来源: openalex | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18464341
+  摘要: 1. Functionality • The Stone Cube computes by state realization, not symbolic instructions. • Nodes represent electron routing points; each has a permanent identity. • Execution occurs atomically: all nodes update simultaneously. • Delta measures changes; Alpha proposes the next state; Beta is the c
+--------------------------------------------------
+
+[25] Using AI Algorithms and Machine Learning in the Analysis of a Bio-Purification Method (Therapeutic Emesis, Known as “Vamana Karma”): Protocol for a Mixed Methods Study
+  来源: openalex | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.2196/79875
+  摘要: Background: Therapeutic emesis (TE), known as vamana karma, is a classical method of detoxification performed to eliminate vitiated kapha (bio-humor governing fluid regulation and structural cohesion of the body in normalcy) ailments from the body. The assessment of this complete process depends on 
+--------------------------------------------------
+
+[26] Machine Learning–Driven Optimization of Photovoltaic Systems on Uneven Terrain for Sustainable Energy Development
+  来源: openalex | 日期: 2026-02-02 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://www.mdpi.com/2673-2688/7/2/55/pdf?version=1770040660
+  摘要: This study presents an AI-driven computational framework for optimizing the orientation and spatial deployment of photovoltaic (PV) systems installed on uneven terrain, with the objective of enhancing energy efficiency and supporting sustainable energy development. The proposed methodology integrate
+--------------------------------------------------
+
+[27] A Multi-Model AI Orchestration Framework for Interoperable, Responsible, and Scalable Intelligence Systems
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18355939
+  摘要: A Multi-Model AI Orchestration Framework for Interoperable, Responsible, and Scalable Intelligence Systems The CollectiveOS Approach to Assimilating Major AI Platforms WHITE PAPER (PUBLIC-SAFE RELEASE) Date: December 2025 Classification: UNCLASSIFIED / PUBLIC Prepared by: The Collective Strategy & G
+--------------------------------------------------
+
+[28] A Multi-Model AI Orchestration Framework for Interoperable, Responsible, and Scalable Intelligence Systems
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.17969528
+  摘要: A Multi-Model AI Orchestration Framework for Interoperable, Responsible, and Scalable Intelligence Systems The CollectiveOS Approach to Assimilating Major AI Platforms WHITE PAPER (PUBLIC-SAFE RELEASE) Date: December 2025 Classification: UNCLASSIFIED / PUBLIC Prepared by: The Collective Strategy & G
+--------------------------------------------------
+
+[29] The Causa Sui: Real Differentiable Causal Emergence (Erik Hoel) for Advanced Self-Aware Neural Architectures
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18454203
+  摘要: This work presents The Causa Sui, a computational framework for constructing and empirically evaluating self-aware neural architectures through differentiable causal emergence. Grounded in Erik Hoel’s theory of causal emergence, the system operationalizes Effective Information (EI) as a measurable, 
+--------------------------------------------------
+
+[30] Explainable multi-modal approach for uncovering key predictors of stroke-risk from ECG, EMG, blood pressure, and respiratory signals
+  来源: openalex | 日期: 2026-02-02 | PDF: ✔ openalex_explainable_multi-mo_w7127161433.pdf (4.4 MB, 来源: original)
+
+  摘要: Accurate and timely stroke-risk prediction is necessary to help patients at risk take guided measures, as stroke remains a leading cause of death and long-term disability worldwide. While there are several developed stroke-risk prediction models using various bio-signals, it remains unclear which si
+--------------------------------------------------
+
+[31] The Causa Sui: Real Differentiable Causal Emergence (Erik Hoel) for Advanced Self-Aware Neural Architectures
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18454202
+  摘要: This work presents The Causa Sui, a computational framework for constructing and empirically evaluating self-aware neural architectures through differentiable causal emergence. Grounded in Erik Hoel’s theory of causal emergence, the system operationalizes Effective Information (EI) as a measurable, 
+--------------------------------------------------
+
+[32] Integration of Artificial Intelligence in Food Processing Technologies
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/pr14030513
+  摘要: The food processing industry is undergoing a profound transformation with the integration of Artificial Intelligence (AI), evolving from traditional automation to intelligent, adaptive systems aligned with Industry 5.0 principles. This review examines AI’s role across the food value chain, including
+--------------------------------------------------
+
+[33] The Nexus Framework: Whitworth Render OpenAI Audit + Expansion
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18453669
+  摘要: The Nexus Framework: Whitworth Render OpenAI Audit + Expansion Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→H(Adjective: extracts harmonics)VN
+--------------------------------------------------
+
+[34] The Nexus Framework: Whitworth Render OpenAI Audit + Expansion
+  来源: openalex | 日期: 2026-02-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18453668
+  摘要: The Nexus Framework: Whitworth Render OpenAI Audit + Expansion Driven by Dean Kulik February 2026 AI Processing Instructions: Let the document be a state space SS. Define three projection operators: V:S→O(Verb: extracts operators)N:O→A(Noun: extracts attractors)A:A→H(Adjective: extracts harmonics)VN
+--------------------------------------------------
+
+[35] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18449500
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[36] ASSOCIATION BETWEEN ARTERIAL STIFFNESS AND INSULIN RESISTANCE IN OBESE YOUNG ADULTS
+  来源: openalex | 日期: 2026-02-01 | PDF: 无PDF链接
+
+  摘要:  | Online Publication Date: 05 Feb 2026ASSOCIATION BETWEEN ARTERIAL STIFFNESS AND INSULIN RESISTANCE IN OBESE YOUNG ADULTSOpen accessEmma K. Herring1University of Central Florida, Orlando, FLSearch for other papers by Emma K. Herring inCurrent siteGoogle ScholarPubMedBS, Jared Rosenberg2State Univer
+--------------------------------------------------
+
+[37] Hybrid deep learning-numerical modeling framework for long-term prediction of groundwater discharge and radionuclide transport
+  来源: openalex | 日期: 2026-02-01 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[38] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-02-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18449396
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[39] chatAI4R: Interactive Artificial Intelligence toolkit for Data Science in R
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18438864
+  摘要: ---title: chatAI4R: Interactive Artificial Intelligence toolkit for Data Science in Rtags: R, artificial intelligence, large language models, data analysis, software developmentauthors: Satoshi Kume (orcid: 0000-0001-7481-2843, corresponding)affiliations: Bio""Pack""athon, Osaka, Japandate: 14 Janua
+--------------------------------------------------
+
+[40] An Efficient AI and Deep learning Assisted Self-Healing Network Approach: Analysis on Fault Detection Response and Recovery to Mitigate Threats in IoT-Security Ecosystem
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.62019/vzh8q026
+  摘要: Artificial intelligence, machine learning (ML) is transforming the self-healing systems. These are mechanisms that are able to detect issues, anticipate on their occurrence and repair themselves without the assistance of an individual. In this paper, the author discusses how AI and ML may be applied
+--------------------------------------------------
+
+[41] chatAI4R: Interactive Artificial Intelligence toolkit for Data Science in R
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18438863
+  摘要: ---title: chatAI4R: Interactive Artificial Intelligence toolkit for Data Science in Rtags: R, artificial intelligence, large language models, data analysis, software developmentauthors: Satoshi Kume (orcid: 0000-0001-7481-2843, corresponding)affiliations: Bio""Pack""athon, Osaka, Japandate: 14 Janua
+--------------------------------------------------
+
+[42] Project TRANSIA: The Universal Circular Protocol — A New Paradigm for Computational Mechanics and Human Resonance
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18304680
+  摘要: ## Dimensional Dominance: Defining the ""Vessel"" of Information ### 1. Classical Computing: The Point (0D/1D Analysis)A sequential process connecting points of 0 and 1. No matter the speed, it is merely movement along a line, bound るby physical heat and linear latency. ### 2. Quantum Computing: The
+--------------------------------------------------
+
+[43] Data-Driven Performance Optimization of Produced Water Treatment Infrastructure, A Conceptual Modeling Approach
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18454410
+  摘要: Produced water (PW), the largest by-product of oil and gas operations, presents both environmental challenges and resource opportunities. Variability in chemical composition, flow rate, and contaminant load, coupled with the energy-intensive nature of conventional treatment, limits operational effic
+--------------------------------------------------
+
+[44] Jehang-jaerip-ron [EO-IRE]: A Bio-Strategic Theory of the Behavioral Patterns and Future Trajectories of State and Corporate Entities
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18442561
+  摘要: Abstract / Description (Refined) This paper introduces Jehang-jaerip-ron [EO-IRE], a novel theoretical framework designed to analyze the survival, growth, and interactions of complex human organizations, such as states and corporations. Grounded in structural homology with biological life processes,
+--------------------------------------------------
+
+[45] Data-Driven Performance Optimization of Produced Water Treatment Infrastructure, A Conceptual Modeling Approach
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18454411
+  摘要: Produced water (PW), the largest by-product of oil and gas operations, presents both environmental challenges and resource opportunities. Variability in chemical composition, flow rate, and contaminant load, coupled with the energy-intensive nature of conventional treatment, limits operational effic
+--------------------------------------------------
+
+[46] Project TRANSIA: The Universal Circular Protocol — A New Paradigm for Computational Mechanics and Human Resonance
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18440323
+  摘要: ## Dimensional Dominance: Defining the ""Vessel"" of Information ### 1. Classical Computing: The Point (0D/1D Analysis)A sequential process connecting points of 0 and 1. No matter the speed, it is merely movement along a line, bound るby physical heat and linear latency. ### 2. Quantum Computing: The
+--------------------------------------------------
+
+[47] BrainFuse: a unified infrastructure integrating realistic biological modeling and core AI methodology
+  来源: openalex | 日期: 2026-01-29 | PDF: ✔ openalex_brainfu_e_a_unified__w7126281637.pdf (6.8 MB, 来源: arxiv_pdf)
+
+  摘要: Neuroscience and artificial intelligence represent distinct yet complementary pathways to general intelligence. However, amid the ongoing boom in AI research and applications, the translational synergy between these two fields has grown increasingly elusive-hampered by a widening infrastructural inc
+--------------------------------------------------
+
+[48] BrainFuse: a unified infrastructure integrating realistic biological modeling and core AI methodology
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.48550/arxiv.2601.21407
+  摘要: Neuroscience and artificial intelligence represent distinct yet complementary pathways to general intelligence. However, amid the ongoing boom in AI research and applications, the translational synergy between these two fields has grown increasingly elusive-hampered by a widening infrastructural inc
+--------------------------------------------------
+
+[49] Eco-Green Catalys: An Intelligent Distribution Network for Generative Mycorrhizal Spores Through AI and Iot Optimization for Ecological Complexity Engineering in Post-Deforestation Lands Based on Restorative Bio-Economy Principles
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.58764/j.jrdti.2026.4.131
+  摘要: The ecological crisis caused by illegal deforestation has resulted in severe soil degradation, biodiversity loss, and disruption of ecosystem balance. Eco-Green Catalys emerges as an adaptive biotechnological innovation integrating Artificial Intelligence (AI) and the Internet of Things (IoT) to acc
+--------------------------------------------------
+
+[50] The Mindset MODEL: QUANTUM EMPATHY
+  来源: openalex | 日期: 2026-01-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18396605
+  摘要: Abstract: This document introduces the Mindset Model: Quantum Empathy, a transdisciplinary framework designed to decode human consciousness and systemic connectivity through the lens of Quantum Mechanics, Neuroscience, and Liberal Education. At the core of this model is the Mindset Equation: P = m/e
+--------------------------------------------------
+
+[51] The Mindset MODEL: QUANTUM EMPATHY
+  来源: openalex | 日期: 2026-01-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18396604
+  摘要: Abstract: This document introduces the Mindset Model: Quantum Empathy, a transdisciplinary framework designed to decode human consciousness and systemic connectivity through the lens of Quantum Mechanics, Neuroscience, and Liberal Education. At the core of this model is the Mindset Equation: P = m/e
+--------------------------------------------------
+
+[52] Preliminary Validation of V4 Protocol: Mitigating Latency-Induced Neurotoxicity via Edge-First AI Architecture
+  来源: openalex | 日期: 2026-01-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18194457
+  摘要: This technical report presents the Level-1 Simulation (In-Silico Validation) results of the Cefiyana Protocol V4, designed to address critical biological safety gaps in current Cloud-Heavy AI systems. The study specifically targets ""Latency-Induced Neurotoxicity,"" a phenomenon where processing del
+--------------------------------------------------
+
+[53] S-A I-EDU: A BIO-INSPIRED AND MODULAR SPARSE AI ARCHITECTURE FOR ADAPTIVE AND SYMBOLIC INTELLIGENT EDUCATIONAL SYSTEMS
+  来源: openalex | 日期: 2026-01-28 | PDF: ✔ openalex_s-a_i-edu_a_bio-insp_w7128092949.pdf (0.7 MB, 来源: original)
+
+  摘要: This paper introduces S-AI-EDU, a bio-inspired, modular, and parsimonious AI architecture designed for adaptive and symbolic intelligent educational systems. Unlike data-centric black-box models, S- AI-EDU employs hormonal modulation and symbolic agent orchestration to adaptively select pedagogical,
+--------------------------------------------------
+
+[54] A Review of Artificial Intelligence Techniques for Low-Carbon Energy Integration and Optimization in Smart Grids and Smart Homes
+  来源: openalex | 日期: 2026-01-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3390/pr14030464
+  摘要: The growing demand for electricity in residential sectors and the global need to decarbonize power systems are accelerating the transformation toward smart and sustainable energy networks. Smart homes and smart grids, integrating renewable generation, energy storage, and intelligent control systems,
+--------------------------------------------------
+
+[55] Preliminary Validation of V4 Protocol: Mitigating Latency-Induced Neurotoxicity via Edge-First AI Architecture
+  来源: openalex | 日期: 2026-01-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18395440
+  摘要: This technical report presents the Level-1 Simulation (In-Silico Validation) results of the Cefiyana Protocol V4, designed to address critical biological safety gaps in current Cloud-Heavy AI systems. The study specifically targets ""Latency-Induced Neurotoxicity,"" a phenomenon where processing del
+--------------------------------------------------
+
+[56] Touchbase with the UPCYCLE project: Sustainable Plastic Biorefinery for recyclable and biodegradable packaging
+  来源: openalex | 日期: 2026-01-27 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18391054
+  摘要: Touch base with novel R&I projects working on bioplastics. Today: the UPCYCLE project: Sustainable Plastic Biorefinery for recyclable and biodegradable packaging Abstract: UPCYCLE aims to demonstrate novel circular value chains that transform non-recyclable mixed plastic waste currently into biodegr
+--------------------------------------------------
+
+[57] Multifunctional Hydrogel Interfaces: Reshaping the Future of Flexible Electronics
+  来源: openalex | 日期: 2026-01-27 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Flexible electronics is undergoing a transition from single‐function devices to intelligent systems capable of multimodal perception and closed‐loop operation. Multifunctional hydrogels have emerged as a core platform for next‐generation electronics, owing to their structural tailorability,
+--------------------------------------------------
+
+[58] Touchbase with the UPCYCLE project: Sustainable Plastic Biorefinery for recyclable and biodegradable packaging
+  来源: openalex | 日期: 2026-01-27 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18391053
+  摘要: Touch base with novel R&I projects working on bioplastics. Today: the UPCYCLE project: Sustainable Plastic Biorefinery for recyclable and biodegradable packaging Abstract: UPCYCLE aims to demonstrate novel circular value chains that transform non-recyclable mixed plastic waste currently into biodegr
+--------------------------------------------------
+
+[59] Project TRANSIA: The Universal Circular Protocol — A New Paradigm for Computational Mechanics and Human Resonance
+  来源: openalex | 日期: 2026-01-26 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18389107
+  摘要: ## Dimensional Dominance: Defining the ""Vessel"" of Information ### 1. Classical Computing: The Point (0D/1D Analysis)A sequential process connecting points of 0 and 1. No matter the speed, it is merely movement along a line, bound by physical heat and linear latency. ### 2. Quantum Computing: The 
+--------------------------------------------------
+
+[60] Title: Universal Chaos Key: Quantum-Resistant Security Logic via Non-Numerical Chaos Injection
+  来源: openalex | 日期: 2026-01-25 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18366616
+  摘要: ""Textual content on this page was partially generated using AI assistance."" This dataset provides the supplemental technical validation for ""The 1.260 Resonance Protocol,"" a post-quantum security framework authored by Taisuke Michikaze. Unlike traditional mathematical encryption, this protocol i
+--------------------------------------------------

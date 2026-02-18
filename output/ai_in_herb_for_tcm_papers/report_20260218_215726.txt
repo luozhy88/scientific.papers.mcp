@@ -1,0 +1,22 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: AI in herbs for TCM
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 2 | 有摘要: 2 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] An AI-Powered Integrated Care Model Combining Traditional Chinese Medicine and Western Medicine for Personalized Alzheimer&rsquo;s Disease Management
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Alzheimer&#039;s Disease (AD) gradually reduces memory and cognition. While Western medicine focuses on pharmacological treatments, it frequently ignores holistic factors such as mood and digestion. Traditional Chinese Medicine (TCM) addresses these issues through a wellness-oriented approach. Howev
+--------------------------------------------------
+
+[2] Multimodal AI‐Driven Identification of Dehydrocostus Lactone as a Potent Renal Fibrosis Attenuator Targeting IQGAP1
+  来源: openalex | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1002/advs.202520277
+  摘要: ABSTRACT Renal fibrosis, a hallmark of chronic kidney disease (CKD), remains a critical therapeutic challenge with limited effective interventions. Herein, we proposed a multimodal AI‐driven Traditional Chinese Medicine (TCM) symptom prediction model (TCM‐SPred) and predicted potential herb‐symptom 
+--------------------------------------------------

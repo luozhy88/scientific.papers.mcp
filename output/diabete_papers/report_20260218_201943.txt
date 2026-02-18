@@ -1,0 +1,69 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: diabetes
+时间范围: 最近 15 天 (2026-02-03 至 2026-02-18)
+总论文: 10 | 有摘要: 4 | PDF下载: 3 (10.8 MB)
+
+============================================================
+
+
+[1] Adults with type 1 diabetes define what matters to them in stem-cell derived islet cell therapy
+  来源: top_journals | 日期: 2026-02-18 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[2] eQTL in diseased colon tissue identifies potential target genes associated with IBD
+  来源: top_journals | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[3] Mitochondrial control of fuel switching via carnitine biosynthesis
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Environmental adaptation often involves a shift in energy utilization toward mitochondrial fatty acid oxidation, which requires carnitine. Besides dietary sources of animal origin, carnitine biosynthesis from trimethyllysine (TML) is essential, particularly for those who consume plant-based diets; h
+--------------------------------------------------
+
+[4] Lay community health worker-led care with mobile decision support for uncontrolled hypertension: a cluster-randomized trial
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[5] Tissue-resident macrophage survival depends on mitochondrial function regulated by SerpinB2 in chronic inflammation
+  来源: top_journals | 日期: 2026-02-12 | PDF: ✔ top_journals_ti_ue-re_ident_macro_httpsdoiorg1.pdf (3.7 MB, 来源: unpaywall_doi)
+
+  摘要: Abstract How cellular metabolism facilitates tissue-resident macrophage maintenance remains elusive. Here we show that visceral adipose tissue (VAT)-resident macrophages, unlike monocyte-derived macrophages, are enriched with mitochondrial-specific antioxidant enzymes restraining inflammation and pr
+--------------------------------------------------
+
+[6] Intrinsic and niche-dependent metabolic regulation of haematopoietic stem cells and implications for leukaemogenesis
+  来源: top_journals | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[7] Developmentally inspired synthetic kidney engineering
+  来源: top_journals | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[8] Inhibitory probes for spatiotemporal analysis of Gαs protein signaling
+  来源: top_journals | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[9] Sample size and power determination for assessing overall SNP effects in joint modeling of longitudinal and time-to-event data
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_sample_ize_and_power_260215247.pdf (0.4 MB, 来源: arxiv_pdf)
+
+  摘要: Longitudinal biomarkers are frequently collected in clinical studies due to their strong association with time-to-event outcomes. While considerable progress has been made in methods for jointly modeling longitudinal and survival data, comparatively little attention has been paid to statistical desi
+--------------------------------------------------
+
+[10] A WDLoRA-Based Multimodal Generative Framework for Clinically Guided Corneal Confocal Microscopy Image Synthesis in Diabetic Neuropathy
+  来源: arxiv | 日期: 2026-02-14 | PDF: ✔ arxiv_a_wdlora-ba_ed_multi_260213693.pdf (6.8 MB, 来源: arxiv_pdf)
+
+  摘要: Corneal Confocal Microscopy (CCM) is a sensitive tool for assessing small-fiber damage in Diabetic Peripheral Neuropathy (DPN), yet the development of robust, automated deep learning-based diagnostic models is limited by scarce labelled data and fine-grained variability in corneal nerve morphology. 
+--------------------------------------------------

@@ -1,0 +1,63 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: machine learning
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 9 | 有摘要: 9 | PDF下载: 9 (56.7 MB)
+
+============================================================
+
+
+[1] Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_en_emble-_ize-depend_260215830.pdf (2.8 MB, 来源: arxiv_pdf)
+
+  摘要: Fair scores reward ensemble forecast members that behave like samples from the same distribution as the verifying observations. They are therefore an attractive choice as loss functions to train data-driven ensemble forecasts or post-processing methods when large training ensembles are either unavai
+--------------------------------------------------
+
+[2] Operationalising the Superficial Alignment Hypothesis via Task Complexity
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_operationali_ing_the_260215829.pdf (0.7 MB, 来源: arxiv_pdf)
+
+  摘要: The superficial alignment hypothesis (SAH) posits that large language models learn most of their knowledge during pre-training, and that post-training merely surfaces this knowledge.111To avoid confusion with the AI safety literature, we will say models are ‘adapted’, rather than ‘aligned’, to a tas
+--------------------------------------------------
+
+[3] Dex4D: Task-Agnostic Point Track Policy for Sim-to-Real Dexterous Manipulation
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_dex4d_ta_k-agno_tic__260215828.pdf (19.5 MB, 来源: arxiv_pdf)
+
+  摘要: Learning generalist policies capable of accomplishing a plethora of everyday tasks remains an open challenge in dexterous manipulation. In particular, collecting large-scale manipulation data via real-world teleoperation is expensive and difficult to scale. While learning in simulation provides a fe
+--------------------------------------------------
+
+[4] Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_perceptive_humanoid__260215827.pdf (3.4 MB, 来源: arxiv_pdf)
+
+  摘要: While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-lik
+--------------------------------------------------
+
+[5] CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_cri_pedit_low-curvat_260215823.pdf (2.3 MB, 来源: arxiv_pdf)
+
+  摘要: A central challenge in large language model (LLM) editing is capability preservation: methods that successfully change targeted behavior can quietly game the editing proxy and corrupt general capabilities, producing degenerate behaviors reminiscent of proxy/reward hacking. We present CrispEdit, a sc
+--------------------------------------------------
+
+[6] Stabilizing Test-Time Adaptation of High-Dimensional Simulation Surrogates via D-Optimal Statistics
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_stabilizing_te_t-tim_260215820.pdf (1.6 MB, 来源: arxiv_pdf)
+
+  摘要: Machine learning surrogates are increasingly used in engineering to accelerate costly simulations, yet distribution shifts between training and deployment often cause severe performance degradation (e.g., unseen geometries or configurations). Test-Time Adaptation (TTA) can mitigate such shifts, but 
+--------------------------------------------------
+
+[7] Solving Parameter-Robust Avoid Problems with Unknown Feasibility using Reinforcement Learning
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_solving_parameter-ro_260215817.pdf (21.6 MB, 来源: arxiv_pdf)
+
+  摘要: Recent advances in deep reinforcement learning (RL) have achieved strong results on high-dimensional control tasks, but applying RL to optimal safe controller synthesis raises a fundamental mismatch: optimal safe controller synthesis seeks to maximize the set of states from which a system remains sa
+--------------------------------------------------
+
+[8] The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_the_geometry_of_alig_260215799.pdf (4.1 MB, 来源: arxiv_pdf)
+
+  摘要: Fine-tuning aligned language models on benign tasks unpredictably degrades safety guardrails, even when training data contains no harmful content and developers have no adversarial intent. We show that the prevailing explanation, that fine-tuning updates should be orthogonal to safety-critical direc
+--------------------------------------------------
+
+[9] Neural Scaling Laws for Boosted Jet Tagging
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_neural_scaling_law_f_260215781.pdf (0.7 MB, 来源: arxiv_pdf)
+
+  摘要: The success of Large Language Models (LLMs) has established that scaling compute, through joint increases in model capacity and dataset size, is the primary driver of performance in modern machine learning. While machine learning has long been an integral component of High Energy Physics (HEP) data 
+--------------------------------------------------

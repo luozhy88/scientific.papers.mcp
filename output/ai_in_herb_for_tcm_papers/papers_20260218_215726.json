@@ -1,0 +1,27 @@
+[
+  {
+    "id": "W7129015509",
+    "title": "An AI-Powered Integrated Care Model Combining Traditional Chinese Medicine and Western Medicine for Personalized Alzheimer&rsquo;s Disease Management",
+    "authors": "Shurong Li; Yiming Chen; Jin Xu; Jiayu Zhang; Yuntong Yang",
+    "date": "2026-02-16",
+    "text": "",
+    "days_ago": 2,
+    "source": "openalex",
+    "abstract": "Alzheimer&#039;s Disease (AD) gradually reduces memory and cognition. While Western medicine focuses on pharmacological treatments, it frequently ignores holistic factors such as mood and digestion. Traditional Chinese Medicine (TCM) addresses these issues through a wellness-oriented approach. However, the combination of both systems in patient care is uncommon. Current Alzheimer&#039;s disease treatments are often siloed, relying solely on Western or alternative medicine. A unified, intelligent system is required to capitalize on the advantages of both methods.&nbsp; This study aims to create an AI-powered model that combines TCM and Western medicine to offer personalized Alzheimer&#039;s care, allowing for early diagnosis and improved treatment plans that contain herbs, drugs, and lifestyle recommendations. The proposed AI-Powered Integrated Alzheimer&#039;s Care (AIP-IAC) model is based on patient data, including demographics, imaging, lab results, cognitive scores, and treatment history. After preprocessing the patient data, machine learning models such as Random Forest and XGBoost are employed to generate predictions, while clustering algorithms discover unique patient subgroups using similar features. A Long Short-Term Memory (LSTM) tracks symptom progression, and a rule-based TCM engine improves AI recommendations into personalized plans, which are continuously updated using patient feedback. AIP-IAC was tested on 1,200 patients and achieved 91.3% accuracy, with high precision (89.7%), recall (90.2%), and F1-score (89.9%). Over six months, it decreased trial-and-error by 32% while increasing patient quality-of-life metrics like sleep and mood by 25-30%.&nbsp; Incorporating TCM and Western practices using AI results in more personalized and efficient Alzheimer&#039;s care. The AIP-IAC model enhances early detection, treatment precision, and patient well-being",
+    "pdf_ok": false,
+    "pdf_blocked": false
+  },
+  {
+    "id": "W7127357492",
+    "title": "Multimodal AI‐Driven Identification of Dehydrocostus Lactone as a Potent Renal Fibrosis Attenuator Targeting IQGAP1",
+    "authors": "Weijiang Lin; Wenzhuo Xu; Kewei Liu; Ping Wang; Zhenzhen Zhu; Wenyu Lu; Zhe Zheng; Xiaoqian Peng; Xunkai Yin; Shulan Mei; An Pan; Jian Liu; Lihong Hu",
+    "date": "2026-02-03",
+    "text": "",
+    "days_ago": 15,
+    "source": "openalex",
+    "abstract": "ABSTRACT Renal fibrosis, a hallmark of chronic kidney disease (CKD), remains a critical therapeutic challenge with limited effective interventions. Herein, we proposed a multimodal AI‐driven Traditional Chinese Medicine (TCM) symptom prediction model (TCM‐SPred) and predicted potential herb‐symptom associations between herbs and symptoms to obtain agents for treating renal fibrosis. The prediction results of TCM‐SPred revealed that a natural guaianolide sesquiterpene lactone derivative dehydrocostus lactone (DCL, a main chemical constituent of Aucklandiae Radix) demonstrated significant anti‐fibrotic effects in vivo (unilateral ureteral obstruction) and in vitro (TGF‐β1‐induced epithelial‐mesenchymal transition). DCL directly targeted IQGAP1 to inhibit the Wnt signaling pathway by blocking the interaction between IQGAP1 and CCT3. These findings highlight the potential of DCL as a promising therapeutic candidate for renal fibrosis, providing novel insights into the IQGAP1‐CCT3‐Wnt signaling axis as a potential target for renal fibrosis intervention.",
+    "pdf_ok": false,
+    "pdf_blocked": false,
+    "openalex_pdf": "https://doi.org/10.1002/advs.202520277"
+  }
+]

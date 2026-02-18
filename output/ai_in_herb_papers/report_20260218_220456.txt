@@ -1,0 +1,141 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: AI in herbs
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 19 | 有摘要: 19 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] An AI-Powered Integrated Care Model Combining Traditional Chinese Medicine and Western Medicine for Personalized Alzheimer&rsquo;s Disease Management
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Alzheimer&#039;s Disease (AD) gradually reduces memory and cognition. While Western medicine focuses on pharmacological treatments, it frequently ignores holistic factors such as mood and digestion. Traditional Chinese Medicine (TCM) addresses these issues through a wellness-oriented approach. Howev
+--------------------------------------------------
+
+[2] Herb-AI/HerbConstraints.jl: v1.1.2
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18595862
+  摘要: HerbConstraints v1.1.2 Diff since v1.1.1 This release adds empty definitions of functions in the ASPExt to HerbConstraints to allow users to extend them for their own types (#112, #113). Functionality should remain otherwise unchanged Merged pull requests: refactor: add empty generic functions in He
+--------------------------------------------------
+
+[3] Emerging Therapeutic Approaches for Effective Wound Healing Management
+  来源: openalex | 日期: 2026-02-09 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18547423
+  摘要: The healing process of wounds is a complicated thrust of intercellular and molecular events designed to repair the skin barrier. Conditions such as diabetes, increasing age, malnutrition, and infections can cause wounds to develop into chronic skin sores that refuse to heal. This phenomenon is a maj
+--------------------------------------------------
+
+[4] Emerging Therapeutic Approaches for Effective Wound Healing Management
+  来源: openalex | 日期: 2026-02-09 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18547422
+  摘要: The healing process of wounds is a complicated thrust of intercellular and molecular events designed to repair the skin barrier. Conditions such as diabetes, increasing age, malnutrition, and infections can cause wounds to develop into chronic skin sores that refuse to heal. This phenomenon is a maj
+--------------------------------------------------
+
+[5] Multimodal AI‐Driven Identification of Dehydrocostus Lactone as a Potent Renal Fibrosis Attenuator Targeting IQGAP1
+  来源: openalex | 日期: 2026-02-03 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1002/advs.202520277
+  摘要: ABSTRACT Renal fibrosis, a hallmark of chronic kidney disease (CKD), remains a critical therapeutic challenge with limited effective interventions. Herein, we proposed a multimodal AI‐driven Traditional Chinese Medicine (TCM) symptom prediction model (TCM‐SPred) and predicted potential herb‐symptom 
+--------------------------------------------------
+
+[6] Machine learning framework for multi-regulatory safety assessment of traditional Chinese medicine compounds
+  来源: openalex | 日期: 2026-01-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1016/j.prmcm.2026.100772
+  摘要: Introduction: Traditional Chinese Medicine faces unprecedented regulatory challenges due to multi-component complexity incompatible with conventional single-molecule assessment frameworks, necessitating innovative computational approaches for cross-jurisdictional safety and efficacy evaluation. Meth
+--------------------------------------------------
+
+[7] Herb-AI/HerbInterpret.jl: v1.0.1
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18416258
+  摘要: HerbInterpret v1.0.1 Diff since v1.0.0 Merged pull requests: Fix typo in make_stateful_interpreter export (#45) (@ReubenJ)
+--------------------------------------------------
+
+[8] Herb.jl
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18417234
+  摘要: Herb v1.0.0 Diff since v0.7.0 Herb turns 1(.0)! 🥳 Breaking Changes This release marks the v1.0 release cycle across the Herb ecosystem HerbInterpret.jl This release includes a generator for interpret functions from arbitrary grammars (https://github.com/Herb-AI/HerbInterpret.jl/pull/43 by @THinneric
+--------------------------------------------------
+
+[9] Herb-AI/HerbInterpret.jl: v1.0.1
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18412197
+  摘要: HerbInterpret v1.0.1 Diff since v1.0.0 Merged pull requests: Fix typo in make_stateful_interpreter export (#45) (@ReubenJ)
+--------------------------------------------------
+
+[10] Herb-AI/HerbInterpret.jl: v1.0.0
+  来源: openalex | 日期: 2026-01-29 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18412198
+  摘要: HerbInterpret v1.0.0 Diff since v0.2.1 Breaking changes Changes here are not breaking, but the package has been bumped to v1.0 alongside all of the rest of the Herb* ecosystem. This release includes a generator for interpret functions from arbitrary grammars (#43 by @THinnerichs). Merged pull reques
+--------------------------------------------------
+
+[11] Herb-AI/HerbConstraints.jl: v1.1.1
+  来源: openalex | 日期: 2026-01-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18404788
+  摘要: HerbConstraints v1.1.1 Diff since v1.1.0 This release includes a fix for the getter functions for ASPSolvers (see #111) Merged pull requests: Extend HerbConstraints functions in ASPExt (#111) (@ReubenJ)
+--------------------------------------------------
+
+[12] HDI Corpus: A Dataset for Named Entity Recognition for In-Context Herb-Drug Interactions
+  来源: openalex | 日期: 2026-01-26 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.2174/0118750362377947250903082648
+  摘要: Introduction This article proposes a new dataset for Named Entity Recognition based on PubMed articles and aiming to address the problem of Herb-Drug Interactions. It aims to offer a new dataset for recognizing herb-drug interaction entities, including contextual information.
+--------------------------------------------------
+
+[13] Herb-AI/HerbConstraints.jl: v1.1.0
+  来源: openalex | 日期: 2026-01-21 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18325940
+  摘要: HerbConstraints v1.1.0 Diff since v1.0.0 This release includes an ASP solver that makes use of clingo to solve uniform trees Merged pull requests: ASP UniformSolver implementation (#104) (@IssaHanou) Closed issues: UniformSolver with ASP (#87)
+--------------------------------------------------
+
+[14] Profiling of volatile organic compounds in herbal extracts: A review on recent advances
+  来源: openalex | 日期: 2026-01-20 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1556/1326.2026.01441
+  摘要: Abstract Medicinal herbs have long been an integral part of traditional healthcare systems and are increasingly gaining global recognition for their therapeutic value. This review explores the chemical complexity of herbal plants, with a particular emphasis on their volatile organic compounds (VOCs)
+--------------------------------------------------
+
+[15] Herb-AI/HerbSpecification.jl: v1.0.0
+  来源: openalex | 日期: 2026-01-19 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18299364
+  摘要: HerbSpecification v1.0.0 Diff since v0.2.1 Preparation for version 1.0 of Herb.jl. No Breaking changes.
+--------------------------------------------------
+
+[16] Herb-AI/HerbCore.jl: v1.0.0
+  来源: openalex | 日期: 2026-01-19 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18299368
+  摘要: HerbCore v1.0.0 Diff since v0.3.12 Breaking changes None. This release marks the 1.0.0 milestone: the public API is now considered stable. Notes Version bumped to 1.0.0 to signal API stability and readiness for broader use. Merged pull requests: Bump version to 1.0.0 (#59) (@THinnerichs)
+--------------------------------------------------
+
+[17] Herb-AI/HerbConstraints.jl: v1.0.0
+  来源: openalex | 日期: 2026-01-19 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18300857
+  摘要: HerbConstraints v1.0.0 Diff since v0.5.0 Breaking changes None. This release marks the 1.0.0 milestone: the public API is now considered stable. Notes Version bumped to 1.0.0 to signal API stability and readiness for broader use. Merged pull requests: Bump version to 1.0.0 (#109) (@THinnerichs)
+--------------------------------------------------
+
+[18] Herb-AI/HerbGrammar.jl: v1.0.0
+  来源: openalex | 日期: 2026-01-19 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18299931
+  摘要: HerbGrammar v1.0.0 Diff since v0.6.2 Breaking changes None. This release marks the 1.0.0 milestone: the public API is now considered stable. Notes Version bumped to 1.0.0 to signal API stability and readiness for broader use. Merged pull requests: Bump version to 1.0.0; including HerbCore (#125) (@T
+--------------------------------------------------
+
+[19] Herb-AI/HerbSpecification.jl: v1.0.0
+  来源: openalex | 日期: 2026-01-19 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18299365
+  摘要: HerbSpecification v1.0.0 Diff since v0.2.1 Preparation for version 1.0 of Herb.jl. No Breaking changes.
+--------------------------------------------------

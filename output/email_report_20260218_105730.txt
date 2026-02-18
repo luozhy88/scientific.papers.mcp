@@ -1,0 +1,38 @@
+文献搜索报告
+
+关键词: machine learning
+搜索日期: 2026-02-18
+总论文数: 3
+PDF下载成功: 3
+总下载大小: 22.97 MB
+
+============================================================
+
+[1] Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution
+来源: ARXIV | 日期: 2026-02-17
+摘要: Fair scores reward ensemble forecast members that behave like samples from the same distribution as the verifying observations. They are therefore an attractive choice as loss functions to train data-driven ensemble forecasts or post-processing methods when large training ensembles are either unavai...
+PDF: ✓ 已下载 (2.83 MB)
+链接: 2602.15830
+
+------------------------------------------------------------
+
+[2] Operationalising the Superficial Alignment Hypothesis via Task Complexity
+来源: ARXIV | 日期: 2026-02-17
+摘要: The superficial alignment hypothesis (SAH) posits that large language models learn most of their knowledge during pre-training, and that post-training merely surfaces this knowledge.111To avoid confusion with the AI safety literature, we will say models are ‘adapted’, rather than ‘aligned’, to a tas...
+PDF: ✓ 已下载 (0.68 MB)
+链接: 2602.15829
+
+------------------------------------------------------------
+
+[3] Dex4D: Task-Agnostic Point Track Policy for Sim-to-Real Dexterous Manipulation
+来源: ARXIV | 日期: 2026-02-17
+摘要: Learning generalist policies capable of accomplishing a plethora of everyday tasks remains an open challenge in dexterous manipulation. In particular, collecting large-scale manipulation data via real-world teleoperation is expensive and difficult to scale. While learning in simulation provides a fe...
+PDF: ✓ 已下载 (19.46 MB)
+链接: 2602.15828
+
+------------------------------------------------------------
+
+
+
+此邮件由文献搜索脚本自动发送。
+

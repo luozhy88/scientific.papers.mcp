@@ -1,0 +1,63 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: machine learning
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 9 | 有摘要: 9 | PDF下载: 9 (88.7 MB)
+
+============================================================
+
+
+[1] Symmetry in language statistics shapes the geometry of model representations
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_symmetry_in_language_260215029.pdf (5.0 MB, 来源: arxiv_pdf)
+
+  摘要: Although learned representations underlie neural networks’ success, their fundamental properties remain poorly understood. A striking example is the emergence of simple geometric structures in LLM representations: for example, calendar months organize into a circle, years form a smooth one-dimension
+--------------------------------------------------
+
+[2] Long Context, Less Focus: A Scaling Gap in LLMs Revealed through Privacy and Personalization
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_long_context_le_focu_260215028.pdf (0.6 MB, 来源: arxiv_pdf)
+
+  摘要: Large language models (LLMs) are increasingly deployed in privacy-critical and personalization-oriented scenarios, yet the role of context length in shaping privacy leakage and personalization effectiveness remains largely unexplored. We introduce a large-scale benchmark, PAPerBench, to systematical
+--------------------------------------------------
+
+[3] Rethinking Diffusion Models with Symmetries through Canonicalization with Applications to Molecular Graph Generation
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_rethinking_diffu_ion_260215022.pdf (3.1 MB, 来源: arxiv_pdf)
+
+  摘要: Many generative tasks in chemistry and science involve distributions invariant to group symmetries (e.g., permutation and rotation). A common strategy enforces invariance and equivariance through architectural constraints such as equivariant denoisers and invariant priors. In this paper, we challeng
+--------------------------------------------------
+
+[4] Generalization from Low- to Moderate-Resolution Spectra with Neural Networks for Stellar Parameter Estimation: A Case Study with DESI
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_generalization_from__260215021.pdf (34.6 MB, 来源: arxiv_pdf)
+
+  摘要: Cross-survey generalization is a critical challenge in stellar spectral analysis, particularly in cases such as transferring from low- to moderate-resolution surveys. We investigate this problem using pre-trained models, focusing on simple neural networks such as multilayer perceptrons (MLPs), with 
+--------------------------------------------------
+
+[5] Neurosim: A Fast Simulator for Neuromorphic Robot Perception
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_neuro_im_a_fa_t_simu_260215018.pdf (10.8 MB, 来源: arxiv_pdf)
+
+  摘要: Neurosim is a fast, real-time, high-performance library for simulating sensors such as dynamic vision sensors, RGB cameras, depth sensors, and inertial sensors. It can also simulate agile dynamics of multi-rotor vehicles in complex and dynamic environments. Neurosim can achieve frame rates as high a
+--------------------------------------------------
+
+[6] Scaling Beyond Masked Diffusion Language Models
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_scaling_beyond_ma_ke_260215014.pdf (1.4 MB, 来源: arxiv_pdf)
+
+  摘要: Diffusion language models are a promising alternative to autoregressive models due to their potential for faster generation. Among discrete diffusion approaches, Masked diffusion currently dominates, largely driven by strong perplexity on language modeling benchmarks. In this work, we present the fi
+--------------------------------------------------
+
+[7] Cold-Start Personalization via Training-Free Priors from Structured World Models
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_cold-start_per_onali_260215012.pdf (3.5 MB, 来源: arxiv_pdf)
+
+  摘要: Cold-start personalization requires inferring user preferences through interaction when no user-specific historical data is available. The core challenge is a routing problem: each task admits dozens of preference dimensions, yet individual users care about only a few, and which ones matter depends 
+--------------------------------------------------
+
+[8] BPP: Long-Context Robot Imitation Learning by Focusing on Key History Frames
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_bpp_long-context_rob_260215010.pdf (28.7 MB, 来源: arxiv_pdf)
+
+  摘要: Figure 1. Big Picture Policies (BPP). Across a suite of non-Markovian tasks, BPP (left) uses an off-the-shelf vision-language model (VLM) to identify task-relevant keyframes from history, enabling robust performance compared to memoryless and naïve history-conditioned baselines (right). \absfont Abs
+--------------------------------------------------
+
+[9] Efficient Sampling with Discrete Diffusion Models: Sharp and Adaptive Guarantees
+  来源: arxiv | 日期: 2026-02-16 | PDF: ✔ arxiv_efficient_sampling_w_260215008.pdf (1.1 MB, 来源: arxiv_pdf)
+
+  摘要: Diffusion models over discrete spaces have recently shown striking empirical success, yet their theoretical foundations remain incomplete. In this paper, we study the sampling efficiency of score-based discrete diffusion models under a continuous-time Markov chain (CTMC) formulation, with a focus on
+--------------------------------------------------

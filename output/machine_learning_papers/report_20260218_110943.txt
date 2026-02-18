@@ -1,0 +1,27 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: machine learning
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 3 | 有摘要: 3 | PDF下载: 3 (23.0 MB)
+
+============================================================
+
+
+[1] Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_en_emble-_ize-depend_260215830.pdf (2.8 MB, 来源: arxiv_pdf)
+
+  摘要: Fair scores reward ensemble forecast members that behave like samples from the same distribution as the verifying observations. They are therefore an attractive choice as loss functions to train data-driven ensemble forecasts or post-processing methods when large training ensembles are either unavai
+--------------------------------------------------
+
+[2] Operationalising the Superficial Alignment Hypothesis via Task Complexity
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_operationali_ing_the_260215829.pdf (0.7 MB, 来源: arxiv_pdf)
+
+  摘要: The superficial alignment hypothesis (SAH) posits that large language models learn most of their knowledge during pre-training, and that post-training merely surfaces this knowledge.111To avoid confusion with the AI safety literature, we will say models are ‘adapted’, rather than ‘aligned’, to a tas
+--------------------------------------------------
+
+[3] Dex4D: Task-Agnostic Point Track Policy for Sim-to-Real Dexterous Manipulation
+  来源: arxiv | 日期: 2026-02-17 | PDF: ✔ arxiv_dex4d_ta_k-agno_tic__260215828.pdf (19.5 MB, 来源: arxiv_pdf)
+
+  摘要: Learning generalist policies capable of accomplishing a plethora of everyday tasks remains an open challenge in dexterous manipulation. In particular, collecting large-scale manipulation data via real-world teleoperation is expensive and difficult to scale. While learning in simulation provides a fe
+--------------------------------------------------

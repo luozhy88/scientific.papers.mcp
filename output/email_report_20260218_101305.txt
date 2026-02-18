@@ -1,0 +1,86 @@
+文献搜索报告
+
+关键词: machine learning
+搜索日期: 2026-02-18
+总论文数: 9
+PDF下载成功: 9
+总下载大小: 88.73 MB
+
+============================================================
+
+[1] Symmetry in language statistics shapes the geometry of model representations
+来源: ARXIV | 日期: 2026-02-16
+摘要: Although learned representations underlie neural networks’ success, their fundamental properties remain poorly understood. A striking example is the emergence of simple geometric structures in LLM representations: for example, calendar months organize into a circle, years form a smooth one-dimension...
+PDF: ✓ 已下载 (5.04 MB)
+链接: 2602.15029
+
+------------------------------------------------------------
+
+[2] Long Context, Less Focus: A Scaling Gap in LLMs Revealed through Privacy and Personalization
+来源: ARXIV | 日期: 2026-02-16
+摘要: Large language models (LLMs) are increasingly deployed in privacy-critical and personalization-oriented scenarios, yet the role of context length in shaping privacy leakage and personalization effectiveness remains largely unexplored. We introduce a large-scale benchmark, PAPerBench, to systematical...
+PDF: ✓ 已下载 (0.55 MB)
+链接: 2602.15028
+
+------------------------------------------------------------
+
+[3] Rethinking Diffusion Models with Symmetries through Canonicalization with Applications to Molecular Graph Generation
+来源: ARXIV | 日期: 2026-02-16
+摘要: Many generative tasks in chemistry and science involve distributions invariant to group symmetries (e.g., permutation and rotation). A common strategy enforces invariance and equivariance through architectural constraints such as equivariant denoisers and invariant priors. In this paper, we challeng...
+PDF: ✓ 已下载 (3.11 MB)
+链接: 2602.15022
+
+------------------------------------------------------------
+
+[4] Generalization from Low- to Moderate-Resolution Spectra with Neural Networks for Stellar Parameter Estimation: A Case Study with DESI
+来源: ARXIV | 日期: 2026-02-16
+摘要: Cross-survey generalization is a critical challenge in stellar spectral analysis, particularly in cases such as transferring from low- to moderate-resolution surveys. We investigate this problem using pre-trained models, focusing on simple neural networks such as multilayer perceptrons (MLPs), with ...
+PDF: ✓ 已下载 (34.60 MB)
+链接: 2602.15021
+
+------------------------------------------------------------
+
+[5] Neurosim: A Fast Simulator for Neuromorphic Robot Perception
+来源: ARXIV | 日期: 2026-02-16
+摘要: Neurosim is a fast, real-time, high-performance library for simulating sensors such as dynamic vision sensors, RGB cameras, depth sensors, and inertial sensors. It can also simulate agile dynamics of multi-rotor vehicles in complex and dynamic environments. Neurosim can achieve frame rates as high a...
+PDF: ✓ 已下载 (10.75 MB)
+链接: 2602.15018
+
+------------------------------------------------------------
+
+[6] Scaling Beyond Masked Diffusion Language Models
+来源: ARXIV | 日期: 2026-02-16
+摘要: Diffusion language models are a promising alternative to autoregressive models due to their potential for faster generation. Among discrete diffusion approaches, Masked diffusion currently dominates, largely driven by strong perplexity on language modeling benchmarks. In this work, we present the fi...
+PDF: ✓ 已下载 (1.36 MB)
+链接: 2602.15014
+
+------------------------------------------------------------
+
+[7] Cold-Start Personalization via Training-Free Priors from Structured World Models
+来源: ARXIV | 日期: 2026-02-16
+摘要: Cold-start personalization requires inferring user preferences through interaction when no user-specific historical data is available. The core challenge is a routing problem: each task admits dozens of preference dimensions, yet individual users care about only a few, and which ones matter depends ...
+PDF: ✓ 已下载 (3.48 MB)
+链接: 2602.15012
+
+------------------------------------------------------------
+
+[8] BPP: Long-Context Robot Imitation Learning by Focusing on Key History Frames
+来源: ARXIV | 日期: 2026-02-16
+摘要: Figure 1. Big Picture Policies (BPP). Across a suite of non-Markovian tasks, BPP (left) uses an off-the-shelf vision-language model (VLM) to identify task-relevant keyframes from history, enabling robust performance compared to memoryless and naïve history-conditioned baselines (right). \absfont Abs...
+PDF: ✓ 已下载 (28.74 MB)
+链接: 2602.15010
+
+------------------------------------------------------------
+
+[9] Efficient Sampling with Discrete Diffusion Models: Sharp and Adaptive Guarantees
+来源: ARXIV | 日期: 2026-02-16
+摘要: Diffusion models over discrete spaces have recently shown striking empirical success, yet their theoretical foundations remain incomplete. In this paper, we study the sampling efficiency of score-based discrete diffusion models under a continuous-time Markov chain (CTMC) formulation, with a focus on...
+PDF: ✓ 已下载 (1.10 MB)
+链接: 2602.15008
+
+------------------------------------------------------------
+
+
+
+此邮件由文献搜索脚本自动发送。
+

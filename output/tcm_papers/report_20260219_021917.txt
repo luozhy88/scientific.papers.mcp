@@ -1,0 +1,396 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: TCM
+时间范围: 最近 30 天 (2026-01-20 至 2026-02-19)
+总论文: 60 | 有摘要: 45 | PDF下载: 17 (41.0 MB)
+
+============================================================
+
+
+[1] Pressor use and its impact on outcomes in aneurysmal subarachnoid hemorrhage patients with takotsubo cardiomyopathy: a quantitative analysis
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1007/s00701-026-06795-6
+  摘要: PurposeTakotsubo cardiomyopathy (TCM) is induced by catecholamine-induced cardiotoxicity. Though uncommon after aneurysmal subarachnoid hemorrhage (aSAH), TCM increases patient morbidity and mortality in an already-devastating disease process. The fear of worsening shock in TCM with blood pressure a
+--------------------------------------------------
+
+[2] A qualitative systematic review and quality assessment of pharmacoeconomic evaluations on Chinese Herbal Medicine from 2020 to 2025
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fpubh.2026.1738097
+  摘要: Objective: This systematic review evaluated the status quo and quality of pharmacoeconomic (PE) evaluations of Chinese Herbal Medicine (CHM) published between 2020 and 2025, aiming to identify common quality flaws, compare the performance of different quality assessment tools, and formulate targeted
+--------------------------------------------------
+
+[3] HoloTSH: A Neuro-Symbolic Tensor Logic for TCM Modernization via Mathematical Isomorphism and Theoretical Guarantees
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.36227/techrxiv.177130202.27796764/v1
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] The Parallel Quantitative Model of TCM Four Examinations Based on Global Velocity Equation V2.1
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18671754
+  摘要: Based on the Global Velocity Equation V2.1, this study constructs a parallel quantitative model for the four examinations of Traditional Chinese Medicine (TCM), aiming to provide a quantifiable, repeatable and teachable objective expression system for classical TCM. Modern medical instruments can ac
+--------------------------------------------------
+
+[5] Efficacy and safety of Yingxin pill for stable angina pectoris with heart blood stasis obstruction syndrome: a randomized, single-blind, positive-controlled trial
+  来源: openalex | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fphar.2026.1730842
+  摘要: Objective: To evaluate the clinical efficacy and safety of Yingxin Pill (YXP) in patients with stable angina pectoris (SAP) and heart blood stasis obstruction syndrome. Methods: Sixty patients were randomly assigned to either the experimental group (YXP plus conventional Western medicine) or the con
+--------------------------------------------------
+
+[6] Assessing coronary disease &amp; heart failure via TCM wrist pulse – Noninvasive &amp; easy
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[7] The Role of Traditional Chinese Medicine in the Management of Polyploid Giant Cancer Cells
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Cancer causes millions of deaths globally every year. At its later stages, cancers are primarily treated with systemic therapies which do not provide an effective cure; the remaining cancer cells ultimately acquire drug resistance, relapse, and metastasize. In particular, polyploid giant cancer cell
+--------------------------------------------------
+
+[8] Body Mass TCM
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.60807/jc8p7p79x5hw
+  摘要: 无摘要
+--------------------------------------------------
+
+[9] Traditional Chinese Medicine in the Treatment of Infertility: A Comprehensive Review
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Infertility, defined as the failure to conceive after 1 year of regular unprotected intercourse, is increasingly prevalent and affecting younger populations. Traditional Chinese medicine (TCM) offers significant therapeutic potential for infertility, with its holistic approach and emphasis 
+--------------------------------------------------
+
+[10] Body Mass TCM
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.60807/fk920n82m68q
+  摘要: 无摘要
+--------------------------------------------------
+
+[11] Body Mass TCM
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.60807/f66q4758h20z
+  摘要: 无摘要
+--------------------------------------------------
+
+[12] Qi deficiency constitution increases risk of acute mountain sickness via reduced aerobic fitness
+  来源: openalex | 日期: 2026-02-16 | PDF: ✔ openalex_qi_deficiency_con_ti_w7129094691.pdf (0.7 MB, 来源: original)
+
+  摘要: Background Acute mountain sickness (AMS) is a common disorder affecting individuals who are exposed to high-altitude environments, generally defined as an elevation of above 2,500 meters. Identifying risk factors for AMS susceptibility before exposure is essential for prevention. According to curren
+--------------------------------------------------
+
+[13] Body Mass TCM
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.60807/61695q74q832
+  摘要: 无摘要
+--------------------------------------------------
+
+[14] Nonlinear association between vitamin D levels and response to tadalafil 5 mg daily treatment in erectile dysfunction patients: a prospective cohort study
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[15] An AI-Powered Integrated Care Model Combining Traditional Chinese Medicine and Western Medicine for Personalized Alzheimer&rsquo;s Disease Management
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: Alzheimer&#039;s Disease (AD) gradually reduces memory and cognition. While Western medicine focuses on pharmacological treatments, it frequently ignores holistic factors such as mood and digestion. Traditional Chinese Medicine (TCM) addresses these issues through a wellness-oriented approach. Howev
+--------------------------------------------------
+
+[16] Policy incentives, market competition, and firms' international strategy choices: Evidence from traditional Chinese medicine enterprises
+  来源: openalex | 日期: 2026-02-16 | PDF: ✔ openalex_policy_incentive_mar_w7129045941.pdf (0.7 MB, 来源: original)
+
+  摘要: <title>Abstract</title> With the strong support of the ""Traditional Chinese Medicine Going Global"" national strategy, how to actively promote the internationalization of Traditional Chinese Medicine (TCM) enterprises is an important issue that urgently needs to be explored. Since the international
+--------------------------------------------------
+
+[17] Financial inclusion in rural region—a review and research agenda
+  来源: openalex | 日期: 2026-02-16 | PDF: ✔ openalex_financial_inclu_ion__w7129017737.pdf (1.1 MB, 来源: original)
+
+  摘要: Abstract This article systematically reviews the state of financial inclusion in rural regions to consolidate fragmented knowledge, identify research gaps, and propose a future research agenda. Following the SPAR-4-SLR (Scientific Procedures and Rationales for Systematic Literature Reviews) protocol
+--------------------------------------------------
+
+[18] Body Mass TCM
+  来源: openalex | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.60807/60878906j41r
+  摘要: 无摘要
+--------------------------------------------------
+
+[19] The General Framework of the Scientification System of Traditional Chinese Medicine Based on Zhao Futao's Axiom of Material Memory Elements
+  来源: openalex | 日期: 2026-02-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.18645239
+  摘要: This study puts forward the scientific system framework of Traditional Chinese Medicine (TCM) based on Zhao Futao's Axiom of Material Memory Elements, aiming to provide quantifiable and systematic underlying logical support for TCM theories. In view of the long-term lack of unified quantitative stan
+--------------------------------------------------
+
+[20] Stage IIIB ROS1-Positive NSCLC management: crizotinib + surgery + TCM achieves exceptionally prolonged PFS (a case report)
+  来源: openalex | 日期: 2026-02-15 | PDF: ✔ openalex_stage_iiib_ros1-po_i_w7128955219.pdf (3.0 MB, 来源: original)
+
+  摘要: This article reports a case of a patient with small primary foci (11 mm*8 mm), highly malignant ROS1 fusion-positive non-small cell lung cancer (NSCLC) with mediastinal and supraclavicular lymph node metastases. After neoadjuvant crizotinib targeted therapy, the patient underwent lobectomy and lymph
+--------------------------------------------------
+
+[21] Integrating multi-omics and network pharmacology: a novel approach to elucidate Chinese medicine mechanisms in Crohn’s disease treatment
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: Since the 19th-century industrial revolution, Crohn's disease (CD), a chronic inflammatory bowel condition, has gained increasing recognition in both medical and public spheres. This review aims to critically analyze the integration of multi-omics data-encompassing genomics, transcriptomics, proteom
+--------------------------------------------------
+
+[22] Natural Combatants: How Herbal Monomers Regulate Autophagy in Ovarian Cancer
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: Introduction: Ovarian cancer (OC) is a lethal gynecological malignancy, with current therapies constrained by drug resistance and side effects. Autophagy plays a dual role in OC, while Traditional Chinese Medicine (TCM) monomers, as natural bioactive compounds, demonstrate significant potential in r
+--------------------------------------------------
+
+[23] From Fingerprint Spectra to Intelligent Perception: Research Advances in Spectral Techniques for Ginseng Species Identification
+  来源: openalex | 日期: 2026-02-13 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://www.mdpi.com/2304-8158/15/4/684/pdf
+  摘要: Owing to the high pharmacological relevance and multidimensional quality attributes of Panax spp., accurate authentication and quality evaluation of Panax-derived herbal materials remain challenging within traditional Chinese medicine (TCM) quality control systems. Conventional approaches often face
+--------------------------------------------------
+
+[24] Expanding the tracer correlation method (TCM): A performance-based framework for wider implementation in landfill methane emissions monitoring
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[25] Mechanism of traditional Chinese medicine in treating erectile dysfunction: A review
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1097/md.0000000000047652
+  摘要: Erectile dysfunction (ED) is a common and serious condition. As people’s lifestyles change and the aging of the population, the incidence of ED is increasing. traditional Chinese medicine (TCM) has long been a traditional clinical approach for treating ED in China and has been shown to be effective 
+--------------------------------------------------
+
+[26] Exploration of pathogenesis and targeted drugs of postmenopausal osteoporosis by means of analysis based on reverse network pharmacology
+  来源: openalex | 日期: 2026-02-13 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1097/md.0000000000047740
+  摘要: This study aims to explore pathogenesis of postmenopausal osteoporosis and study of active compounds of traditional Chinese medicine (TCM) based on reverse network pharmacology and molecular docking. Targets of “osteoporosis” and “postmenopausal” were obtained from GeneCards, and common targets of b
+--------------------------------------------------
+
+[27] Neuroprotective Effects of Active Component Combination from Shengmai San on Cerebral Ischemia Injury
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.53941/ijddp.2026.100005
+  摘要: Background: Shengmai San (SMS), a classical traditional Chinese medicine (TCM) formulation, has been clinically used for centuries in the treatment of ischemic stroke (IS). However, the complexity of SMS leads to ambiguous bioactive components and poorly understood mechanisms of action. Therefore, t
+--------------------------------------------------
+
+[28] The active components of the Danshen-Shanzha herb-pair exert a protective effect on MASLD by synergistically promoting fatty acid oxidation via the activation of PPARα, Plin-5 and Plin-2
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[29] Clinical Efficacy of Zhang’s Formula No. 2 Fumigation Combined with Blood Flow Restriction Training in Middle-Aged and Elderly Patients with Early-Stage Knee Osteoarthritis and Liver-Kidney Deficiency:A Randomized Controlled Trial Protocol (Preprint)
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.2196/preprints.91920
+  摘要: Background: Knee osteoarthritis (KOA) is a prevalent degenerative joint disorder that causes chronic pain and functional impairment, particularly among middle-aged and older adults. In early-stage KOA, patients often exhibit reduced periarticular muscle strength and compromised joint function. Witho
+--------------------------------------------------
+
+[30] Synergistic Effects of Fascia Knife and TCM on Hamstring Fatigue Recovery in Track Athletes: An Electromyographic Evaluation
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Purpose: Sports fatigue is a common among track and field athletes. Among them, the recovery of hamstring fatigue in the hamstring is particularly important for athletic performance and injury prevention. However, current rehabilitation methods often have limitations. This study aims to compare the 
+--------------------------------------------------
+
+[31] A Corpus-based Comparative Study on the English Translation Standardization of Acupuncture and Moxibustion Technique Terminology: Pathways and Proposals
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: The accuracy and consistency of English translations for acupuncture and moxibustion technique terminology, as a pioneering field in the internationalization of Traditional Chinese Medicine (TCM), are crucial for global education, clinical exchange, and academic development. Currently, three major a
+--------------------------------------------------
+
+[32] “Targeting the Body Itself”: Research Progress on the Anti-Inflammatory and Immunomodulatory Mechanisms of Traditional Chinese Medicine Based on Pyroptosis Theory
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[33] A novel approach to fat reduction: integrating traditional Chinese medicine with a dissolving MNs
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Obesity is not only a direct cause of health problems, but is also closely related to the incidence rate of a variety of noncommunicable diseases. Intervention for obesity requires high self-discipline and compliance from individuals, which often makes weight loss less smooth and prone to rebound. I
+--------------------------------------------------
+
+[34] Application of Immersive VR, AR, and MR Training Systems in Acupuncture Education: A scoping review (Preprint)
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.2196/preprints.93369
+  摘要: Background: Acupuncture is one of the most commonly used interventions for pain management, particularly within traditional Chinese medicine (TCM) and Korean medicine (KM). It is a therapeutic technique that involves the insertion of fine needles into anatomically defined points on the body. Accurat
+--------------------------------------------------
+
+[35] Development and validation of a nomogram model integrating noninvasive detection of radial pulse wave for predicting diabetic foot risk in type 2 diabetes mellitus
+  来源: openalex | 日期: 2026-02-12 | PDF: ✔ openalex_development_and_vali_w7128717300.pdf (1.2 MB, 来源: original)
+
+  摘要: Background This study aimed to develop and evaluate a nomogram model based on Traditional Chinese Medicine (TCM) pulse mapping parameters to predict the risk of diabetic foot (DF) in patients with type 2 diabetes mellitus (T2DM). Methods A retrospective analysis was performed on clinical data and pu
+--------------------------------------------------
+
+[36] Towards Differentiated Governance: A Typology and Differentiated Governance Framework for County-Level Traditional Chinese Medicine Hospitals in China
+  来源: openalex | 日期: 2026-02-12 | PDF: ✔ openalex_toward_differentiate_w7128713560.pdf (1.8 MB, 来源: openalex_oa)
+
+  [OpenAlex PDF]: https://www.researchsquare.com/article/rs-8760076/latest.pdf
+  摘要: <title>Abstract</title> This study addresses the heterogeneity in development potential among public county-level Traditional Chinese Medicine (TCM) hospitals in Zhejiang Province, China. Employing a sequential mixed-methods design, we conducted cluster analysis on data from 78 counties and suppleme
+--------------------------------------------------
+
+[37] Successful Treatment of Pediatric COVID-19 Encephalitis Patients under Integrated Western and Traditional Chinese Medicine Therapy: Two Case Reports
+  来源: openalex | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.4103/jmedsci.jmedsci_216_25
+  摘要: Severe acute respiratory syndrome coronavirus 2-induced encephalitis in children poses significant challenges due to neurological sequelae and mortality. We present two pediatric cases of coronavirus disease 2019 (COVID-19) encephalitis treated with integrated Western and traditional Chinese medicin
+--------------------------------------------------
+
+[38] The efficacy and potential pharmacological mechanism of Fufang Danshen Tablet in promoting the rehabilitation of ischemic stroke: a meta-analysis and in silico study
+  来源: openalex | 日期: 2026-02-12 | PDF: ✔ openalex_the_efficacy_and_pot_w7128708730.pdf (6.6 MB, 来源: original)
+
+  摘要: Background Fufang Danshen Tablet (FDT) is a traditional Chinese medicine (TCM) formula with remarkable efficacy in invigorating blood and eliminating blood stasis, thus commonly used in treating ischemic stroke. However, no systemic summary has been conducted to evaluate its efficacy yet. This study
+--------------------------------------------------
+
+[39] Evaluating Large‐Scale and Lightweight Large Language Models for Traditional Chinese Medicine Exam Questions: A Comparative Study
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Background Traditional Chinese medicine (TCM) with knowledge‐intensive framework poses unique challenges to performance for large language models (LLMs). Although TCM‐specific benchmarks and models have been developed, the performance of lightweight LLMs remains insufficiently investigated.
+--------------------------------------------------
+
+[40] Research progress on mechanisms and applications of Chinese herbal pairs in treating hyperplasia of mammary gland
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_re_earch_progre_on_m_w7128510081.pdf (4.5 MB, 来源: original)
+
+  摘要: Hyperplasia of Mammary gland (HMG), a common gynecological disorder with potential malignant transformation risk, has been effectively treated using Traditional Chinese Medicine (TCM) herbal pairs. This systematic review explores the therapeutic effects and underlying mechanisms of eight classic Tra
+--------------------------------------------------
+
+[41] Jinwei Guben Formula (Jinwei Formula II) Modulates NeutrophilExtracellular Trap Formation and Enhances Glucocorticoid Efficacy inCOPD Through HDAC2 Regulation
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: Introduction: Neutrophil extracellular traps (NETs) contribute to chronic inflammation in chronic obstructive pulmonary disease (COPD). Jinwei Guben Formula (JWGB) is a clinically used TCM for COPD, but its mechanism regarding NETs and glucocorticoid sensitivity is unclear. This study aimed to inves
+--------------------------------------------------
+
+[42] Prediction of curvature radius in roll-bending forming based on the ARIMA-TCM-XLSTM-Informer neural network model
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: During dynamic roll forming process, downward pressure parameters nonlinearly affect the final radius of curvature, making accurate prediction a significant challenge in precision molding. To address this issue, this paper proposes a hybrid neural network model, ARIMA-TCM-XLSTM-Informer, designed to
+--------------------------------------------------
+
+[43] Rapid economic valuation and sustainability analysis for managing ecotourism in Gili Matra Marine Conservation Area, West Nusa Tenggara Province
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_rapid_economic_valua_w7128706883.pdf (2.7 MB, 来源: openalex_oa)
+
+  [OpenAlex PDF]: https://www.bio-conferences.org/10.1051/bioconf/202622001001/pdf
+  摘要: The Gili Matra Marine Conservation Area has dual functions as a center for marine conservation as well as an ecotourism destination. Although ecotourism contributes significantly to the economy, the area faces challenges in maintaining ecological and social sustainability owing to increased tourism 
+--------------------------------------------------
+
+[44] Regulation and Mechanistic Insight of Traditional Chinese Medicine Techniques on Gut Microbiota: A Visual Analysis and Data Mining Approach
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.4103/wjtcm.wjtcm_54_25
+  摘要: Abstract Context: Traditional Chinese medicine (TCM) techniques, grounded in TCM theory, offer flexible and personalized therapeutic strategies. Increasing evidence indicates that gut microbiota dysbiosis is closely associated with the onset and progression of various diseases, highlighting a comple
+--------------------------------------------------
+
+[45] Clinical Observation of TCM Constitution Theory-Based Intervention in the Critical Window of AECOPD
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_clinical_ob_ervation_w7128695788.pdf (0.7 MB, 来源: original)
+
+  摘要: Objective: To observe the efficacy and safety of TCM syndrome differentiation-guided herbal intervention for patients with five constitutions during the high-risk window period of acute exacerbation of chronic obstructive pulmonary disease (AECOPD) based on TCM constitution theory. Methods: A total 
+--------------------------------------------------
+
+[46] Focus on gut microbiota regulation: exploring the potential of fermented traditional Chinese medicines in the prevention and treatment of type 2 diabetes mellitus
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fmicb.2026.1763653
+  摘要: Type 2 diabetes mellitus (T2DM), a globally prevalent metabolic disorder, has dysbiosis of the gut microbiota as a significant pathogenic factor. Traditional Chinese medicine (TCM) fermentation, originating from traditional processing techniques, is a technology that combines modern microbiological 
+--------------------------------------------------
+
+[47] Research advances in integrated traditional Chinese and Western medicine for the prevention and treatment of perioperative shivering
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_re_earch_advance_in__w7128503708.pdf (0.7 MB, 来源: original)
+
+  摘要: Perioperative shivering (POS) is a common complication during anesthesia recovery and has traditionally been regarded as a simple thermoregulatory response. Modern research has revealed that it involves complex mechanisms, including activation of the neuro–immune–inflammator y axis and dysfunction o
+--------------------------------------------------
+
+[48] Yizong Tongluo formula attenuates idiopathic pulmonary fibrosis and inflammatory injury by inhibiting HIF-1α/LSH/SCD1-mediated ferroptosis
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_yizong_tongluo_formu_w7128534881.pdf (9.4 MB, 来源: original)
+
+  摘要: Background Idiopathic pulmonary fibrosis (IPF) is a progressive disease characterized by chronic inflammation, aberrant tissue remodeling, and hypoxia. In traditional Chinese medicine (TCM), it is classified as Qi deficiency–blood stasis syndrome. The mechanism of Yizong Tongluo Formula (YZTLF), a T
+--------------------------------------------------
+
+[49] Optimization of potential targets for antidepressant Chinese medicines: AI and multi-omics methods
+  来源: openalex | 日期: 2026-02-11 | PDF: ✔ openalex_optimization_of_pote_w7128475972.pdf (2.0 MB, 来源: original)
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[50] Multiomics combined drugs to explore the potential mechanism and treatment of ankylosing spondylitis
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1186/s13018-026-06701-x
+  摘要: Ankylosing spondylitis (AS) is an immune-mediated disease with an unknown etiology, posing challenges in effective treatment. This study aims to investigate the underlying mechanisms and explore the potential of traditional Chinese medicine (TCM) as a treatment avenue. Employing a multiomics analysi
+--------------------------------------------------
+
+[51] Salidroside targets the Notch1/Hes5 axis to reconstruct the molecular innate immune–vascular network and correlates with repair after ischemic stroke
+  来源: openalex | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fimmu.2026.1756559
+  摘要: Background: Ischemic stroke (IS) induces profound dysregulation of the neuro–molecular innate immune–vascular network, yet the molecular immune states and regulatory mechanisms of key cellular subpopulations remain insufficiently defined. Although traditional Chinese medicine (TCM) exhibits multi-ta
+--------------------------------------------------
+
+[52] FA-2-b-β modulates HMGB1/NF-κB/NLRP3 signaling to alleviate neuroinflammation in Alzheimer’s disease
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1177/13872877261418300
+  摘要: Background FA-2-b-β, an extract derived from traditional Chinese medicine (TCM), has been suggested as a potential neuroprotective agent. Objective This study aimed to elucidate its role in modulating HMGB1-mediated inflammation and pyroptosis in Alzheimer's disease (AD), with a particular emphasis 
+--------------------------------------------------
+
+[53] Commentary on Central-Earth Splenic Equilibrium from Philosophical Aspects
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.24966/acim-7562/100670
+  摘要: I mentioned in my papers that the original medicinal context of TCM was deduced from nature, which was inherited by our ancestors in past history
+--------------------------------------------------
+
+[54] Quality assessment of integrated traditional chinese and western medicine guidelines for dysmetabolism of glucose and lipid: based on AGREE II and RIGHT tools
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1097/gscm.0000000000000092
+  摘要: Objective: To evaluate the methodological and reporting quality of integrated traditional Chinese medicine (TCM) and Western medicine guidelines addressing dysglycemia and dyslipidemia, thereby offering evidence-based recommendations for optimizing clinical decision-making in these conditions. Metho
+--------------------------------------------------
+
+[55] Effect of Xiaonang Yusi decoction (消囊育嗣汤) on IVF outcomes in patients with phlegm-dampness type PCOS: a prospective cohort study with supporting metabolomics, network pharmacology, and molecular docking analysis
+  来源: openalex | 日期: 2026-02-10 | PDF: ✔ openalex_effect_of_xiaonang_y_w7128483403.pdf (2.3 MB, 来源: original)
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[56] Application of Epimedium in Treatment of Erectile Dysfunction
+  来源: openalex | 日期: 2026-02-10 | PDF: ✔ openalex_application_of_epime_w7128535604.pdf (0.1 MB, 来源: original)
+
+  摘要: Erectile Dysfunction (ED), means that Penis cannot reach or keep Erecting enough in sex to finish satisfactory sexual intercourse, is a common health issue of males. The prevalence of ED increase with the increasing of age of males. This review article first presents prevalence data for ED among Chi
+--------------------------------------------------
+
+[57] Synergistic reductive dechlorination and oxidative mineralization of chlorinated organic compounds in a UV-anaerobic Fenton system: UV-driven Fe(II)/Fe(III) cycling and continuous radical generation
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[58] Recent advances in traditional Chinese medicine-mediated regulation of microglial metabolic reprogramming in neurological disease therapy
+  来源: openalex | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[59] Rehabilitation of Rotator Cuff Injuries: Integrative Perspectives from Traditional Chinese and Western Medicine
+  来源: openalex | 日期: 2026-02-10 | PDF: ✔ openalex_rehabilitation_of_ro_w7128698026.pdf (0.1 MB, 来源: original)
+
+  摘要: Rotator cuff injury is one of the most prevalent tendon disorders of the shoulder, with the highest prevalence in patients over 60 years and in occupations or sports requiring sustained overhead load. It arises from chronic tendon degeneration and repetitive microtrauma, often aggravated by acromial
+--------------------------------------------------
+
+[60] Anti-GPV activity of Lactobacillus-fermented traditional Chinese medicines
+  来源: openalex | 日期: 2026-02-10 | PDF: ✔ openalex_anti-gpv_activity_of_w7128532679.pdf (3.5 MB, 来源: original)
+
+  摘要: Background Honeysuckle and gardenia are classified as cold-natured traditional Chinese medicinal herbs, with chlorogenic acid and gardenoside recognized as their major bioactive components. Modern pharmacological studies have confirmed their antiviral, anti-inflammatory, antioxidant, and immunomodul
+--------------------------------------------------

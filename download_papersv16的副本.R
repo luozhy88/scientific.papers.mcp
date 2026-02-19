@@ -450,6 +450,19 @@ search_top_journals <- function(q, n, days) {
     return(NULL)
   }
 
+  # 多关键词 AND 查询时，按相关性过滤（CrossRef 不支持严格 AND，需后处理）
+  req_terms_top <- extract_required_terms(q)
+  if (length(req_terms_top) >= 2) {
+    keep     <- sapply(seq_len(nrow(combined)), function(i) {
+      is_paper_relevant(req_terms_top, combined$title[i], combined$abstract[i])
+    })
+    combined <- combined[keep, ]
+    if (nrow(combined) == 0) {
+      log_msg(sprintf("高档期刊搜索：相关性过滤后无结果（最近 %d 天）", days), "WARN")
+      return(NULL)
+    }
+  }
+
   journals_found <- unique(combined$journal)
   log_msg(sprintf("高档期刊: 共 %d 篇（%s 等）",
                   nrow(combined),
@@ -756,12 +769,7 @@ is_paper_relevant <- function(required_terms, title, abstract = "") {
   for (term_group in required_terms) {
     found <- any(sapply(term_group, function(t) {
       t <- tolower(trimws(t))
-      if (!nzchar(t)) return(TRUE)
-      # 使用词边界匹配，避免子字符串误匹配（如 "ai" 误匹配 "training" 中的 "ai"）
-      # 同时转义正则特殊字符
-      t_esc <- gsub("([.+*?^${}()|\\[\\]\\\\])", "\\\\\\1", t)
-      pattern <- paste0("\\b", t_esc, "\\b")
-      grepl(pattern, text, perl = TRUE)
+      nzchar(t) && grepl(t, text, fixed = TRUE)
     }))
     if (!found) return(FALSE)
   }
@@ -1919,19 +1927,41 @@ main <- function() {
   rownames(all) <- NULL
   all           <- all[!duplicated(all$id), ]
 
+  # ── 相关性过滤（多关键词 AND 查询：过滤与所有关键词均不相关的论文）──
+  req_terms <- extract_required_terms(kw)
+  if (length(req_terms) >= 2) {
+    n_before <- nrow(all)
+    keep     <- sapply(seq_len(nrow(all)), function(i) {
+      is_paper_relevant(req_terms, all$title[i], all$abstract[i])
+    })
+    all      <- all[keep, ]
+    rownames(all) <- NULL
+    n_drop   <- n_before - nrow(all)
+    if (n_drop > 0) {
+      term_desc <- paste(
+        sapply(req_terms, function(g) paste(g, collapse = " / ")),
+        collapse = " AND "
+      )
+      log_msg(sprintf("相关性过滤 [%s]: 移除 %d 篇无关论文，保留 %d 篇",
+                      term_desc, n_drop, nrow(all)), "WARN")
+    }
+    if (nrow(all) == 0) {
+      log_msg("过滤后无结果，请调整关键词或将 AND 改为 OR 扩大范围", "WARN")
+      quit(status = 1)
+    }
+  }
+
   # ── 排序：高档期刊优先，同层按日期排 ──
   all$is_top_journal <- all$source == "top_journals"
   all <- all[order(-all$is_top_journal, all$days_ago), ]
   all$is_top_journal <- NULL
 
-  # 摘要获取前预截断（保留较多候选，摘要补全后再做精准过滤和截断）
   max_n         <- n * length(active_sources)
-  pre_limit     <- max_n * 3    # 保留3倍候选供摘要补全和过滤
-  if (nrow(all) > pre_limit) all <- all[1:pre_limit, ]
+  if (nrow(all) > max_n) all <- all[1:max_n, ]
   if (!"abstract" %in% names(all)) all$abstract <- ""
   if (!"doi"      %in% names(all)) all$doi      <- NA_character_
   if (!"journal"  %in% names(all)) all$journal  <- NA_character_
-  log_msg(sprintf("合并后共 %d 篇（含高档期刊 %d 篇），准备补充摘要...",
+  log_msg(sprintf("合并后共 %d 篇（含高档期刊 %d 篇）",
                   nrow(all), sum(all$source == "top_journals", na.rm = TRUE))); cat("\n")
 
   # ── 补充摘要 ──
@@ -2001,32 +2031,6 @@ main <- function() {
     }
   }
   cat("\n")
-
-  # ── 相关性过滤（摘要补全后进行，利用完整摘要提高准确率）──────────────────
-  req_terms <- extract_required_terms(kw)
-  if (length(req_terms) >= 2) {
-    n_before  <- nrow(all)
-    keep      <- sapply(seq_len(nrow(all)), function(i) {
-      is_paper_relevant(req_terms, all$title[i], all$abstract[i])
-    })
-    all       <- all[keep, ]
-    rownames(all) <- NULL
-    n_drop    <- n_before - nrow(all)
-    term_desc <- paste(
-      sapply(req_terms, function(g) paste(g, collapse = " / ")),
-      collapse = " AND "
-    )
-    log_msg(sprintf("相关性过滤 [%s]: 保留 %d / %d 篇（移除 %d 篇无关）",
-                    term_desc, nrow(all), n_before, n_drop))
-    if (nrow(all) == 0) {
-      log_msg("过滤后无结果，请调整关键词或将 AND 改为 OR 以扩大范围", "WARN")
-      quit(status = 1)
-    }
-  }
-
-  # 最终截断到 max_n（过滤后再截断，保证结果质量）
-  if (nrow(all) > max_n) all <- all[1:max_n, ]
-  log_msg(sprintf("最终共 %d 篇文献进入下载环节", nrow(all))); cat("\n")
 
   # ── 下载 PDF ──
   log_msg("开始下载 PDF（多源策略: arXiv > 原始 > Unpaywall > S2 > PMC > OpenAlex > Google）...")

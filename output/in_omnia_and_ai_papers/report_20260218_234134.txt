@@ -1,0 +1,93 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: insomnia and AI
+时间范围: 最近 30 天 (2026-01-19 至 2026-02-18)
+总论文: 14 | 有摘要: 4 | PDF下载: 3 (3.7 MB)
+
+============================================================
+
+
+[1] Why sky-high pay for AI researchers is bad for the future of science
+  来源: top_journals | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[2] Climate extremes intensify global lake eutrophication by increasing the stress resistance of harmful bloom-forming algae
+  来源: top_journals | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[3] Daily briefing: New platform lets AI agents hire human helpers
+  来源: top_journals | 日期: 2026-02-16 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] Snow or rain? hybrid AI deciphers surface precipitation phase from satellite observations
+  来源: top_journals | 日期: 2026-02-16 | PDF: ✔ top_journals_snow_or_rain_hybrid__httpsdoiorg1.pdf (2.6 MB, 来源: unpaywall_doi)
+
+  摘要: Abstract Surface precipitation phase transition is conducive to devastating snowstorms and avalanches yet remains a global challenge due to the scarcity of surface observations. Here, we present the Real-time Precipitation Phase-Intensity Collaborative Retrieval Network (RePPIC-Net), a hybrid AI fra
+--------------------------------------------------
+
+[5] Transcription factor Etv3 controls the tolerogenic function of dendritic cells
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Dendritic cells (DCs) facilitate the maintenance of immunological tolerance in the steady state. We report that transcription factor Etv3 is preferentially expressed in mature DCs, including tissue-derived migratory DCs (migDCs), and facilitates their homeostatic maturation and CCR7-dependent migrat
+--------------------------------------------------
+
+[6] Stewarding AI in agriculture research
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[7] PRIMARY-AI: outcomes-based standards to safeguard primary care in the AI era
+  来源: top_journals | 日期: 2026-02-11 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[8] Author Correction: Detection of undiagnosed liver cirrhosis via AI-enabled electrocardiogram: a pragmatic, cluster-randomized clinical trial
+  来源: top_journals | 日期: 2026-02-10 | PDF: ✔ top_journals_author_correction_de_httpsdoiorg1.pdf (0.4 MB, 来源: unpaywall_doi)
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[9] AI-enabled vascular grafts monitor blood flow
+  来源: top_journals | 日期: 2026-02-10 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[10] Generative AI powered by nucleic acid language model enables one-round evolution of RNA aptamers
+  来源: top_journals | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[11] A single microRNA miR-195 rescues the arrested B cell development induced by EBF1 deficiency
+  来源: top_journals | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  摘要: Accumulated studies have reported that hematopoietic differentiation was primarily regulated by transcription factors. Early B cell factor 1 (EBF1) is an essential transcription factor for B lymphopoiesis. Contrary to the canonical notion, we found that a single miRNA, miRNA-195 ( Mir195 ) transduct
+--------------------------------------------------
+
+[12] A single microRNA miR-195 rescues the arrested B cell development induced by EBF1 deficiency
+  来源: top_journals | 日期: 2026-02-06 | PDF: 无PDF链接
+
+  摘要: Accumulated studies have reported that hematopoietic differentiation was primarily regulated by transcription factors. Early B cell factor 1 (EBF1) is an essential transcription factor for B lymphopoiesis. Contrary to the canonical notion, we found that a single miRNA, miRNA-195 ( Mir195 ) transduct
+--------------------------------------------------
+
+[13] Using AI responsibly in scientific publishing
+  来源: top_journals | 日期: 2026-02-01 | PDF: ✔ top_journals_u_ing_ai_re_pon_ibly_httpsdoiorg1.pdf (0.7 MB, 来源: unpaywall_doi)
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[14] Engineering AI co-scientists for statistical genetics applications
+  来源: top_journals | 日期: 2026-01-20 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------

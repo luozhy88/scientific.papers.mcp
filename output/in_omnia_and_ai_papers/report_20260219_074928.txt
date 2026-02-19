@@ -1,0 +1,45 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: insomnia and AI
+时间范围: 最近 30 天 (2026-01-20 至 2026-02-19)
+总论文: 6 | 有摘要: 2 | PDF下载: 1 (2.6 MB)
+
+============================================================
+
+
+[1] AI offers way to image and assess clinical cell samples
+  来源: top_journals | 日期: 2026-02-18 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[2] AI succeeds in diagnosing rare diseases
+  来源: top_journals | 日期: 2026-02-18 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[3] Climate extremes intensify global lake eutrophication by increasing the stress resistance of harmful bloom-forming algae
+  来源: top_journals | 日期: 2026-02-17 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] Snow or rain? hybrid AI deciphers surface precipitation phase from satellite observations
+  来源: top_journals | 日期: 2026-02-16 | PDF: ✔ top_journals_snow_or_rain_hybrid__httpsdoiorg1.pdf (2.6 MB, 来源: unpaywall_doi)
+
+  摘要: Abstract Surface precipitation phase transition is conducive to devastating snowstorms and avalanches yet remains a global challenge due to the scarcity of surface observations. Here, we present the Real-time Precipitation Phase-Intensity Collaborative Retrieval Network (RePPIC-Net), a hybrid AI fra
+--------------------------------------------------
+
+[5] Transcription factor Etv3 controls the tolerogenic function of dendritic cells
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: Dendritic cells (DCs) facilitate the maintenance of immunological tolerance in the steady state. We report that transcription factor Etv3 is preferentially expressed in mature DCs, including tissue-derived migratory DCs (migDCs), and facilitates their homeostatic maturation and CCR7-dependent migrat
+--------------------------------------------------
+
+[6] Stewarding AI in agriculture research
+  来源: top_journals | 日期: 2026-02-12 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------

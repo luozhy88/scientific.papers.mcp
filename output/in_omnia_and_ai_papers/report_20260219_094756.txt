@@ -1,0 +1,34 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: insomnia and AI
+时间范围: 最近 365 天 (2025-02-19 至 2026-02-19)
+总论文: 4 | 有摘要: 2 | PDF下载: 1 (0.6 MB)
+
+============================================================
+
+
+[1] Ai-Augmented Management of Pharmacoresistant Insomnia and Restless Legs Syndrome in Park2 Parkinson’s Disease: an N-Of-1 Case Report Integrating Pharmacogenetics, Chronopharmacology, Digital Monitoring, and an Llm Co-Pilot
+  来源: openalex | 日期: 2026-02-13 | PDF: ✔ openalex_ai-augmented_managem_w7128809653.pdf (0.6 MB, 来源: original)
+
+  摘要: <title>Abstract</title> We report a case of young-onset PARK2 Parkinson’s disease complicated by severe, persistent insomnia, restless legs syndrome (RLS), and REM sleep behavior disorder (RBD), refractory to multiple conventional strategies. The clinical course included features consistent with lev
+--------------------------------------------------
+
+[2] An Improved Conventional Method for an AI-Based Assistance System Using Insomnia Participants
+  来源: openalex | 日期: 2026-01-21 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[3] Development of explainable machine learning-based prediction models of depression with mild and severe insomnia in middle-aged and elderly Chinese people
+  来源: openalex | 日期: 2025-11-11 | PDF: 无PDF链接
+
+  摘要: 无摘要
+--------------------------------------------------
+
+[4] Development and content validity analysis of artificial intelligence-generated Indonesian language insomnia questionnaire based on the International Classification of Sleep Disorders, Third Edition
+  来源: openalex | 日期: 2025-09-30 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.25259/jnrp_401_2024
+  摘要: Objectives: Application of artificial intelligence (AI) in the form of a large language model (LLM) in medicine, especially in the field of neurosomnology, is still limited. The generative ability of LLM can be used to develop a specific screening questionnaire in a specific language. In this study,
+--------------------------------------------------

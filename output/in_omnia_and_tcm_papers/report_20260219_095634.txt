@@ -1,0 +1,16 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: insomnia and TCM
+时间范围: 最近 365 天 (2025-02-19 至 2026-02-19)
+总论文: 1 | 有摘要: 0 | PDF下载: 0 (0.0 MB)
+
+============================================================
+
+
+[1] ZhiAn-GPT: An Explainable Language Model for Generating TCM Prescriptions for Insomnia
+  来源: openalex | 日期: 2026-01-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.13140/rg.2.2.30280.79368
+  摘要: 无摘要
+--------------------------------------------------

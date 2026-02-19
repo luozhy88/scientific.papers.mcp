@@ -1,0 +1,259 @@
+最新文献搜索报告 v3.0 (Semantic Scholar 首选版)
+===========================================
+
+关键词: insomnia and TCM
+时间范围: 最近 365 天 (2025-02-19 至 2026-02-19)
+总论文: 39 | 有摘要: 38 | PDF下载: 12 (28.9 MB)
+
+============================================================
+
+
+[1] An Analysis Study of <scp> <i>Celastrus orbiculatus</i> </scp> Fruits ( <i>Beihehuan</i> ) for Insomnia Treatment and Potential Replacement for <scp> <i>Albizia julibrissin</i> </scp> Flowers ( <i>Hehuanhua</i> )
+  来源: openalex | 日期: 2026-01-26 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bmc.70370
+  摘要: ABSTRACT Celastrus orbiculatus fruits as Beihehuan ( BHH ) in Chinese are used as an alternative to Albizia julibrissin flowers ( Hehuanhua ) for insomnia treatment in North of China. Both of them perhaps contain similar material foundations with common components, making them highly worthy of syste
+--------------------------------------------------
+
+[2] Utilization, user evaluation, and associated factors of Traditional Chinese Medicine techniques for insomnia symptoms among Chinese community-dwelling older adults: a cross-sectional study
+  来源: openalex | 日期: 2026-01-15 | PDF: ✔ openalex_utilization_u_er_eva_w7124287233.pdf (0.3 MB, 来源: original)
+
+  摘要: Background Insomnia symptoms are common among older adults, and Traditional Chinese Medicine (TCM) techniques have shown benefits in relieving these symptoms. However, real-world evidence on their use, evaluation, and associated factors in community settings remains limited. This study aimed to desc
+--------------------------------------------------
+
+[3] Comparative effectiveness of different acupuncture therapies for perimenopausal syndrome: a systematic review and network meta-analysis
+  来源: openalex | 日期: 2026-01-15 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fneur.2025.1696085
+  摘要: Background: Perimenopausal women commonly suffer from symptoms like hot flashes, insomnia, and mood swings, impacting quality of life. While acupuncture is a widely used and effective non-pharmacological treatment, the relative efficacy of different acupuncture modalities remains unclear. This study
+--------------------------------------------------
+
+[4] Insomnia treatment based on the regulation of the GABAergic system: traditional Chinese medicine perspectives and therapeutic approaches
+  来源: openalex | 日期: 2026-01-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.3389/fnins.2025.1670273
+  摘要: Insomnia is a common clinical manifestation of central nervous system (CNS) dysfunction that may be attributable to the involvement of abnormalities in multiple systems. Dysfunction of the gamma-aminobutyric acid (GABA) system is one of the key pathologic factors responsible for the increased neural
+--------------------------------------------------
+
+[5] Auricular Acupressure for Insomnia in Patients with Decompensated Hepatitis B-Related Liver Cirrhosis: A Clinical Observation
+  来源: openalex | 日期: 2026-01-06 | PDF: 无PDF链接
+
+  摘要: Objective This study aims to evaluate the efficacy and safety of auricular acupressure for insomnia in patients with decompensated hepatitis B-related liver cirrhosis (DHBV-LC). Methods This prospective randomized controlled trial enrolled 60 patients with DHBV-LC and comorbid insomnia between May 2
+--------------------------------------------------
+
+[6] ZhiAn-GPT: An Explainable Language Model for Generating TCM Prescriptions for Insomnia
+  来源: openalex | 日期: 2026-01-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.13140/rg.2.2.30280.79368
+  摘要: 无摘要
+--------------------------------------------------
+
+[7] Discovery of the Underlying Mechanism of Ginger Juice Processed Ziziphi Spinosae Semen for Its Sedative‐Hypnotic Effect on Insomnia Mice via Regulation of HPA Axis and cAMP/PKA Signaling Pathway
+  来源: openalex | 日期: 2026-01-01 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Based on Traditional Chinese Medicine (TCM) theory, the efficacy and mechanism of Ginger juice processed Ziziphi Spinosae Semen (GJPZSS) for treating insomnia, particularly stress‐related types, were investigated to provide empirical evidence. An insomnia model was induced in mice by DL‐4‐c
+--------------------------------------------------
+
+[8] Cost-effectiveness analysis of commercial Chinese polyherbal preparations for primary insomnia: based on network meta-analysis
+  来源: openalex | 日期: 2025-12-08 | PDF: ✔ openalex_co_t-effectivene_ana_w4417121703.pdf (2.3 MB, 来源: original)
+
+  摘要: Objectives Building upon prior systematic reviews and network meta-analyses, this study evaluated the cost-effectiveness of four commercial Chinese polyherbal preparations (CCPPs)—Tian Meng Oral Liquid/Capsules (TM), Shen-Qi-Wu-Wei-Zi Tablets (SQWWZ), Wu Ling Capsules (WL), and Bai-Le-Mian Capsules 
+--------------------------------------------------
+
+[9] Supplementary file 1_Cost-effectiveness analysis of commercial Chinese polyherbal preparations for primary insomnia: based on network meta-analysis.docx
+  来源: openalex | 日期: 2025-12-08 | PDF: 无PDF链接
+
+  摘要: Objectives: Building upon prior systematic reviews and network meta-analyses, this study evaluated the cost-effectiveness of four commercial Chinese polyherbal preparations (CCPPs)—Tian Meng Oral Liquid/Capsules (TM), Shen-Qi-Wu-Wei-Zi Tablets (SQWWZ), Wu Ling Capsules (WL), and Bai-Le-Mian Capsules
+--------------------------------------------------
+
+[10] Acupuncture and Traditional Chinese Medicine in Surf Sports: Case Series on Recovery, Performance, and Chronic Conditions
+  来源: openalex | 日期: 2025-12-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.17792548
+  摘要: Acupuncture, rooted in Traditional Chinese Medicine (TCM), has been practiced for millennia to treat a variety of conditions, including pain, inflammation, anxiety, insomnia, and other chronic disorders. In recent decades, it has gained increasing recognition within integrative medicine for its role
+--------------------------------------------------
+
+[11] Acupuncture and Traditional Chinese Medicine in Surf Sports: Case Series on Recovery, Performance, and Chronic Conditions
+  来源: openalex | 日期: 2025-12-02 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5281/zenodo.17792547
+  摘要: Acupuncture, rooted in Traditional Chinese Medicine (TCM), has been practiced for millennia to treat a variety of conditions, including pain, inflammation, anxiety, insomnia, and other chronic disorders. In recent decades, it has gained increasing recognition within integrative medicine for its role
+--------------------------------------------------
+
+[12] Time-resolved colored petri net modeling of the eight extraordinary vessels in acupuncture
+  来源: openalex | 日期: 2025-12-01 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://academic.oup.com/bib/article-pdf/26/Supplement_1/i34/65854368/bbaf631.056.pdf
+  摘要: Abstract Background Acupuncture, a core therapy in Traditional Chinese Medicine (TCM), regulates physiological balance through intricate interactions along the meridian system. The Eight Extraordinary Vessels (EEVs) play a central role in redistributing Qi, Blood, and Body Fluids (QBF); however, man
+--------------------------------------------------
+
+[13] Unravelling the Silence: Exploring Tinnitus Pathophysiology and the Promise of Traditional Chinese Medicine
+  来源: openalex | 日期: 2025-12-01 | PDF: ✔ openalex_unravelling_the_sile_w4417334712.pdf (3.5 MB, 来源: original)
+
+  摘要: Tinnitus is a prevalent condition often associated with hearing loss. Tinnitus may persist throughout an individual's life and can result in a range of negative outcomes, including annoyance, anxiety, depression, insomnia, heightened auditory sensitivity, difficulties with concentration, and, in sev
+--------------------------------------------------
+
+[14] Exploring the Causal Relationship between Circadian Rhythm Disorders and Lung Cancer and Potential Interventional Traditional Chinese Medicine
+  来源: openalex | 日期: 2025-12-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doaj.org/article/aae33910a9974680a488a720a35f4892
+  摘要: Background Lung cancer is a leading cause of morbidity and mortality, making its prevention and treatment a key focus of research. Circadian rhythm disruption (CRD) is considered an important risk factor for lung cancer, but the causal relationship between CRD and lung cancer remains unclear. Object
+--------------------------------------------------
+
+[15] Mechanism of Action and Clinical Research Progress of Gastrodia and Uncaria Decoction in Treating Hypertension
+  来源: openalex | 日期: 2025-11-28 | PDF: 无PDF链接
+
+  摘要: Hypertension, a major global public health issue, affects 27.9% of adults in China, with approximately 245 million patients. However, treatment and control rates stand at only 45.8% and 16.8%, respectively, indicating a significant “diagnosis and treatment gap.” While modern Western drugs form the c
+--------------------------------------------------
+
+[16] Impacto Clínico da Acupuntura Abdominal como Técnica Central: Estudo de Série de Casos
+  来源: openalex | 日期: 2025-11-28 | PDF: ✔ openalex_impacto_cl_inico_da__w4416805485.pdf (1.4 MB, 来源: original)
+
+  摘要: Abdominal acupuncture is a therapeutic microsystem based on the representation of the entire body in the abdomen, acting through the harmonization of the Zang-Fu organs, the modulation of Qi and Xue, and the action at the level of various body systems, which makes it especially relevant in the conte
+--------------------------------------------------
+
+[17] Banxia Shumi decoction for the treatment of insomnia: A systematic review and meta-analysis
+  来源: openalex | 日期: 2025-11-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.1097/md.0000000000046207
+  摘要: Background: The efficacy of Banxia Shumi decoction (BSD) and its combination with Chinese medicine (acupuncture, formulas, etc) in treating insomnia remains controversial, with varying research conclusions. This study presents a systematic review and meta-analysis of its impact on insomnia. Methods:
+--------------------------------------------------
+
+[18] Effects and safety of traditional Chinese medicine approaches in cancer symptom care: A systematic review of phase 3 randomized clinical trials
+  来源: openalex | 日期: 2025-11-11 | PDF: 无PDF链接
+
+  摘要: Abstract Cancer‐related symptoms are detrimental to the quality of life of people with cancer. This review systematically evaluates phase 3 randomized clinical trials (RCTs) assessing the effectiveness and safety of traditional Chinese medicine (TCM) interventions in managing cancer‐related symptoms
+--------------------------------------------------
+
+[19] Effectiveness of Five-Element Regulatory Therapy for post-COVID syndrome: a retrospective cohort study
+  来源: openalex | 日期: 2025-11-06 | PDF: ✔ openalex_effectivene_of_five-_w4415948459.pdf (0.7 MB, 来源: original)
+
+  摘要: Introduction Post-COVID syndrome is characterized by persistent, unexplained symptoms including chronic cough, palpitations, insomnia, and fatigue that develop following SARS-CoV-2 infection without identifiable causes. Current treatments show limited efficacy, requiring alternative options. This st
+--------------------------------------------------
+
+[20] Table 1_Effectiveness of Five-Element Regulatory Therapy for post-COVID syndrome: a retrospective cohort study.docx
+  来源: openalex | 日期: 2025-11-06 | PDF: 无PDF链接
+
+  摘要: Introduction: Post-COVID syndrome is characterized by persistent, unexplained symptoms including chronic cough, palpitations, insomnia, and fatigue that develop following SARS-CoV-2 infection without identifiable causes. Current treatments show limited efficacy, requiring alternative options. This s
+--------------------------------------------------
+
+[21] Exploring the Treatment of Insomnia in Traditional Chinese Medicine from the Perspective of Yin-Yang Deficiency and Excess
+  来源: openalex | 日期: 2025-11-05 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.54254/2753-8818/2025.sh28985
+  摘要: This study aims to explore effective approaches and methods of treating insomnia in Traditional Chinese Medicine (TCM) through the theoretical framework of YinYang deficiency and excess. By conducting a comprehensive literature review, it systematically examines the intrinsic connection between the 
+--------------------------------------------------
+
+[22] Efficacy of fumigation with traditional Chinese medicine combined with Acanthopanax Senticosus injection in patients with sleep disorders
+  来源: openalex | 日期: 2025-11-03 | PDF: ✔ openalex_efficacy_of_fumigati_w4415900495.pdf (0.4 MB, 来源: original)
+
+  摘要: Objective: To evaluate the efficacy of traditional Chinese medicine (TCM) fumigation and washing combined with Acanthopanax senticosus injection in patients with sleep disorders. Methodology: The clinical data total of 106 patients with sleep disorders treated at Yan’an Traditional Chinese Medicine 
+--------------------------------------------------
+
+[23] [Research on the anti-inflammatory effects of a novel sleep-aid decoction on elderly insomnia patients across traditional Chinese medicine constitutional types].
+  来源: openalex | 日期: 2025-11-01 | PDF: 无PDF链接
+
+  摘要: Objective To evaluate the clinical efficacy of a novel sleep-aid decoction in treating elderly insomnia patients with different traditional Chinese medicine (TCM) constitutional types, and its effects on neurotransmitter and inflammatory factor levels. Methods A total of 200 patients with four diffe
+--------------------------------------------------
+
+[24] Effect of moxibustion combined with Chinese herbal compress therapy on sleep quality and negative emotion of insomnia patients
+  来源: openalex | 日期: 2025-11-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doaj.org/article/cceb5b8d5e0844d59584f813637c3c75
+  摘要: ObjectiveTo investigate the effects of moxibustion combined with traditional Chinese medicine(TCM) herbal compress therapy on sleep quality and negative emotions in patients with insomnia.MethodsA total of 124 patients with insomnia admitted to our hospital from January 2020 to December 2022 were ra
+--------------------------------------------------
+
+[25] Task-Shifting from Acupuncturists to Nurses in Delivering Acupuncture/Acupressure or Supervising Patient Self-Administered Acupressure for Sleep Management: Is It Feasible?
+  来源: openalex | 日期: 2025-11-01 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doaj.org/article/38ee1fa01f6248c898ee21eaffd7046a
+  摘要: Fei-Yi Zhao,1– 4,&amp;ast; Wen-Jing Zhang,4,&amp;ast; Chin Moi Chow,3,5,&amp;ast; Yuan Xin Lee,4 Peijie Xu,6 Yuen-Shan Ho,7 Qiang-Qiang Fu,8 Russell Conduit2 1Department of Nursing, School of International Medical Technology, Shanghai Sanda University, Shanghai, 201209, People’s Republic of China; 2
+--------------------------------------------------
+
+[26] Mechanism of Herbal Pairs Modulating Endogenous Melatonin to Ameliorate Sleep Disorders: Data Mining, Network Pharmacology andMeta-Analysis
+  来源: openalex | 日期: 2025-10-20 | PDF: 无PDF链接
+
+  摘要: Introduction: Sleep disorders (SD) affect approximately 25% of the global population. Traditional Chinese Medicine (TCM) formulas have been shown to alleviate SD by modulating endogenous melatonin. This study used data mining, network pharmacology, and meta-analysis to identify key herbal pairs from
+--------------------------------------------------
+
+[27] An Analysis of the Theory and Treatment of Insomnia in Wu Cheng’s Bu Ju Ji
+  来源: openalex | 日期: 2025-10-16 | PDF: 无PDF链接
+
+  摘要: This paper conducts an in-depth analysis of the theory and methods for differentiating and treating insomnia in Bu Ju Ji by Wu Cheng, a physician of the Qing Dynasty. By systematically sorting out the origin of Wu Cheng’s academic thoughts, this study explores his unique perspective on differentiati
+--------------------------------------------------
+
+[28] Benzodiazepine Use Among Individuals with Opioid Use Disorder: A Narrative Review
+  来源: openalex | 日期: 2025-10-01 | PDF: ✔ openalex_benzodiazepine_u_e_a_w4415382428.pdf (0.4 MB, 来源: original)
+
+  摘要: The concomitant use of benzodiazepines (BZDs) among individuals with opioid use disorder (OUD) is highly prevalent, with a rapid annual increase in overdose-related deaths. The co-use of BZDs is a significant predictor of opioid overdose. In the absence of other drugs, BZDs are rarely the sole cause
+--------------------------------------------------
+
+[29] Nursing of a patient with knee osteoarthritis complicated by insomnia treated with meridian-unblocking moxibustion combined with auricular acupressure
+  来源: openalex | 日期: 2025-09-28 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.55111/j.issn2709-1961.20250807002
+  摘要: This paper summarizes the nursing measures for a patient with knee osteoarthritis complicated by insomnia treated with meridian-unblocking moxibustion combined with auricular acupressure. Guided by the holistic concept of Traditional Chinese Medicine (TCM) and syndrome differentiation-based nursing,
+--------------------------------------------------
+
+[30] Traditional Chinese Medicine Constitution Characteristics and Influencing Factors for Acute Mountain Sickness Susceptibility in Rapidly Ascending High-Altitude Populations: A Cross-Sectional Survey
+  来源: openalex | 日期: 2025-09-17 | PDF: ✔ openalex_traditional_chine_e__w4414295480.pdf (2.4 MB, 来源: original)
+
+  摘要: <title>Abstract</title> <bold>Background:</bold> Acute Mountain Sickness(AMS) is a significant health concern for individuals rapidly ascending to high altitudes. In severe cases, the condition can develop into high-altitude pulmonary edema and high-altitude cerebral edema, which can have a signific
+--------------------------------------------------
+
+[31] A Case of Postpartum Depression Treated by Bupleurum Decoction Combined with Yingwei Method
+  来源: openalex | 日期: 2025-08-27 | PDF: ✔ openalex_a_ca_e_of_po_tpartum_w4413854868.pdf (0.3 MB, 来源: original)
+
+  摘要: Objective: Based on the theory of ""liver depression and Ying Wei imbalance"", to explore the clinical efficacy and syndrome differentiation of Bupleurum combined with harmonizing Ying Wei method in the treatment of postpartum depression (PPD). Methods: the diagnosis and treatment process of a 28 ye
+--------------------------------------------------
+
+[32] Mapping the research landscape of traditional Chinese medicine in insomnia management: a bibliometric study (2005–2024)
+  来源: openalex | 日期: 2025-08-26 | PDF: ✔ openalex_mapping_the_re_earch_w4413683804.pdf (12.2 MB, 来源: original)
+
+  摘要: Objective Traditional Chinese Medicine (TCM) has shown unique benefits in insomnia management, but existing bibliometric studies on TCM for insomnia remain fragmented. This study, through bibliometric methods, systematically maps the research landscape of TCM in insomnia management from 2005 to 2024
+--------------------------------------------------
+
+[33] Gas chromatography-mass spectrometry-based plasma metabolomics analysis in hypertensive patients with Yin deficiency and Yang hyperactivity syndrome
+  来源: openalex | 日期: 2025-08-12 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.5493/wjem.v15.i3.103154
+  摘要: BACKGROUND Hypertension is a significant global health concern and serves as a critical risk factor for cardiovascular diseases, stroke, and renal failure. Traditional Chinese Medicine (TCM) has been utilized for an extended period to address hypertension, with the syndrome known as Yin deficiency a
+--------------------------------------------------
+
+[34] Zhi-zi-chi decoction exerts hypnotic effect through gut-brain axis modulation in insomnia mice
+  来源: openalex | 日期: 2025-08-07 | PDF: ✔ openalex_zhi-zi-chi_decoction_w4413134081.pdf (4.2 MB, 来源: original)
+
+  摘要: Background Insomnia, a frequently encountered sleep disorder, boasts a high prevalence rate on a global scale. Currently, Western medications are widely used for its treatment; however, they may cause adverse effects such as dependence and daytime drowsiness. Traditional Chinese medicine (TCM) offer
+--------------------------------------------------
+
+[35] Traditional Chinese Medicine Mechanism and Clinical Research on Brain Health Sleep-Aiding Pillow for Encephalopathy and Cervical Spine Rehabilitation
+  来源: openalex | 日期: 2025-08-07 | PDF: ✔ openalex_traditional_chine_e__w4413255296.pdf (0.8 MB, 来源: original)
+
+  摘要: Objective: Based on the theories of “defensive Qi entering Yin” and “Qi and blood in meridians” in traditional Chinese medicine (TCM), this study explores the synergistic intervention effect of the Brain Health Sleep-Aid Pillow on brain diseases (such as insomnia, vertigo) and cervical spondylosis. 
+--------------------------------------------------
+
+[36] Efficacy and safety of Chinese medicine compound for the convalescent COVID-19 patients: Protocol of a multi-centered, randomized, double-blinded, placebo-controlled clinical trial (Preprint)
+  来源: openalex | 日期: 2025-08-03 | PDF: 无PDF链接
+
+  摘要: ABSTRACT Background: Convalescent coronavirus disease 2019 (COVID-19) refers to a series of clinical syndromes in patients with COVID-19 infection that follow the relevant discharge indications but do not fulfill the criteria for a clinical cure, and these patients are discharged from the hospital w
+--------------------------------------------------
+
+[37] 560. COMBINED TRADITIONAL CHINESE AND WESTERN MEDICINE REDUCES DEMENTIA RISK IN INSOMNIA PATIENTS: A REAL-WORLD COHORT STUDY
+  来源: openalex | 日期: 2025-08-01 | PDF: 所有源均失败
+
+  [OpenAlex PDF]: https://academic.oup.com/ijnp/article-pdf/28/Supplement_2/ii158/64072347/pyaf052.313.pdf
+  摘要: Abstract Background Benzodiazepines (BZDs) and Z-drugs are widely prescribed for insomnia, but have been linked to potential cognitive decline, with conflicting evidence regarding their association with dementia risk, particularly in aging populations. In Taiwan, Traditional Chinese Medicine (TCM) i
+--------------------------------------------------
+
+[38] PREPARATION OF AN EFFECTIVE TRADITIONAL CHINESE MEDICINAL COMPOUND FOR SLEEP-AID SACS IN THE TREATMENT OF INSOMNIA IN OLDER PEOPLE: A DELPHI METHOD STUDY
+  来源: openalex | 日期: 2025-07-31 | PDF: 无PDF链接
+
+  [OpenAlex PDF]: https://doi.org/10.21474/ijar01/21443
+  摘要: Objective: To establish an expert consensus on an optimal Traditional Chinese Medicine (TCM) compound for use in sleep-aid sacs to treat insomnia in older adults. Methods: A three-round Delphi study was conducted with 12 TCM experts from a Class Three Grade A hospital in Guangzhou, China, from April
+--------------------------------------------------
+
+[39] Inappropriate Diet – A Major Cause of Psychological Disorders
+  来源: openalex | 日期: 2025-07-30 | PDF: 无PDF链接
+
+  摘要: Emotional imbalances and mental illnesses are continuously increasing and have become one of the plagues of modern society. One of the main contributing factors is the modern diet. The only form of medicine that has precisely described the pathophysiological mechanisms by which the prolonged and exc
+--------------------------------------------------
